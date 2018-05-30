@@ -11,5 +11,23 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix
+    .js('resources/assets/js/app.js', 'public/js')
+    .sass('resources/assets/sass/app.scss', 'public/css')
+    .extract(['jquery', 'tether', 'bootstrap'])
+    .autoload({
+        jquery: ['$', 'jQuery', 'jquery'],
+        tether: ['Tether'],
+    })
+    .browserSync({
+        proxy: 'http://praslin.test',
+        browser: 'google chrome',
+        port: 3010,
+    })
+    .webpackConfig({
+        resolve:{
+            alias: {
+                'styles': path.resolve(__dirname, 'resources/assets/sass'),
+            }
+        }
+    });
