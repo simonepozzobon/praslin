@@ -1,5 +1,5 @@
 let mix = require('laravel-mix');
-
+let webpack = require('webpack')
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -25,9 +25,22 @@ mix
         port: 3010,
     })
     .webpackConfig({
-        resolve:{
+        resolve: {
             alias: {
                 'styles': path.resolve(__dirname, 'resources/assets/sass'),
+                '~js': path.resolve(__dirname, 'resources/assets/js'),
             }
-        }
+        },
+        plugins: [
+            new webpack.LoaderOptionsPlugin({
+                options: {
+                    loaders: [
+                        {
+                            test: /\.vue$/,
+                            loader: 'vue-loader'
+                        },
+                    ],
+                }
+            })
+        ]
     });
