@@ -57,6 +57,11 @@ export default {
     @include media-breakpoint-up('md') {
         min-height: 75px;
     };
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
     > .navbar-brand {
         position: relative;
