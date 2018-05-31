@@ -38643,7 +38643,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n#footer {\n  min-height: 460px;\n  background-image: url(\"/images/footer-bg.png\");\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end;\n}\n#footer > .sub-footer {\n    padding-bottom: 2rem;\n    color: #4A4A4A;\n}\n#footer > .sub-footer > a {\n      color: #4A4A4A;\n}\n#footer > .sub-footer > a:active, #footer > .sub-footer > a:link, #footer > .sub-footer > a:visited {\n        color: #4A4A4A;\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  min-height: 460px;\n  background-image: url(\"/images/footer-bg.png\");\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end;\n}\n#footer > .sub-footer {\n    padding-bottom: 3rem;\n    color: #4A4A4A;\n}\n#footer > .sub-footer > a {\n      color: #4A4A4A;\n}\n#footer > .sub-footer > a:active, #footer > .sub-footer > a:link, #footer > .sub-footer > a:visited {\n        color: #4A4A4A;\n}\n", ""]);
 
 // exports
 

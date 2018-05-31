@@ -27,7 +27,7 @@ export default {
     align-items: flex-end;
 
     > .sub-footer {
-        padding-bottom: $spacer * 2;
+        padding-bottom: $spacer * 3;
         color: $dark-gray;
 
         > a {
