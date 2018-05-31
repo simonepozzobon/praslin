@@ -35983,7 +35983,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#main-slider {\n  position: relative;\n  top: 0;\n}\n.swiper-container {\n  width: 100%;\n  height: 100%;\n}\n.slide {\n  height: 100%;\n  min-height: calc(100vh - 90px);\n  max-height: 100vh;\n  background-position: center;\n  background-size: cover;\n  overflow: hidden;\n}\n.main-slider-slogan {\n  position: absolute;\n  top: 35%;\n  left: 50%;\n  width: 60%;\n  height: 100%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n@media (max-width: 991.98px) {\n.main-slider-slogan {\n      width: 90%;\n}\n}\n.slide-1 {\n  background-image: url(\"/images/home-test.png\");\n}\n.slide-2 {\n  background-image: url(\"/images/home-2.JPG\");\n}\n.slide-3 {\n  background-image: url(\"/images/home-3.JPG\");\n}\n", ""]);
+exports.push([module.i, "\n#main-slider {\n  position: relative;\n  top: 0;\n}\n.swiper-container {\n  width: 100%;\n  height: 100%;\n}\n.slide {\n  height: 100%;\n  min-height: calc(100vh - 90px);\n  max-height: 100vh;\n  background-position: center;\n  background-size: cover;\n  overflow: hidden;\n}\n.main-slider-slogan {\n  position: absolute;\n  top: 35%;\n  left: 50%;\n  width: 60%;\n  height: 100%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n@media (max-width: 991.98px) {\n.main-slider-slogan {\n      width: 90%;\n}\n}\n.slide-1 {\n  background-image: url(\"/images/home-5.png\");\n}\n.slide-2 {\n  background-image: url(\"/images/home-4.JPG\");\n}\n.slide-3 {\n  background-image: url(\"/images/home-6.JPG\");\n}\n.slide-4 {\n  background-image: url(\"/images/home-7.JPG\");\n}\n.slide-5 {\n  background-image: url(\"/images/home-8.JPG\");\n}\n", ""]);
 
 // exports
 
@@ -36000,6 +36000,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MainSliderSlogan_vue__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MainSliderSlogan_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__MainSliderSlogan_vue__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -44483,16 +44489,15 @@ var render = function() {
           attrs: { id: "swiper", options: _vm.swiperOptions }
         },
         [
-          _c(
-            "swiper-slide",
-            { staticClass: "slide slide-1" },
-            [_c("main-slider-slogan", { staticClass: "main-slider-slogan" })],
-            1
-          ),
+          _c("swiper-slide", { staticClass: "slide slide-1" }),
           _vm._v(" "),
           _c("swiper-slide", { staticClass: "slide slide-2" }),
           _vm._v(" "),
           _c("swiper-slide", { staticClass: "slide slide-3" }),
+          _vm._v(" "),
+          _c("swiper-slide", { staticClass: "slide slide-4" }),
+          _vm._v(" "),
+          _c("swiper-slide", { staticClass: "slide slide-5" }),
           _vm._v(" "),
           _c("div", {
             staticClass: "swiper-pagination swiper-pagination-white",
