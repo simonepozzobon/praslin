@@ -38,10 +38,10 @@ export default {
     data: function() {
         return {
             swiperOptions: {
-                // autoplay: {
-                //     delay: 10000,
-                //     disableOnInteraction: true,
-                // },
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
                 speed: 300,
                 keyboard: {
                     enabled: true,

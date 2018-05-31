@@ -36040,10 +36040,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             swiperOptions: {
-                // autoplay: {
-                //     delay: 10000,
-                //     disableOnInteraction: true,
-                // },
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false
+                },
                 speed: 300,
                 keyboard: {
                     enabled: true
