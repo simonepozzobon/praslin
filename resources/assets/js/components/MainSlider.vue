@@ -2,7 +2,7 @@
     <div id="main-slider">
         <swiper id="swiper" :options="swiperOptions" ref="mainSlider">
             <swiper-slide class="slide slide-1">
-                <!-- <main-slider-slogan class="main-slider-slogan"/> -->
+                <main-slider-slogan class="main-slider-slogan"/>
             </swiper-slide>
             <swiper-slide class="slide slide-2">
                 <!-- <main-slider-slogan class="main-slider-slogan"/> -->

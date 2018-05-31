@@ -44495,7 +44495,12 @@ var render = function() {
           attrs: { id: "swiper", options: _vm.swiperOptions }
         },
         [
-          _c("swiper-slide", { staticClass: "slide slide-1" }),
+          _c(
+            "swiper-slide",
+            { staticClass: "slide slide-1" },
+            [_c("main-slider-slogan", { staticClass: "main-slider-slogan" })],
+            1
+          ),
           _vm._v(" "),
           _c("swiper-slide", { staticClass: "slide slide-2" }),
           _vm._v(" "),
