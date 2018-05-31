@@ -4,6 +4,12 @@
             <swiper-slide class="slide slide-1">
                 <main-slider-slogan class="main-slider-slogan"/>
             </swiper-slide>
+            <swiper-slide class="slide slide-2">
+                <!-- <main-slider-slogan class="main-slider-slogan"/> -->
+            </swiper-slide>
+            <swiper-slide class="slide slide-3">
+                <!-- <main-slider-slogan class="main-slider-slogan"/> -->
+            </swiper-slide>
             <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
             <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
             <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
@@ -99,6 +105,13 @@ export default {
 
 .slide-1 {
     background-image: url('/images/home-test.png');
-    background-size: cover;
+}
+
+.slide-2 {
+    background-image: url('/images/home-2.JPG');
+}
+
+.slide-3 {
+    background-image: url('/images/home-3.JPG');
 }
 </style>

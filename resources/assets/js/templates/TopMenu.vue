@@ -54,14 +54,15 @@ export default {
 
 #main-menu {
     background-color: $sand;
-    @include media-breakpoint-up('md') {
-        min-height: 75px;
-    };
     position: fixed;
     z-index: 20;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    @include media-breakpoint-up('md') {
+        min-height: 75px;
+    };
+    @include box-shadow(0 16px 32px 0 rgba(37, 37, 37, .15));
 
     > .navbar-brand {
         position: relative;
@@ -74,14 +75,17 @@ export default {
             top: 50%;
             transform: translateY(-50%);
             min-width: 268px;
-
-                min-height: 89px;
+            min-height: 89px;
+            @include box-shadow(0 8px 32px 0 rgba(37, 37, 37, .15));
         }
     }
 
     #navbarContent {
+
         > .navbar-nav {
             justify-content: space-between;
+            margin-left: 40px;
+            margin-right: 40px;
             width: 100%;
 
 
