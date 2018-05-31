@@ -110,22 +110,22 @@ export default {
 }
 
 .slide-1 {
-    background-image: url('/images/home-5.png');
+    background-image: url('/images/home-5.jpg');
 }
 
 .slide-2 {
-    background-image: url('/images/home-4.JPG');
+    background-image: url('/images/home-4.jpg');
 }
 
 .slide-3 {
-    background-image: url('/images/home-6.JPG');
+    background-image: url('/images/home-6.jpg');
 }
 
 .slide-4 {
-    background-image: url('/images/home-7.JPG');
+    background-image: url('/images/home-7.jpg');
 }
 
 .slide-5 {
-    background-image: url('/images/home-8.JPG');
+    background-image: url('/images/home-8.jpg');
 }
 </style>
