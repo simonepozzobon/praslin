@@ -2,12 +2,18 @@
     <div id="main-slider">
         <swiper id="swiper" :options="swiperOptions" ref="mainSlider">
             <swiper-slide class="slide slide-1">
-                <main-slider-slogan class="main-slider-slogan"/>
+                <!-- <main-slider-slogan class="main-slider-slogan"/> -->
             </swiper-slide>
             <swiper-slide class="slide slide-2">
                 <!-- <main-slider-slogan class="main-slider-slogan"/> -->
             </swiper-slide>
             <swiper-slide class="slide slide-3">
+                <!-- <main-slider-slogan class="main-slider-slogan"/> -->
+            </swiper-slide>
+            <swiper-slide class="slide slide-4">
+                <!-- <main-slider-slogan class="main-slider-slogan"/> -->
+            </swiper-slide>
+            <swiper-slide class="slide slide-5">
                 <!-- <main-slider-slogan class="main-slider-slogan"/> -->
             </swiper-slide>
             <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
@@ -104,14 +110,22 @@ export default {
 }
 
 .slide-1 {
-    background-image: url('/images/home-test.png');
+    background-image: url('/images/home-5.png');
 }
 
 .slide-2 {
-    background-image: url('/images/home-2.JPG');
+    background-image: url('/images/home-4.JPG');
 }
 
 .slide-3 {
-    background-image: url('/images/home-3.JPG');
+    background-image: url('/images/home-6.JPG');
+}
+
+.slide-4 {
+    background-image: url('/images/home-7.JPG');
+}
+
+.slide-5 {
+    background-image: url('/images/home-8.JPG');
 }
 </style>
