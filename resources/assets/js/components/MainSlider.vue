@@ -16,6 +16,12 @@
             <swiper-slide class="slide slide-5">
                 <!-- <main-slider-slogan class="main-slider-slogan"/> -->
             </swiper-slide>
+            <swiper-slide class="slide slide-6">
+                <!-- <main-slider-slogan class="main-slider-slogan"/> -->
+            </swiper-slide>
+            <swiper-slide class="slide slide-7">
+                <!-- <main-slider-slogan class="main-slider-slogan"/> -->
+            </swiper-slide>
             <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
             <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
             <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
@@ -39,7 +45,7 @@ export default {
         return {
             swiperOptions: {
                 autoplay: {
-                    delay: 2000,
+                    delay: 7000,
                     disableOnInteraction: false,
                 },
                 speed: 300,
@@ -127,5 +133,13 @@ export default {
 
 .slide-5 {
     background-image: url('/images/home-8.jpg');
+}
+
+.slide-6 {
+    background-image: url('/images/home-2.JPG');
+}
+
+.slide-7 {
+    background-image: url('/images/home-3.JPG');
 }
 </style>
