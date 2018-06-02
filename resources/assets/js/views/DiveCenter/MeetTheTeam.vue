@@ -1,15 +1,116 @@
 <template lang="html">
-    <div id="meet-the-team">
-
+    <div id="meet-the-team" class="container">
+        <div class="row">
+            <div class="col-12 pb-5">
+                <section-title title="Meet The Team" number="02" align="center"/>
+                <waves class="waves-icon"/>
+            </div>
+            <div class="col-12">
+                <div class="row team-mates">
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <scuba />
+                        </div>
+                        <div class="team-name">
+                            Jean Paul
+                        </div>
+                        <div class="team-role">
+                            Owner
+                        </div>
+                        <div class="description">
+                            <p>
+                                A pralinois with extensive experiences and
+                                knowledge of the Indian ocean. Passionated by
+                                the ocean his been in the diving industry for
+                                over 15 years, taught and certified more than
+                                300 divers with over 4000 logged dives to date.
+                                He is ready to take you  for a dive tour,
+                                knowing the dive sites as the back of his hands
+                                you are sure to be in safe hands.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <sailor align="center"/>
+                        </div>
+                        <div class="team-name">
+                            César Gabriel
+                        </div>
+                        <div class="team-role">
+                            Skipper & Dive Master
+                        </div>
+                        <div class="description">
+                            <p>
+                                A pralinois with extensive experiences and
+                                knowledge of the Indian ocean. Passionated by
+                                the ocean his been in the diving industry for
+                                over 15 years, taught and certified more than
+                                300 divers with over 4000 logged dives to date.
+                                He is ready to take you  for a dive tour,
+                                knowing the dive sites as the back of his hands
+                                you are sure to be in safe hands.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
+import Sailor from '../../components/icons/Sailor.vue'
+import Scuba from '../../components/icons/Scuba.vue'
+import SectionTitle from '../../components/SectionTitle.vue'
+import Waves from '../../components/icons/Waves.vue'
+
+
 export default {
     name: 'MeetTheTeam',
-    
+    components: {
+        Sailor,
+        Scuba,
+        SectionTitle,
+        Waves,
+    }
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
+
+#meet-the-team {
+    .waves-icon {
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .team-mates {
+        padding-top: 130px;
+
+        .team-name {
+            font-weight: 700;
+            font-size: 36px;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+        }
+
+        .team-role {
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+        }
+
+        .description {
+            padding-top: 26px;
+            text-align: justify;
+            line-height: 1.618;
+        }
+    }
+
+
+}
+
 </style>

@@ -35385,7 +35385,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.section-title {\n  position: relative;\n}\n.section-title > .number {\n    position: absolute;\n    color: #E5F7F7;\n    font-size: 132px;\n    line-height: 80px;\n    top: 50%;\n    -webkit-transform: translateY(-60%);\n            transform: translateY(-60%);\n}\n.section-title > .text {\n    position: absolute;\n    color: #252525;\n    font-size: 36px;\n    font-weight: 700;\n    text-transform: uppercase;\n    line-height: 36px;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n}\n.section-title.left > .number {\n    left: -8px;\n}\n.section-title.left > .text {\n    left: 0;\n}\n.section-title.right > .number {\n    right: -8px;\n}\n.section-title.right > .text {\n    right: 0;\n}\n", ""]);
+exports.push([module.i, "\n.section-title {\n  position: relative;\n}\n.section-title > .number {\n    position: absolute;\n    color: #E5F7F7;\n    font-size: 132px;\n    line-height: 80px;\n    top: 50%;\n    -webkit-transform: translateY(-60%);\n            transform: translateY(-60%);\n}\n.section-title > .text {\n    position: absolute;\n    color: #252525;\n    font-size: 36px;\n    font-weight: 700;\n    text-transform: uppercase;\n    line-height: 36px;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n}\n.section-title.left > .number {\n    left: -8px;\n}\n.section-title.left > .text {\n    left: 0;\n}\n.section-title.right > .number {\n    right: -8px;\n}\n.section-title.right > .text {\n    right: 0;\n}\n.section-title.center > .number {\n    left: 50%;\n    -webkit-transform: translate(-50%, -60%);\n            transform: translate(-50%, -60%);\n}\n.section-title.center > .text {\n    left: 50%;\n    -webkit-transform: translate(-50%, -60%);\n            transform: translate(-50%, -60%);\n}\n", ""]);
 
 // exports
 
@@ -48526,7 +48526,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -48539,18 +48539,24 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue__ = __webpack_require__(149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue__);
 //
 //
 //
 //
 //
 //
+//
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'DiveCenterIndex',
     components: {
-        DiveCenter: __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue___default.a
+        DiveCenter: __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue___default.a,
+        MeetTheTeam: __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue___default.a
     }
 });
 
@@ -48565,7 +48571,11 @@ var render = function() {
   return _c(
     "div",
     { attrs: { id: "dive-center" } },
-    [_c("dive-center", { staticClass: "pt-5" })],
+    [
+      _c("dive-center", { staticClass: "pt-5" }),
+      _vm._v(" "),
+      _c("meet-the-team")
+    ],
     1
   )
 }
@@ -48835,6 +48845,680 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-735ebeac", module.exports)
+  }
+}
+
+/***/ }),
+/* 154 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(159)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(157)
+/* template */
+var __vue_template__ = __webpack_require__(158)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/views/DiveCenter/MeetTheTeam.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ab7d6118", Component.options)
+  } else {
+    hotAPI.reload("data-v-ab7d6118", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 155 */,
+/* 156 */,
+/* 157 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_icons_Sailor_vue__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_icons_Sailor_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_icons_Sailor_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_Scuba_vue__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_Scuba_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_icons_Scuba_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'MeetTheTeam',
+    components: {
+        Sailor: __WEBPACK_IMPORTED_MODULE_0__components_icons_Sailor_vue___default.a,
+        Scuba: __WEBPACK_IMPORTED_MODULE_1__components_icons_Scuba_vue___default.a,
+        SectionTitle: __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default.a,
+        Waves: __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default.a
+    }
+});
+
+/***/ }),
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "container", attrs: { id: "meet-the-team" } },
+    [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-12 pb-5" },
+          [
+            _c("section-title", {
+              attrs: { title: "Meet The Team", number: "02", align: "center" }
+            }),
+            _vm._v(" "),
+            _c("waves", { staticClass: "waves-icon" })
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12" }, [
+          _c("div", { staticClass: "row team-mates" }, [
+            _c("div", { staticClass: "col-md-6" }, [
+              _c(
+                "div",
+                { staticClass: "d-flex justify-content-center" },
+                [_c("scuba")],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "team-name" }, [
+                _vm._v(
+                  "\n                        Jean Paul\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "team-role" }, [
+                _vm._v("\n                        Owner\n                    ")
+              ]),
+              _vm._v(" "),
+              _vm._m(0)
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6" }, [
+              _c(
+                "div",
+                { staticClass: "d-flex justify-content-center" },
+                [_c("sailor", { attrs: { align: "center" } })],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "team-name" }, [
+                _vm._v(
+                  "\n                        César Gabriel\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "team-role" }, [
+                _vm._v(
+                  "\n                        Skipper & Dive Master\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ])
+        ])
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "description" }, [
+      _c("p", [
+        _vm._v(
+          "\n                            A pralinois with extensive experiences and\n                            knowledge of the Indian ocean. Passionated by\n                            the ocean his been in the diving industry for\n                            over 15 years, taught and certified more than\n                            300 divers with over 4000 logged dives to date.\n                            He is ready to take you  for a dive tour,\n                            knowing the dive sites as the back of his hands\n                            you are sure to be in safe hands.\n                        "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "description" }, [
+      _c("p", [
+        _vm._v(
+          "\n                            A pralinois with extensive experiences and\n                            knowledge of the Indian ocean. Passionated by\n                            the ocean his been in the diving industry for\n                            over 15 years, taught and certified more than\n                            300 divers with over 4000 logged dives to date.\n                            He is ready to take you  for a dive tour,\n                            knowing the dive sites as the back of his hands\n                            you are sure to be in safe hands.\n                        "
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-ab7d6118", module.exports)
+  }
+}
+
+/***/ }),
+/* 159 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(160);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("2043f2da", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ab7d6118\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./MeetTheTeam.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ab7d6118\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./MeetTheTeam.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 160 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#meet-the-team .waves-icon {\n  top: 70px;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n}\n#meet-the-team .team-mates {\n  padding-top: 130px;\n}\n#meet-the-team .team-mates .team-name {\n    font-weight: 700;\n    font-size: 36px;\n    text-transform: uppercase;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#meet-the-team .team-mates .team-role {\n    text-transform: uppercase;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#meet-the-team .team-mates .description {\n    padding-top: 26px;\n    text-align: justify;\n    line-height: 1.618;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(162)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(164)
+/* template */
+var __vue_template__ = __webpack_require__(165)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/icons/Sailor.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-75a08140", Component.options)
+  } else {
+    hotAPI.reload("data-v-75a08140", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 162 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(163);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("74229bf2", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75a08140\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sailor.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-75a08140\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sailor.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 163 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.sailor-icon {\n  fill: #E5F7F7;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 164 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Sailor'
+});
+
+/***/ }),
+/* 165 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        width: "90px",
+        height: "90px",
+        viewBox: "0 0 90 90",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      }
+    },
+    [
+      _c(
+        "g",
+        {
+          attrs: {
+            id: "logo",
+            stroke: "none",
+            "stroke-width": "1",
+            fill: "none",
+            "fill-rule": "evenodd"
+          }
+        },
+        [
+          _c("g", { staticClass: "sailor-icon", attrs: { id: "sailor" } }, [
+            _c("path", {
+              attrs: {
+                d:
+                  "M44.8207744,8.92594966 C41.0232604,8.9589016 37.2362911,9.87661327 33.7896165,11.693254 L6.05076796,26.3094188 C1.19760549,28.8671487 -0.704216018,34.7612632 1.75798627,39.6058581 L7.34436247,50.598627 L83.8482343,50.598627 L88.5657666,39.9986453 C90.9017629,34.7467643 89.6224366,28.6951396 84.453232,26.0649153 L55.8970105,11.5324485 C52.4239414,9.7652357 48.6182883,8.89892906 44.8207744,8.92594966 Z M45.1876284,14.9304531 C47.8979259,14.9304531 50.1304201,17.1629474 50.1304201,19.8732449 C50.1304201,22.0049062 48.7432421,23.8202288 46.8352256,24.5072769 L46.8352256,41.060357 C49.4634728,40.3983524 51.768,38.2778947 52.8656952,35.9824622 C50.5045236,37.5279085 49.0547698,34.2178856 51.0378838,33.2280092 L54.3330783,31.5804119 C54.5475954,31.4749657 54.7828064,31.4189474 55.021708,31.412357 C55.9491405,31.379405 56.7175469,32.1257666 56.7208092,33.0533638 C56.7208092,39.3844211 51.5635991,44.5601831 45.2326737,44.5865446 C38.9017812,44.6194966 33.7088183,39.4872311 33.6544476,33.1565034 C33.644562,31.9425538 34.9048092,31.1335835 36.0035588,31.6505995 L39.2987533,33.2144989 C41.1787606,33.9644851 40.1716174,37.3219588 37.5803753,36.0977941 C38.6806078,38.3909199 40.9332027,40.4276796 43.5400311,41.0662883 L43.5400311,24.5066178 C41.6320146,23.8195698 40.2448366,22.0042471 40.2448366,19.8725858 C40.2448366,17.1622883 42.4772979,14.9297941 45.1876284,14.9297941 L45.1876284,14.9304531 Z M45.1876284,18.2256476 C44.2581529,18.2256476 43.5400311,18.944 43.5400311,19.8732449 C43.5400311,20.8028192 44.2581529,21.5208421 45.1876284,21.5208421 C46.1170709,21.5208421 46.8352256,20.8028192 46.8352256,19.8732449 C46.8352256,18.944 46.1170709,18.2256476 45.1876284,18.2256476 Z",
+                id: "Shape"
+              }
+            }),
+            _vm._v(" "),
+            _c("polygon", {
+              attrs: {
+                id: "Shape",
+                "fill-rule": "nonzero",
+                points:
+                  "7.28112769 53.8938215 83.0706014 53.8938215 83.0706014 63.779405 7.28112769 63.779405"
+              }
+            }),
+            _vm._v(" "),
+            _c("path", {
+              attrs: {
+                d:
+                  "M7.26708908,67.0745995 C7.25064665,71.9313867 13.3015531,76.552238 23.7366549,79.3541419 C35.8740231,82.6134188 51.7214549,82.8276064 64.398906,79.9011442 C76.0583057,77.2099588 83.0785606,72.3100046 83.0567315,67.0745995 L7.26708908,67.0745995 Z",
+                id: "Shape",
+                "fill-rule": "nonzero"
+              }
+            })
+          ])
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-75a08140", module.exports)
+  }
+}
+
+/***/ }),
+/* 166 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(167)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(169)
+/* template */
+var __vue_template__ = __webpack_require__(170)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/icons/Scuba.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ed6f07f0", Component.options)
+  } else {
+    hotAPI.reload("data-v-ed6f07f0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 167 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(168);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("10e4a141", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ed6f07f0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Scuba.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ed6f07f0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Scuba.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 168 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.scuba-icon {\n  fill: #E5F7F7;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 169 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Scuba'
+});
+
+/***/ }),
+/* 170 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        width: "90px",
+        height: "90px",
+        viewBox: "0 0 90 90",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      }
+    },
+    [
+      _c(
+        "g",
+        {
+          attrs: {
+            id: "logo",
+            stroke: "none",
+            "stroke-width": "1",
+            fill: "none",
+            "fill-rule": "evenodd"
+          }
+        },
+        [
+          _c("g", { staticClass: "scuba-icon", attrs: { id: "scuba" } }, [
+            _c("path", {
+              attrs: {
+                d:
+                  "M18.7859826,12.4772174 C11.0781565,12.4772174 4.87293913,18.6824348 4.87293913,26.3902609 C4.87293913,34.098087 11.0781565,40.3033043 18.7859826,40.3033043 L26.6120696,40.3033043 C26.6122087,36.0118261 30.1468174,32.4772174 34.4381565,32.4772174 C38.7294957,32.4772174 42.2641043,36.0118261 42.2642435,40.3033043 L50.0903304,40.3033043 C57.7981565,40.3033043 64.0033739,34.098087 64.0033739,26.3902609 C64.0033739,18.6824348 57.7981565,12.4772174 50.0903304,12.4772174 L18.7859826,12.4772174 Z",
+                id: "Shape",
+                "fill-rule": "nonzero"
+              }
+            }),
+            _vm._v(" "),
+            _c("path", {
+              attrs: {
+                d:
+                  "M76.1705043,6.39026087 L76.1705043,11.6076522 L78.7859826,11.6076522 L78.7859826,71.6076522 C78.7859826,75.9610435 75.3130783,79.4337391 70.9598957,79.4337391 L60.525113,79.4337391 C56.1719652,79.4337391 52.6990261,75.9610435 52.6990261,71.6076522 L52.6990261,63.3126957 C53.9709913,62.9262609 55.1798957,62.2869565 56.204487,61.3224348 C57.0016308,60.5966472 57.2702766,59.4553132 56.8805587,58.4501635 C56.4908407,57.4450139 55.5230297,56.7830805 54.4449739,56.7843478 C53.7671048,56.7861697 53.1165589,57.0517572 52.6310957,57.5248696 C51.0990261,58.9669565 49.0755478,58.965913 47.5427826,57.5248696 C46.8717539,56.8456282 45.883281,56.5872003 44.9656743,56.8511062 C44.0480677,57.1150122 43.3479185,57.8590919 43.1402724,58.7910422 C42.9326263,59.7229926 43.2506556,60.6939308 43.9694261,61.3224348 C44.9955826,62.2873043 46.2080696,62.9262609 47.4816348,63.3126957 L47.4816348,71.6076522 C47.4816348,78.7805217 53.3523826,84.6511304 60.525113,84.6511304 L70.9598957,84.6511304 C78.1326609,84.6511304 84.0033739,78.7805217 84.0033739,71.6076522 L84.0033739,11.6076522 L86.605287,11.6076522 L86.605287,6.39026087 L76.1705043,6.39026087 Z",
+                id: "Shape"
+              }
+            }),
+            _vm._v(" "),
+            _c("path", {
+              attrs: {
+                d:
+                  "M39.6531826,40.301913 C39.6530916,43.1834289 37.3171332,45.5193093 34.4356174,45.5193043 C31.5541015,45.5193093 29.2181432,43.1834289 29.2180522,40.301913 C29.2181432,37.4203972 31.5541015,35.0845167 34.4356174,35.0845217 C37.3171332,35.0845167 39.6530916,37.4203972 39.6531826,40.301913 Z",
+                id: "Shape",
+                "fill-rule": "nonzero"
+              }
+            })
+          ])
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-ed6f07f0", module.exports)
   }
 }
 

@@ -75,6 +75,18 @@ export default {
             right: 0;
         }
     }
+
+    &.center {
+        > .number {
+            left: 50%;
+            transform: translate(-50%, -60%);
+        }
+
+        > .text {
+            left: 50%;
+            transform: translate(-50%, -60%);
+        }
+    }
 }
 
 </style>
