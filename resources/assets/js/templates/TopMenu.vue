@@ -14,7 +14,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <span class="nav-number">01</span>
-                        <router-link class="nav-link" active-class="active" :to="'/'">About</router-link>
+                        <router-link class="nav-link" active-class="active" :to="'/about'">About</router-link>
                     </li>
                     <li class="nav-item">
                         <span class="nav-number">02</span>

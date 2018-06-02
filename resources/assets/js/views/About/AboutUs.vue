@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import SectionParagraph from '../components/SectionParagraph.vue'
-import SectionSubtitle from '../components/SectionSubtitle.vue'
-import SectionTitle from '../components/SectionTitle.vue'
-import Waves from '../components/icons/Waves.vue'
+import SectionParagraph from '../../components/SectionParagraph.vue'
+import SectionSubtitle from '../../components/SectionSubtitle.vue'
+import SectionTitle from '../../components/SectionTitle.vue'
+import Waves from '../../components/icons/Waves.vue'
 
 export default {
     name: 'AboutUs',
@@ -57,7 +57,7 @@ export default {
 @import '~styles/variables';
 @import '~styles/mixins';
 
-@import './css/scale-img.scss';
+@import '../css/scale-img.scss';
 
 #about-us {
     z-index: 2;
