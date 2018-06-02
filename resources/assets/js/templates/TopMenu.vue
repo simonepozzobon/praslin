@@ -3,7 +3,7 @@
         <nav id="main-menu" class="navbar navbar-expand-lg bg-sand container stiky-top">
             <div class="navbar-brand">
                 <div class="navbar-brand-bg bg-dark-gray">
-                    <logo align="center" style="margin-top: 8px"/>
+                    <router-link :to="'/'"><logo align="center" style="margin-top: 8px"/></router-link>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,19 +14,19 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <span class="nav-number">01</span>
-                        <a class="nav-link" href="#">About</a>
+                        <router-link class="nav-link" active-class="active" :to="'/'">About</router-link>
                     </li>
                     <li class="nav-item">
                         <span class="nav-number">02</span>
-                        <a class="nav-link" href="#">Dive Center</a>
+                        <router-link class="nav-link" active-class="active" :to="'/dive-center'">Dive Center</router-link>
                     </li>
                     <li class="nav-item">
                         <span class="nav-number">03</span>
-                        <a class="nav-link" href="#">Galleries</a>
+                        <router-link class="nav-link" active-class="active" :to="'/'">Galleries</router-link>
                     </li>
                     <li class="nav-item">
                         <span class="nav-number">04</span>
-                        <a class="nav-link" href="#">Contact</a>
+                        <router-link class="nav-link" active-class="active" :to="'/'">Contact</router-link>
                     </li>
                 </ul>
             </div>

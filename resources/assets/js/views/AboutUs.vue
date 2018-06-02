@@ -57,6 +57,8 @@ export default {
 @import '~styles/variables';
 @import '~styles/mixins';
 
+@import './css/scale-img.scss';
+
 #about-us {
     z-index: 2;
 
@@ -66,31 +68,6 @@ export default {
         top: -40px;
     }
 
-}
-
-
-.scale-wrap {
-    overflow: hidden;
-    position: relative;
-    float: left;
-}
-
-.scale-wrap img.fake {
-    float: left;
-    visibility: hidden;
-    width: auto;
-}
-
-.img-wrap {
-    position: absolute;
-    top: 0;
-    right: 15px;
-    // bottom: 0;
-    // left: 0;
-}
-
-.img-wrap img.normal {
-    width: 35%;
 }
 
 #about-us-img-1 {

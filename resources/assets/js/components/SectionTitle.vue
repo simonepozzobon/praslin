@@ -1,5 +1,5 @@
 <template lang="html">
-    <div class="section-title">
+    <div class="section-title" :class="align">
         <div class="number">
             {{ number }}
         </div>
@@ -21,6 +21,10 @@ export default {
             type: String,
             default: 'title',
         },
+        align: {
+            type: String,
+            default: 'left',
+        }
     }
 }
 </script>
@@ -38,7 +42,6 @@ export default {
         font-size: 132px;
         line-height: 80px;
         top: 50%;
-        left: -8px;
         transform: translateY(-60%);
     }
 
@@ -50,8 +53,27 @@ export default {
         text-transform: uppercase;
         line-height: 36px;
         top: 50%;
-        left: 0;
         transform: translateY(-50%);
+    }
+
+    &.left {
+        > .number {
+            left: -8px;
+        }
+
+        > .text {
+            left: 0;
+        }
+    }
+
+    &.right {
+        > .number {
+            right: -8px;
+        }
+
+        > .text {
+            right: 0;
+        }
     }
 }
 

@@ -29417,6 +29417,10 @@ var router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
         path: '/',
         name: 'Home',
         component: __webpack_require__(45)
+    }, {
+        path: '/dive-center',
+        name: 'DiveCenter',
+        component: __webpack_require__(122)
     }]
 });
 
@@ -35116,7 +35120,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#about-us {\n  z-index: 2;\n}\n#about-us .waves-icon {\n    position: absolute;\n    right: 15px;\n    top: -40px;\n}\n.scale-wrap {\n  overflow: hidden;\n  position: relative;\n  float: left;\n}\n.scale-wrap img.fake {\n  float: left;\n  visibility: hidden;\n  width: auto;\n}\n.img-wrap {\n  position: absolute;\n  top: 0;\n  right: 15px;\n}\n.img-wrap img.normal {\n  width: 35%;\n}\n#about-us-img-1 {\n  top: -40px;\n  right: -8px;\n}\n#about-us-img-1 .normal {\n    width: 48%;\n}\n#about-us-img-2 {\n  position: absolute;\n  top: 200px;\n  right: -116px;\n}\n#about-us-img-2 .normal {\n    width: 52%;\n}\n", ""]);
+exports.push([module.i, "\n.scale-wrap {\n  overflow: hidden;\n  position: relative;\n  float: left;\n}\n.scale-wrap img.fake {\n  float: left;\n  visibility: hidden;\n  width: auto;\n}\n.img-wrap {\n  position: absolute;\n  top: 0;\n  right: 15px;\n}\n.img-wrap img.normal {\n  width: 35%;\n}\n#about-us {\n  z-index: 2;\n}\n#about-us .waves-icon {\n    position: absolute;\n    right: 15px;\n    top: -40px;\n}\n#about-us-img-1 {\n  top: -40px;\n  right: -8px;\n}\n#about-us-img-1 .normal {\n    width: 48%;\n}\n#about-us-img-2 {\n  position: absolute;\n  top: 200px;\n  right: -116px;\n}\n#about-us-img-2 .normal {\n    width: 52%;\n}\n", ""]);
 
 // exports
 
@@ -35536,7 +35540,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.section-title {\n  position: relative;\n}\n.section-title > .number {\n    position: absolute;\n    color: #E5F7F7;\n    font-size: 132px;\n    line-height: 80px;\n    top: 50%;\n    left: -8px;\n    -webkit-transform: translateY(-60%);\n            transform: translateY(-60%);\n}\n.section-title > .text {\n    position: absolute;\n    color: #252525;\n    font-size: 36px;\n    font-weight: 700;\n    text-transform: uppercase;\n    line-height: 36px;\n    top: 50%;\n    left: 0;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n}\n", ""]);
+exports.push([module.i, "\n.section-title {\n  position: relative;\n}\n.section-title > .number {\n    position: absolute;\n    color: #E5F7F7;\n    font-size: 132px;\n    line-height: 80px;\n    top: 50%;\n    -webkit-transform: translateY(-60%);\n            transform: translateY(-60%);\n}\n.section-title > .text {\n    position: absolute;\n    color: #252525;\n    font-size: 36px;\n    font-weight: 700;\n    text-transform: uppercase;\n    line-height: 36px;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n}\n.section-title.left > .number {\n    left: -8px;\n}\n.section-title.left > .text {\n    left: 0;\n}\n.section-title.right > .number {\n    right: -8px;\n}\n.section-title.right > .text {\n    right: 0;\n}\n", ""]);
 
 // exports
 
@@ -35569,6 +35573,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         title: {
             type: String,
             default: 'title'
+        },
+        align: {
+            type: String,
+            default: 'left'
         }
     }
 });
@@ -35581,7 +35589,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "section-title" }, [
+  return _c("div", { staticClass: "section-title", class: _vm.align }, [
     _c("div", { staticClass: "number" }, [
       _vm._v("\n        " + _vm._s(_vm.number) + "\n    ")
     ]),
@@ -48091,10 +48099,17 @@ var render = function() {
             "div",
             { staticClass: "navbar-brand-bg bg-dark-gray" },
             [
-              _c("logo", {
-                staticStyle: { "margin-top": "8px" },
-                attrs: { align: "center" }
-              })
+              _c(
+                "router-link",
+                { attrs: { to: "/" } },
+                [
+                  _c("logo", {
+                    staticStyle: { "margin-top": "8px" },
+                    attrs: { align: "center" }
+                  })
+                ],
+                1
+              )
             ],
             1
           )
@@ -48117,60 +48132,93 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _vm._m(0)
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse",
+            attrs: { id: "navbarContent" }
+          },
+          [
+            _c("ul", { staticClass: "navbar-nav" }, [
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c("span", { staticClass: "nav-number" }, [_vm._v("01")]),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link",
+                      attrs: { "active-class": "active", to: "/" }
+                    },
+                    [_vm._v("About")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c("span", { staticClass: "nav-number" }, [_vm._v("02")]),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link",
+                      attrs: { "active-class": "active", to: "/dive-center" }
+                    },
+                    [_vm._v("Dive Center")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c("span", { staticClass: "nav-number" }, [_vm._v("03")]),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link",
+                      attrs: { "active-class": "active", to: "/" }
+                    },
+                    [_vm._v("Galleries")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c("span", { staticClass: "nav-number" }, [_vm._v("04")]),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link",
+                      attrs: { "active-class": "active", to: "/" }
+                    },
+                    [_vm._v("Contact")]
+                  )
+                ],
+                1
+              )
+            ])
+          ]
+        )
       ]
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "collapse navbar-collapse",
-        attrs: { id: "navbarContent" }
-      },
-      [
-        _c("ul", { staticClass: "navbar-nav" }, [
-          _c("li", { staticClass: "nav-item" }, [
-            _c("span", { staticClass: "nav-number" }, [_vm._v("01")]),
-            _vm._v(" "),
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("About")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c("span", { staticClass: "nav-number" }, [_vm._v("02")]),
-            _vm._v(" "),
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Dive Center")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c("span", { staticClass: "nav-number" }, [_vm._v("03")]),
-            _vm._v(" "),
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Galleries")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "nav-item" }, [
-            _c("span", { staticClass: "nav-number" }, [_vm._v("04")]),
-            _vm._v(" "),
-            _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-              _vm._v("Contact")
-            ])
-          ])
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -48232,6 +48280,270 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(127)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(125)
+/* template */
+var __vue_template__ = __webpack_require__(126)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/views/DiveCenter.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-a0ad1e08", Component.options)
+  } else {
+    hotAPI.reload("data-v-a0ad1e08", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 123 */,
+/* 124 */,
+/* 125 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'DiveCenter',
+    components: {
+        SectionParagraph: __WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue___default.a,
+        SectionSubtitle: __WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue___default.a,
+        SectionTitle: __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default.a,
+        Waves: __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default.a
+    }
+});
+
+/***/ }),
+/* 126 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container", attrs: { id: "dive-center" } }, [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c("section-title", {
+            attrs: { title: "Dive Center", number: "02", align: "right" }
+          }),
+          _vm._v(" "),
+          _c("section-subtitle", [
+            _vm._v(
+              "\n                Pick up the equipment and get on board.\n            "
+            )
+          ]),
+          _vm._v(" "),
+          _c("section-paragraph", [
+            _vm._v(
+              "\n                Our 6 meters speed boat provide all the comfort a small\n                embarkation dive boat can provide,equipped with all safety\n                and navigational equipment to get you right on the dive\n                spots with a 100% accuracy.\n            "
+            )
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c("waves", { staticClass: "waves-icon" }),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v("​\n            "),
+          _vm._m(1),
+          _vm._v("​\n        ")
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "scale-wrap", attrs: { id: "dive-center-img-1" } },
+      [
+        _c("img", {
+          staticClass: "fake",
+          attrs: { src: "/images/dive-center-boat.png" }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "img-wrap" }, [
+          _c("img", {
+            staticClass: "normal",
+            attrs: { src: "/images/dive-center-boat.png" }
+          })
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "scale-wrap", attrs: { id: "dive-center-img-2" } },
+      [
+        _c("img", {
+          staticClass: "fake",
+          attrs: { src: "/images/dive-center-island.png" }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "img-wrap" }, [
+          _c("img", {
+            staticClass: "normal",
+            attrs: { src: "/images/dive-center-island.png" }
+          })
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-a0ad1e08", module.exports)
+  }
+}
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(128);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("d74cd710", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a0ad1e08\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DiveCenter.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a0ad1e08\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DiveCenter.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 128 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.scale-wrap {\n  overflow: hidden;\n  position: relative;\n  float: left;\n}\n.scale-wrap img.fake {\n  float: left;\n  visibility: hidden;\n  width: auto;\n}\n.img-wrap {\n  position: absolute;\n  top: 0;\n  right: 15px;\n}\n.img-wrap img.normal {\n  width: 35%;\n}\n#dive-center {\n  padding-top: 180px;\n}\n#dive-center .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#dive-center-img-1 {\n  top: -40px;\n  left: 90px;\n}\n#dive-center-img-1 .normal {\n    width: 50%;\n}\n#dive-center-img-2 {\n  top: -470px;\n  left: 232px;\n}\n#dive-center-img-2 .normal {\n    width: 50%;\n}\n", ""]);
+
+// exports
+
 
 /***/ })
 ],[17]);
