@@ -22,7 +22,7 @@
                     </li>
                     <li class="nav-item">
                         <span class="nav-number">03</span>
-                        <router-link class="nav-link" active-class="active" :to="'/'">Galleries</router-link>
+                        <router-link class="nav-link" active-class="active" :to="'/galleries'">Galleries</router-link>
                     </li>
                     <li class="nav-item">
                         <span class="nav-number">04</span>

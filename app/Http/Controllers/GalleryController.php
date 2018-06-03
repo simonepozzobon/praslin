@@ -35,4 +35,15 @@ class GalleryController extends Controller
 
         return $img;
     }
+
+    public function getImages() {
+        $images = Image::all();
+
+        $images = $images->transform(function($img, $key) {
+            $img->thumb = Storage::disk('local')->url($img->thumb);
+            return $img;
+        });
+        
+        return $images;
+    }
 }

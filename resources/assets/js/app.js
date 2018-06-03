@@ -34,6 +34,11 @@ const router = new VueRouter({
             path: '/dive-center',
             name: 'DiveCenter',
             component: require('./views/DiveCenter/Index.vue')
+        },
+        {
+            path: '/galleries',
+            name: 'Galleries',
+            component: require('./views/Galleries/Index.vue')
         }
     ]
 })
