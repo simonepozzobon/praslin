@@ -11,6 +11,7 @@
     <title>Admin Panel</title>
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -24,6 +25,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
+                        <a class="nav-link" href="{{ route('admin.galleries') }}">Galleries</a>
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">Price List</a>
                     </li>
                 </ul>
@@ -35,6 +39,7 @@
     </div>
     <script src="/js/manifest.js"></script>
     <script src="/js/vendor.js"></script>
-    <script src="/js/app.js"></script>
+    {{-- <script src="/js/app.js"></script> --}}
+    @yield('scripts')
 </body>
 </html>

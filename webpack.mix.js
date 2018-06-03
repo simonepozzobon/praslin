@@ -12,6 +12,7 @@ let webpack = require('webpack')
  */
 
 mix
+    .js('resources/assets/js/admin/galleries.js', 'public/js/admin')
     .js('resources/assets/js/app.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .extract(['jquery', 'tether', 'bootstrap'])

@@ -4,6 +4,7 @@ Auth::routes();
 
 Route::prefix('admin')->group(function() {
     Route::get('/', 'AdminController@index')->name('admin.index');
+    Route::get('/galleries', 'GalleryController@galleries')->name('admin.galleries');
 });
 
 Route::get('/{any}', function () {
