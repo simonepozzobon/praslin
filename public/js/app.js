@@ -48526,7 +48526,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -48541,6 +48541,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PriceList_vue__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PriceList_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__PriceList_vue__);
 //
 //
 //
@@ -48548,6 +48550,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -48556,7 +48560,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     name: 'DiveCenterIndex',
     components: {
         DiveCenter: __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue___default.a,
-        MeetTheTeam: __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue___default.a
+        MeetTheTeam: __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue___default.a,
+        PriceList: __WEBPACK_IMPORTED_MODULE_2__PriceList_vue___default.a
     }
 });
 
@@ -48574,7 +48579,9 @@ var render = function() {
     [
       _c("dive-center", { staticClass: "pt-5" }),
       _vm._v(" "),
-      _c("meet-the-team")
+      _c("meet-the-team", { staticClass: "pb-5" }),
+      _vm._v(" "),
+      _c("price-list")
     ],
     1
   )
@@ -49521,6 +49528,577 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-ed6f07f0", module.exports)
   }
 }
+
+/***/ }),
+/* 171 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(176)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(174)
+/* template */
+var __vue_template__ = __webpack_require__(175)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/views/DiveCenter/PriceList.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-dbea33d8", Component.options)
+  } else {
+    hotAPI.reload("data-v-dbea33d8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 172 */,
+/* 173 */,
+/* 174 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'PriceList',
+    components: {
+        SectionTitle: __WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue___default.a,
+        Waves: __WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue___default.a
+    }
+});
+
+/***/ }),
+/* 175 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "container-fluid bg-sand", attrs: { id: "price-list" } },
+    [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-12" },
+          [
+            _c("section-title", {
+              staticClass: "price-list-title",
+              attrs: { title: "Price List", number: "02", align: "right" }
+            }),
+            _vm._v(" "),
+            _c("waves", { staticClass: "waves-icon" })
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2)
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12 price-content" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("table", { staticClass: "w-100 price-list-table" }, [
+          _c("thead", { staticClass: "bg-light-blue" }, [
+            _c("td", [_vm._v("Details")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Cyl / Weights")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("All Equipment")])
+          ]),
+          _vm._v(" "),
+          _c("tbody", [
+            _c("tr", [
+              _c("td", [_vm._v("1 short distance dive")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("50,00 €")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("60,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("2 short distance dive")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("95,00 €")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("115,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Long distance / night dive")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("+ 20,00 €")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("+ 20,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Snorkeling")]),
+              _vm._v(" "),
+              _c("td"),
+              _vm._v(" "),
+              _c("td", [_vm._v("30,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Marine Park Fees")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("20,00 €")]),
+              _vm._v(" "),
+              _c("td")
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12 pt-5" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("table", { staticClass: "w-100 price-list-table" }, [
+          _c("thead", { staticClass: "bg-light-blue" }, [
+            _c("td", [_vm._v("Padi Courses")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Min Days")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Retail Price")])
+          ]),
+          _vm._v(" "),
+          _c("tbody", [
+            _c("tr", [
+              _c("td", [_vm._v("Discover Scuba Diving")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("1")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("100,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Scuba Diver")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("350,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Open Water")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("4")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("450,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Open Water E-learned")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("330,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Open Water Referral")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("350,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Avd Open Water")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("350,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Avd Open E-learner")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("280,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Rescue Diver")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("350,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Rescue E-learner")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("285,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Emergency First Response")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("1")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("110,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Dive Master")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("TC")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("800,00 €")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12 pt-5" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("table", { staticClass: "w-100 price-list-table" }, [
+          _c("thead", { staticClass: "bg-light-blue" }, [
+            _c("td", [_vm._v("Speciality")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Min Days")]),
+            _vm._v(" "),
+            _c("td", [_vm._v("Retail Price")])
+          ]),
+          _vm._v(" "),
+          _c("tbody", [
+            _c("tr", [
+              _c("td", [_vm._v("Drift or Naturalist")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("1")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("150,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Deep")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("250,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Night")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("280,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Navigation")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("250,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Digital UW")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("2")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("200,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Boat")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("1")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("150,00 €")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v("Peak Buoyancy")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("1")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("160,00 €")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-dbea33d8", module.exports)
+  }
+}
+
+/***/ }),
+/* 176 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(177);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("53b00e48", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dbea33d8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./PriceList.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dbea33d8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./PriceList.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 177 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#price-list {\n  padding-bottom: 8rem;\n}\n#price-list .price-list-title {\n    top: 72px;\n    right: 106px;\n}\n#price-list .waves-icon {\n    position: absolute;\n    top: 32px;\n    left: calc(100% - 90px);\n}\n#price-list .price-content {\n    padding-top: 154px;\n}\n#price-list .price-list-table thead > td {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n    padding: 2rem 1rem;\n    border: 2px solid #E5F7F7;\n    width: 33.333%;\n}\n#price-list .price-list-table tbody td {\n    padding: 1rem;\n    border: 2px solid #E5F7F7;\n    width: 33.333%;\n}\n", ""]);
+
+// exports
+
 
 /***/ })
 ],[17]);
