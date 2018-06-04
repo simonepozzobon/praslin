@@ -1,12 +1,14 @@
 <template lang="html">
-    <div id="price-list" class="container-fluid bg-sand">
-        <div class="row">
-            <div class="col-12">
-                <section-title title="Price List" number="02" align="right" class="price-list-title"/>
-                <waves class="waves-icon"/>
+    <div id="price-list" class="w-100 bg-sand">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <section-title title="Price List" number="02" align="right" class="price-list-title"/>
+                    <waves class="waves-icon"/>
+                </div>
             </div>
-            <div class="col-12 price-content">
-                <div class="container">
+            <div class="row">
+                <div class="col-12 price-content">
                     <table class="w-100 price-list-table">
                         <thead class="bg-light-blue">
                             <td>Details</td>
@@ -43,8 +45,8 @@
                     </table>
                 </div>
             </div>
-            <div class="col-12 pt-5">
-                <div class="container">
+            <div class="row">
+                <div class="col-12 pt-5">
                     <table class="w-100 price-list-table">
                         <thead class="bg-light-blue">
                             <td>Padi Courses</td>
@@ -111,8 +113,8 @@
                     </table>
                 </div>
             </div>
-            <div class="col-12 pt-5">
-                <div class="container">
+            <div class="row">
+                <div class="col-12 pt-5">
                     <table class="w-100 price-list-table">
                         <thead class="bg-light-blue">
                             <td>Speciality</td>
@@ -181,17 +183,18 @@ export default {
 @import '~styles/variables';
 
 #price-list {
+    padding-top: 90px;
     padding-bottom: $spacer * 8;
 
     .price-list-title {
         top: 72px;
-        right: 106px;
+        right: 121px;
     }
 
     .waves-icon {
         position: absolute;
         top: 32px;
-        left: calc(100% - 90px);
+        right: 15px;
     }
 
     .price-content {

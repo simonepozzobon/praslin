@@ -44825,7 +44825,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -44838,10 +44838,12 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""])
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PriceList_vue__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PriceList_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__PriceList_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__DiveSpots_vue__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__DiveSpots_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__DiveSpots_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MeetTheTeam_vue__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MeetTheTeam_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__MeetTheTeam_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PriceList_vue__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PriceList_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__PriceList_vue__);
 //
 //
 //
@@ -44850,6 +44852,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -44859,8 +44863,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     name: 'DiveCenterIndex',
     components: {
         DiveCenter: __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue___default.a,
-        MeetTheTeam: __WEBPACK_IMPORTED_MODULE_1__MeetTheTeam_vue___default.a,
-        PriceList: __WEBPACK_IMPORTED_MODULE_2__PriceList_vue___default.a
+        DiveSpots: __WEBPACK_IMPORTED_MODULE_1__DiveSpots_vue___default.a,
+        MeetTheTeam: __WEBPACK_IMPORTED_MODULE_2__MeetTheTeam_vue___default.a,
+        PriceList: __WEBPACK_IMPORTED_MODULE_3__PriceList_vue___default.a
     }
 });
 
@@ -44950,7 +44955,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.scale-wrap {\n  overflow: hidden;\n  position: relative;\n  float: left;\n}\n.scale-wrap img.fake {\n  float: left;\n  visibility: hidden;\n  width: auto;\n}\n.img-wrap {\n  position: absolute;\n  top: 0;\n  right: 15px;\n}\n.img-wrap img.normal {\n  width: 35%;\n}\n#dive-center {\n  padding-top: 180px;\n}\n#dive-center .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#dive-center-img-1 {\n  top: -40px;\n  left: 90px;\n}\n#dive-center-img-1 .normal {\n    width: 50%;\n}\n#dive-center-img-2 {\n  top: -470px;\n  left: 232px;\n}\n#dive-center-img-2 .normal {\n    width: 50%;\n}\n", ""]);
+exports.push([module.i, "\n#dive-center {\n  padding-top: 180px;\n  padding-bottom: 180px;\n}\n#dive-center .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#images {\n  position: relative;\n}\n#images > #dive-center-img-1 {\n    position: absolute;\n    left: 90px;\n    top: -40px;\n    width: 70%;\n}\n#images > #dive-center-img-2 {\n    position: absolute;\n    top: 180px;\n    right: 0;\n    width: 60%;\n}\n", ""]);
 
 // exports
 
@@ -44969,10 +44974,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
-//
-//
-//
-//
 //
 //
 //
@@ -45055,14 +45056,7 @@ var render = function() {
       _c(
         "div",
         { staticClass: "col-md-6" },
-        [
-          _c("waves", { staticClass: "waves-icon" }),
-          _vm._v(" "),
-          _vm._m(0),
-          _vm._v("​\n            "),
-          _vm._m(1),
-          _vm._v("​\n        ")
-        ],
+        [_c("waves", { staticClass: "waves-icon" }), _vm._v(" "), _vm._m(0)],
         1
       )
     ])
@@ -45073,45 +45067,22 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "scale-wrap", attrs: { id: "dive-center-img-1" } },
-      [
+    return _c("div", { attrs: { id: "images" } }, [
+      _c("div", { attrs: { id: "dive-center-img-1" } }, [
         _c("img", {
-          staticClass: "fake",
+          staticClass: "img-fluid",
           attrs: { src: "/images/dive-center-boat.png" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "img-wrap" }, [
-          _c("img", {
-            staticClass: "normal",
-            attrs: { src: "/images/dive-center-boat.png" }
-          })
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "scale-wrap", attrs: { id: "dive-center-img-2" } },
-      [
+        })
+      ]),
+      _vm._v("​\n                "),
+      _c("div", { attrs: { id: "dive-center-img-2" } }, [
         _c("img", {
-          staticClass: "fake",
+          staticClass: "img-fluid",
           attrs: { src: "/images/dive-center-island.png" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "img-wrap" }, [
-          _c("img", {
-            staticClass: "normal",
-            attrs: { src: "/images/dive-center-island.png" }
-          })
-        ])
-      ]
-    )
+        })
+      ]),
+      _vm._v("​\n            ")
+    ])
   }
 ]
 render._withStripped = true
@@ -45209,7 +45180,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#meet-the-team .waves-icon {\n  top: 70px;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n}\n#meet-the-team .team-mates {\n  padding-top: 130px;\n}\n#meet-the-team .team-mates .team-name {\n    font-weight: 700;\n    font-size: 36px;\n    text-transform: uppercase;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#meet-the-team .team-mates .team-role {\n    text-transform: uppercase;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n}\n#meet-the-team .team-mates .description {\n    padding-top: 26px;\n    text-align: justify;\n    line-height: 1.618;\n}\n", ""]);
+exports.push([module.i, "\n#meet-the-team {\n  padding-bottom: 122px;\n}\n#meet-the-team .waves-icon {\n    position: absolute;\n    top: 60px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n#meet-the-team .team-mates {\n    padding-top: 130px;\n}\n#meet-the-team .team-mates .team-name {\n      font-weight: 700;\n      font-size: 36px;\n      text-transform: uppercase;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n#meet-the-team .team-mates .team-role {\n      text-transform: uppercase;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n#meet-the-team .team-mates .description {\n      padding-top: 26px;\n      text-align: justify;\n      line-height: 1.618;\n}\n", ""]);
 
 // exports
 
@@ -45881,7 +45852,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#price-list {\n  padding-bottom: 8rem;\n}\n#price-list .price-list-title {\n    top: 72px;\n    right: 106px;\n}\n#price-list .waves-icon {\n    position: absolute;\n    top: 32px;\n    left: calc(100% - 90px);\n}\n#price-list .price-content {\n    padding-top: 154px;\n}\n#price-list .price-list-table thead > td {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n    padding: 2rem 1rem;\n    border: 2px solid #E5F7F7;\n    width: 33.333%;\n}\n#price-list .price-list-table tbody td {\n    padding: 1rem;\n    border: 2px solid #E5F7F7;\n    width: 33.333%;\n}\n", ""]);
+exports.push([module.i, "\n#price-list {\n  padding-top: 90px;\n  padding-bottom: 8rem;\n}\n#price-list .price-list-title {\n    top: 72px;\n    right: 121px;\n}\n#price-list .waves-icon {\n    position: absolute;\n    top: 32px;\n    right: 15px;\n}\n#price-list .price-content {\n    padding-top: 154px;\n}\n#price-list .price-list-table thead > td {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n    padding: 2rem 1rem;\n    border: 2px solid #E5F7F7;\n    width: 33.333%;\n}\n#price-list .price-list-table tbody td {\n    padding: 1rem;\n    border: 2px solid #E5F7F7;\n    width: 33.333%;\n}\n", ""]);
 
 // exports
 
@@ -45896,6 +45867,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue__);
+//
+//
 //
 //
 //
@@ -46083,22 +46056,24 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container-fluid bg-sand", attrs: { id: "price-list" } },
+    { staticClass: "w-100 bg-sand", attrs: { id: "price-list" } },
     [
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-12" },
-          [
-            _c("section-title", {
-              staticClass: "price-list-title",
-              attrs: { title: "Price List", number: "02", align: "right" }
-            }),
-            _vm._v(" "),
-            _c("waves", { staticClass: "waves-icon" })
-          ],
-          1
-        ),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-12" },
+            [
+              _c("section-title", {
+                staticClass: "price-list-title",
+                attrs: { title: "Price List", number: "02", align: "right" }
+              }),
+              _vm._v(" "),
+              _c("waves", { staticClass: "waves-icon" })
+            ],
+            1
+          )
+        ]),
         _vm._v(" "),
         _vm._m(0),
         _vm._v(" "),
@@ -46114,8 +46089,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-12 price-content" }, [
-      _c("div", { staticClass: "container" }, [
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12 price-content" }, [
         _c("table", { staticClass: "w-100 price-list-table" }, [
           _c("thead", { staticClass: "bg-light-blue" }, [
             _c("td", [_vm._v("Details")]),
@@ -46174,8 +46149,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-12 pt-5" }, [
-      _c("div", { staticClass: "container" }, [
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12 pt-5" }, [
         _c("table", { staticClass: "w-100 price-list-table" }, [
           _c("thead", { staticClass: "bg-light-blue" }, [
             _c("td", [_vm._v("Padi Courses")]),
@@ -46282,8 +46257,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-12 pt-5" }, [
-      _c("div", { staticClass: "container" }, [
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12 pt-5" }, [
         _c("table", { staticClass: "w-100 price-list-table" }, [
           _c("thead", { staticClass: "bg-light-blue" }, [
             _c("td", [_vm._v("Speciality")]),
@@ -46374,11 +46349,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { attrs: { id: "dive-center" } },
+    { attrs: { id: "dive-center-panel" } },
     [
-      _c("dive-center", { staticClass: "pt-5" }),
+      _c("dive-center"),
       _vm._v(" "),
-      _c("meet-the-team", { staticClass: "pb-5" }),
+      _c("dive-spots"),
+      _vm._v(" "),
+      _c("meet-the-team"),
       _vm._v(" "),
       _c("price-list")
     ],
@@ -51316,6 +51293,403 @@ exports = module.exports = __webpack_require__(0)(false);
 
 // module
 exports.push([module.i, "\n.island-description {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n}\n.island-description > .icon {\n    padding-right: 1rem;\n    font-size: 20px;\n}\n.island-description > .content > .title {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 207 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(212)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(210)
+/* template */
+var __vue_template__ = __webpack_require__(211)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/views/DiveCenter/DiveSpots.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-04be63aa", Component.options)
+  } else {
+    hotAPI.reload("data-v-04be63aa", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 208 */,
+/* 209 */,
+/* 210 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'DiveSpots',
+    components: {
+        SectionParagraph: __WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue___default.a,
+        SectionSubtitle: __WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue___default.a,
+        SectionTitle: __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default.a,
+        Waves: __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default.a
+    },
+    data: function data() {
+        return {
+            spots: [{
+                name: 'St. Pierre',
+                lat: -4.302592,
+                lng: 55.749939
+            }, {
+                name: 'Coral Garden',
+                lat: -4.287068,
+                lng: 55.740583
+            }, {
+                name: 'Red Point',
+                lat: -4.277310,
+                lng: 55.746034
+            }, {
+                name: 'Aride Island',
+                lat: -4.213270,
+                lng: 55.665350
+            }, {
+                name: 'Bobby Rock',
+                lat: -4.251115,
+                lng: 55.678160
+            }, {
+                name: 'Corail Francine',
+                lat: -4.292361,
+                lng: 55.761599
+            }, {
+                name: 'Ave Maria',
+                lat: -4.310583,
+                lng: 55.829240
+            }, {
+                name: 'White Bank',
+                lat: -4.317233,
+                lng: 55.817776
+            }, {
+                name: 'Channel Rock',
+                lat: -4.346670,
+                lng: 55.807134
+            }]
+        };
+    },
+    methods: {
+        loadMap: function loadMap() {
+            var element = document.getElementById('dive-spots-map');
+            var opts = {
+                zoom: 12,
+                center: new google.maps.LatLng(-4.31685, 55.7543),
+                mapTypeId: 'roadmap',
+                mapTypeControl: false,
+                streetViewControl: false,
+                styles: [{ elementType: 'geometry', stylers: [{ color: '#FEFAF5' }] }, { elementType: 'labels.text.stroke', stylers: [{ color: '#FEFAF5' }] }, { elementType: 'labels.text.fill', stylers: [{ color: '#B1A799' }] }, {
+                    featureType: 'administrative.locality',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#d59563' }]
+                }, {
+                    featureType: 'poi',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#d59563' }]
+                }, {
+                    featureType: 'poi.park',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#DCFEE4' }]
+                }, {
+                    featureType: 'poi.park',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#6b9a76' }]
+                }, {
+                    featureType: 'road',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#E3DFDB' }]
+                }, {
+                    featureType: 'road',
+                    elementType: 'geometry.stroke',
+                    stylers: [{ color: '#E3DFDB' }]
+                }, {
+                    featureType: 'road',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#E3DFDB' }]
+                }, {
+                    featureType: 'road.highway',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#E3DFDB' }]
+                }, {
+                    featureType: 'road.highway',
+                    elementType: 'geometry.stroke',
+                    stylers: [{ color: '#E3DFDB' }]
+                }, {
+                    featureType: 'road.highway',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#f3d19c' }]
+                }, {
+                    featureType: 'transit',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#E3DFDB' }]
+                }, {
+                    featureType: 'transit.station',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#d59563' }]
+                }, {
+                    featureType: 'water',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#E5F7F7' }]
+                }, {
+                    featureType: 'water',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#515c6d' }]
+                }, {
+                    featureType: 'water',
+                    elementType: 'labels.text.stroke',
+                    stylers: [{ color: '#17263c' }]
+                }]
+            };
+            var map = new google.maps.Map(element, opts);
+
+            this.spots.forEach(function (coord) {
+                var position = new google.maps.LatLng(coord.lat, coord.lng);
+                var marker = new google.maps.Marker({
+                    position: position,
+                    map: map
+                });
+            });
+
+            console.log('ci siamo');
+        }
+    },
+    created: function created() {
+        var mapsScript = document.createElement('script');
+        mapsScript.setAttribute('src', '//maps.googleapis.com/maps/api/js?key=AIzaSyD4CvJwKmbFXDJTissWXN7_CGeB7kCGlQw');
+        document.head.appendChild(mapsScript);
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        window.onload = function () {
+            _this.loadMap();
+        };
+    }
+});
+
+/***/ }),
+/* 211 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "dive-spots" } }, [
+    _c("div", { staticClass: "container pb-5" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [_c("waves", { staticClass: "waves-icon" }), _vm._v(" "), _vm._m(0)],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
+            _c("section-title", {
+              attrs: { title: "Dive Spots", number: "02", align: "left" }
+            }),
+            _vm._v(" "),
+            _c("section-subtitle", [
+              _vm._v(
+                "\n                    There is a lot to see, from beginners to experts\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("section-paragraph", [
+              _vm._v(
+                "\n                    More than 15 of the Seychelles top scuba diving spots\n                    include some as close as a 5 minutes boat ride and some\n                    an hour or so away for deeper dives and greater chances of\n                    different species. Dive sites are always assessed before\n                    diving, and with plenty of alternative spots nearby, a\n                    change in site is easy when needed.\n                "
+              )
+            ])
+          ],
+          1
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(1)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "dive-sposts-images" } }, [
+      _c("div", { attrs: { id: "dive-spots-img-1" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/praslin-north.jpg" }
+        })
+      ]),
+      _vm._v("​\n                    "),
+      _c("div", { attrs: { id: "dive-spots-img-2" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/praslin-st-pierre.jpg" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "dive-spots-img-3" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/national-park.jpg" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "container-fluid mt-5 px-0",
+        attrs: { id: "map-wrapper" }
+      },
+      [_c("div", { attrs: { id: "dive-spots-map" } })]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-04be63aa", module.exports)
+  }
+}
+
+/***/ }),
+/* 212 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(213);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("f869b274", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04be63aa\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DiveSpots.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04be63aa\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DiveSpots.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 213 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#dive-spots {\n  padding-bottom: 180px;\n}\n#dive-spots .waves-icon {\n    position: absolute;\n    right: 15px;\n    top: -40px;\n}\n#dive-spots #dive-sposts-images {\n    position: relative;\n}\n#dive-spots #dive-sposts-images #dive-spots-img-1 {\n      position: absolute;\n      width: 60%;\n      top: -40px;\n      right: 90px;\n}\n#dive-spots #dive-sposts-images #dive-spots-img-2 {\n      position: absolute;\n      width: 60%;\n      top: 170px;\n      z-index: 1;\n      -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#dive-spots #dive-sposts-images #dive-spots-img-3 {\n      position: absolute;\n      width: 60%;\n      top: 310px;\n      right: 15px;\n      z-index: 0;\n}\n#dive-spots #map-wrapper #dive-spots-map {\n    width: 100%;\n    min-height: 60vh;\n    height: 100%;\n    z-index: 0;\n}\n", ""]);
 
 // exports
 

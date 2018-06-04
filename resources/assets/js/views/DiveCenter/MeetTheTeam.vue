@@ -80,8 +80,11 @@ export default {
 <style lang="scss">
 
 #meet-the-team {
+    padding-bottom: 122px;
+
     .waves-icon {
-        top: 70px;
+        position: absolute;
+        top: 60px;
         left: 50%;
         transform: translateX(-50%);
     }

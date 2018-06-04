@@ -15,18 +15,14 @@
             </div>
             <div class="col-md-6">
                 <waves class="waves-icon"/>
-                <div id="dive-center-img-1" class="scale-wrap">
-                    <img class="fake" src="/images/dive-center-boat.png" />
-                    <div class="img-wrap">
-                        <img class="normal" src="/images/dive-center-boat.png" />
-                    </div>
-                </div>​
-                <div id="dive-center-img-2" class="scale-wrap">
-                    <img class="fake" src="/images/dive-center-island.png" />
-                    <div class="img-wrap">
-                        <img class="normal" src="/images/dive-center-island.png" />
-                    </div>
-                </div>​
+                <div id="images">
+                    <div id="dive-center-img-1">
+                        <img src="/images/dive-center-boat.png" class="img-fluid"/>
+                    </div>​
+                    <div id="dive-center-img-2">
+                        <img src="/images/dive-center-island.png" class="img-fluid"/>
+                    </div>​
+                </div>
             </div>
         </div>
     </div>
@@ -50,10 +46,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../css/scale-img.scss';
+// @import '../css/scale-img.scss';
 
 #dive-center {
     padding-top: 180px;
+    padding-bottom: 180px;
 
     .waves-icon {
         position: absolute;
@@ -62,21 +59,21 @@ export default {
     }
 }
 
-#dive-center-img-1 {
-    top: -40px;
-    left: 90px;
+#images {
+    position: relative;
 
-    .normal {
-        width: 50%;
+    > #dive-center-img-1 {
+        position: absolute;
+        left: 90px;
+        top: -40px;
+        width: 70%;
     }
-}
 
-#dive-center-img-2 {
-    top: -470px;
-    left: 232px;
-
-    .normal {
-        width: 50%;
+    > #dive-center-img-2 {
+        position: absolute;
+        top: 180px;
+        right: 0;
+        width: 60%;
     }
 }
 
