@@ -51316,8 +51316,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "island-description" }, [
-    _c("div", { staticClass: "icon" }, [_c("i", { class: _vm.icon })]),
-    _vm._v(" "),
     _c("div", { staticClass: "content" }, [
       _c("div", { staticClass: "title" }, [
         _vm._v("\n            " + _vm._s(_vm.title) + "\n        ")
@@ -51372,7 +51370,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.island-description {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n}\n.island-description > .icon {\n    padding-right: 1rem;\n    font-size: 20px;\n}\n.island-description > .content > .title {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n}\n", ""]);
+exports.push([module.i, "\n.island-description {\n  width: 100%;\n  padding-bottom: 1rem;\n}\n.island-description > .content {\n    position: relative;\n    z-index: 1;\n}\n.island-description > .content > .title {\n      text-transform: uppercase;\n      font-size: 20px;\n      font-weight: 700;\n      padding-bottom: 0.5rem;\n}\n", ""]);
 
 // exports
 
