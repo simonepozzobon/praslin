@@ -128,7 +128,8 @@ export default {
 
     #contact-map {
         width: 100%;
-        height: 80vh;
+        min-height: 60vh;
+        height: 100%;
     }
 
     @include media-breakpoint-up('md') {
