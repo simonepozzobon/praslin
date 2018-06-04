@@ -2,7 +2,7 @@
     <div id="contact">
         <div id="contact-panel" class="bg-sand row">
                 <div class="col-12 py-5">
-                    <section-title title="Contact" number="04" align="left" class="section-title"/>
+                    <section-title title="Contact" number="05" align="left" class="section-title"/>
                     <waves class="waves-icon"/>
                 </div>
                 <div class="col-12">

@@ -41,6 +41,11 @@ const router = new VueRouter({
             component: require('./views/Galleries/Index.vue')
         },
         {
+            path: '/island',
+            name: 'Island',
+            component: require('./views/Island/Index.vue')
+        },
+        {
             path: '/contacts',
             name: 'Contacts',
             component: require('./views/Contact/Index.vue')
