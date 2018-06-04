@@ -26,7 +26,7 @@
                     </li>
                     <li class="nav-item">
                         <span class="nav-number">04</span>
-                        <router-link class="nav-link" active-class="active" :to="'/'">Contact</router-link>
+                        <router-link class="nav-link" active-class="active" :to="'/contacts'">Contact</router-link>
                     </li>
                 </ul>
             </div>

@@ -39,7 +39,12 @@ const router = new VueRouter({
             path: '/galleries',
             name: 'Galleries',
             component: require('./views/Galleries/Index.vue')
-        }
+        },
+        {
+            path: '/contacts',
+            name: 'Contacts',
+            component: require('./views/Contact/Index.vue')
+        },
     ]
 })
 

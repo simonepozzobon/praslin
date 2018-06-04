@@ -30390,6 +30390,10 @@ var router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
         path: '/galleries',
         name: 'Galleries',
         component: __webpack_require__(176)
+    }, {
+        path: '/contacts',
+        name: 'Contacts',
+        component: __webpack_require__(188)
     }]
 });
 
@@ -50010,7 +50014,7 @@ var render = function() {
                     "router-link",
                     {
                       staticClass: "nav-link",
-                      attrs: { "active-class": "active", to: "/" }
+                      attrs: { "active-class": "active", to: "/contacts" }
                     },
                     [_vm._v("Contact")]
                   )
@@ -50436,6 +50440,290 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-0c5e969e", module.exports)
+  }
+}
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(189)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(191)
+/* template */
+var __vue_template__ = __webpack_require__(192)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/views/Contact/Index.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1b2071c0", Component.options)
+  } else {
+    hotAPI.reload("data-v-1b2071c0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(190);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("1b4a298b", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b2071c0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1b2071c0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 190 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#contact {\n  padding-top: 132px;\n  overflow: hidden;\n}\n#contact #contact-panel .custom-p {\n    margin-bottom: 0;\n}\n#contact #contact-panel .section-title {\n    left: 122px;\n    top: 40px;\n}\n#contact #contact-panel .contact-label {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n}\n#contact #contact-panel .contact-label.last {\n      padding-left: 1.5rem;\n}\n#contact #contact-panel .social {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n    padding-bottom: 40px;\n}\n#contact #contact-panel .social > .social-icon {\n      font-size: 32px;\n}\n#contact #contact-map {\n    width: 100%;\n    height: 80vh;\n}\n@media (min-width: 768px) {\n#contact #contact-panel {\n      position: absolute;\n      width: 40%;\n      min-width: 420px;\n      z-index: 2;\n}\n#contact #contact-map {\n      margin-top: 80px;\n}\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 191 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'ContactIndex',
+    components: {
+        SectionTitle: __WEBPACK_IMPORTED_MODULE_0__components_SectionTitle_vue___default.a,
+        Waves: __WEBPACK_IMPORTED_MODULE_1__components_icons_Waves_vue___default.a
+    },
+    methods: {
+        loadMap: function loadMap() {
+            var element = document.getElementById('contact-map');
+            var opts = {
+                zoom: 15,
+                center: new google.maps.LatLng(-4.31685, 55.7543)
+            };
+            var map = new google.maps.Map(element, opts);
+            var position = new google.maps.LatLng(-4.31914, 55.7636);
+            var marker = new google.maps.Marker({
+                position: position,
+                map: map
+            });
+            console.log('ci siamo');
+        }
+    },
+    created: function created() {
+        var mapsScript = document.createElement('script');
+        mapsScript.setAttribute('src', '//maps.googleapis.com/maps/api/js?key=AIzaSyD4CvJwKmbFXDJTissWXN7_CGeB7kCGlQw');
+        document.head.appendChild(mapsScript);
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        window.onload = function () {
+            _this.loadMap();
+        };
+    }
+});
+
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "contact" } }, [
+    _c("div", { staticClass: "bg-sand row", attrs: { id: "contact-panel" } }, [
+      _c(
+        "div",
+        { staticClass: "col-12 py-5" },
+        [
+          _c("section-title", {
+            staticClass: "section-title",
+            attrs: { title: "Contact", number: "04", align: "left" }
+          }),
+          _vm._v(" "),
+          _c("waves", { staticClass: "waves-icon" })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("div", { attrs: { id: "contact-map" } })
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [
+      _c("p", { staticClass: "custom-p p-4" }, [
+        _c("span", { staticClass: "contact-label" }, [_vm._v("Address")]),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "contact-description" }, [
+          _vm._v(
+            "\n                        C/o L’Archipel Hotel, Anse Gouvernement"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                        Praslin, Seychelles\n                    "
+          )
+        ]),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "contact-label" }, [_vm._v("E-mail")]),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "contact-description" }, [
+          _vm._v(
+            "\n                        praslinprodivers@gmail.com\n                    "
+          )
+        ]),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "contact-label" }, [_vm._v("Phone")]),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "contact-description" }, [
+          _vm._v(
+            "\n                        (+248) 42 32 113\n                    "
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("span", { staticClass: "contact-label last" }, [_vm._v("Social")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "social" }, [
+        _c("div", { staticClass: "social-icon" }, [
+          _c("i", { staticClass: "fab fa-tripadvisor" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "social-icon" }, [
+          _c("i", { staticClass: "fab fa-facebook-f" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "social-icon" }, [
+          _c("i", { staticClass: "fab fa-instagram" })
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1b2071c0", module.exports)
   }
 }
 
