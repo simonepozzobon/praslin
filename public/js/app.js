@@ -50891,6 +50891,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -50914,87 +50934,88 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "island" } }, [
-    _c("div", { staticClass: "container-fluid" }, [
-      _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row first-part" }, [
         _c(
           "div",
-          { staticClass: "col-12" },
-          [
-            _c("section-title", {
-              attrs: { title: "Island", number: "04", align: "center" }
-            }),
-            _vm._v(" "),
-            _c("waves", { staticClass: "waves-icon" })
-          ],
+          { staticClass: "col-md-6" },
+          [_c("waves", { staticClass: "waves-icon" }), _vm._v(" "), _vm._m(0)],
           1
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row pb-5" }, [
-        _vm._m(0),
+        ),
         _vm._v(" "),
         _c(
           "div",
           { staticClass: "col-md-6" },
           [
-            _c(
-              "island-description",
-              { attrs: { title: "Praslin", icon: "far fa-map" } },
-              [
-                _vm._v(
-                  "\n                    The second largest island at 38sq km lies 49km (30.5 nautical miles)\n                    north-east of Mahe."
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                    Famed for its COCO DE- MER forest, Praslin is home to one of\n                    Seychelles two UNESCO world heritage site,the VALLE DE MAI.\n                "
-                )
-              ]
-            ),
+            _c("section-title", {
+              attrs: { title: "About The Island", number: "04", align: "left" }
+            }),
             _vm._v(" "),
             _c(
-              "island-description",
-              { attrs: { title: "Climate", icon: "fas fa-thermometer-half" } },
+              "div",
+              { staticClass: "island-info" },
               [
-                _vm._v(
-                  "\n                    Seychelles has the blissful advantage of a near constant\n                    temperature that rarely drops below 24 degrees Celsius."
+                _c(
+                  "island-description",
+                  { attrs: { title: "Praslin", icon: "far fa-map" } },
+                  [
+                    _vm._v(
+                      "\n                        The second largest island at 38sq km lies 49km (30.5 nautical miles)\n                        north-east of Mahe."
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                        Famed for its COCO DE- MER forest, Praslin is home to one of\n                        Seychelles two UNESCO world heritage site,the VALLE DE MAI.\n                    "
+                    )
+                  ]
                 ),
-                _c("br"),
-                _vm._v(
-                  "\n                    Through the year temperature range between 24-32 degrees\n                    Celsius. This warm, tropical climate is marked by two\n                    distinct season:The NORTH-WEST MONSOON and the SOUTH-EAST MONSOON."
+                _vm._v(" "),
+                _c(
+                  "island-description",
+                  {
+                    attrs: { title: "Climate", icon: "fas fa-thermometer-half" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        Seychelles has the blissful advantage of a near constant\n                        temperature that rarely drops below 24 degrees Celsius."
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                        Through the year temperature range between 24-32 degrees\n                        Celsius. This warm, tropical climate is marked by two\n                        distinct season:The NORTH-WEST MONSOON and the SOUTH-EAST MONSOON."
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                        The north-west monsoon runs from November to March and the\n                        south-east from June to September both season are named\n                        after the direction of the prevailing wind during these periods.\n                        North-west monsoon brings generally light wind, speed varies\n                        between (15 to 22kph) and highest rainfall is between\n                        December and February."
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                        The South-east monsoon is cooler and drier but the wind is\n                        much stronger, with speeds of up to(60 kph) leading to rough\n                        seas for most of the period."
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                        Best weather usually comes at the change-over between the\n                        monsoons, March/April and October/November, though not\n                        guaranteed, the weather in these months is usually windless\n                        which brings calm seas."
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                        Sea temperature varies from 23-30 degrees celcius.\n                        The changes in monsoons also affect the underwater visibility.\n                        The south-east monsoon brings cold upwellings of plankton,\n                        which can reduce visibility to few metres.\n                        North-West monsoon the visibility is usually better can be\n                        up to 30 metres.\n                    "
+                    )
+                  ]
                 ),
-                _c("br"),
-                _vm._v(
-                  "\n                    The north-west monsoon runs from November to March and the\n                    south-east from June to September both season are named\n                    after the direction of the prevailing wind during these periods.\n                    North-west monsoon brings generally light wind, speed varies\n                    between (15 to 22kph) and highest rainfall is between\n                    December and February."
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                    The South-east monsoon is cooler and drier but the wind is\n                    much stronger, with speeds of up to(60 kph) leading to rough\n                    seas for most of the period."
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                    Best weather usually comes at the change-over between the\n                    monsoons, March/April and October/November, though not\n                    guaranteed, the weather in these months is usually windless\n                    which brings calm seas."
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                    Sea temperature varies from 23-30 degrees celcius.\n                    The changes in monsoons also affect the underwater visibility.\n                    The south-east monsoon brings cold upwellings of plankton,\n                    which can reduce visibility to few metres.\n                    North-West monsoon the visibility is usually better can be\n                    up to 30 metres.\n                "
+                _vm._v(" "),
+                _c(
+                  "island-description",
+                  { attrs: { title: "Languages", icon: "far fa-flag" } },
+                  [
+                    _vm._v(
+                      "\n                        The official languages of Seychelles are Creole, French\n                        and English. All three are widely spoken on the Islands,\n                        with Creole being the most commonly spoken and English\n                        usually used for written communication."
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                        Creole is a french patois.Much of its vocabulary is\n                        similar to french although somewhat simplified, so it\n                        is not uncommon to hear conversations with a mix of creole,\n                        french and English words.\n                    "
+                    )
+                  ]
                 )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "island-description",
-              { attrs: { title: "Languages", icon: "far fa-flag" } },
-              [
-                _vm._v(
-                  "\n                    The official languages of Seychelles are Creole, French\n                    and English. All three are widely spoken on the Islands,\n                    with Creole being the most commonly spoken and English\n                    usually used for written communication."
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                    Creole is a french patois.Much of its vocabulary is\n                    similar to french although somewhat simplified, so it\n                    is not uncommon to hear conversations with a mix of creole,\n                    french and English words.\n                "
-                )
-              ]
+              ],
+              1
             )
           ],
           1
@@ -51006,58 +51027,85 @@ var render = function() {
           "div",
           { staticClass: "col-md-6" },
           [
+            _c("section-title", {
+              attrs: { title: "About The Island", number: "04", align: "right" }
+            }),
+            _vm._v(" "),
             _c(
-              "island-description",
-              { attrs: { title: "Getting There", icon: "far fa-compass" } },
+              "div",
+              { staticClass: "island-info" },
               [
-                _vm._v(
-                  "\n                    Seychelles is well served by several Airlines to the\n                    international Airport(SEZ) on Mahe island."
+                _c(
+                  "island-description",
+                  { attrs: { title: "Getting There", icon: "far fa-compass" } },
+                  [
+                    _vm._v(
+                      "\n                        Seychelles is well served by several Airlines to the\n                        international Airport(SEZ) on Mahe island."
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                        There is a reliable ferry service from Mahe to\n                        Praslin/La Digue with traveling time of a little bit\n                        over an hour."
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n                        There are also domestic flights from Mahe to Praslin\n                        flying time takes around 15 minutes so it is the quickest\n                        way to travel between the two Islands.\n                    "
+                    )
+                  ]
                 ),
-                _c("br"),
-                _vm._v(
-                  "\n                    There is a reliable ferry service from Mahe to\n                    Praslin/La Digue with traveling time of a little bit\n                    over an hour."
+                _vm._v(" "),
+                _c(
+                  "island-description",
+                  {
+                    attrs: { title: "Passport / Visa", icon: "far fa-file-alt" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        A short stay holiday (one month) visitors permit is\n                        issued by immigration on arrival in the Seychelles.\n                    "
+                    )
+                  ]
                 ),
-                _c("br"),
-                _vm._v(
-                  "\n                    There are also domestic flights from Mahe to Praslin\n                    flying time takes around 15 minutes so it is the quickest\n                    way to travel between the two Islands.\n                "
+                _vm._v(" "),
+                _c(
+                  "island-description",
+                  { attrs: { title: "Money", icon: "far fa-money-bill-alt" } },
+                  [
+                    _vm._v(
+                      "\n                        The currency of Seychelles is the Seychelles Rupee(scr)\n                        100 cents make up one Rupee.There are a range of\n                        currency denominations in coin and note form, all\n                        of which depict beautifully the natural and cultural\n                        heritage of seychelles.\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "island-description",
+                  {
+                    attrs: {
+                      title: "Health",
+                      icon: "fas fa-hand-holding-heart"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        There are relatively few diseases that visitors to\n                        Seychelles need to be vaccinated against.\n                    "
+                    )
+                  ]
                 )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "island-description",
-              { attrs: { title: "Passport / Visa", icon: "far fa-file-alt" } },
-              [
-                _vm._v(
-                  "\n                    A short stay holiday (one month) visitors permit is\n                    issued by immigration on arrival in the Seychelles.\n                "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "island-description",
-              { attrs: { title: "Money", icon: "far fa-money-bill-alt" } },
-              [
-                _vm._v(
-                  "\n                    The currency of Seychelles is the Seychelles Rupee(scr)\n                    100 cents make up one Rupee.There are a range of\n                    currency denominations in coin and note form, all\n                    of which depict beautifully the natural and cultural\n                    heritage of seychelles.\n                "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "island-description",
-              { attrs: { title: "Health", icon: "fas fa-hand-holding-heart" } },
-              [
-                _vm._v(
-                  "\n                    There are relatively few diseases that visitors to\n                    Seychelles need to be vaccinated against.\n                "
-                )
-              ]
+              ],
+              1
             )
           ],
           1
         ),
         _vm._v(" "),
-        _vm._m(1)
+        _c(
+          "div",
+          { staticClass: "col-md-6" },
+          [
+            _c("waves", { staticClass: "waves-icon left" }),
+            _vm._v(" "),
+            _vm._m(1)
+          ],
+          1
+        )
       ])
     ])
   ])
@@ -51067,22 +51115,54 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-6" }, [
-      _c("img", {
-        staticClass: "img-fluid",
-        attrs: { src: "/images/praslin-island.jpg" }
-      })
+    return _c("div", { staticClass: "island-images" }, [
+      _c("div", { attrs: { id: "island-img-1" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/praslin-island.jpg" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "island-img-2" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/praslin-1.jpg" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "island-img-3" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/praslin-2.jpg" }
+        })
+      ])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-6" }, [
-      _c("img", {
-        staticClass: "img-fluid",
-        attrs: { src: "/images/praslin-anse-lazio.jpg" }
-      })
+    return _c("div", { staticClass: "island-images" }, [
+      _c("div", { attrs: { id: "island-img-4" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/praslin-anse-lazio.jpg" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "island-img-5" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/praslin-3.jpg" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "island-img-6" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/praslin-4.jpg" }
+        })
+      ])
     ])
   }
 ]
@@ -51130,7 +51210,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#island {\n  padding-top: 132px;\n}\n", ""]);
+exports.push([module.i, "\n#island {\n  padding-top: 180px;\n}\n#island .row.first-part {\n    padding-bottom: 120px;\n}\n#island .waves-icon {\n    position: absolute;\n    top: -40px;\n    right: 15px;\n}\n#island .waves-icon.left {\n      left: 15px;\n      right: auto;\n}\n#island .island-info {\n    padding-top: 80px;\n}\n#island .island-images {\n    position: relative;\n}\n#island .island-images > #island-img-1 {\n      position: absolute;\n      width: 80%;\n      top: -40px;\n      right: 90px;\n}\n#island .island-images > #island-img-2 {\n      position: absolute;\n      width: 70%;\n      top: 170px;\n      right: 20px;\n      -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#island .island-images > #island-img-3 {\n      position: absolute;\n      width: 60%;\n      top: 690px;\n      left: -15px;\n      -webkit-box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#island .island-images > #island-img-4 {\n      position: absolute;\n      width: 70%;\n      top: -40px;\n      left: 90px;\n}\n#island .island-images > #island-img-5 {\n      position: absolute;\n      width: 70%;\n      top: 190px;\n      right: 0;\n      z-index: 1;\n      -webkit-box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#island .island-images > #island-img-6 {\n      position: absolute;\n      width: 60%;\n      top: 390px;\n      left: 40px;\n      z-index: 0;\n}\n", ""]);
 
 // exports
 
