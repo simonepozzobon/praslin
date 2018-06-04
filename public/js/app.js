@@ -50456,7 +50456,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "col-md-4 pb-4" }, [
-    _c("img", { staticClass: "img-fluid", attrs: { src: _vm.image } })
+    _c("img", { staticClass: "img-fluid w-100", attrs: { src: _vm.image } })
   ])
 }
 var staticRenderFns = []
