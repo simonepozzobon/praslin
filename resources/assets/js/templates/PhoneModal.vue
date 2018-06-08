@@ -12,11 +12,7 @@
         </div>
         <div id="phone-modal-shape">
             <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="animation-utilities" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="phone-modal-start">
-                        <rect id="Rectangle" x="12" y="12" width="8" height="8"></rect>
-                    </g>
-                </g>
+                <rect id="phone-modal-start" x="12" y="12" width="8" height="8"></rect>
             </svg>
         </div>
     </div>
@@ -24,7 +20,8 @@
 
 <script>
 import EventBus from '~js/EventBus'
-import {TimelineMax} from 'gsap'
+import {TweenMax, TimelineMax} from 'gsap'
+import MorphSVG from '~js/externals/MorphSVGPlugin'
 
 export default {
     name: 'PhoneModal',
@@ -35,22 +32,30 @@ export default {
     },
     methods: {
         toggleModal: function() {
-            if (this.isOpen) {
+            MorphSVG.convertToPath('#phone-modal-start')
+            MorphSVG.convertToPath('#phone-modal')
+            if (!this.isOpen) {
+                var t1 = new TimelineMax()
+                t1.set('#phone-modal', {
+                    morphSVG: '#phone-modal-start'
+                })
+                    .to('#phone-modal', .4, {
+                        morphSVG: '#phone-modal',
+                    })
+                    .to('#phone-modal', .2, {
+                        opacity: 1,
+                        display: 'flex',
+                        onComplete: () => {
+                            this.isOpen = true
+                        }
+                    })
+            } else {
                 var t1 = new TimelineMax()
                 t1.to('#phone-modal', .4, {
                     opacity: 0,
                     display: 'none',
                     onComplete: () => {
                         this.isOpen = false
-                    }
-                })
-            } else {
-                var t1 = new TimelineMax()
-                t1.to('#phone-modal', .4, {
-                    opacity: 1,
-                    display: 'flex',
-                    onComplete: () => {
-                        this.isOpen = true
                     }
                 })
             }
@@ -75,8 +80,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
