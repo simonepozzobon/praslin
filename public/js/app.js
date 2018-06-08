@@ -35717,21 +35717,40 @@ exports.push([module.i, "", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_MainSlider_vue__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_MainSlider_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_MainSlider_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gsap__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_MainSlider_vue__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_MainSlider_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_MainSlider_vue__);
 //
 //
 //
 //
 //
 //
+
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'Home',
     components: {
-        MainSlider: __WEBPACK_IMPORTED_MODULE_0__components_MainSlider_vue___default.a
+        MainSlider: __WEBPACK_IMPORTED_MODULE_1__components_MainSlider_vue___default.a
+    },
+    data: function data() {
+        return {
+            isAnimating: false
+        };
+    },
+    methods: {
+        animate: function animate() {
+            var t1 = new __WEBPACK_IMPORTED_MODULE_0_gsap__["a" /* TimelineMax */]();
+            t1.from('#home', 1.5, {
+                opacity: 0,
+                ease: Back.easeInOut
+            });
+        }
+    },
+    mounted: function mounted() {
+        this.animate();
     }
 });
 

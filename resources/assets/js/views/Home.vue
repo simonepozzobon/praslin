@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import {TweenMax, TimelineMax} from 'gsap'
 import MainSlider from '../components/MainSlider.vue'
 
 export default {
@@ -12,6 +13,23 @@ export default {
     components: {
         MainSlider,
     },
+    data: function() {
+        return {
+            isAnimating: false,
+        }
+    },
+    methods: {
+        animate: function() {
+            var t1 = new TimelineMax()
+            t1.from('#home', 1.5, {
+                opacity: 0,
+                ease: Back.easeInOut
+            })
+        }
+    },
+    mounted: function() {
+        this.animate()
+    }
 }
 </script>
 
