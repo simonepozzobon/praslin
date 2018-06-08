@@ -14,7 +14,11 @@
                         </span><br><br>
                         <span class="contact-label">E-mail</span><br>
                         <span class="contact-description">
-                            praslinprodivers@gmail.com
+                            <a href="mailto:praslinprodivers@gmail.com">praslinprodivers@gmail.com</a>
+                        </span><br><br>
+                        <span class="contact-label">Mobile</span><br>
+                        <span class="contact-description">
+                            (+248) 26 33 000
                         </span><br><br>
                         <span class="contact-label">Phone</span><br>
                         <span class="contact-description">
@@ -43,6 +47,7 @@
 
 <script>
 import apiKeys from '~js/apiKeys'
+import GoogleMapsOpts from '~js/config/GoogleMapsOpts'
 import SectionTitle from '../../components/SectionTitle.vue'
 import Waves from '../../components/icons/Waves.vue'
 
@@ -72,94 +77,9 @@ export default {
     methods: {
         loadMap: function() {
             const element = document.getElementById('contact-map')
-            const opts = {
-                zoom: 15,
-                center: new google.maps.LatLng(-4.31685,55.7543),
-                mapTypeId: 'roadmap',
-                mapTypeControl: false,
-                streetViewControl: false,
-                styles: [
-                            {elementType: 'geometry', stylers: [{color: '#FEFAF5'}]},
-                            {elementType: 'labels.text.stroke', stylers: [{color: '#FEFAF5'}]},
-                            {elementType: 'labels.text.fill', stylers: [{color: '#B1A799'}]},
-                            {
-                                featureType: 'administrative.locality',
-                                elementType: 'labels.text.fill',
-                                stylers: [{color: '#d59563'}]
-                            },
-                            {
-                                featureType: 'poi',
-                                elementType: 'labels.text.fill',
-                                stylers: [{color: '#d59563'}]
-                            },
-                            {
-                                featureType: 'poi.park',
-                                elementType: 'geometry',
-                                stylers: [{color: '#DCFEE4'}]
-                            },
-                            {
-                                featureType: 'poi.park',
-                                elementType: 'labels.text.fill',
-                                stylers: [{color: '#6b9a76'}]
-                            },
-                            {
-                                featureType: 'road',
-                                elementType: 'geometry',
-                                stylers: [{color: '#E3DFDB'}]
-                            },
-                            {
-                                featureType: 'road',
-                                elementType: 'geometry.stroke',
-                                stylers: [{color: '#E3DFDB'}]
-                            },
-                            {
-                                featureType: 'road',
-                                elementType: 'labels.text.fill',
-                                stylers: [{color: '#E3DFDB'}]
-                            },
-                            {
-                                featureType: 'road.highway',
-                                elementType: 'geometry',
-                                stylers: [{color: '#E3DFDB'}]
-                            },
-                            {
-                                featureType: 'road.highway',
-                                elementType: 'geometry.stroke',
-                                stylers: [{color: '#E3DFDB'}]
-                            },
-                            {
-                                featureType: 'road.highway',
-                                elementType: 'labels.text.fill',
-                                stylers: [{color: '#f3d19c'}]
-                            },
-                            {
-                                featureType: 'transit',
-                                elementType: 'geometry',
-                                stylers: [{color: '#E3DFDB'}]
-                            },
-                            {
-                                featureType: 'transit.station',
-                                elementType: 'labels.text.fill',
-                                stylers: [{color: '#d59563'}]
-                            },
-                            {
-                                featureType: 'water',
-                                elementType: 'geometry',
-                                stylers: [{color: '#E5F7F7'}]
-                            },
-                            {
-                                featureType: 'water',
-                                elementType: 'labels.text.fill',
-                                stylers: [{color: '#515c6d'}]
-                            },
-                            {
-                                featureType: 'water',
-                                elementType: 'labels.text.stroke',
-                                stylers: [{color: '#17263c'}]
-                            }
-                        ],
-            }
-            const map = new google.maps.Map(element, opts)
+            GoogleMapsOpts.zoom = 15
+            GoogleMapsOpts.center = new google.maps.LatLng(-4.31685,55.7543)
+            const map = new google.maps.Map(element, GoogleMapsOpts)
             const position = new google.maps.LatLng(-4.31914,55.7636)
             const marker = new google.maps.Marker({
                 position,

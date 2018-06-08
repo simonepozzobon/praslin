@@ -1,22 +1,22 @@
 <template lang="html">
     <div id="phone-call-wrapper">
         <div class="call-to-action">
-            Call Us
-        </div>
-        <div id="phone-call">
-            <div class="mobile">
-                <i class="fas fa-phone"></i> (+248) 42 32 113
-            </div>
-            <div class="center">
-                <i class="fas fa-mobile"></i>(+248) 26 33 000
-            </div>
+            <button class="btn btn-white text-uppercase" @click="openModal">
+                <i class="fas fa-phone"></i> Call Us
+            </button>
         </div>
     </div>
 </template>
 
 <script>
+import EventBus from '~js/EventBus'
 export default {
-    name: 'PhoneCall'
+    name: 'PhoneCall',
+    methods: {
+        openModal: function() {
+            EventBus.$emit('toggle-phone-modal')
+        }
+    }
 }
 </script>
 
@@ -26,27 +26,6 @@ export default {
 @import '~styles/mixins';
 
     #phone-call-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .call-to-action {
-            font-size: 20px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: $white;
-            padding-left: $spacer * 2;
-        }
-
-        #phone-call {
-            display: flex;
-            flex-direction: column;
-            color: $white;
-            padding-left: $spacer;
-
-            > .mobile i, > .center > i {
-                padding-right: $spacer / 2;
-            }
-        }
+        padding-left: $spacer * 2;
     }
 </style>

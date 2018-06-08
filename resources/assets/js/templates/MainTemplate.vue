@@ -1,6 +1,7 @@
 <template lang="html">
     <div id="main-template">
         <top-menu></top-menu>
+        <phone-modal></phone-modal>
         <router-view></router-view>
         <footer-template></footer-template>
     </div>
@@ -8,6 +9,7 @@
 
 <script>
 import FooterTemplate from './FooterTemplate.vue'
+import PhoneModal from './PhoneModal.vue'
 import TopMenu from './TopMenu.vue'
 
 import _ from 'lodash'
@@ -17,6 +19,7 @@ export default {
     name: 'MainTemplate',
     components: {
         FooterTemplate,
+        PhoneModal,
         TopMenu,
     },
     mounted: function() {

@@ -73,7 +73,7 @@ $menu-color: $white;
     width: 100%;
     background-color: $menu-bg;
     position: fixed;
-    z-index: 20;
+    z-index: 101;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
