@@ -42,6 +42,7 @@
 </template>
 
 <script>
+import apiKeys from '~js/apiKeys'
 import SectionTitle from '../../components/SectionTitle.vue'
 import Waves from '../../components/icons/Waves.vue'
 
@@ -156,9 +157,15 @@ export default {
         },
     },
     created: function() {
-        let mapsScript = document.createElement('script')
-        mapsScript.setAttribute('src', '//maps.googleapis.com/maps/api/js?key=AIzaSyD4CvJwKmbFXDJTissWXN7_CGeB7kCGlQw')
-        document.head.appendChild(mapsScript)
+        let url = '//maps.googleapis.com/maps/api/js?key=' + apiKeys.googleMaps
+        let len = $('script').filter(function () {
+            return ($(this).attr('src') == url)
+        }).length
+        if (len === 0) {
+            let mapsScript = document.createElement('script')
+            mapsScript.setAttribute('src', url)
+            document.head.appendChild(mapsScript)
+        }
     },
     mounted: function() {
         window.onload = () => {
