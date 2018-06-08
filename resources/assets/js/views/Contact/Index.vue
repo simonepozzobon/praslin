@@ -1,5 +1,5 @@
 <template lang="html">
-    <div id="contact">
+    <div id="contact" v-observe-visibility="visibilityChanged">
         <div id="contact-panel" class="bg-sand row">
                 <div class="col-12 py-5">
                     <section-title title="Contact" number="05" align="left" class="section-title"/>
@@ -56,6 +56,18 @@ export default {
         return {
 
         }
+    },
+    computed: {
+        googleMapsLoaded: function() {
+            let url = '//maps.googleapis.com/maps/api/js?key=' + apiKeys.googleMaps
+            let len = $('script').filter(function () {
+                return ($(this).attr('src') == url)
+            }).length
+            if (len === 0) {
+                return false
+            }
+            return true
+        },
     },
     methods: {
         loadMap: function() {
@@ -153,15 +165,16 @@ export default {
                 position,
                 map
             })
-            console.log('ci siamo')
         },
+        visibilityChanged: function(isVisible, entry) {
+            if (isVisible && this.googleMapsLoaded) {
+                this.loadMap()
+            }
+        }
     },
     created: function() {
-        let url = '//maps.googleapis.com/maps/api/js?key=' + apiKeys.googleMaps
-        let len = $('script').filter(function () {
-            return ($(this).attr('src') == url)
-        }).length
-        if (len === 0) {
+        if (!this.googleMapsLoaded) {
+            let url = '//maps.googleapis.com/maps/api/js?key=' + apiKeys.googleMaps
             let mapsScript = document.createElement('script')
             mapsScript.setAttribute('src', url)
             document.head.appendChild(mapsScript)

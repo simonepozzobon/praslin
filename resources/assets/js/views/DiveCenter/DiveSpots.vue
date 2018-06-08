@@ -1,5 +1,5 @@
 <template lang="html">
-    <div id="dive-spots">
+    <div id="dive-spots" v-observe-visibility="visibilityChanged">
         <div class="container pb-5">
             <div class="row">
                 <div class="col-md-6">
@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import apiKeys from '~js/apiKeys'
 import SectionParagraph from '../../components/SectionParagraph.vue'
 import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
@@ -104,6 +105,18 @@ export default {
 
             ]
         }
+    },
+    computed: {
+        googleMapsLoaded: function() {
+            let url = '//maps.googleapis.com/maps/api/js?key=' + apiKeys.googleMaps
+            let len = $('script').filter(function () {
+                return ($(this).attr('src') == url)
+            }).length
+            if (len === 0) {
+                return false
+            }
+            return true
+        },
     },
     methods: {
         loadMap: function() {
@@ -204,15 +217,20 @@ export default {
                     map
                 })
             })
-
-
-            console.log('ci siamo')
         },
+        visibilityChanged: function(isVisible, entry) {
+            if (isVisible && this.googleMapsLoaded) {
+                this.loadMap()
+            }
+        }
     },
     created: function() {
-        let mapsScript = document.createElement('script')
-        mapsScript.setAttribute('src', '//maps.googleapis.com/maps/api/js?key=AIzaSyD4CvJwKmbFXDJTissWXN7_CGeB7kCGlQw')
-        document.head.appendChild(mapsScript)
+        if (!this.googleMapsLoaded) {
+            let url = '//maps.googleapis.com/maps/api/js?key=' + apiKeys.googleMaps
+            let mapsScript = document.createElement('script')
+            mapsScript.setAttribute('src', '//maps.googleapis.com/maps/api/js?key=AIzaSyD4CvJwKmbFXDJTissWXN7_CGeB7kCGlQw')
+            document.head.appendChild(mapsScript)
+        }
     },
     mounted: function() {
         window.onload = () => {

@@ -12,9 +12,11 @@ window.Vue = require('vue')
 
 import VueResource from 'vue-resource'
 import VueRouter from 'vue-router'
+import VueVisibility from 'vue-observe-visibility'
 
 Vue.use(VueResource)
 Vue.use(VueRouter)
+Vue.use(VueVisibility)
 
 const router = new VueRouter({
     mode: 'history',
