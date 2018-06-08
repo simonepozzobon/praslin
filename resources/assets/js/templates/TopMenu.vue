@@ -2,8 +2,8 @@
     <div>
         <nav id="main-menu" class="navbar navbar-expand-lg">
             <div class="navbar-brand">
-                <div class="navbar-brand-bg bg-dark">
-                    <router-link :to="'/'"><logo align="center" style="margin-top: 8px"/></router-link>
+                <div class="navbar-brand-bg">
+                    <router-link :to="'/'"><logo align="center" /></router-link>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,14 +87,16 @@ $menu-color: $white;
         min-width: 268px;
 
         > .navbar-brand-bg {
-            padding-top: 6px;
-            padding-bottom: 12px;
-            position: absolute;
+            // padding-top: 6px;
+            // padding-bottom: 12px;
+            position: relative;
+            // position: absolute;
             left: -$spacer;
-            top: 50%;
-            transform: translateY(-50%);
+            // top: 50%;
+            // transform: translateY(-50%);
             min-width: 268px;
-            min-height: 89px;
+            // min-height: 89px;
+            background-color: $menu-bg;
             @include box-shadow(0 8px 32px 0 rgba(37, 37, 37, .15));
         }
     }

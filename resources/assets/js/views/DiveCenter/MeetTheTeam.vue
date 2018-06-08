@@ -15,7 +15,7 @@
                             Jean Paul
                         </div>
                         <div class="team-role">
-                            Owner
+                            Owner & Instructor
                         </div>
                         <div class="description">
                             <p>

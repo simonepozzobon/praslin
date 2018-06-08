@@ -46088,7 +46088,9 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "team-role" }, [
-                _vm._v("\n                        Owner\n                    ")
+                _vm._v(
+                  "\n                        Owner & Instructor\n                    "
+                )
               ]),
               _vm._v(" "),
               _vm._m(0)
@@ -48493,7 +48495,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#main-menu {\n  width: 100%;\n  background-color: #252525;\n  position: fixed;\n  z-index: 101;\n  top: 0;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  -webkit-box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n}\n@media (min-width: 768px) {\n#main-menu {\n      min-height: 75px;\n}\n}\n#main-menu > .navbar-brand {\n    position: relative;\n    min-width: 268px;\n}\n#main-menu > .navbar-brand > .navbar-brand-bg {\n      padding-top: 6px;\n      padding-bottom: 12px;\n      position: absolute;\n      left: -1rem;\n      top: 50%;\n      -webkit-transform: translateY(-50%);\n              transform: translateY(-50%);\n      min-width: 268px;\n      min-height: 89px;\n      -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n              box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n}\n#main-menu #navbarContent > .navbar-nav {\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    margin-left: 40px;\n    margin-right: 40px;\n    width: 100%;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding-right: 1rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n        display: inline-block;\n        color: #00AFB8;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n        text-transform: uppercase;\n        font-weight: 500;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:active, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:link, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:visited {\n          color: #fff;\n}\n@media (max-width: 991.98px) {\n#main-menu #navbarContent > .navbar-nav {\n        margin-top: 2rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n          padding-right: 1rem;\n}\n}\n#main-menu #weather-wrapper {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#main-menu #weather-wrapper > .temperature {\n      color: #fff;\n      font-size: 36px;\n      font-weight: 700;\n}\n#main-menu #weather-wrapper > .icon {\n      padding-right: 1rem;\n}\n#main-menu #weather-wrapper > .icon > svg {\n        width: 36px;\n}\n", ""]);
+exports.push([module.i, "\n#main-menu {\n  width: 100%;\n  background-color: #252525;\n  position: fixed;\n  z-index: 101;\n  top: 0;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  -webkit-box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n}\n@media (min-width: 768px) {\n#main-menu {\n      min-height: 75px;\n}\n}\n#main-menu > .navbar-brand {\n    position: relative;\n    min-width: 268px;\n}\n#main-menu > .navbar-brand > .navbar-brand-bg {\n      position: relative;\n      left: -1rem;\n      min-width: 268px;\n      background-color: #252525;\n      -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n              box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n}\n#main-menu #navbarContent > .navbar-nav {\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    margin-left: 40px;\n    margin-right: 40px;\n    width: 100%;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding-right: 1rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n        display: inline-block;\n        color: #00AFB8;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n        text-transform: uppercase;\n        font-weight: 500;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:active, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:link, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:visited {\n          color: #fff;\n}\n@media (max-width: 991.98px) {\n#main-menu #navbarContent > .navbar-nav {\n        margin-top: 2rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n          padding-right: 1rem;\n}\n}\n#main-menu #weather-wrapper {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#main-menu #weather-wrapper > .temperature {\n      color: #fff;\n      font-size: 36px;\n      font-weight: 700;\n}\n#main-menu #weather-wrapper > .icon {\n      padding-right: 1rem;\n}\n#main-menu #weather-wrapper > .icon > svg {\n        width: 36px;\n}\n", ""]);
 
 // exports
 
@@ -53922,17 +53924,12 @@ var render = function() {
         _c("div", { staticClass: "navbar-brand" }, [
           _c(
             "div",
-            { staticClass: "navbar-brand-bg bg-dark" },
+            { staticClass: "navbar-brand-bg" },
             [
               _c(
                 "router-link",
                 { attrs: { to: "/" } },
-                [
-                  _c("logo", {
-                    staticStyle: { "margin-top": "8px" },
-                    attrs: { align: "center" }
-                  })
-                ],
+                [_c("logo", { attrs: { align: "center" } })],
                 1
               )
             ],
