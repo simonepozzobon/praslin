@@ -45687,7 +45687,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#meet-the-team {\n  padding-bottom: 122px;\n}\n#meet-the-team .waves-icon {\n    position: absolute;\n    top: 60px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n#meet-the-team .team-mates {\n    padding-top: 130px;\n}\n#meet-the-team .team-mates .team-name {\n      font-weight: 700;\n      font-size: 36px;\n      text-transform: uppercase;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n#meet-the-team .team-mates .team-role {\n      text-transform: uppercase;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n#meet-the-team .team-mates .description {\n      padding-top: 26px;\n      text-align: justify;\n      line-height: 1.618;\n}\n", ""]);
+exports.push([module.i, "\n#meet-the-team {\n  padding-bottom: 122px;\n}\n#meet-the-team .waves-icon {\n    position: absolute;\n    z-index: 2;\n    top: 60px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n#meet-the-team .team-mates {\n    padding-top: 130px;\n}\n#meet-the-team .team-mates .team-name {\n      font-weight: 700;\n      font-size: 36px;\n      text-transform: uppercase;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n#meet-the-team .team-mates .team-role {\n      text-transform: uppercase;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n#meet-the-team .team-mates .description {\n      padding-top: 26px;\n      text-align: justify;\n      line-height: 1.618;\n}\n", ""]);
 
 // exports
 
@@ -48628,8 +48628,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Logo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Logo_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue__ = __webpack_require__(287);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PhoneCall_vue__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__PhoneCall_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue__);
 //
@@ -48673,7 +48673,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         burger: __WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue___default.a,
         Logo: __WEBPACK_IMPORTED_MODULE_1__Logo_vue___default.a,
         NavItem: __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue___default.a,
-        PhoneCall: __WEBPACK_IMPORTED_MODULE_3__PhoneCall_vue___default.a,
+        PhoneCall: __WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue___default.a,
         WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue___default.a
     }
 
@@ -54529,158 +54529,13 @@ if (GlobalVue) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4)))
 
 /***/ }),
-/* 256 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(261)
-}
-var normalizeComponent = __webpack_require__(2)
-/* script */
-var __vue_script__ = __webpack_require__(259)
-/* template */
-var __vue_template__ = __webpack_require__(260)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/templates/PhoneCall.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-78c91134", Component.options)
-  } else {
-    hotAPI.reload("data-v-78c91134", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
+/* 256 */,
 /* 257 */,
 /* 258 */,
-/* 259 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_EventBus__ = __webpack_require__(250);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'PhoneCall',
-    methods: {
-        openModal: function openModal() {
-            __WEBPACK_IMPORTED_MODULE_0__js_EventBus__["a" /* default */].$emit('toggle-phone-modal');
-        }
-    }
-});
-
-/***/ }),
-/* 260 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "phone-call-wrapper" } }, [
-    _c("div", { staticClass: "call-to-action" }, [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-white text-uppercase",
-          on: { click: _vm.openModal }
-        },
-        [_c("i", { staticClass: "fas fa-phone" }), _vm._v(" Call Us\n        ")]
-      )
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-78c91134", module.exports)
-  }
-}
-
-/***/ }),
-/* 261 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(262);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(1)("39b96db2", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-78c91134\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./PhoneCall.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-78c91134\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./PhoneCall.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 262 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n#phone-call-wrapper {\n  padding-left: 2rem;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
 /* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -69055,6 +68910,156 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-6cf40fef", module.exports)
+  }
+}
+
+/***/ }),
+/* 292 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(293)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(295)
+/* template */
+var __vue_template__ = __webpack_require__(296)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/PhoneCall.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7c4fa276", Component.options)
+  } else {
+    hotAPI.reload("data-v-7c4fa276", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 293 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(294);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("4b8fb0fc", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7c4fa276\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./PhoneCall.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7c4fa276\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./PhoneCall.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 294 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#phone-call-wrapper {\n  padding-left: 2rem;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 295 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_EventBus__ = __webpack_require__(250);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'PhoneCall',
+    methods: {
+        openModal: function openModal() {
+            __WEBPACK_IMPORTED_MODULE_0__js_EventBus__["a" /* default */].$emit('toggle-phone-modal');
+        }
+    }
+});
+
+/***/ }),
+/* 296 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "phone-call-wrapper" } }, [
+    _c("div", { staticClass: "call-to-action" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-white text-uppercase",
+          on: { click: _vm.openModal }
+        },
+        [_c("i", { staticClass: "fas fa-phone" }), _vm._v(" Call Us\n        ")]
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7c4fa276", module.exports)
   }
 }
 

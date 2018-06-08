@@ -30,7 +30,7 @@
 import burger from '../components/icons/burger.vue'
 import Logo from './Logo.vue'
 import NavItem from '../components/NavItem.vue'
-import PhoneCall from './PhoneCall.vue'
+import PhoneCall from '../components/PhoneCall.vue'
 import WeatherInfoLite from './WeatherInfoLite.vue'
 
 export default {

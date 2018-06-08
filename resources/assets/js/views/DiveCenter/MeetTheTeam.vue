@@ -84,6 +84,7 @@ export default {
 
     .waves-icon {
         position: absolute;
+        z-index: 2;
         top: 60px;
         left: 50%;
         transform: translateX(-50%);
