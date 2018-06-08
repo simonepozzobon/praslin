@@ -1,6 +1,6 @@
 <template lang="html">
-    <div class="section-title" :class="align">
-        <div class="number">
+    <div class="section-title" :class="align" @mouseenter="animate">
+        <div class="number" ref="number">
             {{ number }}
         </div>
         <div class="text">
@@ -10,6 +10,10 @@
 </template>
 
 <script>
+import {TweenMax, TimelineMax} from 'gsap'
+import SplitText from '~js/externals/SplitText'
+import GSDevTools from '~js/externals/GSDevTools'
+
 export default {
     name: 'SectionTitle',
     props: {
@@ -25,6 +29,36 @@ export default {
             type: String,
             default: 'left',
         }
+    },
+    data: function() {
+        return {
+            isAnimating: false,
+        }
+    },
+    methods: {
+        animate: function() {
+            if (!this.isAnimating) {
+                this.isAnimating = true
+                var text = new SplitText(this.$refs.number, {type: 'chars'})
+
+                var t1 = new TimelineMax()
+                t1.set(text.chars, {
+                    perspective: 400,
+                })
+                    .staggerFrom(text.chars, 0.8, {
+                        opacity: 0,
+                        y: 80,
+                        ease: Back.easeInOut,
+                        onComplete: () => {
+                            this.isAnimating = false
+                            text.revert()
+                        }
+                    }, 0.1, '+=0')
+            }
+        },
+    },
+    mounted: function() {
+            this.animate()
     }
 }
 </script>
