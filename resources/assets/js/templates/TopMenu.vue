@@ -35,57 +35,24 @@
                 </ul>
             </div>
 
-            <div id="weather-wrapper">
-                <div class="temperature">
-                    <span>{{ this.temperature }} °C</span>
-                </div>
-                <div class="icon"></div>
-
-            </div>
+            <weather-info-lite />
         </nav>
     </div>
 </template>
 
 <script>
-import apiKeys from '~js/apiKeys'
-import axios from 'axios'
 import burger from '../components/icons/burger.vue'
 import Logo from './Logo.vue'
+import WeatherInfoLite from './WeatherInfoLite.vue'
 
 export default {
     name: 'TopMenu',
     components: {
         burger,
         Logo,
+        WeatherInfoLite,
     },
-    data: function() {
-        return {
-            coords: {
-                lat: '-4.31685',
-                long: '55.7543',
-            },
-            units: 'metric',
-            weather: null
-        }
-    },
-    computed: {
-        temperature: function() {
-            if (this.weather) {
-                return this.weather.main.temp
-            }
-        }
-    },
-    methods: {
-        getWeather: function() {
-            const url = '//api.openweathermap.org/data/2.5/weather?lat=' + this.coords.lat + '&lon=' + this.coords.long + '&units=' + this.units + '&APPID=' + apiKeys.weather
-            $.getJSON(url).then(response => {
-                this.weather = response
-            })
-        },
-    },
-    mounted: function() {
-        this.getWeather()
-    }
+
 }
 </script>
 
@@ -168,11 +135,21 @@ $menu-color: $white;
     }
 
     #weather-wrapper {
+        display: flex;
+
         > .temperature {
             color: $menu-color;
             font-size: 36px;
             font-weight: 700;
-            padding-bottom: 8px;
+            // padding-bottom: 8px;
+        }
+
+        > .icon {
+            padding-right: $spacer;
+
+            > svg {
+                width: 36px;
+            }
         }
     }
 }
