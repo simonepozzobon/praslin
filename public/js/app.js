@@ -69040,7 +69040,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#phone-call-wrapper {\n  padding-left: 2rem;\n}\n", ""]);
+exports.push([module.i, "\n#phone-call-wrapper {\n  padding-left: 2rem;\n}\n#phone-call-wrapper .btn {\n    background-color: transparent;\n    border: 2px solid #fff;\n    color: #fff;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n#phone-call-wrapper .btn > i {\n      padding-right: 0.5rem;\n}\n#phone-call-wrapper .btn:hover {\n      background-color: #fff;\n      color: #252525;\n      -webkit-transition: all .4s ease-in-out;\n      transition: all .4s ease-in-out;\n}\n", ""]);
 
 // exports
 

@@ -27,5 +27,22 @@ export default {
 
     #phone-call-wrapper {
         padding-left: $spacer * 2;
+
+        .btn {
+            background-color: transparent;
+            border: 2px solid $white;
+            color: $white;
+            transition: all .4s ease-in-out;
+
+            > i {
+                padding-right: $spacer / 2;
+            }
+
+            &:hover {
+                background-color: $white;
+                color: $black;
+                transition: all .4s ease-in-out;
+            }
+        }
     }
 </style>
