@@ -61,7 +61,7 @@ export default {
         },
         temperature: function() {
             if (this.weather) {
-                return this.weather.main.temp
+                return parseInt(this.weather.main.temp)
             }
             return null
         },

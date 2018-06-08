@@ -51906,7 +51906,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         temperature: function temperature() {
             if (this.weather) {
-                return this.weather.main.temp;
+                return parseInt(this.weather.main.temp);
             }
             return null;
         }
