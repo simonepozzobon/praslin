@@ -48611,7 +48611,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#main-menu {\n  width: 100%;\n  background-color: #252525;\n  position: fixed;\n  z-index: 101;\n  top: 0;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  -webkit-box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n}\n@media (min-width: 768px) {\n#main-menu {\n      min-height: 75px;\n}\n}\n#main-menu > .navbar-brand {\n    position: relative;\n    min-width: 268px;\n}\n#main-menu > .navbar-brand > .navbar-brand-bg {\n      position: relative;\n      left: -1rem;\n      min-width: 268px;\n      background-color: #252525;\n      -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n              box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n}\n#main-menu #navbarContent > .navbar-nav {\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    margin-left: 40px;\n    margin-right: 40px;\n    width: 100%;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding-right: 1rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n        display: inline-block;\n        color: #00AFB8;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n        text-transform: uppercase;\n        font-weight: 500;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:active, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:link, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:visited {\n          color: #fff;\n}\n@media (max-width: 991.98px) {\n#main-menu #navbarContent > .navbar-nav {\n        margin-top: 2rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n          padding-right: 1rem;\n}\n}\n#main-menu #weather-wrapper {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#main-menu #weather-wrapper > .temperature {\n      color: #fff;\n      font-size: 36px;\n      font-weight: 700;\n}\n#main-menu #weather-wrapper > .icon {\n      padding-right: 1rem;\n}\n#main-menu #weather-wrapper > .icon > svg {\n        width: 36px;\n}\n", ""]);
+exports.push([module.i, "\n#main-menu {\n  width: 100%;\n  background-color: #252525;\n  position: fixed;\n  z-index: 101;\n  top: 0;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  -webkit-box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n}\n@media (min-width: 768px) {\n#main-menu {\n      min-height: 75px;\n}\n}\n#main-menu > .navbar-brand {\n    position: relative;\n    min-width: 268px;\n}\n#main-menu > .navbar-brand > .navbar-brand-bg {\n      position: relative;\n      left: -1rem;\n      min-width: 268px;\n      background-color: #252525;\n      -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n              box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n}\n#main-menu #navbarContent > .navbar-nav {\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    margin-left: 40px;\n    margin-right: 40px;\n    width: 100%;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding-right: 1rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n        display: inline-block;\n        color: #00AFB8;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n        text-transform: uppercase;\n        font-weight: 500;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:active, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:link, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:visited {\n          color: #fff;\n          -webkit-transition: all .3s ease-in-out;\n          transition: all .3s ease-in-out;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:hover {\n          color: #00AFB8;\n          -webkit-transition: all .8s ease-in-out;\n          transition: all .8s ease-in-out;\n}\n@media (max-width: 991.98px) {\n#main-menu #navbarContent > .navbar-nav {\n        margin-top: 2rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n          padding-right: 1rem;\n}\n}\n#main-menu #weather-wrapper {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#main-menu #weather-wrapper > .temperature {\n      color: #fff;\n      font-size: 36px;\n      font-weight: 700;\n}\n#main-menu #weather-wrapper > .icon {\n      padding-right: 1rem;\n}\n#main-menu #weather-wrapper > .icon > svg {\n        width: 36px;\n}\n", ""]);
 
 // exports
 
@@ -48626,10 +48626,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Logo_vue__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Logo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Logo_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PhoneCall_vue__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__PhoneCall_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__WeatherInfoLite_vue__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__WeatherInfoLite_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PhoneCall_vue__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__PhoneCall_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue__);
 //
 //
 //
@@ -48658,21 +48660,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 
 
@@ -48684,8 +48672,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         burger: __WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue___default.a,
         Logo: __WEBPACK_IMPORTED_MODULE_1__Logo_vue___default.a,
-        PhoneCall: __WEBPACK_IMPORTED_MODULE_2__PhoneCall_vue___default.a,
-        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_3__WeatherInfoLite_vue___default.a
+        NavItem: __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue___default.a,
+        PhoneCall: __WEBPACK_IMPORTED_MODULE_3__PhoneCall_vue___default.a,
+        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue___default.a
     }
 
 });
@@ -54077,97 +54066,36 @@ var render = function() {
             attrs: { id: "navbarContent" }
           },
           [
-            _c("ul", { staticClass: "navbar-nav" }, [
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c("span", { staticClass: "nav-number" }, [_vm._v("01")]),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-link",
-                      attrs: { "active-class": "active", to: "/about" }
-                    },
-                    [_vm._v("About")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c("span", { staticClass: "nav-number" }, [_vm._v("02")]),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-link",
-                      attrs: { "active-class": "active", to: "/dive-center" }
-                    },
-                    [_vm._v("Dive Center")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c("span", { staticClass: "nav-number" }, [_vm._v("03")]),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-link",
-                      attrs: { "active-class": "active", to: "/galleries" }
-                    },
-                    [_vm._v("Galleries")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c("span", { staticClass: "nav-number" }, [_vm._v("04")]),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-link",
-                      attrs: { "active-class": "active", to: "/island" }
-                    },
-                    [_vm._v("Island")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "nav-item" },
-                [
-                  _c("span", { staticClass: "nav-number" }, [_vm._v("05")]),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-link",
-                      attrs: { "active-class": "active", to: "/contacts" }
-                    },
-                    [_vm._v("Contact")]
-                  )
-                ],
-                1
-              )
-            ])
+            _c(
+              "ul",
+              { staticClass: "navbar-nav" },
+              [
+                _c("nav-item", {
+                  attrs: { number: "01", link: "/about", text: "About" }
+                }),
+                _vm._v(" "),
+                _c("nav-item", {
+                  attrs: {
+                    number: "02",
+                    link: "/dive-center",
+                    text: "Dive Center"
+                  }
+                }),
+                _vm._v(" "),
+                _c("nav-item", {
+                  attrs: { number: "03", link: "/galleries", text: "Galleries" }
+                }),
+                _vm._v(" "),
+                _c("nav-item", {
+                  attrs: { number: "04", link: "/island", text: "Island" }
+                }),
+                _vm._v(" "),
+                _c("nav-item", {
+                  attrs: { number: "05", link: "/contacts", text: "Contact" }
+                })
+              ],
+              1
+            )
           ]
         ),
         _vm._v(" "),
@@ -68932,6 +68860,203 @@ const Draggable = __WEBPACK_IMPORTED_MODULE_0__TweenLite__["g" /* _gsScope */].D
 
 var SplitText = __WEBPACK_IMPORTED_MODULE_0_gsap_TweenLite_js__["g" /* _gsScope */].SplitText;
 
+
+/***/ }),
+/* 287 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(288)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(290)
+/* template */
+var __vue_template__ = __webpack_require__(291)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/NavItem.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6cf40fef", Component.options)
+  } else {
+    hotAPI.reload("data-v-6cf40fef", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 288 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(289);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("e0407490", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6cf40fef\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NavItem.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6cf40fef\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NavItem.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 289 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 290 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gsap__ = __webpack_require__(277);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'NavItem',
+    props: {
+        link: {
+            type: String,
+            default: '/'
+        },
+        number: {
+            type: String,
+            default: '00'
+        },
+        text: {
+            type: String,
+            default: 'Home'
+        }
+    },
+    data: function data() {
+        return {
+            isAnimating: false
+        };
+    },
+    methods: {
+        animate: function animate() {
+            var _this = this;
+
+            if (!this.isAnimating) {
+                this.isAnimating = true;
+                var text = new SplitText(this.$refs.number, { type: 'chars' });
+
+                var t1 = new __WEBPACK_IMPORTED_MODULE_0_gsap__["a" /* TimelineMax */]();
+                t1.set(text.chars, {
+                    perspective: 400
+                }).staggerFrom(text.chars, 0.8, {
+                    opacity: 0,
+                    y: 16,
+                    ease: Back.easeInOut,
+                    onComplete: function onComplete() {
+                        _this.isAnimating = false;
+                        text.revert();
+                    }
+                }, 0.1, '+=0');
+            }
+        }
+    },
+    mounted: function mounted() {}
+});
+
+/***/ }),
+/* 291 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "li",
+    { staticClass: "nav-item", on: { mouseenter: _vm.animate } },
+    [
+      _c("span", { ref: "number", staticClass: "nav-number" }, [
+        _vm._v("\n        " + _vm._s(_vm.number) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c(
+        "router-link",
+        {
+          staticClass: "nav-link",
+          attrs: { "active-class": "active", to: _vm.link }
+        },
+        [_vm._v("\n        " + _vm._s(_vm.text) + "\n    ")]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6cf40fef", module.exports)
+  }
+}
 
 /***/ })
 ],[64]);

@@ -12,26 +12,11 @@
 
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <span class="nav-number">01</span>
-                        <router-link class="nav-link" active-class="active" :to="'/about'">About</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-number">02</span>
-                        <router-link class="nav-link" active-class="active" :to="'/dive-center'">Dive Center</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-number">03</span>
-                        <router-link class="nav-link" active-class="active" :to="'/galleries'">Galleries</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-number">04</span>
-                        <router-link class="nav-link" active-class="active" :to="'/island'">Island</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <span class="nav-number">05</span>
-                        <router-link class="nav-link" active-class="active" :to="'/contacts'">Contact</router-link>
-                    </li>
+                    <nav-item number="01" link='/about' text="About"/>
+                    <nav-item number="02" link='/dive-center' text="Dive Center"/>
+                    <nav-item number="03" link='/galleries' text="Galleries"/>
+                    <nav-item number="04" link='/island' text="Island"/>
+                    <nav-item number="05" link='/contacts' text="Contact"/>
                 </ul>
             </div>
 
@@ -44,6 +29,7 @@
 <script>
 import burger from '../components/icons/burger.vue'
 import Logo from './Logo.vue'
+import NavItem from '../components/NavItem.vue'
 import PhoneCall from './PhoneCall.vue'
 import WeatherInfoLite from './WeatherInfoLite.vue'
 
@@ -52,6 +38,7 @@ export default {
     components: {
         burger,
         Logo,
+        NavItem,
         PhoneCall,
         WeatherInfoLite,
     },
@@ -109,7 +96,6 @@ $menu-color: $white;
             margin-right: 40px;
             width: 100%;
 
-
             > .nav-item {
                 display: flex;
                 align-items: center;
@@ -126,6 +112,12 @@ $menu-color: $white;
 
                     &:active, &:link, &:visited {
                         color: $menu-color;
+                        transition: all .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        color: $menu-green;
+                        transition: all .8s ease-in-out;
                     }
                 }
             }
@@ -137,6 +129,7 @@ $menu-color: $white;
                     padding-right: $spacer;
                 }
             };
+
         }
     }
 
