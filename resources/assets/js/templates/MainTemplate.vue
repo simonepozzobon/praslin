@@ -1,5 +1,5 @@
 <template lang="html">
-    <div>
+    <div id="main-template">
         <top-menu></top-menu>
         <router-view></router-view>
         <footer-template></footer-template>
@@ -37,5 +37,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
+#main-template {
+    padding-top: 75px;
+}
 </style>

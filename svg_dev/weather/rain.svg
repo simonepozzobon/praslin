@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>rain</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="rain" stroke="#000000" stroke-width="2">
+            <path d="M45.189,15.979 C44.383,15.979 43.606,16.092 42.86,16.284 C41.8,11.544 37.575,8 32.516,8 C27.282,8 22.945,11.794 22.077,16.779 C20.925,16.268 19.652,15.978 18.31,15.978 C13.168,15.978 9,20.146 9,25.288 C9,30.43 13.168,34.598 18.31,34.598 C22.575,34.598 41.16,34.598 45.189,34.598 C50.331,34.598 54.499,30.43 54.499,25.288 C54.499,20.146 50.331,15.979 45.189,15.979 Z" id="Shape"></path>
+            <polygon id="Shape" fill="#000000" fill-rule="nonzero" points="27.292 35 24 46.04 29.5 45.29 26 55.415 38.125 41.04 31.75 40.415 35.5 35"></polygon>
+            <polygon id="Shape-Copy" fill="#000000" fill-rule="nonzero" points="42.3983717 35 41 39.6895575 43.3362832 39.3709735 41.8495575 43.6718584 47 37.5656637 44.2920354 37.300177 45.8849558 35"></polygon>
+            <polygon id="Shape-Copy-2" fill="#000000" fill-rule="nonzero" points="17.4512858 35 16 39.8670096 18.4246877 39.5363703 16.8817046 44 22.2270389 37.662748 19.4166054 37.3872153 21.0698016 35"></polygon>
+        </g>
+    </g>
+</svg>

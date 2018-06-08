@@ -1,8 +1,8 @@
 <template lang="html">
     <div>
-        <nav id="main-menu" class="navbar navbar-expand-lg bg-sand container stiky-top">
+        <nav id="main-menu" class="navbar navbar-expand-lg">
             <div class="navbar-brand">
-                <div class="navbar-brand-bg bg-dark-gray">
+                <div class="navbar-brand-bg bg-dark">
                     <router-link :to="'/'"><logo align="center" style="margin-top: 8px"/></router-link>
                 </div>
             </div>
@@ -34,11 +34,21 @@
                     </li>
                 </ul>
             </div>
+
+            <div id="weather-wrapper">
+                <div class="temperature">
+                    <span>{{ this.temperature }} °C</span>
+                </div>
+                <div class="icon"></div>
+
+            </div>
         </nav>
     </div>
 </template>
 
 <script>
+import apiKeys from '~js/apiKeys'
+import axios from 'axios'
 import burger from '../components/icons/burger.vue'
 import Logo from './Logo.vue'
 
@@ -47,6 +57,34 @@ export default {
     components: {
         burger,
         Logo,
+    },
+    data: function() {
+        return {
+            coords: {
+                lat: '-4.31685',
+                long: '55.7543',
+            },
+            units: 'metric',
+            weather: null
+        }
+    },
+    computed: {
+        temperature: function() {
+            if (this.weather) {
+                return this.weather.main.temp
+            }
+        }
+    },
+    methods: {
+        getWeather: function() {
+            const url = '//api.openweathermap.org/data/2.5/weather?lat=' + this.coords.lat + '&lon=' + this.coords.long + '&units=' + this.units + '&APPID=' + apiKeys.weather
+            $.getJSON(url).then(response => {
+                this.weather = response
+            })
+        },
+    },
+    mounted: function() {
+        this.getWeather()
     }
 }
 </script>
@@ -56,8 +94,14 @@ export default {
 @import '~styles/variables';
 @import '~styles/mixins';
 
+$menu-bg: $black;
+$menu-color: $white;
+
 #main-menu {
-    background-color: $sand;
+    // display: flex;
+
+    width: 100%;
+    background-color: $menu-bg;
     position: fixed;
     z-index: 20;
     top: 0;
@@ -108,7 +152,7 @@ export default {
                     font-weight: 500;
 
                     &:active, &:link, &:visited {
-                        color: $black;
+                        color: $menu-color;
                     }
                 }
             }
@@ -120,6 +164,15 @@ export default {
                     padding-right: $spacer;
                 }
             };
+        }
+    }
+
+    #weather-wrapper {
+        > .temperature {
+            color: $menu-color;
+            font-size: 36px;
+            font-weight: 700;
+            padding-bottom: 8px;
         }
     }
 }
