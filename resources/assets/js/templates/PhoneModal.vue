@@ -69,8 +69,6 @@ export default {
         },
     },
     mounted: function() {
-        this.toggleModal()
-
         EventBus.$on('toggle-phone-modal', () => {
             this.toggleModal()
         })

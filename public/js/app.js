@@ -44158,7 +44158,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.scale-wrap {\n  overflow: hidden;\n  position: relative;\n  float: left;\n}\n.scale-wrap img.fake {\n  float: left;\n  visibility: hidden;\n  width: auto;\n}\n.img-wrap {\n  position: absolute;\n  top: 0;\n  right: 15px;\n}\n.img-wrap img.normal {\n  width: 35%;\n}\n#about-us {\n  z-index: 2;\n}\n#about-us .waves-icon {\n    position: absolute;\n    right: 15px;\n    top: -40px;\n}\n#about-us-img-1 {\n  top: -40px;\n  right: -8px;\n}\n#about-us-img-1 .normal {\n    width: 48%;\n}\n#about-us-img-2 {\n  position: absolute;\n  top: 200px;\n  right: -116px;\n}\n#about-us-img-2 .normal {\n    width: 52%;\n}\n", ""]);
+exports.push([module.i, "\n#about-us .waves-icon {\n  position: absolute;\n  right: 15px;\n  top: -40px;\n}\n#about-us .images {\n  position: relative;\n}\n#about-us .images #about-us-img-1 {\n    position: absolute;\n    right: 90px;\n    top: -40px;\n    width: 70%;\n}\n#about-us .images #about-us-img-2 {\n    position: absolute;\n    top: 170px;\n    left: -20px;\n    width: 70%;\n}\n#about-us .images #about-us-img-3 {\n    position: absolute;\n    top: 330px;\n    right: 0;\n    width: 30%;\n}\n#about-us .padi {\n  padding-top: 4rem;\n}\n#about-us .padi > img {\n    width: 200px;\n    height: auto;\n    height: 100%;\n}\n", ""]);
 
 // exports
 
@@ -44177,6 +44177,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -44650,14 +44656,7 @@ var render = function() {
       _c(
         "div",
         { staticClass: "col-md-6" },
-        [
-          _c("waves", { staticClass: "waves-icon" }),
-          _vm._v(" "),
-          _vm._m(0),
-          _vm._v("​\n            "),
-          _vm._m(1),
-          _vm._v("​\n        ")
-        ],
+        [_c("waves", { staticClass: "waves-icon" }), _vm._v(" "), _vm._m(0)],
         1
       ),
       _vm._v(" "),
@@ -44681,7 +44680,9 @@ var render = function() {
         ],
         1
       )
-    ])
+    ]),
+    _vm._v(" "),
+    _vm._m(1)
   ])
 }
 var staticRenderFns = [
@@ -44689,45 +44690,40 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "scale-wrap", attrs: { id: "about-us-img-1" } },
-      [
+    return _c("div", { staticClass: "images" }, [
+      _c("div", { attrs: { id: "about-us-img-1" } }, [
         _c("img", {
-          staticClass: "fake",
+          staticClass: "img-fluid",
           attrs: { src: "/images/about-us-dive-center.png" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "img-wrap" }, [
-          _c("img", {
-            staticClass: "normal",
-            attrs: { src: "/images/about-us-dive-center.png" }
-          })
-        ])
-      ]
-    )
+        })
+      ]),
+      _vm._v("​\n                "),
+      _c("div", { attrs: { id: "about-us-img-2" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/about-us-palm.png" }
+        })
+      ]),
+      _vm._v("​\n                "),
+      _c("div", { attrs: { id: "about-us-img-3" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/SEA-logo.png" }
+        })
+      ])
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "scale-wrap", attrs: { id: "about-us-img-2" } },
-      [
-        _c("img", {
-          staticClass: "fake",
-          attrs: { src: "/images/about-us-palm.png" }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "img-wrap" }, [
-          _c("img", {
-            staticClass: "normal",
-            attrs: { src: "/images/about-us-palm.png" }
-          })
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "padi d-flex justify-content-center" }, [
+          _c("img", { attrs: { src: "/images/padi-instructor.jpg", alt: "" } })
         ])
-      ]
-    )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -48177,7 +48173,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#main-template {\n  padding-top: 75px;\n}\n", ""]);
+exports.push([module.i, "\n#main-template {\n  padding-top: 75px;\n  min-height: 100vh;\n}\n", ""]);
 
 // exports
 
@@ -48324,7 +48320,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#footer {\n  min-height: 460px;\n  background-image: url(\"/images/footer-bg.png\");\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end;\n}\n#footer > .sub-footer {\n    padding-bottom: 3rem;\n    color: #4A4A4A;\n}\n#footer > .sub-footer > a {\n      color: #4A4A4A;\n}\n#footer > .sub-footer > a:active, #footer > .sub-footer > a:link, #footer > .sub-footer > a:visited {\n        color: #4A4A4A;\n}\n", ""]);
+exports.push([module.i, "\n#footer {\n  min-height: 460px;\n  background-image: url(\"/images/footer-bg.png\");\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n#footer > .footer-logos {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    padding-bottom: 1rem;\n}\n#footer > .footer-logos > .scuba-logo {\n      width: 64px;\n}\n#footer > .footer-logos > .padi-instructor {\n      padding-left: 1rem;\n      width: 150px;\n}\n#footer > .sub-footer {\n    text-align: center;\n    padding-bottom: 3rem;\n    color: #4A4A4A;\n}\n#footer > .sub-footer > a {\n      color: #4A4A4A;\n}\n#footer > .sub-footer > a:active, #footer > .sub-footer > a:link, #footer > .sub-footer > a:visited {\n        color: #4A4A4A;\n}\n", ""]);
 
 // exports
 
@@ -48335,6 +48331,17 @@ exports.push([module.i, "\n#footer {\n  min-height: 460px;\n  background-image: 
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -48364,6 +48371,24 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "footer" } }, [
+      _c("div", { staticClass: "contact-information" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "footer-logos" }, [
+        _c("div", { staticClass: "scuba-logo" }, [
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: { src: "/images/SEA-logo-white.png" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "padi-instructor" }, [
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: { src: "/images/padi-instructor.jpg" }
+          })
+        ])
+      ]),
+      _vm._v(" "),
       _c("div", { staticClass: "sub-footer" }, [
         _vm._v("\n        © 2018 All rights reserved by Praslin Pro Divers | "),
         _c("a", { attrs: { href: "#" } }, [_vm._v("Privacy Policy")]),
@@ -54792,8 +54817,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     mounted: function mounted() {
         var _this2 = this;
-
-        this.toggleModal();
 
         __WEBPACK_IMPORTED_MODULE_0__js_EventBus__["a" /* default */].$on('toggle-phone-modal', function () {
             _this2.toggleModal();

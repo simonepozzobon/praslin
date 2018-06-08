@@ -43,5 +43,6 @@ export default {
 <style lang="scss">
 #main-template {
     padding-top: 75px;
+    min-height: 100vh;
 }
 </style>

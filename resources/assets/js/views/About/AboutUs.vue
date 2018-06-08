@@ -3,18 +3,17 @@
         <div class="row">
             <div class="col-md-6">
                 <waves class="waves-icon"/>
-                <div id="about-us-img-1" class="scale-wrap">
-                    <img class="fake" src="/images/about-us-dive-center.png" />
-                    <div class="img-wrap">
-                        <img class="normal" src="/images/about-us-dive-center.png" />
+                <div class="images">
+                    <div id="about-us-img-1">
+                        <img src="/images/about-us-dive-center.png" class="img-fluid"/>
+                    </div>​
+                    <div id="about-us-img-2">
+                        <img src="/images/about-us-palm.png" class="img-fluid"/>
+                    </div>​
+                    <div id="about-us-img-3">
+                        <img src="/images/SEA-logo.png" class="img-fluid"/>
                     </div>
-                </div>​
-                <div id="about-us-img-2" class="scale-wrap">
-                    <img class="fake" src="/images/about-us-palm.png" />
-                    <div class="img-wrap">
-                        <img class="normal" src="/images/about-us-palm.png" />
-                    </div>
-                </div>​
+                </div>
             </div>
             <div class="col-md-6">
                 <section-title title="About Us" number="01" />
@@ -30,6 +29,13 @@
                     responsible diving practices.
                     This is one of the reason we limit dive groups to six divers per guide.
                 </section-paragraph>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="padi d-flex justify-content-center">
+                    <img src="/images/padi-instructor.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -57,10 +63,7 @@ export default {
 @import '~styles/variables';
 @import '~styles/mixins';
 
-@import '../css/scale-img.scss';
-
 #about-us {
-    z-index: 2;
 
     .waves-icon {
         position: absolute;
@@ -68,26 +71,40 @@ export default {
         top: -40px;
     }
 
-}
+    .images {
+        position: relative;
 
-#about-us-img-1 {
-    top: -40px;
-    right: -8px;
+        #about-us-img-1 {
+            position: absolute;
+            right: 90px;
+            top: -40px;
+            width: 70%;
+        }
 
-    .normal {
-        width: 48%;
+        #about-us-img-2 {
+            position: absolute;
+            top: 170px;
+            left: -20px;
+            width: 70%;
+        }
+
+        #about-us-img-3 {
+            position: absolute;
+            top: 330px;
+            right: 0;
+            width: 30%;
+        }
+    }
+
+    .padi {
+        padding-top: $spacer * 4;
+
+        > img {
+            width: 200px;
+            height: auto;
+            height: 100%;
+        }
     }
 }
 
-#about-us-img-2 {
-    position: absolute;
-    top: 200px;
-    right: -116px;
-    // bottom: 0;
-    // left: -32px;
-
-    .normal {
-        width: 52%;
-    }
-}
 </style>
