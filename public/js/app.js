@@ -48630,8 +48630,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue__ = __webpack_require__(292);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_gsap__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__WeatherInfoLite_vue__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__WeatherInfoLite_vue__);
 //
 //
 //
@@ -48660,6 +48661,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 
 
@@ -48674,9 +48676,48 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         Logo: __WEBPACK_IMPORTED_MODULE_1__Logo_vue___default.a,
         NavItem: __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue___default.a,
         PhoneCall: __WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue___default.a,
-        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_4__WeatherInfoLite_vue___default.a
-    }
+        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_5__WeatherInfoLite_vue___default.a
+    },
+    data: function data() {
+        return {
+            isAnimating: false
+        };
+    },
+    methods: {
+        animate: function animate() {
+            var t1 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            var elements = document.getElementsByClassName('nav-item');
 
+            t1.staggerFrom(elements, .8, {
+                y: -16,
+                opacity: 0,
+                ease: Back.easeInOut
+            }, .1, '+=0');
+
+            var t2 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            t2.from('#weather-wrapper', .8, {
+                y: -16,
+                opacity: 0,
+                ease: Back.easeInOut
+            });
+
+            var t3 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            t3.from('#phone-call-wrapper', .8, {
+                y: -16,
+                opacity: 0,
+                ease: Back.easeInOut
+            });
+
+            var master = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            master.add(t1, 0.1);
+            master.add(t2, 0.7);
+            master.add(t3, 0.8);
+            master.play();
+        }
+    },
+    mounted: function mounted() {
+        this.animate();
+    }
 });
 
 /***/ }),

@@ -12,7 +12,7 @@
 
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav">
-                    <nav-item number="01" link='/about' text="About"/>
+                    <nav-item number="01" link='/about' text="About" />
                     <nav-item number="02" link='/dive-center' text="Dive Center"/>
                     <nav-item number="03" link='/galleries' text="Galleries"/>
                     <nav-item number="04" link='/island' text="Island"/>
@@ -31,6 +31,7 @@ import burger from '../components/icons/burger.vue'
 import Logo from './Logo.vue'
 import NavItem from '../components/NavItem.vue'
 import PhoneCall from '../components/PhoneCall.vue'
+import {TweenMax, TimelineMax} from 'gsap'
 import WeatherInfoLite from './WeatherInfoLite.vue'
 
 export default {
@@ -42,7 +43,46 @@ export default {
         PhoneCall,
         WeatherInfoLite,
     },
+    data: function() {
+        return {
+            isAnimating: false,
+        }
+    },
+    methods: {
+        animate: function() {
+            var t1 = new TimelineMax()
+            var elements = document.getElementsByClassName('nav-item')
 
+            t1.staggerFrom(elements, .8, {
+                y: -16,
+                opacity: 0,
+                ease: Back.easeInOut,
+            }, .1, '+=0')
+
+            var t2 = new TimelineMax()
+            t2.from('#weather-wrapper', .8, {
+                y: -16,
+                opacity: 0,
+                ease: Back.easeInOut,
+            })
+
+            var t3 = new TimelineMax()
+            t3.from('#phone-call-wrapper', .8, {
+                y: -16,
+                opacity: 0,
+                ease: Back.easeInOut,
+            })
+
+            var master = new TimelineMax()
+            master.add(t1, 0.1)
+            master.add(t2, 0.7)
+            master.add(t3, 0.8)
+            master.play()
+        }
+    },
+    mounted: function() {
+        this.animate()
+    }
 }
 </script>
 
