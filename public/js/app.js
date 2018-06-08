@@ -48591,8 +48591,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Logo_vue__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Logo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Logo_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__WeatherInfoLite_vue__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__WeatherInfoLite_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PhoneCall_vue__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__PhoneCall_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__WeatherInfoLite_vue__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__WeatherInfoLite_vue__);
 //
 //
 //
@@ -48635,6 +48637,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -48645,7 +48649,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         burger: __WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue___default.a,
         Logo: __WEBPACK_IMPORTED_MODULE_1__Logo_vue___default.a,
-        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_2__WeatherInfoLite_vue___default.a
+        PhoneCall: __WEBPACK_IMPORTED_MODULE_2__PhoneCall_vue___default.a,
+        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_3__WeatherInfoLite_vue___default.a
     }
 
 });
@@ -54136,7 +54141,9 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _c("weather-info-lite")
+        _c("weather-info-lite"),
+        _vm._v(" "),
+        _c("phone-call")
       ],
       1
     )
@@ -54560,6 +54567,169 @@ if (GlobalVue) {
 /* harmony default export */ __webpack_exports__["a"] = (plugin);
 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4)))
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(261)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(259)
+/* template */
+var __vue_template__ = __webpack_require__(260)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/templates/PhoneCall.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-78c91134", Component.options)
+  } else {
+    hotAPI.reload("data-v-78c91134", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 257 */,
+/* 258 */,
+/* 259 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'PhoneCall'
+});
+
+/***/ }),
+/* 260 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "phone-call-wrapper" } }, [
+      _c("div", { staticClass: "call-to-action" }, [
+        _vm._v("\n        Call Us\n    ")
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "phone-call" } }, [
+        _c("div", { staticClass: "mobile" }, [
+          _c("i", { staticClass: "fas fa-phone" }),
+          _vm._v(" (+248) 42 32 113\n        ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "center" }, [
+          _c("i", { staticClass: "fas fa-mobile" }),
+          _vm._v("(+248) 26 33 000\n        ")
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-78c91134", module.exports)
+  }
+}
+
+/***/ }),
+/* 261 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(262);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("39b96db2", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-78c91134\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./PhoneCall.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-78c91134\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./PhoneCall.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 262 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#phone-call-wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n#phone-call-wrapper .call-to-action {\n    font-size: 20px;\n    font-weight: 700;\n    text-transform: uppercase;\n    color: #fff;\n    padding-left: 2rem;\n}\n#phone-call-wrapper #phone-call {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    color: #fff;\n    padding-left: 1rem;\n}\n#phone-call-wrapper #phone-call > .mobile i, #phone-call-wrapper #phone-call > .center > i {\n      padding-right: 0.5rem;\n}\n", ""]);
+
+// exports
+
 
 /***/ })
 ],[64]);

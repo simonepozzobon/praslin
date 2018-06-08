@@ -36,6 +36,7 @@
             </div>
 
             <weather-info-lite />
+            <phone-call />
         </nav>
     </div>
 </template>
@@ -43,6 +44,7 @@
 <script>
 import burger from '../components/icons/burger.vue'
 import Logo from './Logo.vue'
+import PhoneCall from './PhoneCall.vue'
 import WeatherInfoLite from './WeatherInfoLite.vue'
 
 export default {
@@ -50,6 +52,7 @@ export default {
     components: {
         burger,
         Logo,
+        PhoneCall,
         WeatherInfoLite,
     },
 
