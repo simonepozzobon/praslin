@@ -48468,7 +48468,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#main-menu {\n  width: 100%;\n  background-color: #252525;\n  position: fixed;\n  z-index: 101;\n  top: 0;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  -webkit-box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n}\n@media (min-width: 768px) {\n#main-menu {\n      min-height: 75px;\n}\n}\n#main-menu > .navbar-brand {\n    position: relative;\n    min-width: 268px;\n}\n#main-menu > .navbar-brand > .navbar-brand-bg {\n      margin-top: 6px;\n      position: absolute;\n      left: -1rem;\n      top: 50%;\n      -webkit-transform: translateY(-50%);\n              transform: translateY(-50%);\n      min-width: 268px;\n      min-height: 89px;\n      -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n              box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n}\n#main-menu #navbarContent > .navbar-nav {\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    margin-left: 40px;\n    margin-right: 40px;\n    width: 100%;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding-right: 1rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n        display: inline-block;\n        color: #00AFB8;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n        text-transform: uppercase;\n        font-weight: 500;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:active, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:link, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:visited {\n          color: #fff;\n}\n@media (max-width: 991.98px) {\n#main-menu #navbarContent > .navbar-nav {\n        margin-top: 2rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n          padding-right: 1rem;\n}\n}\n#main-menu #weather-wrapper {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n#main-menu #weather-wrapper > .temperature {\n      color: #fff;\n      font-size: 36px;\n      font-weight: 700;\n}\n#main-menu #weather-wrapper > .icon {\n      padding-right: 1rem;\n}\n#main-menu #weather-wrapper > .icon > svg {\n        width: 36px;\n}\n", ""]);
+exports.push([module.i, "\n#main-menu {\n  width: 100%;\n  background-color: #252525;\n  position: fixed;\n  z-index: 101;\n  top: 0;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  -webkit-box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n}\n@media (min-width: 768px) {\n#main-menu {\n      min-height: 75px;\n}\n}\n#main-menu > .navbar-brand {\n    position: relative;\n    min-width: 268px;\n}\n#main-menu > .navbar-brand > .navbar-brand-bg {\n      padding-top: 6px;\n      padding-bottom: 12px;\n      position: absolute;\n      left: -1rem;\n      top: 50%;\n      -webkit-transform: translateY(-50%);\n              transform: translateY(-50%);\n      min-width: 268px;\n      min-height: 89px;\n      -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n              box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n}\n#main-menu #navbarContent > .navbar-nav {\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    margin-left: 40px;\n    margin-right: 40px;\n    width: 100%;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding-right: 1rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n        display: inline-block;\n        color: #00AFB8;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n        text-transform: uppercase;\n        font-weight: 500;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:active, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:link, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:visited {\n          color: #fff;\n}\n@media (max-width: 991.98px) {\n#main-menu #navbarContent > .navbar-nav {\n        margin-top: 2rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n          padding-right: 1rem;\n}\n}\n#main-menu #weather-wrapper {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#main-menu #weather-wrapper > .temperature {\n      color: #fff;\n      font-size: 36px;\n      font-weight: 700;\n}\n#main-menu #weather-wrapper > .icon {\n      padding-right: 1rem;\n}\n#main-menu #weather-wrapper > .icon > svg {\n        width: 36px;\n}\n", ""]);
 
 // exports
 
@@ -54700,7 +54700,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#phone-modal {\n  position: absolute;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  background-color: #FEFAF5;\n  z-index: 100;\n  -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n  display: none;\n  opacity: 0;\n}\n#phone-modal > .info {\n    padding: 2rem;\n}\n#phone-modal > .info > i {\n      padding-right: 1rem;\n}\n#phone-modal-start {\n  fill: #FEFAF5;\n}\n", ""]);
+exports.push([module.i, "\n#phone-modal-wrapper {\n  position: absolute;\n  width: 60%;\n  height: 60%;\n  min-width: 340px;\n  min-height: 420px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  z-index: 100;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  background-color: #FEFAF5;\n  -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n  display: none;\n  opacity: 0;\n}\n#phone-modal-wrapper > .title {\n    padding-top: 50px;\n    width: 100%;\n}\n#phone-modal-wrapper > .title > .phone-section-title {\n      left: 122px;\n      top: -40px;\n}\n#phone-modal-wrapper #phone-modal {\n    padding-top: 60px;\n}\n#phone-modal-wrapper #phone-modal > .info {\n      padding: 1rem 2rem;\n}\n#phone-modal-wrapper #phone-modal > .info > i {\n        padding-right: 1rem;\n}\n#phone-modal-wrapper #phone-modal > .custom-p .contact-label {\n      text-transform: uppercase;\n      font-size: 20px;\n      font-weight: 700;\n}\n#phone-modal-wrapper #phone-modal > .custom-p .contact-label.last {\n        padding-left: 1.5rem;\n}\n", ""]);
 
 // exports
 
@@ -54712,8 +54712,12 @@ exports.push([module.i, "\n#phone-modal {\n  position: absolute;\n  display: -we
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_EventBus__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_gsap__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_externals_MorphSVGPlugin__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_externals_MorphSVGPlugin__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_gsap__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_icons_Waves_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_icons_Waves_vue__);
 //
 //
 //
@@ -54734,6 +54738,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+
+
 
 
 
@@ -54741,6 +54752,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'PhoneModal',
+    components: {
+        SectionTitle: __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default.a,
+        Waves: __WEBPACK_IMPORTED_MODULE_4__components_icons_Waves_vue___default.a
+    },
     data: function data() {
         return {
             isOpen: false
@@ -54750,15 +54765,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         toggleModal: function toggleModal() {
             var _this = this;
 
-            __WEBPACK_IMPORTED_MODULE_2__js_externals_MorphSVGPlugin__["a" /* default */].convertToPath('#phone-modal-start');
-            __WEBPACK_IMPORTED_MODULE_2__js_externals_MorphSVGPlugin__["a" /* default */].convertToPath('#phone-modal');
             if (!this.isOpen) {
-                var t1 = new __WEBPACK_IMPORTED_MODULE_1_gsap__["a" /* TimelineMax */]();
-                t1.set('#phone-modal', {
-                    morphSVG: '#phone-modal-start'
-                }).to('#phone-modal', .4, {
-                    morphSVG: '#phone-modal'
-                }).to('#phone-modal', .2, {
+                var t1 = new __WEBPACK_IMPORTED_MODULE_3_gsap__["a" /* TimelineMax */]();
+                t1.fromTo('#phone-modal-wrapper', .2, {
+                    y: '-=500'
+                }, {
+                    y: '-50%',
                     opacity: 1,
                     display: 'flex',
                     onComplete: function onComplete() {
@@ -54766,10 +54778,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     }
                 });
             } else {
-                var t1 = new __WEBPACK_IMPORTED_MODULE_1_gsap__["a" /* TimelineMax */]();
-                t1.to('#phone-modal', .4, {
+                var t1 = new __WEBPACK_IMPORTED_MODULE_3_gsap__["a" /* TimelineMax */]();
+                t1.to('#phone-modal-wrapper', .4, {
                     opacity: 0,
                     display: 'none',
+                    y: '-=500',
                     onComplete: function onComplete() {
                         _this.isOpen = false;
                     }
@@ -54779,6 +54792,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     mounted: function mounted() {
         var _this2 = this;
+
+        this.toggleModal();
 
         __WEBPACK_IMPORTED_MODULE_0__js_EventBus__["a" /* default */].$on('toggle-phone-modal', function () {
             _this2.toggleModal();
@@ -54795,34 +54810,21 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "phone-modal-wrapper" } }, [
-    _vm._m(0),
+    _c(
+      "div",
+      { staticClass: "title" },
+      [
+        _c("waves", { staticClass: "waves-icon" }),
+        _vm._v(" "),
+        _c("section-title", {
+          staticClass: "phone-section-title",
+          attrs: { title: "Call Us", number: "05", position: "left" }
+        })
+      ],
+      1
+    ),
     _vm._v(" "),
-    _c("div", { attrs: { id: "phone-modal-shape" } }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            width: "32px",
-            height: "32px",
-            viewBox: "0 0 32 32",
-            version: "1.1",
-            xmlns: "http://www.w3.org/2000/svg",
-            "xmlns:xlink": "http://www.w3.org/1999/xlink"
-          }
-        },
-        [
-          _c("rect", {
-            attrs: {
-              id: "phone-modal-start",
-              x: "12",
-              y: "12",
-              width: "8",
-              height: "8"
-            }
-          })
-        ]
-      )
-    ])
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
@@ -54831,16 +54833,33 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "phone-modal" } }, [
-      _c("div", { staticClass: "info mobile" }, [
-        _c("i", { staticClass: "fas fa-mobile" }),
+      _c("p", { staticClass: "custom-p p-4" }, [
+        _c("span", { staticClass: "contact-label" }, [_vm._v("E-mail")]),
+        _c("br"),
         _vm._v(" "),
-        _c("span", [_vm._v("+248 26 33 000")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "info center" }, [
-        _c("i", { staticClass: "fas fa-phone" }),
+        _c("span", { staticClass: "contact-description" }, [
+          _c("a", { attrs: { href: "mailto:praslinprodivers@gmail.com" } }, [
+            _vm._v("praslinprodivers@gmail.com")
+          ])
+        ]),
+        _c("br"),
+        _c("br"),
         _vm._v(" "),
-        _c("span", [_vm._v("+248 42 32 113")])
+        _c("span", { staticClass: "contact-label" }, [_vm._v("Mobile")]),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "contact-description" }, [
+          _vm._v("\n                (+248) 26 33 000\n            ")
+        ]),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "contact-label" }, [_vm._v("Phone")]),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "contact-description" }, [
+          _vm._v("\n                (+248) 42 32 113\n            ")
+        ])
       ])
     ])
   }
@@ -63294,7 +63313,7 @@ var GoogleMapsOpts = {
 
 "use strict";
 /* unused harmony export MorphSVGPlugin */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MorphSVGPlugin; });
+/* unused harmony export default */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gsap_TweenLite_js__ = __webpack_require__(268);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 

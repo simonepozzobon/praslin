@@ -1,30 +1,41 @@
 <template lang="html">
     <div id="phone-modal-wrapper">
-        <div id="phone-modal">
-            <div class="info mobile">
-                <i class="fas fa-mobile"></i>
-                <span>+248 26 33 000</span>
-            </div>
-            <div class="info center">
-                <i class="fas fa-phone"></i>
-                <span>+248 42 32 113</span>
-            </div>
+        <div class="title">
+            <waves class="waves-icon"/>
+            <section-title title="Call Us" number="05" position="left" class="phone-section-title"/>
         </div>
-        <div id="phone-modal-shape">
-            <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect id="phone-modal-start" x="12" y="12" width="8" height="8"></rect>
-            </svg>
+        <div id="phone-modal">
+            <p class="custom-p p-4">
+                <span class="contact-label">E-mail</span><br>
+                <span class="contact-description">
+                <a href="mailto:praslinprodivers@gmail.com">praslinprodivers@gmail.com</a>
+                </span><br><br>
+                <span class="contact-label">Mobile</span><br>
+                <span class="contact-description">
+                    (+248) 26 33 000
+                </span><br><br>
+                <span class="contact-label">Phone</span><br>
+                <span class="contact-description">
+                    (+248) 42 32 113
+                </span>
+            </p>
         </div>
     </div>
 </template>
 
 <script>
 import EventBus from '~js/EventBus'
-import {TweenMax, TimelineMax} from 'gsap'
 import MorphSVG from '~js/externals/MorphSVGPlugin'
+import SectionTitle from '../components/SectionTitle.vue'
+import {TweenMax, TimelineMax} from 'gsap'
+import Waves from '../components/icons/Waves.vue'
 
 export default {
     name: 'PhoneModal',
+    components: {
+        SectionTitle,
+        Waves,
+    },
     data: function() {
         return {
             isOpen: false,
@@ -32,28 +43,24 @@ export default {
     },
     methods: {
         toggleModal: function() {
-            MorphSVG.convertToPath('#phone-modal-start')
-            MorphSVG.convertToPath('#phone-modal')
             if (!this.isOpen) {
                 var t1 = new TimelineMax()
-                t1.set('#phone-modal', {
-                    morphSVG: '#phone-modal-start'
+                t1.fromTo('#phone-modal-wrapper', .2, {
+                    y: '-=500',
+                }, {
+                    y: '-50%',
+                    opacity: 1,
+                    display: 'flex',
+                    onComplete: () => {
+                        this.isOpen = true
+                    }
                 })
-                    .to('#phone-modal', .4, {
-                        morphSVG: '#phone-modal',
-                    })
-                    .to('#phone-modal', .2, {
-                        opacity: 1,
-                        display: 'flex',
-                        onComplete: () => {
-                            this.isOpen = true
-                        }
-                    })
             } else {
                 var t1 = new TimelineMax()
-                t1.to('#phone-modal', .4, {
+                t1.to('#phone-modal-wrapper', .4, {
                     opacity: 0,
                     display: 'none',
+                    y: '-=500',
                     onComplete: () => {
                         this.isOpen = false
                     }
@@ -62,6 +69,8 @@ export default {
         },
     },
     mounted: function() {
+        this.toggleModal()
+
         EventBus.$on('toggle-phone-modal', () => {
             this.toggleModal()
         })
@@ -74,34 +83,62 @@ export default {
 @import '~styles/variables';
 @import '~styles/mixins';
 
-#phone-modal {
+#phone-modal-wrapper {
     position: absolute;
+    width: 60%;
+    height: 60%;
+    min-width: 340px;
+    min-height: 420px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // width: 100%;
-    // height: 100%;
+    z-index: 100;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: $sand;
-    z-index: 100;
     @include box-shadow(0 8px 32px 0 rgba(37, 37, 37, .15));
 
     display: none;
     opacity: 0;
 
-    > .info {
-        padding: $spacer * 2;
+    > .title {
+        padding-top: 50px;
+        width: 100%;
 
-        > i {
-            padding-right: $spacer;
+        > .phone-section-title {
+            left: 122px;
+            top: -40px;
+        }
+    }
+
+    #phone-modal {
+        padding-top: 60px;
+
+        > .info {
+            padding: $spacer ($spacer * 2);
+
+            > i {
+                padding-right: $spacer;
+            }
+        }
+
+        > .custom-p {
+            .contact-label {
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 700;
+
+                &.last {
+                    padding-left: 1.5rem;
+                }
+            }
         }
     }
 }
 
-#phone-modal-start {
-    fill: $sand;
-}
+
+//
+// #phone-modal-start {
+//     fill: $sand;
+// }
 </style>

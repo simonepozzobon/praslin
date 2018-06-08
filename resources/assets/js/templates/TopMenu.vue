@@ -87,7 +87,8 @@ $menu-color: $white;
         min-width: 268px;
 
         > .navbar-brand-bg {
-            margin-top: 6px;
+            padding-top: 6px;
+            padding-bottom: 12px;
             position: absolute;
             left: -$spacer;
             top: 50%;
@@ -139,12 +140,12 @@ $menu-color: $white;
 
     #weather-wrapper {
         display: flex;
+        align-items: center;
 
         > .temperature {
             color: $menu-color;
             font-size: 36px;
             font-weight: 700;
-            // padding-bottom: 8px;
         }
 
         > .icon {
