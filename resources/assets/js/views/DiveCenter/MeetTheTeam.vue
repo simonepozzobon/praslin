@@ -8,6 +8,9 @@
             <div class="col-12">
                 <div class="row team-mates">
                     <div class="col-md-6">
+                        <div class="team-pic">
+                            <img src="/images/jp-circle.jpg" class="img-fluid"/>
+                        </div>
                         <div class="d-flex justify-content-center">
                             <scuba />
                         </div>
@@ -31,6 +34,9 @@
                         </div>
                     </div>
                     <div class="col-md-6">
+                        <div class="team-pic">
+                            <img src="/images/guest-circle.jpg" class="img-fluid"/>
+                        </div>
                         <div class="d-flex justify-content-center">
                             <sailor align="center"/>
                         </div>

@@ -45786,6 +45786,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -46209,6 +46215,8 @@ var render = function() {
         _c("div", { staticClass: "col-12" }, [
           _c("div", { staticClass: "row team-mates" }, [
             _c("div", { staticClass: "col-md-6" }, [
+              _vm._m(0),
+              _vm._v(" "),
               _c(
                 "div",
                 { staticClass: "d-flex justify-content-center" },
@@ -46228,10 +46236,12 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm._m(0)
+              _vm._m(1)
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-md-6" }, [
+              _vm._m(2),
+              _vm._v(" "),
               _c(
                 "div",
                 { staticClass: "d-flex justify-content-center" },
@@ -46251,7 +46261,7 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm._m(1)
+              _vm._m(3)
             ])
           ])
         ])
@@ -46264,12 +46274,34 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "team-pic" }, [
+      _c("img", {
+        staticClass: "img-fluid",
+        attrs: { src: "/images/jp-circle.jpg" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "description" }, [
       _c("p", [
         _vm._v(
           "\n                            A pralinois with extensive experiences and\n                            knowledge of the Indian ocean. Passionated by\n                            the ocean his been in the diving industry for\n                            over 15 years, taught and certified more than\n                            300 divers with over 4000 logged dives to date.\n                            He is ready to take you  for a dive tour,\n                            knowing the dive sites as the back of his hands\n                            you are sure to be in safe hands.\n                        "
         )
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "team-pic" }, [
+      _c("img", {
+        staticClass: "img-fluid",
+        attrs: { src: "/images/guest-circle.jpg" }
+      })
     ])
   },
   function() {
@@ -48797,17 +48829,19 @@ exports.push([module.i, "\n#main-menu {\n  width: 100%;\n  background-color: #25
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Logo_vue__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Logo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Logo_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue__ = __webpack_require__(292);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_gsap__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__WeatherInfoLite_vue__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__WeatherInfoLite_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_BookNow_vue__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_BookNow_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_BookNow_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_burger_vue__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_icons_burger_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_icons_burger_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Logo_vue__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Logo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Logo_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_NavItem_vue__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_NavItem_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_NavItem_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_PhoneCall_vue__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_PhoneCall_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_gsap__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__WeatherInfoLite_vue__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__WeatherInfoLite_vue__);
 //
 //
 //
@@ -48836,6 +48870,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -48847,11 +48883,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'TopMenu',
     components: {
-        burger: __WEBPACK_IMPORTED_MODULE_0__components_icons_burger_vue___default.a,
-        Logo: __WEBPACK_IMPORTED_MODULE_1__Logo_vue___default.a,
-        NavItem: __WEBPACK_IMPORTED_MODULE_2__components_NavItem_vue___default.a,
-        PhoneCall: __WEBPACK_IMPORTED_MODULE_3__components_PhoneCall_vue___default.a,
-        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_5__WeatherInfoLite_vue___default.a
+        BookNow: __WEBPACK_IMPORTED_MODULE_0__components_BookNow_vue___default.a,
+        burger: __WEBPACK_IMPORTED_MODULE_1__components_icons_burger_vue___default.a,
+        Logo: __WEBPACK_IMPORTED_MODULE_2__Logo_vue___default.a,
+        NavItem: __WEBPACK_IMPORTED_MODULE_3__components_NavItem_vue___default.a,
+        PhoneCall: __WEBPACK_IMPORTED_MODULE_4__components_PhoneCall_vue___default.a,
+        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_6__WeatherInfoLite_vue___default.a
     },
     data: function data() {
         return {
@@ -48860,7 +48897,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     methods: {
         animate: function animate() {
-            var t1 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            var t1 = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
             var elements = document.getElementsByClassName('nav-item');
 
             t1.staggerFrom(elements, .8, {
@@ -48869,21 +48906,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 ease: Back.easeInOut
             }, .1, '+=0');
 
-            var t2 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            var t2 = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
             t2.from('#weather-wrapper', .8, {
                 y: -16,
                 opacity: 0,
                 ease: Back.easeInOut
             });
 
-            var t3 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            var t3 = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
             t3.from('#phone-call-wrapper', .8, {
                 y: -16,
                 opacity: 0,
                 ease: Back.easeInOut
             });
 
-            var master = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            var master = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
             master.add(t1, 0.1);
             master.add(t2, 0.7);
             master.add(t3, 0.8);
@@ -54303,7 +54340,7 @@ var render = function() {
                 }),
                 _vm._v(" "),
                 _c("nav-item", {
-                  attrs: { number: "04", link: "/island", text: "Island" }
+                  attrs: { number: "04", link: "/island", text: "Info" }
                 }),
                 _vm._v(" "),
                 _c("nav-item", {
@@ -54317,7 +54354,9 @@ var render = function() {
         _vm._v(" "),
         _c("weather-info-lite"),
         _vm._v(" "),
-        _c("phone-call")
+        _c("phone-call"),
+        _vm._v(" "),
+        _c("book-now")
       ],
       1
     )
@@ -69480,6 +69519,159 @@ exports.push([module.i, "\n#image-single .close-btn {\n  position: absolute;\n  
 
 // exports
 
+
+/***/ }),
+/* 306 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(307)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(309)
+/* template */
+var __vue_template__ = __webpack_require__(310)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/BookNow.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-788d3e74", Component.options)
+  } else {
+    hotAPI.reload("data-v-788d3e74", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 307 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(308);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("d22c91a4", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-788d3e74\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./BookNow.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-788d3e74\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./BookNow.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 308 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#phone-call-wrapper {\n  padding-left: 2rem;\n}\n#phone-call-wrapper .btn {\n    background-color: transparent;\n    border: 2px solid #fff;\n    color: #fff;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n#phone-call-wrapper .btn > i {\n      padding-right: 0.5rem;\n}\n#phone-call-wrapper .btn:hover {\n      background-color: #fff;\n      color: #252525;\n      -webkit-transition: all .4s ease-in-out;\n      transition: all .4s ease-in-out;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 309 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_EventBus__ = __webpack_require__(250);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'PhoneCall',
+    methods: {
+        openModal: function openModal() {
+            __WEBPACK_IMPORTED_MODULE_0__js_EventBus__["a" /* default */].$emit('toggle-phone-modal');
+        }
+    }
+});
+
+/***/ }),
+/* 310 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "phone-call-wrapper" } }, [
+    _c("div", { staticClass: "call-to-action" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-white text-uppercase",
+          on: { click: _vm.openModal }
+        },
+        [
+          _c("i", { staticClass: "fas fa-phone" }),
+          _vm._v(" Book Now\n        ")
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-788d3e74", module.exports)
+  }
+}
 
 /***/ })
 ],[64]);
