@@ -47062,7 +47062,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(156)
+  __webpack_require__(297)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
@@ -47107,57 +47107,40 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 156 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(157);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(1)("339830ba", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c5e969e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GalleryItem.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c5e969e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GalleryItem.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 157 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 156 */,
+/* 157 */,
 /* 158 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gsap__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_externals_MorphSVGPlugin__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_externals_GSDevTools__ = __webpack_require__(284);
 //
 //
 //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'GalleryItem',
@@ -47166,7 +47149,60 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             type: String,
             default: 'none'
         }
-    }
+    },
+    data: function data() {
+        return {
+            isAnimating: false
+        };
+    },
+    methods: {
+        animate: function animate() {
+            var _this = this;
+
+            if (!this.isAnimating) {
+                var el = this.$refs.start;
+                this.isAnimating = true;
+                var t1 = new __WEBPACK_IMPORTED_MODULE_0_gsap__["a" /* TimelineMax */]();
+                el.style.visibility = 'visible';
+                t1.to(el, .1, {
+                    morphSVG: '#step-1',
+                    ease: Power0.easeNone
+                }).to(el, .1, {
+                    morphSVG: '#step-2',
+                    ease: Power0.easeNone
+                }).to(el, .2, {
+                    morphSVG: '#end',
+                    ease: Back.easeOut,
+                    onComplete: function onComplete() {
+                        _this.isAnimating = false;
+                    }
+                });
+
+                var t2 = new __WEBPACK_IMPORTED_MODULE_0_gsap__["a" /* TimelineMax */]();
+                t2.set(el, {
+                    opacity: .8
+                });
+                t2.from(el, .2, {
+                    opacity: 0,
+                    y: -150,
+                    ease: Back.easeIn
+                });
+
+                var master = new __WEBPACK_IMPORTED_MODULE_0_gsap__["a" /* TimelineMax */]();
+                master.add(t1, 0.1);
+                master.add(t2, 0.1);
+                master.play();
+            }
+        },
+        fadeOut: function fadeOut() {
+            var t1 = new __WEBPACK_IMPORTED_MODULE_0_gsap__["a" /* TimelineMax */]();
+            t1.to(this.$refs.start, .4, {
+                opacity: 0,
+                ease: Power1.easeInOut
+            });
+        }
+    },
+    mounted: function mounted() {}
 });
 
 /***/ }),
@@ -47177,9 +47213,100 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "col-md-4 pb-4" }, [
-    _c("img", { staticClass: "img-fluid w-100", attrs: { src: _vm.image } })
-  ])
+  return _c(
+    "div",
+    {
+      staticClass: "gallery-item col-md-4 pb-4",
+      on: { mouseenter: _vm.animate, mouseleave: _vm.fadeOut }
+    },
+    [
+      _c("img", { staticClass: "img-fluid w-100", attrs: { src: _vm.image } }),
+      _vm._v(" "),
+      _c("div", { staticClass: "overlay" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              width: "350px",
+              height: "350px",
+              viewBox: "0 0 350 350",
+              version: "1.1",
+              xmlns: "http://www.w3.org/2000/svg",
+              "xmlns:xlink": "http://www.w3.org/1999/xlink"
+            }
+          },
+          [
+            _c(
+              "g",
+              {
+                attrs: {
+                  stroke: "none",
+                  "stroke-width": "1",
+                  fill: "none",
+                  "fill-rule": "evenodd"
+                }
+              },
+              [
+                _c("g", { staticClass: "water-gallery" }, [
+                  _c(
+                    "g",
+                    {
+                      attrs: {
+                        id: "Group",
+                        transform: "translate(141.000000, 113.000000)"
+                      }
+                    },
+                    [
+                      _c("circle", {
+                        ref: "end",
+                        attrs: {
+                          id: "end",
+                          cx: "33",
+                          cy: "62",
+                          r: "32",
+                          visibility: "hidden"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        ref: "step2",
+                        attrs: {
+                          d:
+                            "M34,94 C51.673112,94 66,89.673112 66,72 C66,60.2179253 55.3333333,39.5512587 34,10 C12.6666667,39.5512587 2,60.2179253 2,72 C2,89.673112 16.326888,94 34,94 Z",
+                          id: "step-2",
+                          visibility: "hidden"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        ref: "step1",
+                        attrs: {
+                          d:
+                            "M35,94.3984375 C52.673112,94.3984375 68,93.673112 68,76 C68,64.2179253 56.6666667,50.2179253 34,34 C11.3333333,50.2179253 0,64.2179253 0,76 C0,93.673112 17.326888,94.3984375 35,94.3984375 Z",
+                          id: "step-1",
+                          visibility: "hidden"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("path", {
+                        ref: "start",
+                        attrs: {
+                          d:
+                            "M34,94 C51.673112,94 66,79.673112 66,62 C66,50.2179253 55.3333333,29.5512587 34,0 C12.6666667,29.5512587 2,50.2179253 2,62 C2,79.673112 16.326888,94 34,94 Z",
+                          id: "start",
+                          visibility: "hidden"
+                        }
+                      })
+                    ]
+                  )
+                ])
+              ]
+            )
+          ]
+        )
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -69122,6 +69249,46 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-7c4fa276", module.exports)
   }
 }
+
+/***/ }),
+/* 297 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(298);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("3aebb17e", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c5e969e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GalleryItem.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0c5e969e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GalleryItem.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 298 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.gallery-item {\n  position: relative;\n}\n.gallery-item > .overlay {\n    position: absolute;\n    top: 0;\n}\n.gallery-item > .overlay .water-gallery {\n      fill: #E5F7F7;\n}\n", ""]);
+
+// exports
+
 
 /***/ })
 ],[64]);
