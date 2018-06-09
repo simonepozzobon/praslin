@@ -107,7 +107,7 @@
                             <tr>
                                 <td>Dive Master</td>
                                 <td>TC</td>
-                                <td>800,00 €</td>
+                                <td>1000,00 €</td>
                             </tr>
                         </tbody>
                     </table>
