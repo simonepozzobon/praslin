@@ -56,6 +56,25 @@ export default {
         }
     },
     methods: {
+        closeSeleted: function() {
+            if(this.isAnimating) return
+            this.isAnimating = true
+            var t1 = new TimelineMax()
+            t1.to('#image-open-wrapper', .4, {
+                opacity: 0,
+                display: 'none',
+                ease: Power4.easeOut
+            })
+                .to('#gallery-wrapper', .4, {
+                    opacity: 1,
+                    display: 'flex',
+                    ease: Power4.easeOut,
+                    onComplete: () => {
+                        this.isAnimating = false
+                        this.isOpen = false
+                    }
+                })
+        },
         getImages: function() {
             axios.get('/api/images').then(response => {
                 this.images = response.data
@@ -110,6 +129,10 @@ export default {
         this.getImages()
         EventBus.$on('image-selected', id => {
             this.hideGallery(id)
+        })
+
+        EventBus.$on('close-gallery', () => {
+            this.closeSeleted()
         })
     }
 }

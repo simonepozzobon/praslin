@@ -47067,15 +47067,35 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
     methods: {
-        getImages: function getImages() {
+        closeSeleted: function closeSeleted() {
             var _this = this;
 
+            if (this.isAnimating) return;
+            this.isAnimating = true;
+            var t1 = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
+            t1.to('#image-open-wrapper', .4, {
+                opacity: 0,
+                display: 'none',
+                ease: Power4.easeOut
+            }).to('#gallery-wrapper', .4, {
+                opacity: 1,
+                display: 'flex',
+                ease: Power4.easeOut,
+                onComplete: function onComplete() {
+                    _this.isAnimating = false;
+                    _this.isOpen = false;
+                }
+            });
+        },
+        getImages: function getImages() {
+            var _this2 = this;
+
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/api/images').then(function (response) {
-                _this.images = response.data;
+                _this2.images = response.data;
             });
         },
         hideGallery: function hideGallery(id) {
-            var _this2 = this;
+            var _this3 = this;
 
             if (this.isAnimating) return;
             var elementsHTML = document.getElementsByClassName('gallery-item');
@@ -47111,18 +47131,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 opacity: 1,
                 ease: Power4.easeOut,
                 onComplete: function onComplete() {
-                    _this2.isAnimating = false;
-                    _this2.isOpen = true;
+                    _this3.isAnimating = false;
+                    _this3.isOpen = true;
                 }
             });
         }
     },
     mounted: function mounted() {
-        var _this3 = this;
+        var _this4 = this;
 
         this.getImages();
         __WEBPACK_IMPORTED_MODULE_1__js_EventBus__["a" /* default */].$on('image-selected', function (id) {
-            _this3.hideGallery(id);
+            _this4.hideGallery(id);
+        });
+
+        __WEBPACK_IMPORTED_MODULE_1__js_EventBus__["a" /* default */].$on('close-gallery', function () {
+            _this4.closeSeleted();
         });
     }
 });
@@ -69307,7 +69331,7 @@ exports.push([module.i, "\n.gallery-item {\n  cursor: pointer;\n  -webkit-transi
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(300)
+  __webpack_require__(304)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
@@ -69352,57 +69376,25 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 300 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(301);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(1)("cd96fbc6", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c46e0026\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GallerySelectedImg.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c46e0026\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GallerySelectedImg.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 301 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 300 */,
+/* 301 */,
 /* 302 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_EventBus__ = __webpack_require__(250);
 //
 //
 //
 //
 //
 //
+//
+//
+//
+
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'GallerySelectedImg',
@@ -69410,6 +69402,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         src: {
             type: String,
             default: ''
+        }
+    },
+    methods: {
+        closeGallery: function closeGallery() {
+            __WEBPACK_IMPORTED_MODULE_0__js_EventBus__["a" /* default */].$emit('close-gallery');
         }
     }
 });
@@ -69422,9 +69419,17 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "col-12 pb-4" }, [
-    _c("img", { staticClass: "img-fluid w-100", attrs: { src: _vm.src } })
-  ])
+  return _c(
+    "div",
+    { staticClass: "col-12 pb-4", attrs: { id: "image-single" } },
+    [
+      _c("div", { staticClass: "close-btn", on: { click: _vm.closeGallery } }, [
+        _c("i", { staticClass: "fas fa-times" })
+      ]),
+      _vm._v(" "),
+      _c("img", { staticClass: "img-fluid w-100", attrs: { src: _vm.src } })
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -69435,6 +69440,46 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-c46e0026", module.exports)
   }
 }
+
+/***/ }),
+/* 304 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(305);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("e872a170", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c46e0026\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GallerySelectedImg.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c46e0026\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./GallerySelectedImg.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 305 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#image-single .close-btn {\n  position: absolute;\n  top: 40px;\n  right: 56px;\n}\n#image-single .close-btn::before {\n    content: '';\n    position: absolute;\n    width: 54px;\n    height: 54px;\n    border-radius: 50%;\n    left: 50%;\n    top: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    background-color: #FEFAF5;\n    z-index: 1;\n    cursor: pointer;\n    -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n            box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n}\n#image-single .close-btn > i {\n    position: absolute;\n    font-size: 36px;\n    z-index: 2;\n    left: 50%;\n    top: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    cursor: pointer;\n    color: #252525;\n}\n", ""]);
+
+// exports
+
 
 /***/ })
 ],[64]);
