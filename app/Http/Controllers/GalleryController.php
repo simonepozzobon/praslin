@@ -41,9 +41,10 @@ class GalleryController extends Controller
 
         $images = $images->transform(function($img, $key) {
             $img->thumb = Storage::disk('local')->url($img->thumb);
+            $img->landscape = Storage::disk('local')->url($img->landscape);
             return $img;
         });
-        
+
         return $images;
     }
 }
