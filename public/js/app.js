@@ -48399,15 +48399,18 @@ exports.push([module.i, "\n#main-template {\n  padding-top: 75px;\n  min-height:
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FooterTemplate_vue__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FooterTemplate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FooterTemplate_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PhoneModal_vue__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PhoneModal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__PhoneModal_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TopMenu_vue__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TopMenu_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__TopMenu_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_EventBus__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_EventBus__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FooterTemplate_vue__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FooterTemplate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__FooterTemplate_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PhoneModal_vue__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PhoneModal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__PhoneModal_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__TopMenu_vue__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__TopMenu_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__TopMenu_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_gsap__ = __webpack_require__(277);
+//
+//
 //
 //
 //
@@ -48428,23 +48431,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'MainTemplate',
     components: {
-        FooterTemplate: __WEBPACK_IMPORTED_MODULE_0__FooterTemplate_vue___default.a,
-        PhoneModal: __WEBPACK_IMPORTED_MODULE_1__PhoneModal_vue___default.a,
-        TopMenu: __WEBPACK_IMPORTED_MODULE_2__TopMenu_vue___default.a
+        FooterTemplate: __WEBPACK_IMPORTED_MODULE_2__FooterTemplate_vue___default.a,
+        PhoneModal: __WEBPACK_IMPORTED_MODULE_3__PhoneModal_vue___default.a,
+        TopMenu: __WEBPACK_IMPORTED_MODULE_4__TopMenu_vue___default.a
+    },
+    methods: {
+        enter: function enter(el, done) {
+            __WEBPACK_IMPORTED_MODULE_5_gsap__["b" /* TweenMax */].fromTo(el, .4, {
+                opacity: 0
+            }, {
+                opacity: 1,
+                onComplete: done
+            });
+        },
+        leave: function leave(el, done) {
+            __WEBPACK_IMPORTED_MODULE_5_gsap__["b" /* TweenMax */].fromTo(el, .4, {
+                opacity: 1
+            }, {
+                opacity: 0,
+                onComplete: done
+            });
+        }
     },
     mounted: function mounted() {
         var size = {
             width: window.innerWidth,
             height: window.innerHeight
         };
-        __WEBPACK_IMPORTED_MODULE_4__js_EventBus__["a" /* default */].$emit('window-resized', size);
+        __WEBPACK_IMPORTED_MODULE_1__js_EventBus__["a" /* default */].$emit('window-resized', size);
 
-        window.addEventListener('resize', __WEBPACK_IMPORTED_MODULE_3_lodash___default.a.debounce(function () {
+        window.addEventListener('resize', __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.debounce(function () {
             var size = {
                 width: window.innerWidth,
                 height: window.innerHeight
             };
-            __WEBPACK_IMPORTED_MODULE_4__js_EventBus__["a" /* default */].$emit('window-resized', size);
+            __WEBPACK_IMPORTED_MODULE_1__js_EventBus__["a" /* default */].$emit('window-resized', size);
         }, 100));
     }
 });
@@ -54288,7 +54309,12 @@ var render = function() {
       _vm._v(" "),
       _c("phone-modal"),
       _vm._v(" "),
-      _c("router-view"),
+      _c(
+        "transition",
+        { attrs: { css: false }, on: { enter: _vm.enter, leave: _vm.leave } },
+        [_c("router-view")],
+        1
+      ),
       _vm._v(" "),
       _c("footer-template")
     ],
@@ -62472,7 +62498,7 @@ const ExpoScaleEase = __WEBPACK_IMPORTED_MODULE_0__TweenLite__["g" /* _gsScope *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__EasePack__ = __webpack_require__(276);
 /* unused harmony reexport default */
 /* unused harmony reexport TweenLite */
-/* unused harmony reexport TweenMax */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__TweenMax__["a"]; });
 /* unused harmony reexport TimelineLite */
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__TimelineMax__["a"]; });
 /* unused harmony reexport CSSPlugin */
@@ -62561,7 +62587,7 @@ module.exports = function(originalModule) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export default */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TweenMax; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__TweenLite__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TweenMaxBase__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CSSPlugin__ = __webpack_require__(271);

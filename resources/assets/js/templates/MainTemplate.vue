@@ -2,18 +2,20 @@
     <div id="main-template">
         <top-menu></top-menu>
         <phone-modal></phone-modal>
-        <router-view></router-view>
+        <transition :css="false" @enter="enter" @leave="leave">
+            <router-view></router-view>
+        </transition>
         <footer-template></footer-template>
     </div>
 </template>
 
 <script>
+import _ from 'lodash'
+import EventBus from '~js/EventBus'
 import FooterTemplate from './FooterTemplate.vue'
 import PhoneModal from './PhoneModal.vue'
 import TopMenu from './TopMenu.vue'
-
-import _ from 'lodash'
-import EventBus from '~js/EventBus'
+import {TweenMax, TimelineMax} from 'gsap'
 
 export default {
     name: 'MainTemplate',
@@ -21,6 +23,24 @@ export default {
         FooterTemplate,
         PhoneModal,
         TopMenu,
+    },
+    methods: {
+        enter: function(el, done) {
+            TweenMax.fromTo(el, .4, {
+                opacity: 0,
+            }, {
+                opacity: 1,
+                onComplete: done
+            })
+        },
+        leave: function(el, done) {
+            TweenMax.fromTo(el, .4, {
+                opacity: 1,
+            }, {
+                opacity: 0,
+                onComplete: done
+            })
+        },
     },
     mounted: function() {
         var size = {
