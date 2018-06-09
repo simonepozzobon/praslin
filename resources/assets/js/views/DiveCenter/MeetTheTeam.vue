@@ -24,10 +24,10 @@
                             <p>
                                 A pralinois with extensive experiences and
                                 knowledge of the Indian ocean. Passionated by
-                                the ocean his been in the diving industry for
-                                over 15 years, taught and certified more than
+                                the ocean he has been in the diving industry for
+                                over 20 years, taught and certified more than
                                 300 divers with over 4000 logged dives to date.
-                                He is ready to take you  for a dive tour,
+                                He is ready to take you for a dive tour,
                                 knowing the dive sites as the back of his hands
                                 you are sure to be in safe hands.
                             </p>
@@ -50,10 +50,10 @@
                             <p>
                                 A pralinois with extensive experiences and
                                 knowledge of the Indian ocean. Passionated by
-                                the ocean his been in the diving industry for
-                                over 15 years, taught and certified more than
+                                the ocean he has been in the diving industry for
+                                over 20 years, taught and certified more than
                                 300 divers with over 4000 logged dives to date.
-                                He is ready to take you  for a dive tour,
+                                He is ready to take you for a dive tour,
                                 knowing the dive sites as the back of his hands
                                 you are sure to be in safe hands.
                             </p>

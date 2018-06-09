@@ -46288,7 +46288,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "description" }, [
       _c("p", [
         _vm._v(
-          "\n                            A pralinois with extensive experiences and\n                            knowledge of the Indian ocean. Passionated by\n                            the ocean his been in the diving industry for\n                            over 15 years, taught and certified more than\n                            300 divers with over 4000 logged dives to date.\n                            He is ready to take you  for a dive tour,\n                            knowing the dive sites as the back of his hands\n                            you are sure to be in safe hands.\n                        "
+          "\n                            A pralinois with extensive experiences and\n                            knowledge of the Indian ocean. Passionated by\n                            the ocean he has been in the diving industry for\n                            over 20 years, taught and certified more than\n                            300 divers with over 4000 logged dives to date.\n                            He is ready to take you for a dive tour,\n                            knowing the dive sites as the back of his hands\n                            you are sure to be in safe hands.\n                        "
         )
       ])
     ])
@@ -46311,7 +46311,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "description" }, [
       _c("p", [
         _vm._v(
-          "\n                            A pralinois with extensive experiences and\n                            knowledge of the Indian ocean. Passionated by\n                            the ocean his been in the diving industry for\n                            over 15 years, taught and certified more than\n                            300 divers with over 4000 logged dives to date.\n                            He is ready to take you  for a dive tour,\n                            knowing the dive sites as the back of his hands\n                            you are sure to be in safe hands.\n                        "
+          "\n                            A pralinois with extensive experiences and\n                            knowledge of the Indian ocean. Passionated by\n                            the ocean he has been in the diving industry for\n                            over 20 years, taught and certified more than\n                            300 divers with over 4000 logged dives to date.\n                            He is ready to take you for a dive tour,\n                            knowing the dive sites as the back of his hands\n                            you are sure to be in safe hands.\n                        "
         )
       ])
     ])
