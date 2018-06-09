@@ -41,7 +41,7 @@
                             <sailor align="center"/>
                         </div>
                         <div class="team-name">
-                            César Gabriel
+                            Ted Charles
                         </div>
                         <div class="team-role">
                             Skipper & Dive Master
