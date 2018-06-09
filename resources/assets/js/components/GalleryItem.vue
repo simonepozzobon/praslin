@@ -1,5 +1,5 @@
 <template lang="html">
-    <div :id="'image-'+id" class="gallery-item pb-4" :class="size" @click="selected">
+    <div :id="'image-'+id" class="pb-4" :class="size + ' ' + itemClass" @click="selected">
         <img :src="src" class="img-fluid w-100"/>
     </div>
 </template>
@@ -17,6 +17,10 @@ export default {
         image: {
             type: String,
             default: 'none',
+        },
+        itemClass: {
+            type: String,
+            default: 'gallery-item'
         },
         size: {
             type: String,

@@ -46986,7 +46986,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#galleries {\n  padding-top: 132px;\n}\n#galleries .waves-icon {\n    position: relative;\n    top: 70px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n", ""]);
+exports.push([module.i, "\n#galleries {\n  padding-top: 132px;\n}\n#galleries .waves-icon {\n    position: relative;\n    top: 70px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n#galleries #image-open-wrapper {\n    display: none;\n    opacity: 0;\n}\n", ""]);
 
 // exports
 
@@ -47039,6 +47039,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -47047,8 +47049,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-var ANIMATION = true;
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'Index',
@@ -47061,6 +47061,8 @@ var ANIMATION = true;
     data: function data() {
         return {
             images: [],
+            isAnimating: false,
+            isOpen: false,
             selectedImg: {}
         };
     },
@@ -47073,6 +47075,9 @@ var ANIMATION = true;
             });
         },
         hideGallery: function hideGallery(id) {
+            var _this2 = this;
+
+            if (this.isAnimating) return;
             var elementsHTML = document.getElementsByClassName('gallery-item');
             var elements = Array.from(elementsHTML);
 
@@ -47087,27 +47092,37 @@ var ANIMATION = true;
                     id: id,
                     src: this.images[index].landscape
                 };
-                this.cloneImg();
-                // elements.splice(index, 1)
             }
 
-            // nasconde le altre
+            if (this.isOpen) return;
+            this.isAnimating = true;
             var t1 = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
-            t1.staggerTo(elements, .8, {
+            t1.set('#image-open-wrapper', {
                 opacity: 0,
+                display: 'flex',
+                position: 'absolute'
+            }).to('#gallery-wrapper', .4, {
+                opacity: 0,
+                display: 'none',
                 ease: Power4.easeOut
-            }, .2, '+=0').set(elements, {
-                display: 'none'
+            }).set('#image-open-wrapper', {
+                position: 'inherit'
+            }).to('#image-open-wrapper', .4, {
+                opacity: 1,
+                ease: Power4.easeOut,
+                onComplete: function onComplete() {
+                    _this2.isAnimating = false;
+                    _this2.isOpen = true;
+                }
             });
-        },
-        cloneImg: function cloneImg() {}
+        }
     },
     mounted: function mounted() {
-        var _this2 = this;
+        var _this3 = this;
 
         this.getImages();
         __WEBPACK_IMPORTED_MODULE_1__js_EventBus__["a" /* default */].$on('image-selected', function (id) {
-            _this2.hideGallery(id);
+            _this3.hideGallery(id);
         });
     }
 });
@@ -47192,6 +47207,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             type: String,
             default: 'none'
         },
+        itemClass: {
+            type: String,
+            default: 'gallery-item'
+        },
         size: {
             type: String,
             default: 'col-md-4'
@@ -47233,8 +47252,8 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "gallery-item pb-4",
-      class: _vm.size,
+      staticClass: "pb-4",
+      class: _vm.size + " " + _vm.itemClass,
       attrs: { id: "image-" + _vm.id },
       on: { click: _vm.selected }
     },
@@ -47278,18 +47297,27 @@ var render = function() {
         _c("div", { staticClass: "col-12 pt-5" }, [
           _c(
             "div",
-            { staticClass: "row" },
+            { staticClass: "row", attrs: { id: "gallery-wrapper" } },
             _vm._l(_vm.images, function(image) {
               return _c("gallery-item", {
                 key: image.id,
-                attrs: { image: image.thumb, id: image.id, size: "col-md-4" }
+                attrs: {
+                  image: image.thumb,
+                  id: image.id,
+                  itemClass: "gallery-item",
+                  size: "col-md-4"
+                }
               })
             })
           ),
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "row", attrs: { id: "image-open-wrapper" } },
+            {
+              ref: "imageSelected",
+              staticClass: "row",
+              attrs: { id: "image-open-wrapper" }
+            },
             [
               _c("gallery-selected-img", {
                 attrs: { src: this.selectedImg.src }
@@ -47298,7 +47326,12 @@ var render = function() {
               _vm._l(_vm.images, function(image) {
                 return _c("gallery-item", {
                   key: image.id,
-                  attrs: { image: image.thumb, id: image.id, size: "col-md-1" }
+                  attrs: {
+                    image: image.thumb,
+                    id: image.id,
+                    itemClass: "gallery-small-item",
+                    size: "col-md-1 pb-4"
+                  }
                 })
               })
             ],
@@ -69389,7 +69422,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "col-12" }, [
+  return _c("div", { staticClass: "col-12 pb-4" }, [
     _c("img", { staticClass: "img-fluid w-100", attrs: { src: _vm.src } })
   ])
 }
