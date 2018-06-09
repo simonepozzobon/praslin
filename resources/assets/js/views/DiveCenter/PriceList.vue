@@ -189,12 +189,14 @@ export default {
     .price-list-title {
         top: 72px;
         right: 121px;
+        z-index: 2;
     }
 
     .waves-icon {
         position: absolute;
         top: 32px;
         right: 15px;
+        z-index: 2;
     }
 
     .price-content {
