@@ -1,7 +1,7 @@
 <template lang="html">
     <div id="phone-call-wrapper">
         <div class="call-to-action">
-            <button class="btn btn-white text-uppercase" @click="openModal">
+            <button class="btn btn-sm btn-white text-uppercase" @click="openModal">
                 <i class="fas fa-phone"></i> Call Us
             </button>
         </div>

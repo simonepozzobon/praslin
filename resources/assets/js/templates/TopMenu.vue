@@ -114,7 +114,8 @@ $menu-color: $white;
 
     > .navbar-brand {
         position: relative;
-        min-width: 268px;
+        min-width: 128px;
+        max-width: 170px;
 
         > .navbar-brand-bg {
             // padding-top: 6px;
@@ -124,10 +125,16 @@ $menu-color: $white;
             left: -$spacer;
             // top: 50%;
             // transform: translateY(-50%);
-            min-width: 268px;
+            min-width: 128px;
             // min-height: 89px;
             background-color: $menu-bg;
             @include box-shadow(0 8px 32px 0 rgba(37, 37, 37, .15));
+
+            .logo {
+                > svg {
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -152,6 +159,7 @@ $menu-color: $white;
                 > .nav-link {
                     text-transform: uppercase;
                     font-weight: 500;
+                    font-size: 14px;
 
                     &:active, &:link, &:visited {
                         color: $menu-color;
@@ -182,7 +190,7 @@ $menu-color: $white;
 
         > .temperature {
             color: $menu-color;
-            font-size: 36px;
+            font-size: 20px;
             font-weight: 700;
         }
 
