@@ -35840,7 +35840,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#main-slider {\n  position: relative;\n  top: 0;\n}\n.swiper-container {\n  width: 100%;\n  height: 100%;\n}\n.slide {\n  height: 100%;\n  min-height: calc(100vh - 90px);\n  max-height: 100vh;\n  background-position: center;\n  background-size: cover;\n  overflow: hidden;\n}\n.main-slider-slogan {\n  position: absolute;\n  top: 35%;\n  left: 50%;\n  width: 60%;\n  height: 100%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n@media (max-width: 991.98px) {\n.main-slider-slogan {\n      width: 90%;\n}\n}\n.slide-1 {\n  background-image: url(\"/images/home-5.jpg\");\n}\n.slide-2 {\n  background-image: url(\"/images/home-4.jpg\");\n}\n.slide-3 {\n  background-image: url(\"/images/home-6.jpg\");\n}\n.slide-4 {\n  background-image: url(\"/images/home-7.jpg\");\n}\n.slide-5 {\n  background-image: url(\"/images/home-8.jpg\");\n}\n.slide-6 {\n  background-image: url(\"/images/home-2.JPG\");\n}\n.slide-7 {\n  background-image: url(\"/images/home-3.JPG\");\n}\n", ""]);
+exports.push([module.i, "\n#main-slider {\n  position: relative;\n  top: 0;\n}\n#home-slider-slogan {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n#home-slider-slogan > h1, #home-slider-slogan h2, #home-slider-slogan h3 {\n    text-transform: uppercase;\n    font-weight: 700;\n    color: #fff;\n    display: block;\n}\n#home-slider-slogan > h1 {\n    font-size: 64px;\n}\n.swiper-container {\n  width: 100%;\n  height: 100%;\n}\n.slide {\n  height: 100%;\n  min-height: calc(100vh - 90px);\n  max-height: 100vh;\n  background-position: center;\n  background-size: cover;\n  overflow: hidden;\n}\n.main-slider-slogan {\n  position: absolute;\n  top: 35%;\n  left: 50%;\n  width: 60%;\n  height: 100%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n@media (max-width: 991.98px) {\n.main-slider-slogan {\n      width: 90%;\n}\n}\n.slide-1 {\n  background-image: url(\"/images/home-5.jpg\");\n}\n.slide-2 {\n  background-image: url(\"/images/home-4.jpg\");\n}\n.slide-3 {\n  background-image: url(\"/images/home-6.jpg\");\n}\n.slide-4 {\n  background-image: url(\"/images/home-7.jpg\");\n}\n.slide-5 {\n  background-image: url(\"/images/home-8.jpg\");\n}\n.slide-6 {\n  background-image: url(\"/images/home-2.JPG\");\n}\n.slide-7 {\n  background-image: url(\"/images/home-3.JPG\");\n}\n", ""]);
 
 // exports
 
@@ -35857,6 +35857,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_awesome_swiper__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MainSliderSlogan_vue__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MainSliderSlogan_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__MainSliderSlogan_vue__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -35931,7 +35936,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             return this.$refs.mainSlider.swiper;
         }
     },
-    mounted: function mounted() {}
+    methods: {
+        animate: function animate() {
+            var t1 = new TimelineMax();
+            t1.from(['#home-slider-slogan h1', '#home-slider-slogan h2', '#home-slider-slogan h3'], .8, {
+                delay: 1.2,
+                opacity: 0,
+                scale: 0.98,
+                transformOrigin: '50% 50% -50',
+                ease: Back.easeInOut
+            });
+        }
+    },
+    mounted: function mounted() {
+        this.animate();
+    }
 });
 
 /***/ }),
@@ -43838,12 +43857,22 @@ var render = function() {
           attrs: { id: "swiper", options: _vm.swiperOptions }
         },
         [
-          _c(
-            "swiper-slide",
-            { staticClass: "slide slide-1" },
-            [_c("main-slider-slogan", { staticClass: "main-slider-slogan" })],
-            1
-          ),
+          _c("swiper-slide", { staticClass: "slide slide-1" }, [
+            _c(
+              "div",
+              {
+                staticClass: "text-center",
+                attrs: { id: "home-slider-slogan" }
+              },
+              [
+                _c("h2", [_vm._v("Welcome To")]),
+                _vm._v(" "),
+                _c("h1", [_vm._v("Praslin Pro Divers")]),
+                _vm._v(" "),
+                _c("h3", [_vm._v("Seychelles")])
+              ]
+            )
+          ]),
           _vm._v(" "),
           _c("swiper-slide", { staticClass: "slide slide-2" }),
           _vm._v(" "),

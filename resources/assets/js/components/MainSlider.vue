@@ -2,7 +2,12 @@
     <div id="main-slider">
         <swiper id="swiper" :options="swiperOptions" ref="mainSlider">
             <swiper-slide class="slide slide-1">
-                <main-slider-slogan class="main-slider-slogan"/>
+                <div id="home-slider-slogan" class="text-center">
+                    <h2>Welcome To</h2>
+                    <h1>Praslin Pro Divers</h1>
+                    <h3>Seychelles</h3>
+                </div>
+                <!-- <main-slider-slogan class="main-slider-slogan"/> -->
             </swiper-slide>
             <swiper-slide class="slide slide-2">
                 <!-- <main-slider-slogan class="main-slider-slogan"/> -->
@@ -72,8 +77,20 @@ export default {
             return this.$refs.mainSlider.swiper
         }
     },
+    methods: {
+        animate: function() {
+            var t1 = new TimelineMax()
+                t1.from(['#home-slider-slogan h1', '#home-slider-slogan h2', '#home-slider-slogan h3'], .8, {
+                    delay: 1.2,
+                    opacity: 0,
+                    scale: 0.98,
+                    transformOrigin: '50% 50% -50',
+                    ease: Back.easeInOut
+                })
+        },
+    },
     mounted: function() {
-
+        this.animate()
     }
 }
 </script>
@@ -86,6 +103,30 @@ export default {
 #main-slider {
     position: relative;
     top: 0;
+}
+
+#home-slider-slogan {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // width: 100%;
+    // height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    > h1, h2, h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $white;
+        display: block;
+    }
+
+    > h1 {
+        font-size: 64px;
+    }
 }
 
 .swiper-container {
