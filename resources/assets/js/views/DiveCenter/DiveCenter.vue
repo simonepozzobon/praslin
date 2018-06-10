@@ -4,7 +4,7 @@
             <div class="col-md-6">
                 <section-title title="Dive Center" number="02" align="right"/>
                 <section-subtitle>
-                    Pick up the equipment and get on board.
+                    We are a “S.E.A“ dive centre.
                 </section-subtitle>
                 <section-paragraph>
                     The dive centre is located in the north-east corner of the
@@ -86,7 +86,7 @@ export default {
 
     > #dive-center-img-3 {
         position: absolute;
-        top: 350px;
+        top: 280px;
         left: 0;
         width: 30%;
     }

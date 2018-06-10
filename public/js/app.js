@@ -45087,7 +45087,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#dive-center {\n  padding-top: 180px;\n  padding-bottom: 180px;\n}\n#dive-center .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#images {\n  position: relative;\n}\n#images > #dive-center-img-1 {\n    position: absolute;\n    left: 90px;\n    top: -40px;\n    width: 75%;\n}\n#images > #dive-center-img-2 {\n    position: absolute;\n    top: 180px;\n    right: 0;\n    width: 65%;\n    -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n            box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#images > #dive-center-img-3 {\n    position: absolute;\n    top: 350px;\n    left: 0;\n    width: 30%;\n}\n", ""]);
+exports.push([module.i, "\n#dive-center {\n  padding-top: 180px;\n  padding-bottom: 180px;\n}\n#dive-center .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#images {\n  position: relative;\n}\n#images > #dive-center-img-1 {\n    position: absolute;\n    left: 90px;\n    top: -40px;\n    width: 75%;\n}\n#images > #dive-center-img-2 {\n    position: absolute;\n    top: 180px;\n    right: 0;\n    width: 65%;\n    -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n            box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#images > #dive-center-img-3 {\n    position: absolute;\n    top: 280px;\n    left: 0;\n    width: 30%;\n}\n", ""]);
 
 // exports
 
@@ -45176,7 +45176,7 @@ var render = function() {
           _vm._v(" "),
           _c("section-subtitle", [
             _vm._v(
-              "\n                Pick up the equipment and get on board.\n            "
+              "\n                We are a “S.E.A“ dive centre.\n            "
             )
           ]),
           _vm._v(" "),
