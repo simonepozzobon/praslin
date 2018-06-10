@@ -73731,14 +73731,14 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "boats-img-1" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/boat.jpg" }
+          attrs: { src: "/images/boat-2.jpg" }
         })
       ]),
       _vm._v("​\n                    "),
       _c("div", { attrs: { id: "boats-img-2" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/boat-2.jpg" }
+          attrs: { src: "/images/equipment-5.jpg" }
         })
       ]),
       _vm._v("​\n                ")

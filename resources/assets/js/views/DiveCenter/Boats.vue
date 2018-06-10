@@ -5,10 +5,10 @@
                     <waves class="waves-icon"/>
                     <div id="boats-images">
                         <div id="boats-img-1">
-                            <img src="/images/boat.jpg" class="img-fluid"/>
+                            <img src="/images/boat-2.jpg" class="img-fluid"/>
                         </div>​
                         <div id="boats-img-2">
-                            <img src="/images/boat-2.jpg" class="img-fluid"/>
+                            <img src="/images/equipment-5.jpg" class="img-fluid"/>
                         </div>​
                     </div>
                 </div>
