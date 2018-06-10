@@ -2,6 +2,21 @@
     <div id="diving-spots" v-observe-visibility="visibilityChanged">
         <div class="container pb-5">
             <div class="row">
+
+                <div class="col-md-6">
+                    <section-title title="Dive Spots" number="02" align="right"/>
+                    <section-subtitle>
+                        There is a lot to see, from beginners to experts
+                    </section-subtitle>
+                    <section-paragraph>
+                        More than 15 of the Seychelles top scuba diving spots
+                        include some as close as a 5 minutes boat ride and some
+                        an hour or so away for deeper dives and greater chances of
+                        different species. Dive sites are always assessed before
+                        diving, and with plenty of alternative spots nearby, a
+                        change in site is easy when needed.
+                    </section-paragraph>
+                </div>
                 <div class="col-md-6">
                     <waves class="waves-icon"/>
                     <div id="dive-sposts-images">
@@ -15,20 +30,6 @@
                             <img src="/images/national-park.jpg" class="img-fluid"/>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <section-title title="Dive Spots" number="02" align="left"/>
-                    <section-subtitle>
-                        There is a lot to see, from beginners to experts
-                    </section-subtitle>
-                    <section-paragraph>
-                        More than 15 of the Seychelles top scuba diving spots
-                        include some as close as a 5 minutes boat ride and some
-                        an hour or so away for deeper dives and greater chances of
-                        different species. Dive sites are always assessed before
-                        diving, and with plenty of alternative spots nearby, a
-                        change in site is easy when needed.
-                    </section-paragraph>
                 </div>
             </div>
         </div>
@@ -173,7 +174,7 @@ export default {
 
     .waves-icon {
         position: absolute;
-        right: 15px;
+        left: 15px;
         top: -40px;
     }
 
@@ -184,13 +185,14 @@ export default {
             position: absolute;
             width: 60%;
             top: -40px;
-            right: 90px;
+            left: 90px;
         }
 
         #dive-spots-img-2 {
             position: absolute;
             width: 60%;
             top: 170px;
+            right: 0;
             z-index: 1;
             @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
         }
@@ -199,7 +201,7 @@ export default {
             position: absolute;
             width: 60%;
             top: 310px;
-            right: 15px;
+            left: 15px;
             z-index: 0;
         }
     }

@@ -10,9 +10,6 @@
                     <div id="about-us-img-2">
                         <img src="/images/equipment-4.jpg" class="img-fluid"/>
                     </div>​
-                    <div id="about-us-img-3">
-                        <img src="/images/SEA-logo.png" class="img-fluid"/>
-                    </div>
                 </div>
             </div>
             <div class="col-md-6">
@@ -87,13 +84,6 @@ export default {
             left: -20px;
             width: 70%;
             @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
-        }
-
-        #about-us-img-3 {
-            position: absolute;
-            top: 330px;
-            right: 0;
-            width: 30%;
         }
     }
 

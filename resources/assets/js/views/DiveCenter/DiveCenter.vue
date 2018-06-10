@@ -7,10 +7,6 @@
                     Pick up the equipment and get on board.
                 </section-subtitle>
                 <section-paragraph>
-                    <!-- Our 6 meters speed boat provide all the comfort a small
-                    embarkation dive boat can provide,equipped with all safety
-                    and navigational equipment to get you right on the dive
-                    spots with a 100% accuracy. -->
                     The dive centre is located in the north-east corner of the
                     long stretch of cote D’or Beach at l’Archipel Hotel which
                     also provide all the services a holiday maker may need.<br>
@@ -22,11 +18,14 @@
                 <waves class="waves-icon"/>
                 <div id="images">
                     <div id="dive-center-img-1">
-                        <img src="/images/boat.jpg" class="img-fluid"/>
-                    </div>​
-                    <div id="dive-center-img-2">
                         <img src="/images/dive-center.jpg" class="img-fluid"/>
                     </div>​
+                    <div id="dive-center-img-2">
+                        <img src="/images/equipment-3.jpg" class="img-fluid"/>
+                    </div>​
+                    <div id="dive-center-img-3">
+                        <img src="/images/SEA-logo.png" class="img-fluid"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,8 +80,15 @@ export default {
         position: absolute;
         top: 180px;
         right: 0;
-        width: 75%;
+        width: 65%;
         @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
+    }
+
+    > #dive-center-img-3 {
+        position: absolute;
+        top: 350px;
+        left: 0;
+        width: 30%;
     }
 }
 

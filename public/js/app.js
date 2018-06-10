@@ -44146,7 +44146,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#about-us .waves-icon {\n  position: absolute;\n  right: 15px;\n  top: -40px;\n}\n#about-us .images {\n  position: relative;\n}\n#about-us .images #about-us-img-1 {\n    position: absolute;\n    right: 90px;\n    top: -40px;\n    width: 78%;\n}\n#about-us .images #about-us-img-2 {\n    position: absolute;\n    top: 250px;\n    left: -20px;\n    width: 70%;\n    -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n            box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#about-us .images #about-us-img-3 {\n    position: absolute;\n    top: 330px;\n    right: 0;\n    width: 30%;\n}\n#about-us .padi {\n  padding-top: 4rem;\n}\n#about-us .padi > img {\n    width: 200px;\n    height: auto;\n    height: 100%;\n}\n", ""]);
+exports.push([module.i, "\n#about-us .waves-icon {\n  position: absolute;\n  right: 15px;\n  top: -40px;\n}\n#about-us .images {\n  position: relative;\n}\n#about-us .images #about-us-img-1 {\n    position: absolute;\n    right: 90px;\n    top: -40px;\n    width: 78%;\n}\n#about-us .images #about-us-img-2 {\n    position: absolute;\n    top: 250px;\n    left: -20px;\n    width: 70%;\n    -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n            box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#about-us .padi {\n  padding-top: 4rem;\n}\n#about-us .padi > img {\n    width: 200px;\n    height: auto;\n    height: 100%;\n}\n", ""]);
 
 // exports
 
@@ -44165,9 +44165,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
-//
-//
-//
 //
 //
 //
@@ -44808,13 +44805,7 @@ var staticRenderFns = [
           attrs: { src: "/images/equipment-4.jpg" }
         })
       ]),
-      _vm._v("​\n                "),
-      _c("div", { attrs: { id: "about-us-img-3" } }, [
-        _c("img", {
-          staticClass: "img-fluid",
-          attrs: { src: "/images/SEA-logo.png" }
-        })
-      ])
+      _vm._v("​\n            ")
     ])
   },
   function() {
@@ -44950,7 +44941,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -44961,14 +44952,16 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__DiveSpots_vue__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__DiveSpots_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__DiveSpots_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MeetTheTeam_vue__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MeetTheTeam_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__MeetTheTeam_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PriceList_vue__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PriceList_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__PriceList_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Boats_vue__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Boats_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Boats_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__DiveCenter_vue__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__DiveCenter_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__DiveCenter_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DiveSpots_vue__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DiveSpots_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__DiveSpots_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MeetTheTeam_vue__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MeetTheTeam_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__MeetTheTeam_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PriceList_vue__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PriceList_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__PriceList_vue__);
 //
 //
 //
@@ -44978,6 +44971,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -44987,10 +44982,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'DiveCenterIndex',
     components: {
-        DiveCenter: __WEBPACK_IMPORTED_MODULE_0__DiveCenter_vue___default.a,
-        DiveSpots: __WEBPACK_IMPORTED_MODULE_1__DiveSpots_vue___default.a,
-        MeetTheTeam: __WEBPACK_IMPORTED_MODULE_2__MeetTheTeam_vue___default.a,
-        PriceList: __WEBPACK_IMPORTED_MODULE_3__PriceList_vue___default.a
+        Boats: __WEBPACK_IMPORTED_MODULE_0__Boats_vue___default.a,
+        DiveCenter: __WEBPACK_IMPORTED_MODULE_1__DiveCenter_vue___default.a,
+        DiveSpots: __WEBPACK_IMPORTED_MODULE_2__DiveSpots_vue___default.a,
+        MeetTheTeam: __WEBPACK_IMPORTED_MODULE_3__MeetTheTeam_vue___default.a,
+        PriceList: __WEBPACK_IMPORTED_MODULE_4__PriceList_vue___default.a
     },
     watch: {
         '$route': 'scrollTo'
@@ -45091,7 +45087,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#dive-center {\n  padding-top: 180px;\n  padding-bottom: 180px;\n}\n#dive-center .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#images {\n  position: relative;\n}\n#images > #dive-center-img-1 {\n    position: absolute;\n    left: 90px;\n    top: -40px;\n    width: 75%;\n}\n#images > #dive-center-img-2 {\n    position: absolute;\n    top: 180px;\n    right: 0;\n    width: 75%;\n    -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n            box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n", ""]);
+exports.push([module.i, "\n#dive-center {\n  padding-top: 180px;\n  padding-bottom: 180px;\n}\n#dive-center .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#images {\n  position: relative;\n}\n#images > #dive-center-img-1 {\n    position: absolute;\n    left: 90px;\n    top: -40px;\n    width: 75%;\n}\n#images > #dive-center-img-2 {\n    position: absolute;\n    top: 180px;\n    right: 0;\n    width: 65%;\n    -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n            box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#images > #dive-center-img-3 {\n    position: absolute;\n    top: 350px;\n    left: 0;\n    width: 30%;\n}\n", ""]);
 
 // exports
 
@@ -45110,7 +45106,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
-//
 //
 //
 //
@@ -45216,17 +45211,23 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "dive-center-img-1" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/boat.jpg" }
+          attrs: { src: "/images/dive-center.jpg" }
         })
       ]),
       _vm._v("​\n                "),
       _c("div", { attrs: { id: "dive-center-img-2" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/dive-center.jpg" }
+          attrs: { src: "/images/equipment-3.jpg" }
         })
       ]),
-      _vm._v("​\n            ")
+      _vm._v("​\n                "),
+      _c("div", { attrs: { id: "dive-center-img-3" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/SEA-logo.png" }
+        })
+      ])
     ])
   }
 ]
@@ -45325,7 +45326,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#diving-spots {\n  padding-bottom: 180px;\n}\n#diving-spots .waves-icon {\n    position: absolute;\n    right: 15px;\n    top: -40px;\n}\n#diving-spots #dive-sposts-images {\n    position: relative;\n}\n#diving-spots #dive-sposts-images #dive-spots-img-1 {\n      position: absolute;\n      width: 60%;\n      top: -40px;\n      right: 90px;\n}\n#diving-spots #dive-sposts-images #dive-spots-img-2 {\n      position: absolute;\n      width: 60%;\n      top: 170px;\n      z-index: 1;\n      -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#diving-spots #dive-sposts-images #dive-spots-img-3 {\n      position: absolute;\n      width: 60%;\n      top: 310px;\n      right: 15px;\n      z-index: 0;\n}\n#diving-spots #map-wrapper #dive-spots-map {\n    width: 100%;\n    min-height: 60vh;\n    height: 100%;\n    z-index: 0;\n}\n", ""]);
+exports.push([module.i, "\n#diving-spots {\n  padding-bottom: 180px;\n}\n#diving-spots .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#diving-spots #dive-sposts-images {\n    position: relative;\n}\n#diving-spots #dive-sposts-images #dive-spots-img-1 {\n      position: absolute;\n      width: 60%;\n      top: -40px;\n      left: 90px;\n}\n#diving-spots #dive-sposts-images #dive-spots-img-2 {\n      position: absolute;\n      width: 60%;\n      top: 170px;\n      right: 0;\n      z-index: 1;\n      -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#diving-spots #dive-sposts-images #dive-spots-img-3 {\n      position: absolute;\n      width: 60%;\n      top: 310px;\n      left: 15px;\n      z-index: 0;\n}\n#diving-spots #map-wrapper #dive-spots-map {\n    width: 100%;\n    min-height: 60vh;\n    height: 100%;\n    z-index: 0;\n}\n", ""]);
 
 // exports
 
@@ -45350,6 +45351,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_icons_Waves_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_icons_sea_creatures_Coral_vue__ = __webpack_require__(320);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_icons_sea_creatures_Coral_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_icons_sea_creatures_Coral_vue__);
+//
 //
 //
 //
@@ -45540,19 +45542,8 @@ var render = function() {
             "div",
             { staticClass: "col-md-6" },
             [
-              _c("waves", { staticClass: "waves-icon" }),
-              _vm._v(" "),
-              _vm._m(0)
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-md-6" },
-            [
               _c("section-title", {
-                attrs: { title: "Dive Spots", number: "02", align: "left" }
+                attrs: { title: "Dive Spots", number: "02", align: "right" }
               }),
               _vm._v(" "),
               _c("section-subtitle", [
@@ -45566,6 +45557,17 @@ var render = function() {
                   "\n                    More than 15 of the Seychelles top scuba diving spots\n                    include some as close as a 5 minutes boat ride and some\n                    an hour or so away for deeper dives and greater chances of\n                    different species. Dive sites are always assessed before\n                    diving, and with plenty of alternative spots nearby, a\n                    change in site is easy when needed.\n                "
                 )
               ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-md-6" },
+            [
+              _c("waves", { staticClass: "waves-icon" }),
+              _vm._v(" "),
+              _vm._m(0)
             ],
             1
           )
@@ -46901,6 +46903,8 @@ var render = function() {
     { attrs: { id: "dive-center-panel" } },
     [
       _c("dive-center"),
+      _vm._v(" "),
+      _c("boats"),
       _vm._v(" "),
       _c("dive-spots"),
       _vm._v(" "),
@@ -70541,7 +70545,7 @@ var render = function() {
             "router-link",
             {
               staticClass: "dropdown-item",
-              attrs: { to: { name: "DiveCenter", params: { anchor: "none" } } }
+              attrs: { to: { name: "DiveCenter", params: { anchor: "boats" } } }
             },
             [_vm._v("Boats")]
           ),
@@ -73520,6 +73524,233 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-f03d1a66", module.exports)
   }
 }
+
+/***/ }),
+/* 378 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(383)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(381)
+/* template */
+var __vue_template__ = __webpack_require__(382)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/views/DiveCenter/Boats.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-8d4fcf80", Component.options)
+  } else {
+    hotAPI.reload("data-v-8d4fcf80", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 379 */,
+/* 380 */,
+/* 381 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Boats',
+    components: {
+        SectionParagraph: __WEBPACK_IMPORTED_MODULE_0__components_SectionParagraph_vue___default.a,
+        SectionSubtitle: __WEBPACK_IMPORTED_MODULE_1__components_SectionSubtitle_vue___default.a,
+        SectionTitle: __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default.a,
+        Waves: __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default.a
+    }
+});
+
+/***/ }),
+/* 382 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container", attrs: { id: "boats" } }, [
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [_c("waves", { staticClass: "waves-icon" }), _vm._v(" "), _vm._m(0)],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c("section-title", {
+            attrs: { title: "Boats", number: "02", align: "left" }
+          }),
+          _vm._v(" "),
+          _c("section-subtitle", [
+            _vm._v(
+              "\n                  Pick up the equipment and get on board.\n              "
+            )
+          ]),
+          _vm._v(" "),
+          _c("section-paragraph", [
+            _vm._v(
+              "\n                  Our 6 meters speed boat provide all the comfort a small\n                  embarkation dive boat can provide,equipped with all safety\n                  and navigational equipment to get you right on the dive\n                  spots with a 100% accuracy.\n              "
+            )
+          ])
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "boats-images" } }, [
+      _c("div", { attrs: { id: "boats-img-1" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/boat.jpg" }
+        })
+      ]),
+      _vm._v("​\n                  "),
+      _c("div", { attrs: { id: "boats-img-2" } }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: { src: "/images/dive-center-boat.png" }
+        })
+      ]),
+      _vm._v("​\n              ")
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-8d4fcf80", module.exports)
+  }
+}
+
+/***/ }),
+/* 383 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(384);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("e034945e", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8d4fcf80\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Boats.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8d4fcf80\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Boats.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 384 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#boats {\n  padding-bottom: 180px;\n}\n#boats .waves-icon {\n    position: absolute;\n    right: 15px;\n    top: -40px;\n}\n#boats-images {\n  position: relative;\n}\n#boats-images > #boats-img-1 {\n    position: absolute;\n    right: 90px;\n    top: -40px;\n    width: 75%;\n}\n#boats-images > #boats-img-2 {\n    position: absolute;\n    top: 180px;\n    left: 0;\n    width: 65%;\n}\n", ""]);
+
+// exports
+
 
 /***/ })
 ],[64]);

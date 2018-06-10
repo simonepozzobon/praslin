@@ -8,7 +8,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <router-link :to="{name: 'DiveCenter', params: {anchor: 'dive-center'}}" class="dropdown-item">Dive Center</router-link>
-            <router-link :to="{name: 'DiveCenter', params: {anchor: 'none'}}" class="dropdown-item">Boats</router-link>
+            <router-link :to="{name: 'DiveCenter', params: {anchor: 'boats'}}" class="dropdown-item">Boats</router-link>
             <router-link :to="{name: 'DiveCenter', params: {anchor: 'diving-spots'}}" class="dropdown-item">Dive Spots</router-link>
             <router-link :to="{name: 'DiveCenter', params: {anchor: 'meet-the-team'}}" class="dropdown-item">Meet The Team</router-link>
             <router-link :to="{name: 'DiveCenter', params: {anchor: 'price-list'}}" class="dropdown-item">Price List</router-link>
