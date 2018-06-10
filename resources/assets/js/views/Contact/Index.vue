@@ -6,12 +6,7 @@
                     <waves class="waves-icon"/>
                 </div>
                 <div class="col-12">
-                    <p class="custom-p p-4">
-                        <span class="contact-label">Address</span><br>
-                        <span class="contact-description">
-                            C/o L’Archipel Hotel, Anse Gouvernement<br>
-                            Praslin, Seychelles
-                        </span><br><br>
+                    <p class="custom-p p-4 text-center">
                         <span class="contact-label">E-mail</span><br>
                         <span class="contact-description">
                             <a href="mailto:praslinprodivers@gmail.com">praslinprodivers@gmail.com</a>
@@ -25,22 +20,36 @@
                             (+248) 42 32 113
                         </span>
                     </p>
-                    <span class="contact-label last">Social</span>
-                    <div class="social">
-                        <div class="social-icon">
-                            <i class="fab fa-tripadvisor"></i>
-                        </div>
-                        <div class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </div>
-                        <div class="social-icon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                    </div>
+
                 </div>
         </div>
         <div id="contact-map">
 
+        </div>
+        <div class="container">
+            <div id="bottom-contact" class="row">
+                <div class="col-12">
+                    <p class="custom-p p-4">
+                        <span class="contact-label">Address</span><br>
+                        <span class="contact-description">
+                            C/o L’Archipel Hotel, Anse Gouvernement<br>
+                            Praslin, Seychelles
+                        </span><br><br>
+                    </p>
+                    <span class="contact-label last text-center">Social</span>
+                    <div class="social">
+                        <div class="social-icon p-4">
+                            <i class="fab fa-tripadvisor fa-2x"></i>
+                        </div>
+                        <div class="social-icon p-4 fa-2x">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="social-icon p-4 fa-2x">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -117,10 +126,7 @@ export default {
     padding-top: 132px;
     overflow: hidden;
 
-    #contact-panel {
-        @include box-shadow(0 4px 16px 0 rgba($black, 0.33));
-        
-
+    #contact-panel, #bottom-contact {
         .custom-p {
             margin-bottom: 0;
         }

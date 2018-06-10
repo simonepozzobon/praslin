@@ -48122,7 +48122,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#contact {\n  padding-top: 132px;\n  overflow: hidden;\n}\n#contact #contact-panel {\n    -webkit-box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n            box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#contact #contact-panel .custom-p {\n      margin-bottom: 0;\n}\n#contact #contact-panel .section-title {\n      left: 122px;\n      top: 40px;\n}\n#contact #contact-panel .contact-label {\n      text-transform: uppercase;\n      font-size: 20px;\n      font-weight: 700;\n}\n#contact #contact-panel .contact-label.last {\n        padding-left: 1.5rem;\n}\n#contact #contact-panel .social {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: justify;\n          -ms-flex-pack: justify;\n              justify-content: space-between;\n      padding-left: 1.5rem;\n      padding-right: 1.5rem;\n      padding-bottom: 40px;\n}\n#contact #contact-panel .social > .social-icon {\n        font-size: 32px;\n}\n#contact #contact-map {\n    top: 0;\n    width: 100%;\n    min-height: 100vh;\n    height: 100%;\n}\n@media (min-width: 768px) {\n#contact #contact-panel {\n      position: absolute;\n      width: 40%;\n      min-width: 420px;\n      z-index: 2;\n}\n#contact #contact-map {\n      margin-top: 80px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#contact {\n  padding-top: 132px;\n  overflow: hidden;\n}\n#contact #contact-panel .custom-p, #contact #bottom-contact .custom-p {\n    margin-bottom: 0;\n}\n#contact #contact-panel .section-title, #contact #bottom-contact .section-title {\n    left: 122px;\n    top: 40px;\n}\n#contact #contact-panel .contact-label, #contact #bottom-contact .contact-label {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n}\n#contact #contact-panel .contact-label.last, #contact #bottom-contact .contact-label.last {\n      padding-left: 1.5rem;\n}\n#contact #contact-panel .social, #contact #bottom-contact .social {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    padding-left: 1.5rem;\n    padding-right: 1.5rem;\n    padding-bottom: 40px;\n}\n#contact #contact-panel .social > .social-icon, #contact #bottom-contact .social > .social-icon {\n      font-size: 32px;\n}\n#contact #contact-map {\n    top: 0;\n    width: 100%;\n    min-height: 100vh;\n    height: 100%;\n}\n@media (min-width: 768px) {\n#contact #contact-panel {\n      position: absolute;\n      width: 40%;\n      min-width: 420px;\n      z-index: 2;\n}\n#contact #contact-map {\n      margin-top: 80px;\n}\n}\n", ""]);
 
 // exports
 
@@ -48139,6 +48139,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -48293,7 +48302,9 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("div", { attrs: { id: "contact-map" } })
+      _c("div", { attrs: { id: "contact-map" } }),
+      _vm._v(" "),
+      _vm._m(1)
     ]
   )
 }
@@ -48303,22 +48314,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-12" }, [
-      _c("p", { staticClass: "custom-p p-4" }, [
-        _c("span", { staticClass: "contact-label" }, [_vm._v("Address")]),
-        _c("br"),
-        _vm._v(" "),
-        _c("span", { staticClass: "contact-description" }, [
-          _vm._v(
-            "\n                        C/o L’Archipel Hotel, Anse Gouvernement"
-          ),
-          _c("br"),
-          _vm._v(
-            "\n                        Praslin, Seychelles\n                    "
-          )
-        ]),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
+      _c("p", { staticClass: "custom-p p-4 text-center" }, [
         _c("span", { staticClass: "contact-label" }, [_vm._v("E-mail")]),
         _c("br"),
         _vm._v(" "),
@@ -48349,21 +48345,50 @@ var staticRenderFns = [
             "\n                        (+248) 42 32 113\n                    "
           )
         ])
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "contact-label last" }, [_vm._v("Social")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "social" }, [
-        _c("div", { staticClass: "social-icon" }, [
-          _c("i", { staticClass: "fab fa-tripadvisor" })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "social-icon" }, [
-          _c("i", { staticClass: "fab fa-facebook-f" })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "social-icon" }, [
-          _c("i", { staticClass: "fab fa-instagram" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row", attrs: { id: "bottom-contact" } }, [
+        _c("div", { staticClass: "col-12" }, [
+          _c("p", { staticClass: "custom-p p-4" }, [
+            _c("span", { staticClass: "contact-label" }, [_vm._v("Address")]),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", { staticClass: "contact-description" }, [
+              _vm._v(
+                "\n                        C/o L’Archipel Hotel, Anse Gouvernement"
+              ),
+              _c("br"),
+              _vm._v(
+                "\n                        Praslin, Seychelles\n                    "
+              )
+            ]),
+            _c("br"),
+            _c("br")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "contact-label last text-center" }, [
+            _vm._v("Social")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "social" }, [
+            _c("div", { staticClass: "social-icon p-4" }, [
+              _c("i", { staticClass: "fab fa-tripadvisor fa-2x" })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "social-icon p-4 fa-2x" }, [
+              _c("i", { staticClass: "fab fa-facebook-f" })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "social-icon p-4 fa-2x" }, [
+              _c("i", { staticClass: "fab fa-instagram" })
+            ])
+          ])
         ])
       ])
     ])
