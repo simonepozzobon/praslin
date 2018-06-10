@@ -46237,7 +46237,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "team-name" }, [
                 _vm._v(
-                  "\n                        Jean Paul\n                    "
+                  "\n                        Jean-Paul\n                    "
                 )
               ]),
               _vm._v(" "),

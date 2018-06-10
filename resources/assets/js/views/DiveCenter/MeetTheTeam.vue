@@ -15,7 +15,7 @@
                             <img src="/images/jp-circle.jpg" class="img-fluid"/>
                         </div>
                         <div class="team-name">
-                            Jean Paul
+                            Jean-Paul
                         </div>
                         <div class="team-role">
                             Owner & Instructor
