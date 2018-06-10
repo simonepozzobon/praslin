@@ -9,7 +9,7 @@
                             <img src="/images/beach-2.jpg" class="img-fluid" />
                         </div>
                         <div id="island-img-2">
-                            <img src="/images/praslin-1.jpg" class="img-fluid" />
+                            <img src="/images/praslin-island-1.jpg" class="img-fluid" />
                         </div>
                         <div id="island-img-3">
                             <img src="/images/beach.jpg" class="img-fluid" />
@@ -178,8 +178,8 @@ export default {
 
         > #island-img-3 {
             position: absolute;
-            width: 60%;
-            top: 690px;
+            width: 80%;
+            top: 790px;
             left: -15px;
             @include box-shadow(0 4px 16px 0 rgba($black, 0.33));
         }
