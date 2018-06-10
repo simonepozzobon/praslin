@@ -8,7 +8,7 @@
                         <img src="/images/praslin-about-1.jpg" class="img-fluid"/>
                     </div>​
                     <div id="about-us-img-2">
-                        <img src="/images/about-us-palm.png" class="img-fluid"/>
+                        <img src="/images/equipment-4.jpg" class="img-fluid"/>
                     </div>​
                     <div id="about-us-img-3">
                         <img src="/images/SEA-logo.png" class="img-fluid"/>
@@ -83,9 +83,10 @@ export default {
 
         #about-us-img-2 {
             position: absolute;
-            top: 240px;
+            top: 250px;
             left: -20px;
             width: 70%;
+            @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
         }
 
         #about-us-img-3 {
