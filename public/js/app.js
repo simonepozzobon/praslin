@@ -45575,7 +45575,7 @@ var render = function() {
               _vm._v(" "),
               _c("section-paragraph", [
                 _vm._v(
-                  "\n                    More than 26 of the Seychelles top scuba diving spots\n                    include some as close as a 5 minutes boat ride and some\n                    an hour or so away for deeper dives and greater chances of\n                    different species. Dive sites are always assessed before\n                    diving, and with plenty of alternative spots nearby, a\n                    change in site is easy when needed.\n                "
+                  "\n                    Seychelles top scuba diving spots\n                    include some as close as a 5 minutes boat ride and some\n                    an hour or so away for deeper dives and greater chances of\n                    different species. Dive sites are always assessed before\n                    diving, and with plenty of alternative spots nearby, a\n                    change in site is easy when needed.\n                "
                 )
               ])
             ],
