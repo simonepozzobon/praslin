@@ -13449,7 +13449,18 @@ module.exports = function spread(callback) {
 /* 40 */,
 /* 41 */,
 /* 42 */,
-/* 43 */,
+/* 43 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var apiKeys = {
+    weather: 'c74e004563b26fdcf8985cf0c0416166',
+    googleMaps: 'AIzaSyD4CvJwKmbFXDJTissWXN7_CGeB7kCGlQw'
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (apiKeys);
+
+/***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13465,8 +13476,11 @@ module.exports = __webpack_require__(61);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_GalleryPanel_vue__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_GalleryPanel_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_GalleryPanel_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_DivespotsPanel_vue__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_DivespotsPanel_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_DivespotsPanel_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_GalleryPanel_vue__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_GalleryPanel_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_GalleryPanel_vue__);
+
 
 
 
@@ -13474,7 +13488,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var gallery = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#admin-gallery',
     components: {
-        GalleryPanel: __WEBPACK_IMPORTED_MODULE_1__components_GalleryPanel_vue___default.a
+        DivespotsPanel: __WEBPACK_IMPORTED_MODULE_1__components_DivespotsPanel_vue___default.a,
+        GalleryPanel: __WEBPACK_IMPORTED_MODULE_2__components_GalleryPanel_vue___default.a
     }
 });
 
@@ -14003,6 +14018,2772 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */,
+/* 94 */,
+/* 95 */,
+/* 96 */,
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */,
+/* 103 */,
+/* 104 */,
+/* 105 */,
+/* 106 */,
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var GoogleMapsOpts = {
+    zoom: 15,
+    mapTypeId: 'roadmap',
+    mapTypeControl: false,
+    streetViewControl: false,
+    styles: [{ elementType: 'geometry', stylers: [{ color: '#FEFAF5' }] }, { elementType: 'labels.text.stroke', stylers: [{ color: '#FEFAF5' }] }, { elementType: 'labels.text.fill', stylers: [{ color: '#B1A799' }] }, {
+        featureType: 'administrative.locality',
+        elementType: 'labels.text.fill',
+        stylers: [{ color: '#d59563' }]
+    }, {
+        featureType: 'poi',
+        elementType: 'labels.text.fill',
+        stylers: [{ color: '#d59563' }]
+    }, {
+        featureType: 'poi.park',
+        elementType: 'geometry',
+        stylers: [{ color: '#DCFEE4' }]
+    }, {
+        featureType: 'poi.park',
+        elementType: 'labels.text.fill',
+        stylers: [{ color: '#6b9a76' }]
+    }, {
+        featureType: 'road',
+        elementType: 'geometry',
+        stylers: [{ color: '#E3DFDB' }]
+    }, {
+        featureType: 'road',
+        elementType: 'geometry.stroke',
+        stylers: [{ color: '#E3DFDB' }]
+    }, {
+        featureType: 'road',
+        elementType: 'labels.text.fill',
+        stylers: [{ color: '#E3DFDB' }]
+    }, {
+        featureType: 'road.highway',
+        elementType: 'geometry',
+        stylers: [{ color: '#E3DFDB' }]
+    }, {
+        featureType: 'road.highway',
+        elementType: 'geometry.stroke',
+        stylers: [{ color: '#E3DFDB' }]
+    }, {
+        featureType: 'road.highway',
+        elementType: 'labels.text.fill',
+        stylers: [{ color: '#f3d19c' }]
+    }, {
+        featureType: 'transit',
+        elementType: 'geometry',
+        stylers: [{ color: '#E3DFDB' }]
+    }, {
+        featureType: 'transit.station',
+        elementType: 'labels.text.fill',
+        stylers: [{ color: '#d59563' }]
+    }, {
+        featureType: 'water',
+        elementType: 'geometry',
+        stylers: [{ color: '#E5F7F7' }]
+    }, {
+        featureType: 'water',
+        elementType: 'labels.text.fill',
+        stylers: [{ color: '#515c6d' }]
+    }, {
+        featureType: 'water',
+        elementType: 'labels.text.stroke',
+        stylers: [{ color: '#17263c' }]
+    }]
+};
+/* harmony default export */ __webpack_exports__["a"] = (GoogleMapsOpts);
+
+/***/ }),
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(312)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(314)
+/* template */
+var __vue_template__ = __webpack_require__(315)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/admin/components/DivespotsPanel.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2583e604", Component.options)
+  } else {
+    hotAPI.reload("data-v-2583e604", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 312 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(313);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("eb3e38f2", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2583e604\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DivespotsPanel.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2583e604\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./DivespotsPanel.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 313 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#map {\n  width: 100%;\n  min-height: 60vh;\n  height: 100%;\n  z-index: 0;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 314 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_apiKeys__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_FishIcons_vue__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_FishIcons_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_FishIcons_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_config_GoogleMapsOpts__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_StarsIcons_vue__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_StarsIcons_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_StarsIcons_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'GalleryPanel',
+    components: {
+        FishIcons: __WEBPACK_IMPORTED_MODULE_2__components_FishIcons_vue___default.a,
+        StarsIcons: __WEBPACK_IMPORTED_MODULE_4__components_StarsIcons_vue___default.a
+    },
+    props: {
+        spots: {
+            type: String,
+            default: ''
+        }
+    },
+    data: function data() {
+        return {
+            depth: '0mt',
+            divespots: [],
+            divespotsMarker: [],
+            icons: [],
+            iconsAvailable: [],
+            lat: 0,
+            level_id: 1,
+            levels: [],
+            lon: 0,
+            map: null,
+            rating: 0,
+            reef_type_id: 1,
+            reef_types: [],
+            snorkeling: null,
+            title: 'dive spot'
+        };
+    },
+    computed: {
+        spotsConverted: function spotsConverted() {
+            if (this.spots) {
+                return JSON.parse(this.spots);
+            }
+            return null;
+        },
+        googleMapsLoaded: function googleMapsLoaded() {
+            var url = '//maps.googleapis.com/maps/api/js?key=' + __WEBPACK_IMPORTED_MODULE_0__js_apiKeys__["a" /* default */].googleMaps;
+            var len = $('script').filter(function () {
+                return $(this).attr('src') == url;
+            }).length;
+            if (len === 0) {
+                return false;
+            }
+            return true;
+        }
+    },
+    methods: {
+        checkedBox: function checkedBox($event, icon) {
+            var value = $event.target.checked;
+
+            var data = {
+                id: icon.id
+            };
+
+            if (value) {
+                this.icons.push(data);
+            } else {
+                var index = this.icons.findIndex(function (icon) {
+                    return icon.id == data.id;
+                });
+
+                if (index > -1) {
+                    this.icons.splice(index, 1);
+                }
+            }
+        },
+        getFormData: function getFormData() {
+            var _this = this;
+
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get('/api/dive-spots/formdata').then(function (response) {
+                _this.iconsAvailable = response.data.icons;
+                _this.reef_types = response.data.reef_types;
+                _this.levels = response.data.levels;
+            });
+        },
+        loadMap: function loadMap() {
+            var _this2 = this;
+
+            var marker = void 0;
+            var element = document.getElementById('map');
+            __WEBPACK_IMPORTED_MODULE_3__js_config_GoogleMapsOpts__["a" /* default */].zoom = 12;
+            __WEBPACK_IMPORTED_MODULE_3__js_config_GoogleMapsOpts__["a" /* default */].center = new google.maps.LatLng(-4.31685, 55.7543);
+            this.map = new google.maps.Map(element, __WEBPACK_IMPORTED_MODULE_3__js_config_GoogleMapsOpts__["a" /* default */]);
+
+            this.previewSpots();
+
+            this.map.addListener('click', function (event) {
+                _this2.lat = event.latLng.lat();
+                _this2.lon = event.latLng.lng();
+
+                if (marker) marker.setMap(null);
+
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(_this2.lat, _this2.lon),
+                    map: _this2.map,
+                    title: 'Position'
+                });
+            });
+        },
+        previewSpots: function previewSpots() {
+            for (var i = 0; i < this.divespots.length; i++) {
+                var marker = this.divespotsMarker[i];
+                var spot = this.divespots[i];
+                if (marker) marker.setMap(null);
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(spot.lat, spot.lon),
+                    map: this.map,
+                    title: spot.name
+                });
+            }
+        },
+        saveSpot: function saveSpot() {
+            var data = new FormData();
+            data.append('title', this.title);
+            data.append('lat', this.lat);
+            data.append('lon', this.lon);
+            data.append('level', this.level_id);
+            data.append('depth', this.depth);
+            data.append('snorkeling', this.snorkeling);
+            data.append('rating', this.rating);
+            data.append('reef_type_id', this.reef_type_id);
+            data.append('icons', JSON.stringify(this.icons));
+
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post('/api/dive-spots/new', data).then(function (response) {
+                console.log(response);
+            });
+        }
+    },
+    created: function created() {
+        if (!this.googleMapsLoaded) {
+            var url = '//maps.googleapis.com/maps/api/js?key=' + __WEBPACK_IMPORTED_MODULE_0__js_apiKeys__["a" /* default */].googleMaps;
+            var mapsScript = document.createElement('script');
+            mapsScript.setAttribute('src', '//maps.googleapis.com/maps/api/js?key=AIzaSyD4CvJwKmbFXDJTissWXN7_CGeB7kCGlQw');
+            document.head.appendChild(mapsScript);
+        }
+    },
+    mounted: function mounted() {
+        var _this3 = this;
+
+        this.divespots = this.spotsConverted;
+        this.getFormData();
+        window.onload = function () {
+            _this3.loadMap();
+        };
+    }
+});
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(8)))
+
+/***/ }),
+/* 315 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row bg-light" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-12" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 form-group" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Title")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.title,
+                expression: "title"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text" },
+            domProps: { value: _vm.title },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.title = $event.target.value
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "form-group col-md-6" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Latitude")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.lat,
+                expression: "lat"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text" },
+            domProps: { value: _vm.lat },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.lat = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group col-md-6" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Longitude")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.lon,
+                expression: "lon"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text" },
+            domProps: { value: _vm.lon },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.lon = $event.target.value
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "form-group col-md-4" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Level")]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.level_id,
+                  expression: "level_id"
+                }
+              ],
+              staticClass: "form-control",
+              on: {
+                change: function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.level_id = $event.target.multiple
+                    ? $$selectedVal
+                    : $$selectedVal[0]
+                }
+              }
+            },
+            _vm._l(this.levels, function(level) {
+              return _c(
+                "option",
+                { key: level.id, domProps: { value: level.id } },
+                [_vm._v(_vm._s(level.description))]
+              )
+            })
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group col-md-4" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Depth")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.depth,
+                expression: "depth"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text" },
+            domProps: { value: _vm.depth },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.depth = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group col-md-4" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Rating")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.rating,
+                expression: "rating"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text" },
+            domProps: { value: _vm.rating },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.rating = $event.target.value
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row pb-4" }, [
+        _c("div", { staticClass: "form-group col-md-6" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Snorkeling")]),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.snorkeling,
+                expression: "snorkeling"
+              }
+            ],
+            staticClass: "form-check",
+            attrs: { type: "checkbox" },
+            domProps: {
+              checked: Array.isArray(_vm.snorkeling)
+                ? _vm._i(_vm.snorkeling, null) > -1
+                : _vm.snorkeling
+            },
+            on: {
+              change: function($event) {
+                var $$a = _vm.snorkeling,
+                  $$el = $event.target,
+                  $$c = $$el.checked ? true : false
+                if (Array.isArray($$a)) {
+                  var $$v = null,
+                    $$i = _vm._i($$a, $$v)
+                  if ($$el.checked) {
+                    $$i < 0 && (_vm.snorkeling = $$a.concat([$$v]))
+                  } else {
+                    $$i > -1 &&
+                      (_vm.snorkeling = $$a
+                        .slice(0, $$i)
+                        .concat($$a.slice($$i + 1)))
+                  }
+                } else {
+                  _vm.snorkeling = $$c
+                }
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group col-md-6" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Reef Type")]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.reef_type_id,
+                  expression: "reef_type_id"
+                }
+              ],
+              staticClass: "form-control",
+              on: {
+                change: function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.reef_type_id = $event.target.multiple
+                    ? $$selectedVal
+                    : $$selectedVal[0]
+                }
+              }
+            },
+            _vm._l(this.reef_types, function(reef_type) {
+              return _c(
+                "option",
+                { key: reef_type.id, domProps: { value: reef_type.id } },
+                [_vm._v(_vm._s(reef_type.description))]
+              )
+            })
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "row pl-4" },
+        _vm._l(this.iconsAvailable, function(icon) {
+          return _c("div", { staticClass: "col-md-3" }, [
+            _c("div", { staticClass: "form-group" }, [
+              _c("input", {
+                staticClass: "form-check-input",
+                attrs: { type: "checkbox" },
+                on: {
+                  change: function($event) {
+                    _vm.checkedBox($event, icon)
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("label", { staticClass: "form-check-label text-capitalize" }, [
+                _vm._v(_vm._s(icon.description))
+              ])
+            ])
+          ])
+        })
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col" }, [
+          _c("div", { staticClass: "d-flex justify-content-center p-5" }, [
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", on: { click: _vm.saveSpot } },
+              [
+                _c("i", { staticClass: "far fa-save" }),
+                _vm._v(" Save\n                    ")
+              ]
+            )
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-12" }, [
+      _c("table", { staticClass: "table" }, [
+        _vm._m(2),
+        _vm._v(" "),
+        _c(
+          "tbody",
+          _vm._l(this.divespots, function(divespot) {
+            return _c("tr", { key: divespot.id }, [
+              _c("td", [_vm._v(_vm._s(divespot.id))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(divespot.name))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(divespot.reef_type.description))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(divespot.dive_level.description))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(divespot.depth))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(divespot.snorkeling))]),
+              _vm._v(" "),
+              _c(
+                "td",
+                [
+                  _c("stars-icons", {
+                    attrs: { stars: parseInt(divespot.rating) }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                _vm._l(divespot.icons, function(icon) {
+                  return _c("fish-icons", {
+                    key: icon.id,
+                    attrs: { icon_id: icon.id, size: "32" }
+                  })
+                })
+              )
+            ])
+          })
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [
+      _c("h1", { staticClass: "text-uppercase pt-4" }, [_vm._v("Dive Spots")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12" }, [
+      _c("div", { attrs: { id: "map" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Id")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Title")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Reef Type")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Level")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Depth")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Snorkeling")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Rating")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("What")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-2583e604", module.exports)
+  }
+}
+
+/***/ }),
+/* 316 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(317)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(319)
+/* template */
+var __vue_template__ = __webpack_require__(355)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/FishIcons.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-815a7b0a", Component.options)
+  } else {
+    hotAPI.reload("data-v-815a7b0a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 317 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(318);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("56f2d218", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-815a7b0a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FishIcons.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-815a7b0a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FishIcons.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 318 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 319 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__icons_sea_creatures_Coral_vue__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__icons_sea_creatures_Coral_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__icons_sea_creatures_Coral_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__icons_sea_creatures_Macro_vue__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__icons_sea_creatures_Macro_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__icons_sea_creatures_Macro_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icons_sea_creatures_Ray_vue__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icons_sea_creatures_Ray_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__icons_sea_creatures_Ray_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icons_sea_creatures_SchoolOfFish_vue__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icons_sea_creatures_SchoolOfFish_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__icons_sea_creatures_SchoolOfFish_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__icons_sea_creatures_Shark_vue__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__icons_sea_creatures_Shark_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__icons_sea_creatures_Shark_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__icons_sea_creatures_SoftCoral_vue__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__icons_sea_creatures_SoftCoral_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__icons_sea_creatures_SoftCoral_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__icons_sea_creatures_Turtle_vue__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__icons_sea_creatures_Turtle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__icons_sea_creatures_Turtle_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'FishIcons',
+    props: {
+        icon_id: {
+            type: Number,
+            default: 0
+        },
+        size: {
+            type: String,
+            default: '64'
+        }
+    },
+    components: {
+        Coral: __WEBPACK_IMPORTED_MODULE_0__icons_sea_creatures_Coral_vue___default.a,
+        Macro: __WEBPACK_IMPORTED_MODULE_1__icons_sea_creatures_Macro_vue___default.a,
+        Ray: __WEBPACK_IMPORTED_MODULE_2__icons_sea_creatures_Ray_vue___default.a,
+        SchoolOfFish: __WEBPACK_IMPORTED_MODULE_3__icons_sea_creatures_SchoolOfFish_vue___default.a,
+        Shark: __WEBPACK_IMPORTED_MODULE_4__icons_sea_creatures_Shark_vue___default.a,
+        SoftCoral: __WEBPACK_IMPORTED_MODULE_5__icons_sea_creatures_SoftCoral_vue___default.a,
+        Turtle: __WEBPACK_IMPORTED_MODULE_6__icons_sea_creatures_Turtle_vue___default.a
+    }
+});
+
+/***/ }),
+/* 320 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(321)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(323)
+/* template */
+var __vue_template__ = __webpack_require__(324)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/icons/sea-creatures/Coral.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ef667248", Component.options)
+  } else {
+    hotAPI.reload("data-v-ef667248", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 321 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(322);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("341d9b7c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ef667248\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Coral.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ef667248\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Coral.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 322 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#sea-coral {\n  fill: #252525;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 323 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Coral',
+    props: {
+        size: {
+            type: String,
+            default: '64px'
+        }
+    }
+});
+
+/***/ }),
+/* 324 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        width: _vm.size,
+        height: _vm.size,
+        viewBox: "0 0 64 64",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      }
+    },
+    [
+      _c(
+        "g",
+        {
+          attrs: {
+            stroke: "none",
+            "stroke-width": "1",
+            fill: "none",
+            "fill-rule": "evenodd"
+          }
+        },
+        [
+          _c("g", { attrs: { id: "sea-coral", "fill-rule": "nonzero" } }, [
+            _c("path", {
+              attrs: {
+                d:
+                  "M52.9319463,33.2899273 C53.572821,32.7772274 53.8425012,32.3768089 53.871725,32.286061 C53.9624729,32.0056142 53.4446461,31.6236528 53.1026753,31.7518278 C53.1026753,31.7518278 53.0811419,32.2429942 52.7607045,32.5208775 C52.4402671,32.7987608 52.1839172,32.7131399 51.9916548,32.45679 C51.7993923,32.2004401 51.6927508,32.0722652 51.5430424,32.157886 C51.3933341,32.2435069 51.1585175,32.4998568 51.3082259,32.6705859 C51.4579342,32.8413149 51.8424591,33.2258398 51.8424591,33.6534314 C51.8424591,34.0805104 51.7783716,34.4440146 51.5861092,34.2302187 C51.3938468,34.0164229 51.3297593,33.631898 51.051876,33.760073 C50.7739927,33.888248 50.5176428,33.888248 50.5391761,34.187152 C50.5607095,34.486056 50.9452344,34.9777351 50.7314386,35.5970765 C50.5176428,36.2164179 50.6032636,36.4727678 50.1761847,36.3445928 C49.7491057,36.2164179 48.9369892,36.2164179 48.9369892,35.9385346 C48.9369892,35.6606513 49.1292516,35.4258347 49.2148725,35.1694848 C49.3004934,34.9131349 49.3004934,34.6783184 48.9585226,34.6352516 C48.6165518,34.5926975 48.4591529,34.5445037 48.3602019,34.7634266 C48.2571492,34.991578 48.103852,35.4043014 47.4629772,35.4899222 C46.8221024,35.5755431 45.9674318,35.3191932 46.2237817,34.6993391 C46.4801316,34.079485 47.2466178,32.9054024 47.8100749,32.7741512 C48.3950655,32.6377731 48.9795433,32.7341606 49.321514,33.054598 C49.6634848,33.3750354 49.9623888,33.3965688 50.2402721,33.1402189 C50.5181555,32.883869 50.2402721,32.8197815 49.9198348,32.6059857 C49.5993974,32.3921898 49.3645808,32.1573733 49.7060389,31.87949 C50.0480097,31.6016067 50.2187388,31.0889069 50.7314386,31.1745278 C51.2441384,31.2601486 51.4579342,31.4308777 51.6501967,31.3883236 C51.8424591,31.3457695 52.3551589,30.9181778 52.2485174,30.8115363 C52.1418758,30.7048947 51.3938468,30.4910989 51.5220217,30.2562824 C51.6501967,30.0214658 51.8957799,29.9466117 52.3202954,29.5938742 C52.6730328,29.3011226 52.4402671,28.8673785 52.1839172,28.8248244 C51.9275673,28.7822703 51.9060339,28.8673785 51.7353049,29.1237284 C51.5645758,29.3800783 51.3723134,29.8927782 51.051876,29.7646032 C50.7314386,29.6364283 51.1077603,28.5802666 50.6888845,28.1198622 C50.3899805,27.7912216 50.0264763,28.3121246 50.0480097,28.803291 C50.0695431,29.2944575 50.1546513,30.1275947 49.8983014,30.4480321 C49.6419514,30.7684695 48.6380852,31.7082483 48.2320269,31.6441608 C47.8259686,31.5800733 47.5055312,31.4944524 47.7618812,31.0673735 C48.0182311,30.6402945 48.70166,29.9778863 48.8088142,29.6789823 C48.9154558,29.3800783 48.6591059,29.059641 48.5309309,29.2088366 C48.402756,29.358545 48.0397645,30.1275947 47.8685227,29.8922655 C47.6977937,29.657449 47.6977937,29.2513907 47.6121728,29.2088366 C47.5265519,29.1662825 47.0779396,29.1447491 47.1210064,29.4651865 C47.1640732,29.7856239 47.3773563,30.5121196 46.9287439,31.4093443 C46.4801316,32.306569 46.2663358,32.5629189 46.1596942,32.4347439 C46.0530526,32.306569 46.1171401,31.0463528 45.9458984,30.8751111 C45.7751693,30.704382 44.9845862,30.6613152 45.1127611,31.0458401 C45.2409361,31.430365 45.3475777,32.2850356 45.198382,33.0966394 C45.0491864,33.9082432 44.8138571,34.5280973 44.0448074,34.5706514 C43.2757576,34.6132055 42.7845912,34.0153975 43.2542243,33.3955434 C43.72437,32.776202 44.3437114,32.7121145 44.4718864,32.4767853 C44.6000613,32.2419688 44.5785279,31.7077356 44.0448074,31.9215314 C43.5105742,32.1353272 43.1901368,32.1778813 43.1691161,31.6867149 C43.1475827,31.1955484 42.8061246,31.003286 42.6348829,31.2165691 C42.4641538,31.430365 42.7845912,32.2635022 42.4851745,32.4983187 C42.1862705,32.7331352 41.9509413,32.4767853 41.7802122,32.3060563 C41.6094832,32.1353272 41.2890458,32.0922604 41.1393375,32.2419688 C40.9896291,32.3916771 40.947075,32.5408728 41.1608708,32.7546686 C41.3746667,32.9684645 41.8873665,33.6303599 41.6951041,33.9938641 C41.5028416,34.3573683 41.3531333,34.6562723 40.7122585,34.6562723 C40.7122585,34.6562723 39.6443047,34.7844473 39.7294129,33.9087559 C39.8150338,33.0330646 40.2421127,32.4562773 40.5410168,32.0502191 C40.8399208,31.6441608 41.1178041,30.7684695 41.1818915,30.5121196 C41.245979,30.2557697 41.8653204,29.2088366 42.4636411,29.3370116 C43.0619618,29.4651865 43.3393324,29.8497114 43.6813032,30.1275947 C44.023274,30.405478 44.5882692,30.014288 44.6426154,29.8286907 C44.7415665,29.4897961 44.6426154,29.059641 45.0696944,29.059641 C45.4967733,29.059641 45.5398401,29.3375243 45.8812982,29.3800783 C46.223269,29.4226324 46.5006396,29.3159909 46.4155314,28.9955535 C46.3304232,28.6751161 46.4796189,28.1839496 46.7785229,28.0767954 C47.0774269,27.9701538 47.2486686,27.8629995 47.3768436,28.1624162 C47.5050185,28.4618329 47.4624645,28.7607369 47.7613685,28.6966495 C48.0602725,28.632562 48.5088848,28.5469411 48.2525349,28.205483 C47.996185,27.8635122 47.7613685,27.5646082 48.1243599,27.2867249 C48.4873514,27.0088416 48.9149431,26.6884042 48.7437013,26.4961418 C48.5729723,26.3038794 48.2525349,26.0900835 48.1243599,26.2182585 C47.996185,26.3464334 47.4193977,27.3077456 47.1845812,27.0088416 C46.9497646,26.7099376 47.1204937,25.9619086 46.8641438,25.9619086 C46.6077938,25.9619086 46.2017356,26.0900835 46.2448024,26.3679668 C46.2873565,26.6458501 46.3514439,27.6071623 45.7321025,27.9701538 C45.1127611,28.3331453 44.1083822,28.6966495 43.9376531,28.3121246 C43.7669241,27.9275997 43.7987115,26.2505586 44.5252071,26.0582961 C45.2517028,25.8660337 45.1768486,26.3038794 45.4331985,26.1757044 C45.6895484,26.0475294 46.2448024,25.5132962 46.0740733,25.4066547 C45.9033443,25.3000131 45.3906444,24.808334 45.7110818,24.4453425 C46.0315192,24.082351 46.6083065,23.5696512 46.9287439,23.9326426 C47.2491813,24.2956341 47.3558229,24.25308 47.4839979,24.1033717 C47.6121728,23.9536633 47.7188144,23.5481178 47.5265519,23.4624969 C47.3342895,23.376876 46.8190262,23.1195007 47.0779396,22.6719138 C47.3127561,22.2658555 47.7506018,22.031039 47.5050185,21.8172431 C47.2076526,21.5588424 46.7785229,21.5183391 46.5652398,22.0951265 C46.3514439,22.6719138 46.4796189,22.9923512 46.2022483,23.2271677 C45.924365,23.4619842 45.6982643,23.5686258 45.6680151,23.1846136 C45.6146943,22.5011847 45.3050236,21.732135 45.0912277,21.9454181 C44.8774319,22.1592139 44.4718864,22.6503804 44.5785279,22.8211094 C44.6851695,22.9918385 45.1553152,23.3338092 44.8564112,24.0172381 C44.5575072,24.700667 44.002766,24.9703471 43.8094782,24.8503753 C43.4998075,24.6581129 42.9978743,24.1454131 43.4675074,22.9703051 C43.9371404,21.7951971 44.1083822,21.6777888 44.3431987,21.5285931 C44.5780152,21.3788848 44.791811,21.1122809 44.5569945,20.9195057 C44.322178,20.7267306 44.1832363,20.7697974 44.0550614,21.0051266 C43.9268864,21.2399431 43.6597698,21.6675348 43.4034199,21.624468 C43.14707,21.5814012 43.0788809,21.4296421 43.1255366,21.1758557 C43.1788574,20.8877184 43.445974,19.9156395 43.1255366,19.8300186 C42.8050992,19.7443977 42.730245,19.8084852 42.6553909,20.2037768 C42.5461858,20.7800514 42.5487493,20.8338849 42.3564869,20.7697974 C42.1642244,20.7057099 41.8863411,20.3427184 41.6515246,19.7443977 C41.4167081,19.146077 40.8609414,19.5736687 40.9680957,19.7869518 C41.0747373,20.0007476 41.4592621,20.3422057 41.2244456,20.620089 C40.9896291,20.8979723 40.7117458,21.0687014 40.4553959,20.620089 C40.199046,20.1714767 40.0226772,19.9935698 39.9211627,19.9151268 C39.6330254,19.6905642 39.0880254,19.8084852 39.3018213,20.1073892 C39.5156171,20.4062932 39.7929877,20.4278266 40.0067835,21.047168 C40.2205794,21.6665094 40.0067835,22.222276 40.3487543,22.3289176 C40.6907251,22.4355591 41.07525,22.3714717 41.1178041,22.0941011 C41.1603581,21.8162177 41.245979,21.5173137 41.5023289,21.5598678 C41.7586788,21.6024219 42.3569996,21.6880428 42.421087,22.4355591 C42.4851745,23.1830755 42.1432037,23.8029296 42.3785329,24.6570875 C42.4841491,25.0421251 42.8486787,25.6824872 42.8696994,26.0885454 C42.8912328,26.4946037 42.9337869,27.49847 42.0580955,27.9686157 C41.1824042,28.4387615 40.7348173,28.6848574 40.4559086,28.0542366 C40.1677713,27.4025951 40.0883028,25.9352482 40.8619668,25.4481833 C41.6417833,24.9570169 41.8658331,24.7432211 41.6735707,24.5294252 C41.4813082,24.3156294 41.2249583,23.7819089 41.1824042,23.525559 C41.1398502,23.2692091 40.7553253,23.09848 40.7122585,23.3332965 C40.6697044,23.5681131 40.8829875,24.8929294 40.3702877,24.871396 C39.8575879,24.8498626 39.8791213,24.6150461 39.7078795,24.871396 C39.5371505,25.127746 39.5479172,25.1062126 39.7294129,25.8542416 C39.9021928,26.5648436 39.8042671,26.5592039 39.4197422,26.6658454 C39.0352173,26.772487 38.8106548,26.473583 38.7255467,26.5592039 C38.6404385,26.6448247 38.4051093,27.3282536 38.4907301,27.477962 C38.576351,27.6276703 39.302334,28.0973034 39.4735757,29.0160615 C39.6443047,29.9348196 39.4951091,30.6608025 39.1956924,31.0027733 C38.8967884,31.3447441 38.4999587,31.4544619 38.5332842,31.0027733 C38.5548176,30.714636 38.4476633,30.297811 38.2343802,30.5116069 C38.0205844,30.7254027 37.4894274,30.9648335 37.6360595,31.430365 C37.700147,31.6333941 37.8283219,31.6441608 37.8283219,32.1137938 C37.8283219,32.5839396 37.5504386,33.2248144 37.5935054,33.8226224 C37.6360595,34.4209431 37.7642345,34.5701387 37.5078846,34.9336429 C37.2515346,35.2966344 36.6962807,35.980576 36.3758433,35.6811593 C36.0554059,35.3822553 36.09796,34.549118 35.8205894,34.6342262 C35.5427061,34.7198471 35.1797146,34.7198471 35.1797146,35.0613052 C35.1797146,35.403276 35.41812,36.1236192 35.0515397,37.0264836 C34.4962857,38.3938541 33.453967,38.3174618 33.1504487,37.9237083 C32.5736614,37.176192 32.7874572,36.5137838 33.4924195,35.6483465 C34.1973817,34.7829092 34.6675275,34.4414511 34.8705566,33.7575095 C35.0392349,33.1889254 34.9987316,32.091235 35.7036938,31.5467478 C36.4086561,31.0022606 37.0279975,30.4039399 37.6370849,30.019415 C38.2461723,29.6348902 38.8121929,29.2078112 38.6517179,28.8550737 C38.4912428,28.5023362 38.2354056,28.3105865 38.1072307,28.5669364 C37.9790557,28.8232863 37.9149682,29.4959485 37.4022684,29.4641611 C36.8895686,29.4323737 36.9962101,29.1544904 37.1884726,28.673578 C37.380735,28.1926655 36.6973061,27.8404408 36.4619769,28.246499 C36.2686891,28.5802666 36.5152977,29.2934321 36.2271604,29.7420444 C35.9390231,30.1906568 35.607819,30.1691234 35.5114314,30.0409484 C35.4150438,29.9127735 35.0628191,29.2401113 35.6396064,28.5346363 C36.2163937,27.8291614 36.2804812,27.2846741 37.0813183,26.9001493 C37.8821554,26.5156244 38.1518355,26.6858407 38.1385053,26.2274871 C38.1277386,25.8537289 37.818068,25.8429622 37.4335431,25.5225248 C37.0490182,25.2020874 36.7465253,24.3889455 37.1131057,23.9844253 C37.4760972,23.5840068 37.9139428,23.5681131 38.1385053,23.7598628 C38.3630679,23.9516125 38.5978844,24.4489314 38.8757677,24.4648251 C39.0808476,24.4766172 39.5597093,23.9664808 39.2551656,23.6957753 C38.8224469,23.3112505 38.2661676,23.3917443 38.5553303,22.9267256 C38.8542343,22.4458131 39.2602926,22.1894632 38.9716426,21.8695385 C38.6829926,21.5496138 38.4271553,21.3568387 38.2666803,21.644976 C38.1062053,21.9331133 38.2984677,22.6062882 37.850368,22.7985506 C37.4022684,22.9908131 37.0290229,22.6124406 36.9480163,22.1735695 C36.8680352,21.7408509 37.4709702,20.6831511 37.3376682,20.3632264 C37.2043663,20.042789 36.6434726,19.8187392 36.5686185,20.2991389 C36.5240136,20.5857382 36.6967934,21.2927512 36.3440559,21.3245386 C35.9913185,21.356326 35.4786186,21.0041012 35.4468312,20.3632264 C35.4150438,19.7223516 34.6690656,19.707996 34.5762669,19.9469142 C34.4265586,20.331439 34.4855191,20.9405264 35.1904813,21.3886261 C35.8954436,21.8367257 36.3066288,22.109482 36.3225225,22.4940069 C36.3399543,22.9149335 36.2799685,23.2789504 35.7349685,23.0549005 C35.1899686,22.8308507 35.1366478,21.9977135 34.8695312,21.8049383 C34.7593008,21.7254699 34.196869,21.7085508 34.2286564,21.9649007 C34.2604438,22.2212506 34.4209189,22.8621254 34.036394,22.8621254 C33.6518691,22.8621254 33.4273066,22.3176382 33.2673443,22.0612883 C33.1073819,21.8049383 32.6264695,22.1894632 32.722857,22.3817257 C32.8192446,22.5739881 33.3955192,22.8944255 33.2037695,23.3430378 C33.0120197,23.7916502 32.2040048,23.7752438 32.0768552,23.9998063 C31.8046116,24.4807188 32.5680217,25.1267206 32.845905,24.9770122 C33.4708861,24.6406811 33.6575088,23.6737292 34.1009942,23.5988751 C34.5762669,23.5188939 35.4094041,23.4865938 35.6980542,24.3520311 C35.9867042,25.2174684 36.4671039,26.1782679 36.0236185,26.4828116 C35.6426826,26.7442885 35.3827438,26.4828116 35.2863562,26.1623742 C35.1899686,25.8419368 34.8700439,25.617887 34.4855191,26.0341993 C34.1009942,26.4505115 35.201248,26.8996366 34.7844231,27.4759112 C34.3727251,28.0460334 33.9728192,28.0526985 33.9728192,29.0140107 C33.9728192,29.9753228 34.4809048,30.5192974 33.9087317,31.6738974 C33.599061,32.2988785 32.5967329,32.3460469 32.8515447,31.513935 C33.1504487,30.5367292 32.9263989,30.2480792 32.5634074,30.3921478 C32.4147244,30.4511083 32.330129,31.2288739 31.9814931,30.9048476 C31.7569306,30.6966915 31.4687932,30.5203228 32.0937743,29.4149419 C32.3834497,28.9022421 31.1857829,28.4695234 30.9935205,28.8863484 C30.8012581,29.3031734 30.6089956,30.6490104 31.3780454,31.5462351 C32.1470951,32.4434598 32.403445,32.5075473 32.3393576,33.3088971 C32.2752701,34.110247 31.7092495,34.9644049 31.0150539,34.9110841 C31.0150539,34.9110841 29.5625753,34.6547342 29.9896542,33.6718886 C30.552086,32.378347 30.7802374,31.93076 30.6997435,31.3862728 C30.6361687,30.9556049 29.7999553,30.5546737 29.5461689,30.8253792 C29.3057127,31.0817291 29.3052,31.3857601 29.3877446,32.0081777 C29.470802,32.6305953 29.2631586,33.3355575 29.0144992,33.0453694 C28.7658397,32.7551813 28.445915,31.4272888 28.8089065,30.2168045 C29.2416252,28.7750925 29.9271049,28.1921528 30.7981819,27.6943213 C31.6692589,27.1964898 32.1040283,27.4343825 32.3178242,28.0752573 C32.6428759,29.0498997 33.4288447,28.1413956 33.4529416,27.860436 C33.4929322,27.3918284 32.4157498,27.4041332 33.1212248,26.6161136 C33.8261871,25.8280939 34.2409612,25.4963771 33.8677158,25.247205 C33.4944703,24.9985456 33.4529416,25.2056763 33.1627535,25.5789218 C32.8725654,25.9521673 32.2916765,26.2838841 31.7523163,25.9521673 C31.212956,25.6204505 30.6735958,24.2930706 30.8397106,23.4635223 C31.0058253,22.633974 31.5036568,22.0530851 32.0425044,21.6383109 C32.5813519,21.2235367 32.664922,20.6426478 32.9966387,20.3939884 C33.3283555,20.145329 33.7277487,19.8346329 33.7277487,19.5623893 C33.7277487,19.0830149 33.1509614,18.985602 32.9551101,19.1911946 C32.7884826,19.3660253 33.0868739,19.8992331 32.4157498,20.1868577 C31.9553454,20.3842471 31.8763896,20.2699151 31.9179183,19.7305548 C31.959447,19.1911946 31.4616155,19.2327233 31.2544847,19.5229114 C31.047354,19.8130995 31.08837,19.7715708 31.1714273,20.2278737 C31.2544847,20.6841765 31.2960134,21.057422 31.0053126,21.2650654 C30.7146118,21.4727089 30.3244472,21.3619657 30.0927069,21.1820081 C29.8020061,20.9564201 29.4292733,20.7672339 29.8025188,20.2278737 C30.1757643,19.6885134 30.0588687,18.8948541 29.5123307,19.1076245 C29.2098378,19.2255455 29.4979751,19.5300892 29.4979751,19.9945952 C29.4979751,20.4093694 28.8483844,20.6841765 28.5581963,20.2688897 C28.2680082,19.8541155 27.6871193,19.6054561 27.8947627,19.1076245 C28.1024062,18.609793 28.6873967,18.047874 28.2680082,17.8633021 C27.8317006,17.6715523 27.3354072,17.6715523 27.3138738,18.609793 C27.2984928,19.2962981 26.6612069,19.1645342 26.1977263,18.9691956 C25.8931826,18.8410206 25.7424488,19.7495247 25.9895702,19.9628079 C26.3038552,20.2335134 27.0652144,19.6885134 27.4799886,20.1032876 C27.8947627,20.5180618 27.8270864,20.8220928 28.2003318,20.9882075 C28.5735773,21.1543223 29.3467286,21.5137248 29.7199741,22.0115564 C30.0932196,22.5093879 30.2788169,22.9410812 29.9471002,23.2312693 C29.6153834,23.5214574 29.5128434,23.505051 28.8904258,22.8826334 C28.2680082,22.2602158 28.2152001,21.9341387 28.1024062,21.6798396 C27.8804071,21.18047 27.4948569,21.2942893 27.3974439,21.5552535 C27.255426,21.933626 27.8963008,22.0776947 27.4805013,22.4263305 C27.053935,22.7836823 26.5263669,22.67499 26.6924816,23.1728215 C26.8585964,23.670653 27.0657271,23.546067 27.5635586,23.4630096 C28.0613902,23.3799522 28.7663524,23.2968949 28.6422791,23.7531977 C28.517693,24.2095006 27.9373168,24.2925579 27.9373168,24.6242747 C27.9373168,24.9559915 28.1034316,25.2466923 28.3936197,25.1636349 C28.6838078,25.0805776 29.1401106,24.6242747 29.4723401,24.8734468 C29.8040569,25.1221063 30.0711735,26.5853516 29.3062254,27.1964898 C28.2336573,28.0537239 27.3415596,29.2288319 27.2882388,30.3449794 C27.2072323,32.0374016 27.7691513,33.9713053 26.7437516,33.7575095 C26.0639116,33.6160043 26.1746548,32.5824015 26.1746548,32.1127684 C26.1746548,31.6426227 26.3028298,31.631856 26.3669172,31.4293396 C26.5140621,30.9638081 25.9823924,30.7243773 25.7685965,30.5105815 C25.5548007,30.2967856 25.4481591,30.7136106 25.4696925,31.0017479 C25.503018,31.4534365 25.1067011,31.3437187 24.8072843,31.0017479 C24.5083803,30.6597771 24.358672,29.9337942 24.529401,29.0150361 C24.7001301,28.096278 26.054683,27.3082583 26.187985,27.1990533 C26.4228015,27.0067908 26.358714,26.4300035 25.8249935,26.0239453 C25.5578769,25.8209161 24.9857039,26.5566404 24.7355064,26.494091 C24.6073314,26.4623036 24.1782017,26.350535 24.3509815,25.6394204 C24.5324772,24.891904 24.0090107,24.9129247 23.632689,24.8703706 C23.1230654,24.8124356 23.4752902,23.8131836 23.2907183,23.3322711 C23.2050974,23.1092467 22.8636393,23.2681837 22.8205725,23.5245336 C22.7780184,23.7808835 22.5216685,24.3151167 22.3294061,24.5283998 C22.1371436,24.7421957 22.3611935,24.9554788 23.1410099,25.4471579 C23.9146739,25.9347355 23.8352055,27.4015697 23.5470682,28.0532112 C23.2681595,28.683832 22.8205725,28.4377361 21.9448812,27.9675903 C21.0691899,27.4974446 21.111744,26.4935783 21.1332774,26.08752 C21.1548108,25.6814618 21.5188276,25.0410997 21.6244438,24.6560621 C21.8592603,23.8013915 21.5178022,23.1820501 21.5818897,22.4345337 C21.6459772,21.6870174 22.2442979,21.6013965 22.5006478,21.5588424 C22.7569977,21.5162883 22.8426186,21.8151923 22.8851727,22.0930757 C22.9277268,22.370959 23.3122516,22.4350464 23.6542224,22.3278922 C23.9961932,22.2212506 23.7823974,21.665484 23.9961932,21.0461426 C24.209989,20.4268012 24.4873597,20.4052678 24.7011555,20.1063638 C24.9149513,19.8074598 24.3699514,19.6900515 24.0818141,19.9141014 C23.9808122,19.9925444 23.8039308,20.1704513 23.5475809,20.6190636 C23.291231,21.067676 23.0133476,20.8969469 22.7785311,20.6190636 C22.5437146,20.3411803 22.9282395,19.9997222 23.034881,19.7859264 C23.1415226,19.5721306 22.5862687,19.1450516 22.3514522,19.7433723 C22.1166356,20.341693 21.8387523,20.7046845 21.6464899,20.768772 C21.4542275,20.8328595 21.4562783,20.779026 21.3475859,20.2027514 C21.2727317,19.8074598 21.1978775,19.7433723 20.8774401,19.8289932 C20.5570028,19.9146141 20.8241194,20.8861803 20.8774401,21.1748303 C20.9246085,21.4286167 20.8559068,21.5808885 20.5995568,21.6234426 C20.3432069,21.6659967 20.0760903,21.2389177 19.9479154,21.0041012 C19.8197404,20.7692847 19.6807987,20.7262179 19.4459822,20.9184803 C19.2111657,21.1107428 19.4244488,21.3778594 19.6597781,21.5275677 C19.8951073,21.6772761 20.0658363,21.7946844 20.5354694,22.9692797 C21.0056151,24.1443877 20.503682,24.6570875 20.1934986,24.8493499 C20.0007234,24.9693217 19.4459822,24.6996416 19.1465655,24.0162127 C18.8476615,23.3327838 19.3172946,22.9908131 19.4244488,22.820084 C19.5310904,22.649355 19.1255448,22.1576758 18.911749,21.9443927 C18.6979532,21.7305969 18.3882825,22.4996466 18.3349617,23.1835882 C18.3047124,23.5676004 18.0786118,23.4614715 17.8007285,23.2261423 C17.5228452,22.9908131 17.6510201,22.6708884 17.437737,22.0941011 C17.2239412,21.5173137 16.7948114,21.557817 16.4979582,21.8162177 C16.252375,22.0300136 16.6902206,22.2648301 16.9250372,22.6708884 C17.1839506,23.1184753 16.6686872,23.3758506 16.4764248,23.4614715 C16.2841624,23.5470924 16.3908039,23.9526379 16.5189789,24.1023463 C16.6471538,24.2520546 16.7537954,24.2946087 17.0742328,23.9316172 C17.3946702,23.5686258 17.9714575,24.0813256 18.2918949,24.4443171 C18.6123323,24.8073086 18.0996325,25.2989877 17.9289034,25.4056293 C17.7581744,25.5122708 18.3134283,26.046504 18.5697782,26.174679 C18.8261281,26.302854 18.751274,25.8650083 19.4777696,26.0572707 C20.2042653,26.2495332 20.2360527,27.9265743 20.0653236,28.3110992 C19.8945946,28.6956241 18.8902156,28.3326326 18.2708742,27.9691284 C17.6515328,27.6061369 17.7156203,26.6448247 17.7581744,26.3669414 C17.8007285,26.0890581 17.3951829,25.9608832 17.138833,25.9608832 C16.8824831,25.9608832 17.0532121,26.7083995 16.8183956,27.0078162 C16.5835791,27.3067202 16.0067918,26.345408 15.8786168,26.2172331 C15.7504418,26.0890581 15.4300044,26.302854 15.2592754,26.4951164 C15.0885464,26.6873788 15.5156253,27.0078162 15.8786168,27.2856995 C16.2416083,27.5635828 16.0067918,27.8624868 15.7504418,28.2044576 C15.4940919,28.5464284 15.9427043,28.6315366 16.2416083,28.6956241 C16.5405123,28.7597116 16.4979582,28.4608075 16.6261332,28.1613908 C16.7543081,27.8619741 16.9250372,27.9691284 17.2244539,28.07577 C17.5233579,28.1824115 17.6730662,28.6740907 17.5874453,28.9945281 C17.5018245,29.3149655 17.7797078,29.421607 18.1216786,29.3790529 C18.4636493,29.3364989 18.5062034,29.0586156 18.9332824,29.0586156 C19.3603613,29.0586156 19.261923,29.4887707 19.3603613,29.8276653 C19.4147075,30.0132626 19.9797027,30.4044526 20.3216735,30.1265693 C20.6636443,29.848686 20.9410149,29.4641611 21.5393356,29.3359862 C22.1376563,29.2078112 22.7569977,30.2547443 22.8210852,30.5110942 C22.8851727,30.7674441 23.163056,31.6431354 23.46196,32.0491937 C23.760864,32.4552519 24.1884557,33.0320392 24.2735638,33.9077305 C24.3591847,34.7834219 23.2907183,34.6552469 23.2907183,34.6552469 C22.6498435,34.6552469 22.5001351,34.3563429 22.3078727,33.9928387 C22.1156102,33.6293345 22.6283101,32.9674391 22.8421059,32.7536432 C23.0559017,32.5398474 23.0128349,32.3906518 22.8636393,32.2409434 C22.7139309,32.091235 22.3934935,32.1343018 22.2227645,32.3050309 C22.0520355,32.4757599 21.8167062,32.7321098 21.5178022,32.4972933 C21.2188982,32.2624768 21.5393356,31.4293396 21.3680939,31.2155437 C21.1973648,31.0017479 20.8553941,31.1940103 20.8338607,31.6856895 C20.8123273,32.1768559 20.4918899,32.1343018 19.9581694,31.920506 C19.4239361,31.7067102 19.4029154,32.2409434 19.5310904,32.4757599 C19.6592654,32.7105764 20.2786067,32.7746639 20.7487525,33.394518 C21.2188982,34.0138594 20.7272191,34.6121801 19.9581694,34.569626 C19.1891196,34.5270719 18.9543031,33.9072178 18.8045947,33.095614 C18.6548864,32.2840102 18.7620406,31.4293396 18.8902156,31.0448147 C19.0183906,30.6602898 18.2278074,30.7028439 18.0570784,30.8740857 C17.8863493,31.0448147 17.9504368,32.3055436 17.8432826,32.4337185 C17.736641,32.5618935 17.5228452,32.3055436 17.0742328,31.4083189 C16.6256205,30.5110942 16.8394163,29.7845985 16.8819704,29.4641611 C16.9245245,29.1437237 16.4759121,29.1652571 16.3908039,29.2078112 C16.3051831,29.2503653 16.3051831,29.6564236 16.134454,29.8912401 C15.963725,30.1260566 15.6002208,29.3570069 15.4720458,29.2078112 C15.3438709,29.0581029 15.087521,29.3785402 15.1941625,29.6779569 C15.3008041,29.9768609 15.9847457,30.6392691 16.2410956,31.0663481 C16.4974455,31.493427 16.1770081,31.5790479 15.7709498,31.6431354 C15.3648916,31.7072229 14.3610253,30.7674441 14.1046754,30.4470067 C13.8483255,30.1265693 13.9339463,29.2934321 13.954967,28.8022656 C13.9759877,28.3110992 13.6129962,27.7901962 13.3140922,28.1188368 C12.8947038,28.5792412 13.2715382,29.6354029 12.9511008,29.7635778 C12.6306634,29.8917528 12.4384009,29.3790529 12.2676719,29.122703 C12.0969428,28.8663531 12.0754095,28.7807322 11.8190595,28.823799 C11.5627096,28.8663531 11.3299439,29.3000972 11.6826814,29.5928488 C12.1071968,29.9455863 12.3527801,30.0199277 12.480955,30.255257 C12.60913,30.4900735 11.8616136,30.7038693 11.7544594,30.8105109 C11.6478178,30.9171524 12.1605176,31.3447441 12.3527801,31.3872982 C12.5450425,31.4298523 12.7588383,31.2591232 13.2715382,31.1735024 C13.784238,31.0878815 13.954967,31.6005813 14.2969378,31.8784646 C14.6389086,32.1563479 14.4035794,32.3911645 14.083142,32.6049603 C13.7627046,32.8187561 13.4848213,32.8828436 13.7627046,33.1391935 C14.0405879,33.3955434 14.3394919,33.37401 14.6814627,33.0535726 C15.0234335,32.7331352 15.6079113,32.6372604 16.1929018,32.7731258 C16.7563589,32.904377 17.5228452,34.0789723 17.7791951,34.6983137 C18.035545,35.3176551 17.1808744,35.574005 16.5399996,35.4888968 C15.8991248,35.403276 15.7458275,34.9905526 15.6427749,34.7624012 C15.5438238,34.5434783 15.386425,34.5916721 15.0444542,34.6342262 C14.7024834,34.6767803 14.7024834,34.9121095 14.7881043,35.1684594 C14.8737251,35.4248093 15.0659876,35.6596259 15.0659876,35.9375092 C15.0659876,36.2153925 14.2543837,36.2153925 13.8267921,36.3435674 C13.3992004,36.4717424 13.4848213,36.2153925 13.2715382,35.5960511 C13.0577423,34.9767097 13.4422672,34.4850306 13.4638006,34.1861266 C13.485334,33.8872226 13.2289841,33.8872226 12.9511008,33.7590476 C12.6732175,33.6308726 12.60913,34.0153975 12.4168675,34.2291933 C12.2246051,34.4429892 12.1605176,34.079485 12.1605176,33.652406 C12.1605176,33.2253271 12.5450425,32.8408022 12.6947509,32.6695605 C12.8444592,32.4988314 12.60913,32.2424815 12.4599343,32.1568606 C12.310226,32.0712398 12.2035844,32.1994147 12.011322,32.4557646 C11.8190595,32.7121145 11.5627096,32.7977354 11.2422722,32.5198521 C10.9218348,32.2419688 10.9003014,31.7508024 10.9003014,31.7508024 C10.5583307,31.6226274 10.0405038,32.0045888 10.1312517,32.2850356 C10.1604756,32.3757835 10.4301557,32.776202 11.0710305,33.2889019 C11.7119053,33.8016017 11.7544594,34.4424765 11.6903719,34.8270013 C11.6262844,35.2115262 11.1776721,35.1689721 10.9638762,35.1899928 C10.7500804,35.2115262 10.9854096,35.6811593 11.1346053,35.8093342 C11.2838009,35.9375092 11.5616842,35.8308676 12.03183,35.9159758 C12.5019757,36.001084 12.5019757,36.450209 12.6727048,36.7916671 C12.8434338,37.1336379 12.6511714,37.346921 11.9677425,37.3684544 C11.2843136,37.3899878 11.0279637,37.0054629 10.728547,37.1121045 C10.429643,37.2187461 10.5788387,38.0308626 10.7926345,38.2656791 C11.0064303,38.5004956 11.4842666,38.2338917 11.8903248,38.2123583 C12.2963831,38.1908249 12.5071027,38.6209801 12.9290547,38.6286706 C13.1259314,38.6322595 13.3935607,38.2990046 14.0610959,37.7314459 C14.7019707,37.1869587 15.0588098,37.2500207 15.3910393,37.346921 C15.7622339,37.4551007 15.9355265,37.7473396 16.6410014,37.2028524 C17.3464764,36.6583651 18.2590821,36.3697151 18.7558882,36.4496963 C19.2526944,36.5296775 18.8943172,37.0305852 19.1245194,37.4909897 C19.2368007,37.7155522 19.5731318,37.650952 19.8617818,37.4909897 C20.1504318,37.3310273 19.9499662,36.5137838 21.2799095,36.0492777 C22.4821906,35.6293766 25.0369739,37.1228712 25.4696925,37.4592023 C25.9024112,37.7955334 25.661955,38.6768644 24.7324302,38.7250582 C23.8029054,38.7732519 23.0743589,38.1728804 22.8256995,37.8760272 C22.5370495,37.531493 22.6252339,37.2033651 22.3529903,37.1387649 C22.0807467,37.0741647 21.7521061,37.3310273 21.9284748,37.6032709 C21.9720543,37.6704346 22.112534,37.9319115 22.1366309,38.356427 C22.1617532,38.8045266 21.6080374,38.8691268 21.3357938,38.949108 C21.0635502,39.0290892 21.1758314,39.3654202 21.3839876,39.4618078 C21.5921437,39.5581954 22.0566498,39.3895171 22.4411746,39.4459141 C22.5519178,39.4623205 22.7457183,39.5100016 22.601137,39.7663515 C22.4565556,40.0227014 22.008456,40.3831294 21.719806,40.5753918 C21.431156,40.7676543 20.7907939,40.8717323 19.8771628,40.5031012 C18.9635317,40.13447 19.0558176,38.7983742 19.0599192,38.7409519 C19.0681224,38.6286706 19.1240067,38.1559613 18.7071818,38.1800582 C18.2406249,38.2067186 18.4026381,38.7086518 18.3385506,38.9973018 C18.2744631,39.2854391 18.0022195,39.237758 17.5536071,39.0131955 C17.1049948,38.7891456 16.880945,38.228252 16.7845574,38.1318645 C16.6881698,38.0354769 16.4318199,38.0518833 16.1436826,38.1477581 C15.8555453,38.243633 16.1677795,38.6204674 16.2159733,38.9567985 C16.2641671,39.2931296 15.9170693,39.4074616 15.5592048,39.357217 C15.046505,39.2849264 14.814252,39.357217 14.8624457,39.6053638 C14.8752632,39.6699639 15.0547082,39.8935011 15.1828831,40.0057823 C15.3110581,40.1180636 15.5356206,40.2621322 15.7755641,40.0857635 C16.0155077,39.9093948 16.6245951,39.5889574 16.7850701,39.7012386 C16.9455451,39.8135199 16.5928077,40.310326 16.4323326,40.4062009 C16.2718576,40.5020758 16.5605076,40.7907258 16.7045762,40.8707069 C16.8486449,40.9506881 17.1049948,40.5984633 17.2972572,40.4220946 C17.4895197,40.2457259 17.7940634,40.1016572 18.2103756,40.2780259 C18.6266879,40.4543947 18.8830378,41.1111632 18.8030566,41.495688 C18.7440962,41.7786983 18.3221442,41.9766005 17.8576381,41.8961066 C17.3931321,41.8156127 17.417229,41.5115817 17.2167634,41.4151942 C17.1244774,41.3705893 16.9522102,41.4233974 16.8163448,41.5592628 C16.711754,41.6638536 16.6722761,41.927894 16.8163448,42.0401753 C16.9604134,42.1524565 17.2490634,42.216544 17.2808508,42.4728939 C17.3126382,42.7292438 16.7840447,43.0173811 16.3354323,42.8892062 C15.88682,42.7610312 15.7909451,42.2965252 15.7427513,41.8638065 C15.6945576,41.4310879 16.014995,41.4310879 15.9673139,41.1911443 C15.9391154,41.0486138 15.5510016,40.9189007 15.2782453,40.9189007 C15.1264861,40.9189007 15.0060017,40.9506881 15.1500703,41.2875319 C15.294139,41.6243757 14.9419142,41.8161254 14.7173517,41.8484255 C14.4933019,41.8802129 14.0918579,41.6925648 13.980602,41.2234444 C13.9006209,40.8871133 13.7252775,40.8384069 13.6360677,40.903007 C13.4038147,41.0711726 13.2915335,41.1911443 13.1151647,41.4157069 C12.938796,41.6402694 13.1792522,41.8884161 13.531477,42.144766 C13.8452493,42.3729175 14.4287017,42.5374941 14.6050704,42.6015816 C14.7814392,42.6656691 14.3969143,43.1142814 14.2046519,43.2906501 C14.0123894,43.4670189 14.4927892,43.7715626 14.7973329,43.8674375 C15.1018766,43.963825 15.4382076,43.6910687 15.6145764,43.5628938 C15.7909451,43.4347188 16.1913637,43.6746623 16.5435885,43.8192437 C16.9922008,44.0033029 17.4966975,43.8110405 17.6171819,43.5470001 C17.7017774,43.3614027 17.9053192,43.3547376 18.0499006,43.5152127 C18.1944819,43.6756877 18.030418,43.9858711 18.1298818,44.092 C18.735893,44.7369764 19.0271065,43.5793002 19.1393877,43.2747565 C19.251669,42.9702128 19.6520876,42.8420378 20.1488937,42.7302692 C20.6456998,42.6185007 21.0943122,42.2657632 21.2542745,42.1211818 C21.4142369,41.9766005 21.5665087,41.9848037 21.5588182,42.2175694 C21.5547166,42.339592 21.318362,42.8102504 21.8792556,42.8743379 C22.4401492,42.9384254 22.5590956,42.5651799 22.616518,42.3457444 C22.8431313,41.4741546 23.0492366,40.4072263 25.5327546,40.2308576 C28.0162726,40.0544888 28.8571003,42.0012101 29.0493627,42.6020943 C29.2416252,43.2024658 29.0990946,43.6910687 28.8171097,43.7874563 C28.512566,43.8915343 28.2244287,43.5152127 28.0798474,43.1624752 C27.935266,42.8097377 28.0639537,42.5374941 28.0639537,42.329338 C28.0639537,42.1211818 27.8557975,42.1211818 27.631235,42.1047754 C27.4066725,42.088369 27.3107976,42.4252128 27.4066725,42.5856879 C27.5025474,42.7461629 27.5189538,43.0666003 27.3907788,43.1301751 C27.2626038,43.1937499 27.1585258,43.2424564 26.878079,43.0819813 C26.6232671,42.9363746 26.558667,42.4652034 26.5417479,42.2488441 C26.517651,41.9443004 26.4135729,41.7361443 26.1254356,41.495688 C25.8372983,41.2552318 25.4394432,41.3834068 25.3081921,41.4797943 C25.2000124,41.5592628 25.105163,41.7761348 25.2922984,41.8961066 C25.6404216,42.1201564 25.7911553,42.4395684 25.9013858,42.7133501 C26.0059766,42.973289 25.9880321,43.1178703 25.827557,43.2301516 C25.667082,43.3424328 25.4835354,43.3326915 25.2764047,43.2424564 C25.0456898,43.1419672 25.0072373,42.8743379 24.9400736,42.6979691 C24.8939306,42.5774847 24.7672938,42.5749212 24.5129946,42.5431338 C24.3314989,42.520575 24.075149,42.5323671 23.9951678,42.7302692 C23.9341565,42.881003 24.0915554,42.9866191 24.3479053,43.1306878 C24.6042552,43.2747565 24.5883615,43.5793002 24.5078676,43.7074751 C24.4273738,43.8356501 24.1874303,43.7874563 24.0269552,43.7074751 C23.8664802,43.6274939 23.2261181,43.2265627 23.0979431,43.1788816 C22.9697682,43.1312005 22.7339262,43.2009277 22.5529432,43.3070565 C22.4170777,43.3870377 22.3283807,43.5951938 22.4888557,43.6915814 C22.6493308,43.787969 22.4570683,43.9479313 22.2483995,44.0120188 C22.0397307,44.0761063 21.7546696,43.974079 21.6393121,43.9156312 C21.4424354,43.8156548 21.2229998,43.5793002 20.9984373,43.5470001 C20.7738748,43.5147 20.5339313,43.7874563 20.4375437,43.9797187 C20.3411561,44.1719812 20.4718946,44.3211768 20.5657187,44.3483499 C20.7061984,44.3888532 21.4162877,44.4160263 21.5911183,44.4447375 C21.8038887,44.4796011 21.8710524,44.5882934 21.5429245,44.9574373 C21.4147496,45.1015059 21.9756432,45.5342246 22.1837993,45.261981 C22.3068473,45.1009933 22.4719366,44.6211062 22.8405678,44.5570187 C23.0953796,44.5124138 23.673705,44.4929313 23.8659675,44.541125 C24.0582299,44.5893188 23.9618423,44.8820704 23.8977548,45.1179123 C23.8664802,45.2337825 23.822388,45.3927195 23.9295422,45.4383497 C24.1741001,45.5414024 24.6345045,45.6946997 24.7467858,45.678806 C24.859067,45.6629123 24.8872655,45.5321738 24.987242,45.3906687 C25.2353887,45.0379312 25.6522137,44.829775 26.3812728,44.9261626 C27.2877261,45.0456217 27.631235,45.9033685 27.631235,45.9033685 C27.6379001,45.9100336 30.9776268,45.9054193 32.0014884,45.9038812 C33.0253499,45.9054193 36.3645639,45.9100336 36.3717417,45.9033685 C36.3717417,45.9033685 36.7147379,45.0456217 37.6217039,44.9261626 C38.3507631,44.829775 38.7670753,45.0384439 39.0157348,45.3906687 C39.1157112,45.5321738 39.1439097,45.6629123 39.256191,45.678806 C39.3684722,45.6946997 39.8288767,45.5414024 40.0734345,45.4383497 C40.1811015,45.3927195 40.1370093,45.2337825 40.1052219,45.1179123 C40.0416471,44.8820704 39.9452595,44.5893188 40.1370093,44.541125 C40.328759,44.4929313 40.9075971,44.5129265 41.1624089,44.5570187 C41.5310401,44.6211062 41.6961295,45.1009933 41.8191774,45.261981 C42.0273336,45.5342246 42.5882272,45.1020186 42.4600522,44.9574373 C42.1319243,44.5882934 42.199088,44.4796011 42.4118584,44.4447375 C42.5866891,44.4160263 43.2967783,44.3893659 43.4372581,44.3483499 C43.5310822,44.3211768 43.6618206,44.1719812 43.5654331,43.9797187 C43.4690455,43.7874563 43.229102,43.5152127 43.0045394,43.5470001 C42.7799769,43.5787875 42.5605414,43.8156548 42.3636646,43.9156312 C42.2483072,43.974079 41.9632461,44.0755936 41.7545772,44.0120188 C41.5459084,43.948444 41.3541587,43.7874563 41.514121,43.6915814 C41.6740834,43.5957065 41.585899,43.3870377 41.4500335,43.3070565 C41.2695632,43.2009277 41.0337213,43.1306878 40.9055463,43.1788816 C40.7773714,43.2270754 40.1364966,43.6274939 39.9765342,43.7074751 C39.8165719,43.7874563 39.5761157,43.8356501 39.4956218,43.7074751 C39.4151279,43.5793002 39.3992342,43.2747565 39.6555841,43.1306878 C39.9119341,42.9866191 40.0693329,42.881003 40.0083216,42.7302692 C39.9283405,42.5323671 39.6719905,42.520575 39.4904948,42.5431338 C39.2361957,42.5749212 39.1090461,42.5774847 39.0634158,42.6979691 C38.9962522,42.8748506 38.9577997,43.1419672 38.7270847,43.2424564 C38.519954,43.3326915 38.3358948,43.3424328 38.1759324,43.2301516 C38.0159701,43.1178703 37.9975129,42.9738017 38.1021037,42.7133501 C38.2118214,42.4400811 38.3625552,42.1201564 38.7111911,41.8961066 C38.8983265,41.7756221 38.803477,41.5592628 38.6952974,41.4797943 C38.5645589,41.3834068 38.1667038,41.2552318 37.8780538,41.495688 C37.5894038,41.7361443 37.4853258,41.9443004 37.4617416,42.2488441 C37.4448225,42.4652034 37.3802223,42.9363746 37.1254105,43.0819813 C36.8449637,43.2419437 36.7408856,43.1942626 36.6127106,43.1301751 C36.4845357,43.0660876 36.5004294,42.7456502 36.596817,42.5856879 C36.6932045,42.4257255 36.596817,42.0888817 36.3722544,42.1047754 C36.1476919,42.1206691 35.9395358,42.1206691 35.9395358,42.329338 C35.9395358,42.5380068 36.0677107,42.8102504 35.9236421,43.1624752 C35.7795734,43.5147 35.4909234,43.8915343 35.1863797,43.7874563 C34.9043948,43.6910687 34.7618643,43.2024658 34.9541267,42.6020943 C35.1463891,42.0012101 35.9877296,40.0544888 38.4707348,40.2308576 C40.9537401,40.4072263 41.1603581,41.4741546 41.3869715,42.3457444 C41.4438812,42.5651799 41.5633402,42.9384254 42.1242338,42.8743379 C42.6851274,42.8102504 42.4487728,42.339592 42.4446712,42.2175694 C42.436468,41.9853164 42.5887399,41.9771132 42.7492149,42.1211818 C42.90969,42.2652505 43.3583023,42.617988 43.8545958,42.7302692 C44.3508892,42.8425505 44.7518205,42.9707255 44.8641017,43.2747565 C44.976383,43.5787875 45.2675965,44.7364637 45.8736077,44.092 C45.9730715,43.9858711 45.8095202,43.6756877 45.9535889,43.5152127 C46.0976575,43.3547376 46.301712,43.3614027 46.3863075,43.5470001 C46.5062793,43.8115532 47.0112886,44.0038156 47.459901,43.8192437 C47.8121257,43.6746623 48.213057,43.4347188 48.3889131,43.5628938 C48.5647691,43.6910687 48.9016129,43.9633123 49.2061566,43.8674375 C49.5107003,43.7715626 49.9911,43.4670189 49.7988376,43.2906501 C49.6065752,43.1142814 49.2220503,42.6656691 49.398419,42.6015816 C49.5747878,42.5374941 50.1582402,42.3729175 50.4720125,42.144766 C50.82475,41.8884161 51.0646935,41.6402694 50.8883247,41.4157069 C50.711956,41.1911443 50.6001874,41.0711726 50.3674217,40.903007 C50.2782119,40.8384069 50.1028686,40.8871133 50.0228874,41.2234444 C49.9111189,41.6925648 49.5101876,41.8802129 49.2856251,41.8484255 C49.0610625,41.8166381 48.7088378,41.623863 48.8529064,41.2875319 C48.9969751,40.9512008 48.8764906,40.9189007 48.7247314,40.9189007 C48.4524878,40.9189007 48.0643741,41.0491265 48.0356629,41.1911443 C47.9874691,41.4316006 48.3079065,41.4316006 48.2602254,41.8638065 C48.2125443,42.2960125 48.1161567,42.7610312 47.6675444,42.8892062 C47.218932,43.0173811 46.6903385,42.7292438 46.7221259,42.4728939 C46.7539133,42.216544 47.0425633,42.1524565 47.186632,42.0401753 C47.3307006,41.927894 47.2912227,41.6638536 47.186632,41.5592628 C47.0502538,41.4228847 46.8784994,41.3705893 46.7862134,41.4151942 C46.5857478,41.5115817 46.6098446,41.8156127 46.1453386,41.8961066 C45.6808326,41.9766005 45.2588806,41.7781856 45.1999201,41.495688 C45.1199389,41.1111632 45.3762889,40.4543947 45.7926011,40.2780259 C46.2089134,40.1016572 46.5134571,40.2462386 46.7057195,40.4220946 C46.8979819,40.5979506 47.1543319,40.9506881 47.2984005,40.8707069 C47.4424692,40.7907258 47.7311192,40.5020758 47.5706441,40.4062009 C47.4101691,40.310326 47.0579443,39.8135199 47.2179066,39.7012386 C47.377869,39.5889574 47.9869564,39.9093948 48.2274126,40.0857635 C48.4678688,40.2621322 48.6919187,40.1175509 48.8200936,40.0057823 C48.9482686,39.8940138 49.1282262,39.6699639 49.140531,39.6053638 C49.1887248,39.357217 48.9564718,39.2849264 48.4437719,39.357217 C48.0859075,39.4074616 47.7388097,39.2931296 47.7870035,38.9567985 C47.8351972,38.6204674 48.1474314,38.243633 47.8592941,38.1477581 C47.5711568,38.0518833 47.3148069,38.0354769 47.2184193,38.1318645 C47.1220318,38.228252 46.8979819,38.7886329 46.4493696,39.0131955 C46.0007572,39.237758 45.7285136,39.2854391 45.6644262,38.9973018 C45.6003387,38.7091645 45.7623518,38.2072313 45.295795,38.1800582 C44.8794827,38.1559613 44.935367,38.6286706 44.9430575,38.7409519 C44.9471591,38.7983742 45.0394451,40.1349827 44.125814,40.5031012 C43.2121829,40.8712196 42.5718208,40.7676543 42.2831708,40.5753918 C41.9945208,40.3831294 41.5459084,40.0227014 41.4018398,39.7663515 C41.2577711,39.5100016 41.4510589,39.4623205 41.5618021,39.4459141 C41.946327,39.3900298 42.410833,39.5581954 42.6189892,39.4618078 C42.8271453,39.3654202 42.9394266,39.0290892 42.6671829,38.949108 C42.3949393,38.8691268 41.8407108,38.8040139 41.8663458,38.356427 C41.8904427,37.9319115 42.0309225,37.6704346 42.0745019,37.6032709 C42.2508707,37.3310273 41.9222301,37.0746774 41.6499865,37.1387649 C41.3777429,37.2028524 41.4659272,37.531493 41.1772772,37.8760272 C40.9286178,38.1728804 40.2000714,38.7732519 39.2705466,38.7250582 C38.3410218,38.6768644 38.1010783,37.7960461 38.5332842,37.4592023 C38.9654902,37.1223585 41.5207861,35.6293766 42.7230672,36.0492777 C44.0530106,36.5137838 43.852545,37.3310273 44.141195,37.4909897 C44.429845,37.650952 44.7661761,37.7155522 44.8784573,37.4909897 C45.1086595,37.0305852 44.7502824,36.5296775 45.2470885,36.4496963 C45.7438946,36.3697151 46.657013,36.6578524 47.3619753,37.2028524 C48.0669376,37.7478523 48.2402301,37.4551007 48.6119375,37.346921 C48.944167,37.2500207 49.3010061,37.1869587 49.9418808,37.7314459 C50.6099287,38.2990046 50.8770453,38.6322595 51.0739221,38.6286706 C51.495874,38.6204674 51.7065937,38.1908249 52.1126519,38.2123583 C52.5187102,38.2338917 52.9965464,38.5004956 53.2103423,38.2656791 C53.4241381,38.0308626 53.5733337,37.2187461 53.2744297,37.1121045 C52.9755257,37.0054629 52.7191758,37.3899878 52.0352343,37.3684544 C51.3518054,37.346921 51.1595429,37.1336379 51.330272,36.7916671 C51.501001,36.4496963 51.501001,36.001084 51.9711468,35.9159758 C52.4412925,35.8303549 52.7186631,35.9375092 52.8683715,35.8093342 C53.0180798,35.6811593 53.2528963,35.2110135 53.0391005,35.1899928 C52.8253047,35.1684594 52.3766923,35.2115262 52.3126049,34.8270013 C52.2485174,34.4424765 52.2910715,33.8026271 52.9319463,33.2899273 Z",
+                id: "Shape"
+              }
+            })
+          ])
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-ef667248", module.exports)
+  }
+}
+
+/***/ }),
+/* 325 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(326)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(328)
+/* template */
+var __vue_template__ = __webpack_require__(329)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/icons/sea-creatures/Macro.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-af504e12", Component.options)
+  } else {
+    hotAPI.reload("data-v-af504e12", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 326 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(327);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("63f530ec", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-af504e12\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Macro.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-af504e12\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Macro.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 327 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#sea-macro {\n  fill: #252525;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 328 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Macro',
+    props: {
+        size: {
+            type: String,
+            default: '64px'
+        }
+    }
+});
+
+/***/ }),
+/* 329 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        width: _vm.size,
+        height: _vm.size,
+        viewBox: "0 0 64 64",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      }
+    },
+    [
+      _c(
+        "g",
+        {
+          attrs: {
+            stroke: "none",
+            "stroke-width": "1",
+            fill: "none",
+            "fill-rule": "evenodd"
+          }
+        },
+        [
+          _c("g", { attrs: { id: "sea-macro" } }, [
+            _c("path", {
+              attrs: {
+                d:
+                  "M43.5907536,27.4208725 C41.8596684,27.3652959 38.9471357,30.4366679 37.289092,32.5498013 C35.6310484,34.6629346 34.8478224,38.9523344 33.2693709,42.5975669 C30.8900417,48.0923242 28.3336356,46.7715099 26.0090387,49.1146899 C24.2913444,50.8461156 20.6137012,53.6872416 14.8890681,50.8461156 C13.6347284,50.2235888 18.0712459,47.1059918 17.4388276,45.1540918 C15.8556515,44.1647056 12.5,40.9858447 12.5,39.4932153 C12.5,38.0005859 15.799653,41.4829807 18.2812404,41.4829807 C20.7628278,41.4829807 16.6426745,34.8027922 24.2913444,25.6100516 C29.6259309,20.4623418 38.0130017,20.1410772 40.0496307,20.8237436 C40.6240873,21.0162982 39.1524337,17.1724336 40.0496307,16.4252276 C40.9468278,15.6780217 40.9510192,19.5281868 41.7251502,18.4687604 C42.4992811,17.4093339 41.7251502,13.6670417 45.1569638,12.7721358 C46.1961362,12.5011533 42.6645462,15.9873209 43.5907536,18.4687604 C44.5169611,20.9501998 45.1559349,14.7855596 48.8333124,14.7855596 C49.5116914,14.7855596 45.7250495,18.0920131 46.4395248,18.8568546 C47.1540002,19.621696 50.0224554,16.4805556 50.9114578,18.1502776 C51.2876574,18.8568546 47.1514478,19.2292356 47.3492466,20.5492181 C47.4104045,20.9573467 50.0040272,19.8093436 50.2004513,20.8237436 C50.5026272,22.3842809 50.3545459,25.164678 48.3525981,26.2542242 C46.3506504,27.3437704 45.3218389,27.4764491 43.5907536,27.4208725 Z M25.1105518,40.4694665 C23.7556101,38.6056873 21.452114,36.5040206 21.0757617,37.2530595 C20.8715893,37.6594157 21.4891425,40.6033784 22.7175681,42.3303026 C23.8668435,43.9459572 24.9063379,44.990582 26.5573087,44.7414624 C27.3566996,44.6208401 26.4654935,42.3332457 25.1105518,40.4694665 Z",
+                id: "Combined-Shape"
+              }
+            })
+          ])
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-af504e12", module.exports)
+  }
+}
+
+/***/ }),
+/* 330 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(331)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(333)
+/* template */
+var __vue_template__ = __webpack_require__(334)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/icons/sea-creatures/Ray.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6348c1d6", Component.options)
+  } else {
+    hotAPI.reload("data-v-6348c1d6", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 331 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(332);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("12be058a", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6348c1d6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Ray.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6348c1d6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Ray.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 332 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#sea-ray {\n  fill: #252525;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 333 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Ray',
+    props: {
+        size: {
+            type: String,
+            default: '64px'
+        }
+    }
+});
+
+/***/ }),
+/* 334 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        width: _vm.size,
+        height: _vm.size,
+        viewBox: "0 0 64 64",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      }
+    },
+    [
+      _c(
+        "g",
+        {
+          attrs: {
+            stroke: "none",
+            "stroke-width": "1",
+            fill: "none",
+            "fill-rule": "evenodd"
+          }
+        },
+        [
+          _c("g", { attrs: { id: "sea-ray", "fill-rule": "nonzero" } }, [
+            _c("path", {
+              attrs: {
+                d:
+                  "M52.6878134,51.6377465 C53.3877188,50.7376724 53.6948271,46.9317227 53.6948271,46.9317227 C54.3337221,41.1062616 50.7334253,31.9595061 50.7334253,31.9595061 C48.6042323,28.4195342 49.8230685,23.5599562 49.8230685,23.5599562 C52.2545713,22.0888525 50.99529,20.4895584 50.99529,20.4895584 L52.2196103,17.8921623 C53.332878,16.3209742 52.6336581,16.1626214 52.6336581,16.1626214 C51.241388,15.991244 49.2424418,19.4187923 49.2424418,19.4187923 C47.6383492,20.5327455 45.6167812,19.0691824 45.6167812,19.0691824 C45.6167812,19.0691824 44.0181727,17.1531829 45.0183313,15.4764263 C45.0183313,15.4764263 48.299866,13.2464633 48.0332028,11.8685889 C48.0332028,11.8685889 47.8268644,11.1823937 46.3358808,12.4012299 L43.828972,13.8017261 C43.828972,13.8017261 42.1474168,12.6548685 40.847005,15.1816571 C40.847005,15.1816571 36.0827128,16.7329655 32.4042679,14.851927 C32.4042679,14.851927 23.0312943,11.8898397 17.2641015,12.9277013 C17.2641015,12.9277013 13.4869433,13.4959888 12.6375968,14.254848 C12.6375968,14.254848 10.2890407,14.9561244 14.4521409,15.0315305 C14.4521409,15.0315305 25.1810526,18.0532571 26.9441835,25.3128044 C26.9441835,25.3128044 27.971077,30.2614987 29.9069562,32.4208541 C29.9069562,32.4208541 29.673883,33.974219 30.2737039,34.8907455 C27.6379193,38.297043 19.4851528,47.9668423 10.2280303,50.2811229 C10.2280303,50.2811229 18.4808812,51.1126461 31.0661531,35.4151603 C31.9751389,36.1815601 33.3756351,35.6585163 33.3756351,35.6585163 C35.6638664,37.4408414 40.6715145,38.12498 40.6715145,38.12498 C48.0345738,39.3842613 51.7870537,49.8800998 51.7870537,49.8800998 C52.1496883,54.0294898 52.6878134,51.6377465 52.6878134,51.6377465 Z",
+                id: "Shape",
+                transform:
+                  "translate(31.999419, 31.999845) scale(-1, 1) translate(-31.999419, -31.999845) "
+              }
+            })
+          ])
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6348c1d6", module.exports)
+  }
+}
+
+/***/ }),
+/* 335 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(336)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(338)
+/* template */
+var __vue_template__ = __webpack_require__(339)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/icons/sea-creatures/SchoolOfFish.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7b3d5288", Component.options)
+  } else {
+    hotAPI.reload("data-v-7b3d5288", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 336 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(337);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("92bd05ca", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b3d5288\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SchoolOfFish.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7b3d5288\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SchoolOfFish.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 337 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#sea-schools-of-fish {\n  fill: #252525;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 338 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'SchoolOfFish',
+    props: {
+        size: {
+            type: String,
+            default: '64px'
+        }
+    }
+});
+
+/***/ }),
+/* 339 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        width: _vm.size,
+        height: _vm.size,
+        viewBox: "0 0 64 64",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      }
+    },
+    [
+      _c(
+        "g",
+        {
+          attrs: {
+            stroke: "none",
+            "stroke-width": "1",
+            fill: "none",
+            "fill-rule": "evenodd"
+          }
+        },
+        [
+          _c(
+            "g",
+            { attrs: { id: "sea-schools-of-fish", "fill-rule": "nonzero" } },
+            [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M18.8771429,23.917526 C19.0471375,23.730966 19.3547468,23.451126 19.5085515,23.281526 C19.8242557,22.933846 20.3747144,22.1367261 20.4556642,22.0604061 C20.115675,21.9247261 19.7352109,22.1536861 19.4276016,22.2893661 C19.2414171,22.3741661 19.0633275,22.4759261 18.8933329,22.569206 C18.3104943,22.908406 17.6952757,23.273046 17.0072023,23.264566 C17.0072023,23.264566 14.8539373,23.018646 13.291606,22.798166 C13.3320809,22.730326 13.3887457,22.721846 13.3644608,22.704886 C12.9273318,22.4165661 11.7292746,21.1445661 11.7211796,21.1445661 C11.1869109,21.4752861 10.7497819,22.560726 10.7497819,22.560726 C9.09031077,22.5183261 7.16370526,22.772726 5.45566425,24.104086 C5.45566425,24.104086 7.59273926,26.4954459 11.4864252,26.3258459 C11.4864252,26.3258459 12.1906885,27.2162459 12.4740129,27.1399259 C12.5468677,26.9364059 12.6278175,26.7837659 12.6197225,26.3258459 C12.6278175,26.3088859 12.5711526,26.2834459 12.4740129,26.2325659 C13.1701812,26.1308059 13.9230145,25.9357659 14.7163226,25.6474459 C14.8701273,25.7661659 15.2748763,26.0544859 15.4772509,25.8340059 C15.6634354,25.6304859 15.86581,25.4608859 16.0762795,25.291286 C16.3596038,25.053846 16.6348332,24.757046 16.9829173,24.621366 C17.3148116,24.485686 17.6548008,24.578966 17.970505,24.723126 C18.1728796,24.816406 18.3509692,24.935126 18.5452487,25.053846 C18.6585784,25.121686 18.7719082,25.189526 18.8852379,25.257366 C19.0633275,25.359126 19.2414171,25.4524059 19.4195067,25.5372059 C19.7271159,25.6813659 20.1075801,25.9018459 20.4475693,25.7746459 C20.3666195,25.6983259 19.8161607,24.909686 19.5004565,24.553526 C19.3547468,24.383926 19.0471375,24.104086 18.8771429,23.917526 Z",
+                  id: "Shape",
+                  transform:
+                    "translate(12.955664, 24.144566) rotate(14.000000) translate(-12.955664, -24.144566) "
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M27.3600581,14.6958044 C27.5300527,14.5092444 27.837662,14.2294044 27.9914667,14.0598044 C28.3071709,13.7121244 28.8576296,12.9150044 28.9385795,12.8386845 C28.5985902,12.7030045 28.2181261,12.9319644 27.9105169,13.0676444 C27.7243323,13.1524444 27.5462427,13.2542044 27.3762481,13.3474844 C26.7934095,13.6866844 26.1781909,14.0513244 25.4901175,14.0428444 C25.4901175,14.0428444 23.3368525,13.7969244 21.7745212,13.5764444 C21.8149961,13.5086044 21.8716609,13.5001244 21.847376,13.4831644 C21.410247,13.1948444 20.2121898,11.9228445 20.2040948,11.9228445 C19.6698261,12.2535645 19.2326971,13.3390044 19.2326971,13.3390044 C17.573226,13.2966044 15.6466205,13.5510044 13.9385795,14.8823644 C13.9385795,14.8823644 16.0756545,17.2737243 19.9693404,17.1041243 C19.9693404,17.1041243 20.6736037,17.9945243 20.9569281,17.9182043 C21.0297829,17.7146843 21.1107327,17.5620443 21.1026377,17.1041243 C21.1107327,17.0871643 21.0540679,17.0617243 20.9569281,17.0108443 C21.6530965,16.9090843 22.4059297,16.7140443 23.1992378,16.4257243 C23.3530425,16.5444443 23.7577915,16.8327643 23.9601661,16.6122843 C24.1463506,16.4087643 24.3487252,16.2391643 24.5591947,16.0695643 C24.842519,15.8321243 25.1177484,15.5353244 25.4658326,15.3996444 C25.7977268,15.2639644 26.137716,15.3572444 26.4534203,15.5014044 C26.6557948,15.5946844 26.8338844,15.7134044 27.0281639,15.8321243 C27.1414936,15.8999643 27.2548234,15.9678043 27.3681531,16.0356443 C27.5462427,16.1374043 27.7243323,16.2306843 27.9024219,16.3154843 C28.2100312,16.4596443 28.5904953,16.6801243 28.9304845,16.5529243 C28.8495347,16.4766043 28.2990759,15.6879644 27.9833717,15.3318044 C27.837662,15.1622044 27.5381477,14.8823644 27.3600581,14.6958044 Z",
+                  id: "Shape",
+                  transform:
+                    "translate(21.438579, 14.922844) rotate(14.000000) translate(-21.438579, -14.922844) "
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M21.0674807,35.8003885 C21.2374753,35.6138285 21.5450846,35.3339885 21.6988892,35.1643885 C22.0145935,34.8167085 22.5650522,34.0195885 22.646002,33.9432685 C22.3060128,33.8075885 21.9255487,34.0365485 21.6179394,34.1722285 C21.4317549,34.2570285 21.2536653,34.3587885 21.0836707,34.4520685 C20.500832,34.7912685 19.8856135,35.1559085 19.1975401,35.1474285 C19.1975401,35.1474285 17.0442751,34.9015085 15.4819437,34.6810285 C15.5224186,34.6131885 15.5790835,34.6047085 15.5547986,34.5877485 C15.1176696,34.2994285 13.9196124,33.0274286 13.9115174,33.0274286 C13.3772487,33.3581486 12.9401197,34.4435885 12.9401197,34.4435885 C11.2806485,34.4011885 9.35404304,34.6555885 7.64600203,35.9869485 C7.64600203,35.9869485 9.78307704,38.3783084 13.676763,38.2087084 C13.676763,38.2087084 14.3810263,39.0991084 14.6643506,39.0227884 C14.7372055,38.8192684 14.8181553,38.6666284 14.8100603,38.2087084 C14.8181553,38.1917484 14.7614904,38.1663084 14.6643506,38.1154284 C15.360519,38.0136684 16.1133523,37.8186284 16.9066604,37.5303084 C17.0604651,37.6490284 17.4652141,37.9373484 17.6675886,37.7168684 C17.8537732,37.5133484 18.0561477,37.3437484 18.2666172,37.1741484 C18.5499416,36.9367084 18.8251709,36.6399084 19.1732551,36.5042284 C19.5051494,36.3685484 19.8451386,36.4618284 20.1608428,36.6059884 C20.3632174,36.6992684 20.5413069,36.8179884 20.7355865,36.9367084 C20.8489162,37.0045484 20.962246,37.0723884 21.0755757,37.1402284 C21.2536653,37.2419884 21.4317549,37.3352684 21.6098444,37.4200684 C21.9174537,37.5642284 22.2979178,37.7847084 22.637907,37.6575084 C22.5569572,37.5811884 22.0064985,36.7925484 21.6907943,36.4363884 C21.5450846,36.2667885 21.2374753,35.9869485 21.0674807,35.8003885 Z",
+                  id: "Shape",
+                  transform:
+                    "translate(15.146002, 36.027429) rotate(14.000000) translate(-15.146002, -36.027429) "
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M38.2830575,28.7559639 C38.4530521,28.5694039 38.7606613,28.2895639 38.914466,28.1199639 C39.2301702,27.7722839 39.780629,26.975164 39.8615788,26.898844 C39.5215896,26.763164 39.1411255,26.992124 38.8335162,27.127804 C38.6473316,27.212604 38.469242,27.314364 38.2992474,27.407644 C37.7164088,27.7468439 37.1011902,28.1114839 36.4131168,28.1030039 C36.4131168,28.1030039 34.2598518,27.8570839 32.6975205,27.636604 C32.7379954,27.568764 32.7946603,27.560284 32.7703753,27.543324 C32.3332463,27.255004 31.1351891,25.983004 31.1270942,25.983004 C30.5928254,26.313724 30.1556964,27.399164 30.1556964,27.399164 C28.4962253,27.356764 26.5696198,27.611164 24.8615788,28.9425239 C24.8615788,28.9425239 26.9986538,31.3338838 30.8923397,31.1642838 C30.8923397,31.1642838 31.5966031,32.0546838 31.8799274,31.9783638 C31.9527822,31.7748438 32.033732,31.6222038 32.0256371,31.1642838 C32.033732,31.1473238 31.9770672,31.1218838 31.8799274,31.0710038 C32.5760958,30.9692438 33.328929,30.7742038 34.1222372,30.4858839 C34.2760418,30.6046038 34.6807909,30.8929238 34.8831654,30.6724438 C35.06935,30.4689239 35.2717245,30.2993239 35.482194,30.1297239 C35.7655183,29.8922839 36.0407477,29.5954839 36.3888319,29.4598039 C36.7207261,29.3241239 37.0607153,29.4174039 37.3764196,29.5615639 C37.5787941,29.6548439 37.7568837,29.7735639 37.9511632,29.8922839 C38.064493,29.9601239 38.1778227,30.0279639 38.2911524,30.0958039 C38.469242,30.1975639 38.6473316,30.2908439 38.8254212,30.3756439 C39.1330305,30.5198039 39.5134946,30.7402838 39.8534838,30.6130838 C39.772534,30.5367639 39.2220753,29.7481239 38.906371,29.3919639 C38.7606613,29.2223639 38.461147,28.9425239 38.2830575,28.7559639 Z",
+                  id: "Shape",
+                  transform:
+                    "translate(32.361579, 28.983004) rotate(14.000000) translate(-32.361579, -28.983004) "
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M46.5240508,20.504538 C46.6940454,20.317978 47.0016547,20.038138 47.1554593,19.868538 C47.4711636,19.5208581 48.0216223,18.7237381 48.1025721,18.6474181 C47.7625829,18.5117381 47.3821188,18.7406981 47.0745095,18.8763781 C46.8883249,18.9611781 46.7102353,19.0629381 46.5402407,19.1562181 C45.9574021,19.4954181 45.3421835,19.860058 44.6541101,19.851578 C44.6541101,19.851578 42.5008452,19.6056581 40.9385138,19.3851781 C40.9789887,19.3173381 41.0356536,19.3088581 41.0113686,19.2918981 C40.5742397,19.0035781 39.3761824,17.7315781 39.3680875,17.7315781 C38.8338187,18.0622981 38.3966897,19.1477381 38.3966897,19.1477381 C36.7372186,19.1053381 34.8106131,19.3597381 33.1025721,20.691098 C33.1025721,20.691098 35.2396471,23.0824579 39.133333,22.9128579 C39.133333,22.9128579 39.8375964,23.8032579 40.1209207,23.7269379 C40.1937755,23.5234179 40.2747254,23.3707779 40.2666304,22.9128579 C40.2747254,22.8958979 40.2180605,22.8704579 40.1209207,22.8195779 C40.8170891,22.7178179 41.5699223,22.522778 42.3632305,22.234458 C42.5170351,22.353178 42.9217842,22.6414979 43.1241587,22.421018 C43.3103433,22.217498 43.5127178,22.047898 43.7231873,21.878298 C44.0065116,21.640858 44.281741,21.344058 44.6298252,21.208378 C44.9617194,21.072698 45.3017086,21.165978 45.6174129,21.310138 C45.8197874,21.403418 45.997877,21.522138 46.1921565,21.640858 C46.3054863,21.708698 46.418816,21.776538 46.5321457,21.844378 C46.7102353,21.946138 46.8883249,22.039418 47.0664145,22.124218 C47.3740238,22.268378 47.7544879,22.488858 48.0944771,22.361658 C48.0135273,22.285338 47.4630686,21.496698 47.1473643,21.140538 C47.0016547,20.970938 46.6940454,20.691098 46.5240508,20.504538 Z",
+                  id: "Shape",
+                  transform:
+                    "translate(40.602572, 20.731578) rotate(14.000000) translate(-40.602572, -20.731578) "
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M42.8978305,39.1820787 C43.0678251,38.9955187 43.3754344,38.7156787 43.529239,38.5460787 C43.8449433,38.1983988 44.395402,37.4012788 44.4763518,37.3249588 C44.1363626,37.1892788 43.7558985,37.4182388 43.4482892,37.5539188 C43.2621046,37.6387188 43.084015,37.7404788 42.9140204,37.8337588 C42.3311818,38.1729588 41.7159632,38.5375987 41.0278898,38.5291187 C41.0278898,38.5291187 38.8746249,38.2831988 37.3122935,38.0627188 C37.3527684,37.9948788 37.4094333,37.9863988 37.3851483,37.9694388 C36.9480194,37.6811188 35.7499622,36.4091188 35.7418672,36.4091188 C35.2075984,36.7398388 34.7704694,37.8252788 34.7704694,37.8252788 C33.1109983,37.7828788 31.1843928,38.0372788 29.4763518,39.3686387 C29.4763518,39.3686387 31.6134268,41.7599986 35.5071127,41.5903986 C35.5071127,41.5903986 36.2113761,42.4807986 36.4947004,42.4044786 C36.5675552,42.2009586 36.6485051,42.0483186 36.6404101,41.5903986 C36.6485051,41.5734386 36.5918402,41.5479986 36.4947004,41.4971186 C37.1908688,41.3953586 37.943702,41.2003186 38.7370102,40.9119987 C38.8908148,41.0307187 39.2955639,41.3190386 39.4979384,41.0985587 C39.684123,40.8950387 39.8864975,40.7254387 40.096967,40.5558387 C40.3802914,40.3183987 40.6555207,40.0215987 41.0036049,39.8859187 C41.3354991,39.7502387 41.6754883,39.8435187 41.9911926,39.9876787 C42.1935671,40.0809587 42.3716567,40.1996787 42.5659363,40.3183987 C42.679266,40.3862387 42.7925957,40.4540787 42.9059255,40.5219187 C43.084015,40.6236787 43.2621046,40.7169587 43.4401942,40.8017587 C43.7478035,40.9459187 44.1282676,41.1663986 44.4682568,41.0391987 C44.387307,40.9628787 43.8368483,40.1742387 43.521144,39.8180787 C43.3754344,39.6484787 43.0678251,39.3771187 42.8978305,39.1820787 Z",
+                  id: "Shape",
+                  transform:
+                    "translate(36.976352, 39.409119) rotate(14.000000) translate(-36.976352, -39.409119) "
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M35.8690548,46.7051308 C36.0390494,46.5185708 36.3466587,46.2387308 36.5004633,46.0691308 C36.8161676,45.7214508 37.3666263,44.9243308 37.4475761,44.8480108 C37.1075869,44.7123308 36.7271228,44.9412908 36.4195135,45.0769708 C36.2333289,45.1617708 36.0552394,45.2635308 35.8852447,45.3568108 C35.3024061,45.6960108 34.6871875,46.0606508 33.9991141,46.0521708 C33.9991141,46.0521708 31.8458492,45.8062508 30.2835178,45.5857708 C30.3239927,45.5179308 30.3806576,45.5094508 30.3563726,45.4924908 C29.9192437,45.2041708 28.7211865,43.9321709 28.7130915,43.9321709 C28.1788227,44.2628909 27.7416938,45.3483308 27.7416938,45.3483308 C26.0822226,45.3059308 24.1556171,45.5603308 22.4475761,46.8916908 C22.4475761,46.8916908 24.5846511,49.2830507 28.478337,49.1134507 C28.478337,49.1134507 29.1826004,50.0038507 29.4659247,49.9275307 C29.5387796,49.7240107 29.6197294,49.5713707 29.6116344,49.1134507 C29.6197294,49.0964907 29.5630645,49.0710507 29.4659247,49.0201707 C30.1620931,48.9184107 30.9149263,48.7233707 31.7082345,48.4350507 C31.8620391,48.5537707 32.2667882,48.8420907 32.4691627,48.6216107 C32.6553473,48.4180907 32.8577218,48.2484907 33.0681913,48.0788907 C33.3515157,47.8414507 33.626745,47.5446507 33.9748292,47.4089708 C34.3067234,47.2732908 34.6467126,47.3665708 34.9624169,47.5107307 C35.1647914,47.6040107 35.342881,47.7227307 35.5371606,47.8414507 C35.6504903,47.9092907 35.76382,47.9771307 35.8771498,48.0449707 C36.0552394,48.1467307 36.2333289,48.2400107 36.4114185,48.3248107 C36.7190278,48.4689707 37.0994919,48.6894507 37.4394811,48.5622507 C37.3585313,48.4859307 36.8080726,47.6972907 36.4923683,47.3411308 C36.3466587,47.1715308 36.0390494,46.8916908 35.8690548,46.7051308 Z",
+                  id: "Shape",
+                  transform:
+                    "translate(29.947576, 46.932171) rotate(14.000000) translate(-29.947576, -46.932171) "
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M58.9011896,32.866028 C59.0711842,32.679468 59.3787935,32.399628 59.5325981,32.230028 C59.8483024,31.882348 60.3987611,31.0852281 60.4797109,31.0089081 C60.1397217,30.8732281 59.7592576,31.1021881 59.4516483,31.2378681 C59.2654638,31.322668 59.0873742,31.424428 58.9173796,31.517708 C58.3345409,31.856908 57.7193224,32.221548 57.031249,32.213068 C57.031249,32.213068 54.877984,31.967148 53.3156526,31.746668 C53.3561275,31.678828 53.4127924,31.670348 53.3885075,31.653388 C52.9513785,31.365068 51.7533213,30.0930681 51.7452263,30.0930681 C51.2109575,30.4237881 50.7738286,31.509228 50.7738286,31.509228 C49.1143574,31.466828 47.1877519,31.721228 45.4797109,33.052588 C45.4797109,33.052588 47.6167859,35.4439479 51.5104718,35.2743479 C51.5104718,35.2743479 52.2147352,36.1647479 52.4980595,36.0884279 C52.5709144,35.8849079 52.6518642,35.7322679 52.6437692,35.2743479 C52.6518642,35.2573879 52.5951993,35.2319479 52.4980595,35.1810679 C53.1942279,35.0793079 53.9470612,34.8842679 54.7403693,34.5959479 C54.894174,34.7146679 55.298923,35.0029879 55.5012975,34.7825079 C55.6874821,34.5789879 55.8898566,34.4093879 56.1003261,34.2397879 C56.3836505,34.002348 56.6588798,33.705548 57.006964,33.569868 C57.3388582,33.434188 57.6788475,33.527468 57.9945517,33.671628 C58.1969262,33.764908 58.3750158,33.883628 58.5692954,34.002348 C58.6826251,34.070188 58.7959548,34.1380279 58.9092846,34.2058679 C59.0873742,34.3076279 59.2654638,34.4009079 59.4435533,34.4857079 C59.7511626,34.6298679 60.1316267,34.8503479 60.4716159,34.7231479 C60.3906661,34.6468279 59.8402074,33.858188 59.5245031,33.502028 C59.3787935,33.332428 59.0711842,33.052588 58.9011896,32.866028 Z",
+                  id: "Shape",
+                  transform:
+                    "translate(52.979711, 33.093068) rotate(14.000000) translate(-52.979711, -33.093068) "
+                }
+              })
+            ]
+          )
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7b3d5288", module.exports)
+  }
+}
+
+/***/ }),
+/* 340 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(341)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(343)
+/* template */
+var __vue_template__ = __webpack_require__(344)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/icons/sea-creatures/Shark.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-e1d44ee0", Component.options)
+  } else {
+    hotAPI.reload("data-v-e1d44ee0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 341 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(342);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("30ae22b8", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e1d44ee0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Shark.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e1d44ee0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Shark.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 342 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#sea-shark {\n  fill: #252525;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 343 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Shark',
+    props: {
+        size: {
+            type: String,
+            default: '64px'
+        }
+    }
+});
+
+/***/ }),
+/* 344 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        width: _vm.size,
+        height: _vm.size,
+        viewBox: "0 0 64 64",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      }
+    },
+    [
+      _c(
+        "g",
+        {
+          attrs: {
+            stroke: "none",
+            "stroke-width": "1",
+            fill: "none",
+            "fill-rule": "evenodd"
+          }
+        },
+        [
+          _c("g", { attrs: { id: "sea-shark", "fill-rule": "nonzero" } }, [
+            _c("path", {
+              attrs: {
+                d:
+                  "M27.6723613,21.7097713 C28.1176636,21.415185 28.6794297,21.2576154 29.1932444,21.4631445 C29.0425203,22.4907658 28.5766651,23.4567283 28.5561122,24.5049025 C28.5424211,25.0187172 28.7547876,25.5119789 29.049374,25.923021 C29.3439603,26.2861197 29.7687097,26.4710878 30.1592069,26.6971698 C29.8440676,26.7451293 29.5289284,26.7999263 29.2137973,26.8684387 C31.0840636,27.1767243 32.9680454,27.3959526 34.8314661,27.745344 C37.6060444,28.101581 40.3669233,28.5126311 43.1415016,28.9031283 C43.716975,28.9647789 44.3061476,29.2799263 44.8884666,29.0469987 C45.2104514,28.9510878 45.5118914,28.759266 45.8612828,28.7798189 C46.2860322,29.0264458 46.5600656,29.5128539 47.0738722,29.5950655 C48.4234864,29.8759445 49.8347512,29.8690989 51.1432595,30.3486534 C52.2667917,29.5882118 53.3834783,28.7866645 54.5823684,28.1289875 C56.7266763,26.9506503 59.0148464,25.998387 61.426334,25.5188245 C62.0360595,25.4297673 62.6389314,25.2721977 63.2623563,25.2927506 C63.4130722,25.3544012 63.5158368,25.491426 63.6254469,25.6078898 C61.2922289,27.2250815 58.5265709,29.1864134 56.9870104,31.2872174 C56.3087725,32.3970503 56.5006023,33.8083151 56.8431401,35.0003597 C57.124019,35.6100772 57.3912069,36.233502 57.6583866,36.8500812 C57.952973,37.5077582 58.5626985,38.0215648 58.7134145,38.7477541 C57.3021416,38.5970382 56.2197152,37.5283111 55.2126469,36.6171536 C53.6917638,35.2812387 52.355857,33.7603556 51.0816008,32.1983749 C49.7867998,32.2600255 48.4919907,32.1777977 47.2040433,32.2737167 C47.2314256,32.3353673 47.265694,32.3901805 47.2999542,32.4518392 C46.7998388,32.5888559 46.3613902,32.8971415 45.8612828,33.0341582 C45.3337689,33.013581 44.936418,32.5203435 44.4020585,32.5408964 C43.9636018,32.5614736 43.5388525,32.602547 43.1141031,32.6847668 C41.3945446,32.9724994 39.6338884,33.1163698 37.969135,33.6438756 C38.5172018,33.6644529 39.0652687,33.6438756 39.6133355,33.6575668 C39.2502449,33.8425349 38.8665932,33.9795516 38.5240555,34.1850807 C38.0170945,34.5618706 37.612898,35.0551324 37.311458,35.6031992 C37.2087016,35.7813217 37.0374246,36.0279486 36.7976514,35.9183384 C36.0714621,35.6237521 35.509696,35.061986 34.8999704,34.5961227 C34.6190914,34.4248539 34.2491471,34.623505 33.9545608,34.6371962 C30.1112555,35.562061 26.1583319,36.1169734 22.1985547,35.993664 C21.4586661,35.9183222 20.7530378,36.575983 20.7256312,37.3090179 C20.4858499,39.2066908 21.1161284,41.0564124 21.218893,42.9335405 C21.2462752,43.1664681 21.068177,43.4199486 20.8146965,43.392542 C20.1227593,43.3376964 19.6295056,42.7691172 19.1841952,42.2964164 C18.2319319,41.2619415 17.7386783,39.9123273 17.2454165,38.6175263 C16.8754722,37.6036043 16.7316099,36.5211779 16.4918287,35.4729956 C15.1833203,35.2811739 13.8816656,35.1030513 12.5868646,34.8564245 C11.2029983,34.6851556 9.84653853,34.3631627 8.52433094,33.9178605 C7.32543271,33.5068184 5.99637954,33.5684691 4.85228646,32.9930037 C4.52344798,32.801182 4.18776393,32.5682544 4.0096414,32.218863 C3.50952595,32.3558797 2.97516646,32.2942048 2.50931127,32.0475941 C1.64610519,31.6228367 -0.444108954,30.731008 0.35534323,30.4502765 C1.93103133,29.8953641 3.32455785,29.4853825 4.90709963,28.951023 C6.92123625,28.3481511 8.96277954,27.8343364 11.038575,27.4986443 C12.3333841,27.3205298 13.6144859,27.0876022 14.9092869,26.9574311 C17.1289527,26.6902513 19.3623178,26.6285926 21.5888373,26.4504701 C22.4931411,26.3819334 23.6166732,26.4847384 24.2058459,25.6420772 C25.199215,24.217105 26.1583319,22.6551243 27.6723613,21.7097065 L27.6723613,21.7097713 Z",
+                id: "Shape"
+              }
+            })
+          ])
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-e1d44ee0", module.exports)
+  }
+}
+
+/***/ }),
+/* 345 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(346)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(348)
+/* template */
+var __vue_template__ = __webpack_require__(349)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/icons/sea-creatures/SoftCoral.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2f778052", Component.options)
+  } else {
+    hotAPI.reload("data-v-2f778052", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 346 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(347);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("18cd1273", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2f778052\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SoftCoral.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2f778052\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SoftCoral.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 347 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#sea-soft-coral {\n  fill: #252525;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 348 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'SoftCoral',
+    props: {
+        size: {
+            type: String,
+            default: '64px'
+        }
+    }
+});
+
+/***/ }),
+/* 349 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        width: _vm.size,
+        height: _vm.size,
+        viewBox: "0 0 64 64",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      }
+    },
+    [
+      _c(
+        "g",
+        {
+          attrs: {
+            stroke: "none",
+            "stroke-width": "1",
+            fill: "none",
+            "fill-rule": "evenodd"
+          }
+        },
+        [
+          _c("g", { attrs: { id: "sea-soft-coral", "fill-rule": "nonzero" } }, [
+            _c("path", {
+              attrs: {
+                d:
+                  "M51.955734,29.6881489 C51.955734,29.6881489 51.9101015,29.6881489 51.955734,29.6881489 C51.5906739,29.6881489 51.0430837,29.4143538 50.5411261,29.0949262 C50.5411261,29.0949262 50.5867586,29.0949262 50.5867586,29.0492937 C50.7236561,28.9580286 50.8605537,28.8211311 50.9974512,28.7298661 C51.1343488,28.638601 51.2256138,28.547336 51.3168788,28.456071 C51.4081438,28.364806 51.4994089,28.2735409 51.5450414,28.2279084 C51.6819389,28.0910109 51.7275714,27.9997458 51.7275714,27.9997458 C52.0013665,27.7259508 52.0013665,27.2696256 51.7275714,26.9958305 C51.4537764,26.7220355 50.9518187,26.7220355 50.6780236,26.9958305 L50.6323911,27.0414631 C50.6323911,27.0414631 50.5867586,27.0870956 50.4954936,27.1783606 C50.449861,27.2239931 50.4042285,27.2696256 50.3129635,27.3608906 C50.267331,27.4521557 50.176066,27.4977882 50.0848009,27.5434207 C49.9935359,27.6346857 49.9022709,27.6803182 49.8110059,27.7715833 C49.7197408,27.8172158 49.5828433,27.9084808 49.4459457,27.9541133 C49.3090482,27.9997458 49.1721507,28.0910109 49.0352531,28.1366434 C48.8983556,28.1822759 48.761458,28.2279084 48.6245605,28.2735409 C48.487663,28.3191734 48.3507654,28.3191734 48.1682354,28.3191734 C48.0313378,28.3191734 47.8944403,28.3191734 47.7119102,28.3191734 C47.5750127,28.3191734 47.4381151,28.3191734 47.3012176,28.2735409 C47.16432,28.2735409 47.0274225,28.2279084 46.9361575,28.2279084 C46.7079949,28.1822759 46.5254649,28.1366434 46.3885673,28.0910109 C46.3885673,28.0910109 46.3429348,28.0910109 46.3429348,28.0910109 C46.3885673,27.8628483 46.4341998,27.6346857 46.5254649,27.4521557 C46.8448925,26.4482404 47.3012176,25.7637527 47.7119102,25.3074275 C47.9400728,25.079265 48.0769703,24.8967349 48.2138679,24.8054699 C48.3507654,24.7142048 48.3963979,24.6229398 48.3963979,24.6229398 C48.3963979,24.6229398 48.4420304,24.5773073 48.4420304,24.5773073 C48.7158255,24.3035122 48.7158255,23.8015546 48.4420304,23.5277595 C48.1682354,23.2539644 47.6662777,23.2539644 47.3924826,23.5277595 C47.3924826,23.5277595 47.3012176,23.6190245 47.16432,23.7559221 C47.0274225,23.8928196 46.8448925,24.1209822 46.6167299,24.3947772 C46.3885673,24.6685723 46.1147722,25.0336324 45.8409771,25.4899576 C45.5671821,25.9462827 45.3390195,26.4482404 45.1108569,27.0414631 C44.8826944,27.6346857 44.7457968,28.2735409 44.5632668,28.9123961 C44.3807367,29.5512513 44.1982066,30.1901065 43.9700441,30.8289617 C43.9244116,30.9658592 43.8331465,31.1483893 43.787514,31.2852868 L43.696249,31.5134494 L43.5593515,31.741612 C43.4680864,31.8785095 43.4224539,31.9697746 43.3311889,32.1066721 C43.2399239,32.2435696 43.1486588,32.3804672 43.0573938,32.5173647 C42.6467012,33.0649549 42.1447435,33.5669125 41.6427859,34.0688702 C41.0951957,34.5708278 40.5476055,35.0727855 39.9543829,35.5291106 C39.9087503,35.5747431 39.9087503,35.5747431 39.8631178,35.6203757 C39.7718528,35.5291106 39.6805878,35.4378456 39.5893227,35.3465806 C39.2698952,34.9815205 38.904835,34.5251953 38.5854074,34.0232377 C38.4028774,33.7494426 38.2659798,33.52128 38.1290823,33.2474849 C38.0834498,33.1105874 37.9921848,33.0193224 37.9465522,32.8824248 C37.9009197,32.7455273 37.8552872,32.6542623 37.8096547,32.5629972 C37.7640222,32.4717322 37.7640222,32.3804672 37.7183897,32.2892021 C37.6727572,32.1979371 37.6727572,32.1523046 37.6727572,32.0610396 C37.6271247,31.924142 37.6271247,31.8785095 37.6271247,31.8785095 L37.5814921,31.7872445 C37.4902271,31.4678169 37.216432,31.1940218 36.8513719,31.1940218 C36.4406793,31.1940218 36.1212517,31.5134494 36.1212517,31.924142 C36.1212517,31.924142 36.1212517,32.0154071 36.1212517,32.1979371 C36.1212517,32.2892021 36.1212517,32.3804672 36.1212517,32.5173647 C36.1212517,32.6542623 36.1668842,32.7455273 36.1668842,32.9280573 C36.1668842,33.0649549 36.2125167,33.2018524 36.2581492,33.3843825 C36.2581492,33.430015 36.3037817,33.4756475 36.3037817,33.5669125 C35.528029,33.33875 35.1173364,32.9280573 35.1173364,32.9280573 C34.8891738,32.6998948 34.5241137,32.6998948 34.2959511,32.9280573 C34.0677886,33.1562199 34.0677886,33.52128 34.2959511,33.7494426 C34.3415837,33.7950751 35.2086014,34.6620929 36.7601069,34.8902554 C36.7601069,34.8902554 36.7601069,34.935888 36.7601069,34.935888 C37.033902,35.6203757 37.3533296,36.2592309 37.6271247,36.715556 C37.7183897,36.898086 37.8096547,37.0349836 37.9009197,37.1262486 C37.4445946,37.4456762 36.9882695,37.7651038 36.5775768,38.0845314 C36.0299867,38.4495915 35.528029,38.7690191 35.0260714,39.0884467 C34.0677886,39.6816694 33.2464033,40.183627 32.6988132,40.5030546 C32.5619156,40.5486872 32.4706506,40.6399522 32.3793856,40.6855847 C32.2881205,40.5486872 32.1968555,40.4574221 32.1055905,40.3205246 C31.6036328,39.7273019 31.0560427,39.1340792 30.46282,38.6321216 L30.5997175,38.1301639 C30.6909825,37.7651038 30.8278801,37.4000437 30.9191451,37.0349836 C31.0104101,36.6699235 31.1016752,36.3048634 31.1929402,35.9398033 C31.2842052,35.5747431 31.3298377,35.1640505 31.3754703,34.7989904 C31.4211028,34.3882978 31.4667353,34.0232377 31.4667353,33.612545 C31.4667353,33.5669125 31.4667353,33.5669125 31.4667353,33.52128 C31.5580003,33.4756475 31.6492653,33.430015 31.6948978,33.3843825 C31.6948978,33.3843825 32.5162831,32.6998948 33.748361,31.6959795 C34.3872162,31.1940218 35.0717039,30.6007991 35.8474566,29.9619439 C36.2125167,29.6425163 36.6232093,29.3230887 37.033902,29.0036611 L37.3533296,28.7298661 C37.4445946,28.638601 37.5358596,28.547336 37.6727572,28.456071 C37.9009197,28.2735409 38.0834498,28.0910109 38.3116124,27.8628483 C39.0873651,27.0870956 39.8174853,26.2657103 40.501973,25.4443251 C40.5476055,25.3986926 40.5932381,25.35306 40.5932381,25.3074275 C41.3689908,25.2161625 43.6506165,24.8054699 44.7001643,23.9840846 C44.9739594,23.8015546 45.0195919,23.3908619 44.7914293,23.1626994 C44.6088993,22.8889043 44.1982066,22.8432718 43.9700441,23.0714343 C43.4680864,23.4364945 42.4641711,23.7559221 41.5971534,23.9384521 C41.6427859,23.8471871 41.6884184,23.7559221 41.7796834,23.7102895 C41.916581,23.5277595 42.007846,23.3452294 42.099111,23.1626994 C42.3272736,22.7976393 42.5098036,22.4782117 42.6467012,22.1587841 C42.7835987,21.8393565 42.9204963,21.5655614 43.0117613,21.3373988 C43.1942913,20.8810737 43.2855564,20.6072786 43.2855564,20.6072786 C43.4224539,20.2422185 43.2855564,19.8315259 42.9204963,19.6489958 C42.5554361,19.4664658 42.099111,19.6489958 41.916581,20.0140559 L41.916581,20.0596884 C41.916581,20.0596884 41.8253159,20.287851 41.6427859,20.6985436 C41.5515208,20.8810737 41.4146233,21.1092363 41.2777258,21.3830313 C41.1408282,21.6568264 40.9582982,21.9306215 40.7301356,22.2500491 C40.6388706,22.3869466 40.501973,22.5694767 40.410708,22.7520067 C40.2738105,22.9345368 40.1825454,23.0714343 40.0456479,23.2539644 C39.9087503,23.4364945 39.7718528,23.6190245 39.6349553,23.7559221 C39.4980577,23.9384521 39.3155277,24.1209822 39.1786301,24.3035122 C38.5854074,24.9879999 37.9009197,25.6268551 37.216432,26.2657103 C37.216432,26.2657103 37.216432,26.2657103 37.216432,26.2200778 C37.1707995,26.1288128 37.125167,26.0375477 37.0795345,25.9462827 C37.033902,25.8550177 36.9882695,25.7181202 36.9426369,25.5812226 C36.8970044,25.4443251 36.8057394,25.3074275 36.7601069,25.1248975 C36.7144744,24.9423674 36.6688419,24.8054699 36.6232093,24.6229398 C36.5775768,24.4404098 36.5319443,24.2578797 36.4863118,24.0753497 C36.4406793,23.8928196 36.3950468,23.7102895 36.3950468,23.482127 C36.3494143,23.0714343 36.3037817,22.7063742 36.3037817,22.3413141 C36.3037817,21.976254 36.3037817,21.6111939 36.3494143,21.3373988 C36.3950468,21.0179712 36.4406793,20.7898087 36.4406793,20.6529111 C36.4406793,20.5616461 36.4863118,20.5160136 36.4863118,20.4703811 C36.4863118,20.4247485 36.4863118,20.4247485 36.4863118,20.4247485 C36.5775768,20.0596884 36.3950468,19.6489958 36.0299867,19.5120983 C35.6649266,19.3752007 35.2086014,19.5577308 35.0717039,19.9684234 C35.0717039,19.9684234 35.0717039,20.0140559 35.0260714,20.0596884 C35.0260714,20.1053209 34.9804388,20.196586 34.9348063,20.287851 C34.8891738,20.4703811 34.7979088,20.7898087 34.7522763,21.1092363 C34.7066438,21.2461338 34.7066438,21.4286638 34.6610113,21.6111939 C34.2503186,21.3830313 33.7027285,21.0179712 33.2007708,20.5616461 C32.9726082,20.3334835 32.5619156,20.379116 32.3793856,20.6072786 C32.151223,20.8354412 32.1968555,21.2461338 32.4250181,21.4286638 C32.8357107,21.793724 33.7027285,22.5238442 34.5241137,22.7976393 C34.5241137,23.0714343 34.5241137,23.3452294 34.5241137,23.6190245 C34.5241137,23.8471871 34.5697462,24.0753497 34.5697462,24.3035122 C34.5697462,24.5316748 34.6153787,24.7598374 34.6610113,24.9879999 C34.7066438,25.2161625 34.7522763,25.3986926 34.7979088,25.6268551 C34.8435413,25.8093852 34.8891738,25.9919152 34.9348063,26.1744453 C34.9804388,26.3569753 35.0260714,26.4938729 35.0717039,26.6307704 C35.1173364,26.767668 35.1629689,26.9045655 35.2086014,26.9958305 C35.2998664,27.1783606 35.345499,27.3152581 35.345499,27.3152581 C35.345499,27.3608906 35.3911315,27.3608906 35.3911315,27.4065232 C35.436764,27.4521557 35.436764,27.4977882 35.4823965,27.5434207 C35.2086014,27.7715833 34.8891738,27.9541133 34.6153787,28.1366434 C33.7939935,28.7298661 33.0182408,29.2318237 32.3793856,29.6881489 C31.9230604,30.0075765 31.5123678,30.2813715 31.1929402,30.5551666 C31.1473077,30.3270041 31.0560427,30.144474 31.0104101,29.9163114 L30.9647776,29.7794139 L30.9191451,29.6881489 L30.9191451,29.6425163 L30.8735126,29.5968838 L30.7366151,29.3687213 L30.6909825,29.2318237 C30.6909825,29.1861912 30.64535,29.1405587 30.5997175,29.0949262 L30.4171875,28.7754986 C30.2802899,28.547336 30.1433924,28.4104385 30.0064948,28.2279084 L29.8239648,27.9997458 L29.6414347,27.7715833 C29.3676396,27.4977882 29.0938446,27.2239931 28.8200495,26.950198 C28.6831519,26.8133005 28.5006219,26.6764029 28.3637243,26.5395054 C28.4549894,26.3569753 28.5462544,26.1744453 28.5918869,25.9919152 C28.6375194,25.8550177 28.6831519,25.6724876 28.7287844,25.5355901 C28.774417,25.35306 28.8200495,25.17053 28.8200495,24.9879999 C28.8200495,24.8054699 28.865682,24.6229398 28.865682,24.3947772 C28.865682,24.2122472 28.865682,23.9840846 28.865682,23.8015546 C28.8200495,23.3908619 28.7287844,22.9801693 28.6375194,22.5694767 C28.5462544,22.1587841 28.4093569,21.7480914 28.2724593,21.3373988 C28.1355618,20.9267062 27.9986642,20.5616461 27.9073992,20.196586 C27.8617667,20.0140559 27.8161342,19.8315259 27.7705017,19.6033633 L27.7705017,19.4208332 C28.774417,19.3295682 30.46282,19.0101406 31.6492653,17.6867977 C31.9230604,17.3673701 31.9230604,16.911045 31.6036328,16.6372499 C31.2842052,16.3634548 30.8278801,16.4090873 30.554085,16.6828824 C29.7783323,17.5499002 28.5918869,17.8236953 27.8161342,17.9149603 C27.8617667,17.5955327 27.9073992,17.2761051 27.9986642,16.9566775 C28.0899293,16.6372499 28.1355618,16.3178223 28.2268268,15.9983947 C28.3637243,15.405172 28.5462544,14.9488469 28.6831519,14.5837868 C28.7287844,14.4012567 28.774417,14.3099917 28.8200495,14.2187267 C28.865682,14.1274616 28.865682,14.0818291 28.865682,14.0818291 C29.0025795,13.716769 28.8200495,13.2604439 28.4549894,13.1235463 C28.0899293,12.9866488 27.6336041,13.1691788 27.4967066,13.5342389 C27.4967066,13.5342389 27.4967066,13.5798715 27.4510741,13.6711365 C27.4054415,13.7624015 27.359809,13.8992991 27.3141765,14.0818291 C27.177279,14.4468892 26.9947489,14.9488469 26.8122189,15.5877021 C26.7209538,15.9071297 26.6296888,16.2265573 26.5384238,16.6372499 C26.4471588,17.00231 26.4015262,17.4130026 26.3102612,17.8236953 C26.2646287,18.2343879 26.2189962,18.690713 26.2646287,19.1470382 C26.2646287,19.2839357 26.2646287,19.3752007 26.3102612,19.5120983 C26.3102612,19.6489958 26.3558937,19.7402608 26.3558937,19.8771584 C26.4015262,20.0596884 26.4471588,20.287851 26.4927913,20.5160136 C26.6296888,20.9723387 26.7209538,21.3830313 26.8578514,21.7480914 C26.9947489,22.1587841 27.0860139,22.5238442 27.177279,22.8432718 C27.268544,23.2083319 27.3141765,23.5277595 27.3141765,23.8471871 C27.3141765,23.9840846 27.3141765,24.1666147 27.3141765,24.3035122 C27.3141765,24.4404098 27.268544,24.5773073 27.268544,24.7142048 C27.2229115,24.8511024 27.2229115,24.9423674 27.177279,25.079265 C27.1316465,25.17053 27.0860139,25.3074275 27.0860139,25.3986926 C27.0860139,25.4443251 27.0860139,25.4443251 27.0403814,25.4899576 C26.7665864,25.3074275 26.4927913,25.1248975 26.1733637,24.8967349 C25.8539361,24.7142048 25.5345085,24.4860423 25.2607134,24.3035122 C25.0325508,24.1666147 24.8043883,24.0297171 24.5762257,23.8928196 C24.5305932,23.8015546 24.5305932,23.7102895 24.4849607,23.6190245 L24.2111656,23.1626994 C24.074268,22.7976393 23.9373705,22.3869466 23.8004729,22.0218865 C23.5266779,21.2461338 23.2072503,20.5160136 22.7965576,19.7858933 C22.6140276,19.4208332 22.1577025,19.2839357 21.7926423,19.4664658 C21.4275822,19.6489958 21.2906847,20.1053209 21.4732147,20.4703811 C21.8382749,21.1092363 22.1120699,21.793724 22.385865,22.5238442 C22.5227626,22.8889043 22.6596601,23.2539644 22.7509251,23.6190245 L22.8421902,23.8928196 C21.6101123,24.0297171 19.191589,24.1209822 17.320656,23.3908619 C16.9555959,23.2539644 16.4992707,23.4364945 16.3623732,23.8015546 C16.2254756,24.1666147 16.4080057,24.6229398 16.7730658,24.7598374 C18.1420412,25.3074275 19.7391792,25.4899576 21.0625221,25.4899576 C22.203335,25.4899576 23.1159852,25.3986926 23.6179429,25.3074275 C23.8461055,25.4443251 24.0286355,25.6268551 24.2567981,25.7637527 C24.5305932,25.9462827 24.8043883,26.1744453 25.0781833,26.4026079 C25.3519784,26.6307704 25.6257735,26.8133005 25.8995686,27.0414631 C26.1733637,27.2696256 26.4015262,27.4977882 26.6753213,27.7259508 C26.9491164,27.9541133 27.177279,28.1822759 27.4054415,28.4104385 C27.6336041,28.638601 27.8617667,28.9123961 28.0442967,29.1405587 L28.1811943,29.3230887 L28.3180918,29.5056188 C28.4093569,29.6425163 28.5006219,29.7794139 28.5462544,29.8706789 C28.5918869,29.9163114 28.5918869,29.9619439 28.6375194,30.0075765 C28.6375194,30.053209 28.6831519,30.053209 28.6831519,30.0988415 L28.7287844,30.235739 L28.8200495,30.4639016 L28.865682,30.5095341 L28.865682,30.5551666 C28.865682,30.5095341 28.8200495,30.4639016 28.8200495,30.4639016 L28.865682,30.5551666 C28.956947,30.8289617 29.0025795,31.1483893 29.048212,31.4678169 C29.048212,31.6047144 29.0938446,31.7872445 29.0938446,31.924142 C29.0938446,32.0610396 29.0938446,32.2435696 29.0938446,32.3804672 C29.0938446,32.6998948 29.048212,32.9736899 29.048212,33.2931175 C29.0025795,33.612545 28.956947,33.9319726 28.865682,34.2057677 C28.8200495,34.5251953 28.7287844,34.8446229 28.6375194,35.118418 C28.5462544,35.4378456 28.4549894,35.7572732 28.3180918,36.0310683 C28.2724593,36.2135983 28.1811943,36.3961284 28.0899293,36.5786585 C26.9034839,35.8485382 25.671406,35.2553155 24.4849607,34.7533579 C24.4849607,34.7077254 24.4849607,34.6620929 24.4849607,34.6164604 C24.4849607,34.4795628 24.4393281,34.2514002 24.3936956,34.0688702 C24.3480631,33.8407076 24.3024306,33.612545 24.2567981,33.33875 C24.2111656,33.0649549 24.1199005,32.7911598 24.0286355,32.4717322 C23.9373705,32.1523046 23.8461055,31.832877 23.7092079,31.4678169 C23.6635754,31.2852868 23.5723104,31.1027568 23.4354128,30.9202267 C23.3897803,30.8289617 23.2985153,30.6920642 23.2072503,30.6007991 C23.1616178,30.5551666 23.1159852,30.4639016 23.0247202,30.4182691 L22.9334552,30.3270041 L22.8421902,30.235739 L22.7965576,30.235739 C22.7052926,30.1901065 22.6596601,30.144474 22.5227626,30.053209 C22.4314975,30.0075765 22.385865,30.0075765 22.2946,29.9619439 L22.203335,29.9163114 L22.1120699,29.9163114 L21.7926423,29.8250464 L21.5188473,29.9163114 C21.1537871,29.8250464 20.788727,29.7794139 20.4692994,29.7337814 C20.1498718,29.6881489 19.8304442,29.6425163 19.5110166,29.5968838 C19.191589,29.5512513 18.917794,29.5056188 18.6439989,29.4143538 C18.3702038,29.3687213 18.1420412,29.3230887 17.9138787,29.2318237 C17.7769811,29.1861912 17.6857161,29.1861912 17.5944511,29.1405587 C17.503186,29.0949262 17.411921,29.0949262 17.320656,29.0492937 C17.229391,29.0036611 17.1837584,29.0036611 17.0924934,28.9580286 C17.0468609,28.9123961 17.0012284,28.9123961 16.9555959,28.8667636 C16.9099634,28.8211311 16.8643308,28.8211311 16.8643308,28.7754986 C16.8186983,28.7754986 16.8186983,28.7298661 16.8186983,28.7298661 C16.7730658,28.6842336 16.7730658,28.6842336 16.7730658,28.6842336 L16.5905358,28.547336 C16.3167407,28.364806 15.9060481,28.364806 15.6778855,28.5929685 C15.3584579,28.8667636 15.3584579,29.3230887 15.632253,29.6425163 C15.632253,29.6425163 15.6778855,29.6881489 15.7691505,29.7794139 C15.8604155,29.8706789 15.9516806,30.0075765 16.1342106,30.0988415 C16.2254756,30.144474 16.3167407,30.235739 16.4080057,30.2813715 C16.4992707,30.3270041 16.5905358,30.4182691 16.7274333,30.4639016 C16.7730658,30.4639016 16.7730658,30.5095341 16.8186983,30.5095341 C15.9973131,30.7376967 14.6283377,30.7376967 12.5748745,29.9619439 C12.2098144,29.8250464 11.7534893,30.0075765 11.6165917,30.4182691 C11.4796942,30.7833292 11.6622243,31.2396543 12.0729169,31.3765519 C13.5331573,31.924142 14.7652352,32.1066721 15.723518,32.1066721 C17.2750235,32.1066721 18.2333063,31.6047144 18.7352639,31.1483893 C18.917794,31.1940218 19.100324,31.2396543 19.2828541,31.2852868 C19.6022817,31.3309194 19.9217093,31.4221844 20.2867694,31.4678169 C20.606197,31.5134494 20.9256246,31.6047144 21.2450522,31.6959795 L21.4732147,31.741612 L21.5188473,31.832877 L21.5644798,31.832877 C21.5644798,31.832877 21.5644798,31.832877 21.5644798,31.832877 C21.5644798,31.832877 21.5644798,31.832877 21.5644798,31.832877 C21.5644798,31.832877 21.6101123,31.832877 21.6557448,31.8785095 C21.6557448,31.924142 21.7013773,31.924142 21.7013773,31.9697746 C21.7470098,32.0610396 21.7926423,32.1523046 21.8382749,32.2892021 C21.9295399,32.5173647 22.0208049,32.7911598 22.0664374,33.0649549 C22.1120699,33.33875 22.203335,33.5669125 22.2489675,33.8407076 C22.2489675,33.8863401 22.2489675,33.9319726 22.2946,33.9776052 C22.2489675,33.9776052 22.203335,33.9319726 22.1577025,33.9319726 C21.3819497,33.7494426 20.697462,33.7038101 20.0586068,33.7494426 C19.4197516,33.7494426 18.8721615,33.8407076 18.3702038,33.9319726 C17.8682461,34.0232377 17.4575535,34.1145027 17.0924934,34.2057677 C16.7274333,34.2970328 16.4992707,34.3882978 16.3167407,34.4339303 C16.1342106,34.4795628 16.0429456,34.5251953 16.0429456,34.5251953 C15.6778855,34.6620929 15.4497229,35.0727855 15.5866205,35.4378456 C15.723518,35.8485382 16.1342106,36.0310683 16.4992707,35.9398033 L16.5449032,35.9398033 C16.5449032,35.9398033 16.6361683,35.8941707 16.7730658,35.8485382 C16.9099634,35.8029057 17.1837584,35.7572732 17.503186,35.6660082 C17.8226136,35.6203757 18.1876737,35.5291106 18.6439989,35.4834781 C19.100324,35.4378456 19.5566492,35.3922131 20.1042393,35.4378456 C20.606197,35.4834781 21.1994197,35.5291106 21.7013773,35.7116407 C21.8382749,35.7572732 21.9751724,35.8029057 22.0664374,35.8485382 L22.2489675,35.9398033 L22.3402325,35.9854358 L22.385865,36.0310683 L22.4314975,36.0767008 C22.5683951,36.1679658 22.7509251,36.2592309 22.8878227,36.3504959 C23.0247202,36.4417609 23.2072503,36.5330259 23.3441478,36.624291 C23.7092079,36.806821 24.074268,37.0349836 24.4393281,37.2631462 C24.4393281,37.3087787 24.3480631,37.3087787 24.2567981,37.3544112 C24.1199005,37.4000437 23.9373705,37.4456762 23.8004729,37.4913087 C23.1616178,37.6738388 22.5227626,37.7651038 22.0208049,37.8107363 C21.7926423,37.8563688 21.5644798,37.8563688 21.4275822,37.8563688 C21.2906847,37.8563688 21.1994197,37.8563688 21.1994197,37.8563688 L21.1537871,37.8563688 C20.788727,37.9020014 20.4692994,38.1757964 20.4692994,38.5864891 C20.4692994,38.9971817 20.788727,39.3166093 21.1994197,39.3622418 C21.1994197,39.3622418 21.2906847,39.3622418 21.4732147,39.3622418 C21.6557448,39.3622418 21.8839074,39.3622418 22.1577025,39.3622418 C22.4314975,39.3622418 22.7509251,39.3622418 23.0703527,39.3166093 C22.7965576,40.0467295 22.2946,40.8224822 22.0664374,41.1875424 C21.8839074,41.4613374 21.9751724,41.8263975 22.2489675,42.0089276 C22.3402325,42.0545601 22.47713,42.1001926 22.5683951,42.1001926 C22.7509251,42.1001926 22.9334552,42.0089276 23.0703527,41.8263975 C23.1616178,41.6438675 24.074268,40.2748921 24.3480631,39.1340792 C24.4849607,39.1340792 24.6218582,39.0884467 24.7131232,39.0428142 C24.8956533,38.9971817 25.0781833,38.9515492 25.2607134,38.9059167 C25.4432434,38.8602841 25.6257735,38.7690191 25.8083036,38.7233866 C25.9908336,38.6777541 26.1277312,38.5864891 26.3102612,38.495224 C26.3558937,38.495224 26.3558937,38.4495915 26.4015262,38.4495915 C26.6296888,38.6321216 26.8578514,38.7690191 27.0860139,38.9515492 C27.268544,39.0884467 27.4510741,39.2709768 27.6336041,39.4078743 C27.7705017,39.6360369 27.9530317,39.8185669 28.1811943,39.909832 C28.8200495,40.5486872 29.3676396,41.2331749 29.8239648,41.9632951 C30.1890249,42.5108853 30.46282,43.0584754 30.6909825,43.5604331 C30.9191451,44.1080232 31.1016752,44.6099809 31.1929402,45.1119385 C31.3298377,45.6138962 31.3754703,46.0702213 31.4667353,46.480914 C31.5123678,46.663444 31.5123678,46.8916066 31.5123678,47.0285041 C31.5123678,47.2110342 31.5123678,47.3479317 31.5580003,47.5304618 C31.6036328,47.8042569 31.5580003,48.0780519 31.5580003,48.2149495 C31.5580003,48.351847 31.5580003,48.4431121 31.5580003,48.4431121 L31.5580003,48.5343771 C31.5580003,48.6256421 31.5580003,48.6712746 31.5580003,48.7625397 C31.6948978,49.8120875 32.6988132,50.5878402 33.748361,50.4509427 C34.7979088,50.3140451 35.5736615,49.3101298 35.436764,48.260582 C35.436764,48.260582 35.436764,48.169317 35.3911315,47.9411544 C35.345499,47.7586243 35.345499,47.4391968 35.2542339,47.0741366 C35.2086014,46.8916066 35.1629689,46.663444 35.1173364,46.4352814 C35.0717039,46.2071189 35.0260714,45.9789563 34.9348063,45.7051612 C34.7979088,45.2032036 34.6153787,44.6099809 34.3872162,44.0167582 C34.3415837,43.8342282 34.2503186,43.6973306 34.1590536,43.5148006 C34.2959511,43.4235355 34.4328487,43.286638 34.6610113,43.1041079 C35.2086014,42.6477828 35.9387216,42.0545601 36.8513719,41.2788074 C37.3076971,40.9137473 37.7640222,40.5030546 38.2659798,40.0467295 C38.7679375,39.5904044 39.3155277,39.1340792 39.8631178,38.6321216 C40.9582982,37.6282063 42.099111,36.5786585 43.1942913,35.3922131 C43.2855564,35.2553155 43.4224539,35.1640505 43.5137189,35.027153 C43.604984,35.0727855 43.696249,35.1640505 43.8331465,35.209683 C43.9700441,35.3009481 44.1069416,35.3465806 44.2438392,35.3922131 C44.5176342,35.5291106 44.8370618,35.6203757 45.202122,35.7116407 C45.384652,35.7572732 45.5215496,35.8029057 45.7040796,35.8029057 C45.8866097,35.8029057 46.0691397,35.8485382 46.2060373,35.8029057 C46.2973023,35.8029057 46.3885673,35.8029057 46.4341998,35.8029057 C46.5254649,35.8029057 46.6167299,35.7572732 46.6623624,35.7572732 C46.7992599,35.7116407 46.98179,35.7116407 47.073055,35.6660082 C47.2099526,35.6203757 47.3012176,35.5747431 47.4381151,35.5291106 C47.5293802,35.4834781 47.6206452,35.4378456 47.6662777,35.3922131 C47.8031752,35.3009481 47.8944403,35.2553155 47.8944403,35.2553155 C48.2138679,35.0727855 48.3507654,34.6620929 48.2138679,34.3426653 C48.0769703,33.9776052 47.6206452,33.7950751 47.2555851,33.9319726 L47.1186875,33.9776052 C47.1186875,33.9776052 47.073055,33.9776052 46.98179,34.0232377 C46.9361575,34.0232377 46.890525,34.0688702 46.8448925,34.0688702 C46.7992599,34.0688702 46.7079949,34.1145027 46.6623624,34.1145027 C46.5710974,34.1601352 46.5254649,34.1601352 46.4341998,34.1601352 C46.3885673,34.1601352 46.3429348,34.1601352 46.2973023,34.1601352 C46.2516698,34.1601352 46.2060373,34.1601352 46.1604047,34.1601352 C46.0691397,34.1601352 45.9778747,34.1601352 45.8866097,34.1145027 C45.7953446,34.1145027 45.7040796,34.0688702 45.5671821,34.0232377 C45.3390195,33.9319726 45.1564894,33.8863401 44.9739594,33.7494426 C44.8826944,33.7038101 44.7914293,33.6581776 44.7001643,33.5669125 C44.6545318,33.5669125 44.6545318,33.52128 44.6088993,33.52128 C44.6545318,33.4756475 44.7001643,33.3843825 44.7457968,33.33875 C44.8826944,33.1562199 44.9739594,32.9736899 45.0652244,32.7911598 C45.1564894,32.6086297 45.293387,32.3804672 45.3390195,32.1523046 L45.4302845,31.8785095 L45.5215496,31.6047144 C45.5671821,31.4221844 45.6128146,31.2396543 45.6584471,31.0571243 C45.7953446,30.5095341 45.8866097,30.0075765 46.0235072,29.5056188 C46.2060373,29.5512513 46.3885673,29.5968838 46.6167299,29.6425163 C46.7536274,29.6881489 46.9361575,29.6881489 47.1186875,29.6881489 C47.3012176,29.6881489 47.4837476,29.6881489 47.6662777,29.6881489 C47.8488078,29.6881489 48.0769703,29.6881489 48.2595004,29.6425163 C48.487663,29.5968838 48.670193,29.5968838 48.8983556,29.5056188 C49.0352531,29.4599863 49.1721507,29.4599863 49.2634157,29.4143538 C49.9022709,29.8706789 50.9974512,30.5551666 51.864469,30.5551666 C51.864469,30.5551666 51.9101015,30.5551666 51.9101015,30.5551666 C52.2295291,30.5551666 52.5033242,30.2813715 52.5033242,29.9619439 C52.5489567,29.9163114 52.2751616,29.6881489 51.955734,29.6881489 Z",
+                id: "Shape"
+              }
+            })
+          ])
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-2f778052", module.exports)
+  }
+}
+
+/***/ }),
+/* 350 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(351)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(353)
+/* template */
+var __vue_template__ = __webpack_require__(354)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/icons/sea-creatures/Turtle.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-23c3efa1", Component.options)
+  } else {
+    hotAPI.reload("data-v-23c3efa1", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 351 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(352);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("54784124", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-23c3efa1\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Turtle.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-23c3efa1\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/sass-loader/lib/loader.js!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Turtle.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 352 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#sea-turtle {\n  fill: #252525;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 353 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'Turtle',
+    props: {
+        size: {
+            type: String,
+            default: '64px'
+        }
+    }
+});
+
+/***/ }),
+/* 354 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "svg",
+    {
+      attrs: {
+        width: _vm.size,
+        height: _vm.size,
+        viewBox: "0 0 64 64",
+        version: "1.1",
+        xmlns: "http://www.w3.org/2000/svg",
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      }
+    },
+    [
+      _c(
+        "g",
+        {
+          attrs: {
+            stroke: "none",
+            "stroke-width": "1",
+            fill: "none",
+            "fill-rule": "evenodd"
+          }
+        },
+        [
+          _c("g", { attrs: { id: "sea-turtle", "fill-rule": "nonzero" } }, [
+            _c("path", {
+              attrs: {
+                d:
+                  "M41.4008953,43 C41.4008953,43 45.2300309,44.598014 44.9890882,47.7773538 C44.7490722,50.9440511 43.7477699,53.3087072 42.8266274,54 C42.7881692,53.731473 42.7399807,53.4528319 42.6709413,53.1575028 C42.113993,50.7791927 40.8722114,50.1313902 40.3050693,49.9554064 C40.2786583,49.9205131 40.2397367,49.8977565 40.193865,49.885114 C39.0975756,49.3950901 38.9798844,48.0271699 39.0081488,47.2767102 C38.9882247,47.0122288 39.0109289,46.8266366 39.012319,46.817534 C39.0118556,46.8165226 39.0100022,46.8114656 39.0100022,46.8114656 L41.4008953,43 Z M39,22.4895852 C39,22.4895852 40.5964857,19.2793797 42.3433196,20.1496103 C44.0901535,21.019841 48.9996001,23.6895723 50.1739543,27.0197765 C51.3483086,30.3499807 51.77044,30.5299788 51.9207882,32.6299562 C52.0711364,34.7299336 51.9612666,36 51.9612666,36 C51.9612666,36 49.1600678,33.5899459 48.1163045,32.1000419 C47.0725411,30.6101379 43.1658977,26.2493848 42.4430699,25.2293957 C41.720242,24.2094067 39,22.4895852 39,22.4895852 Z M35.4478541,17.4225864 C36.1166706,18.2487855 35.9907818,21.1542607 35.9902638,21.1542607 L31.9752922,22 L28.0033198,21.1542607 C28.0033198,21.1542607 27.919912,18.2487855 28.5892466,17.4225864 C28.1333531,16.3779381 28.5115375,15.6108605 28.8109766,15.2210589 C28.8757342,13.4869927 30.4257723,11.9758851 30.9821696,11.4222465 C31.4069795,10.9998779 31.9758103,10.9653068 31.9758103,11.0199191 C32.2208531,10.9653068 32.5871221,10.9998779 33.011932,11.4222465 C33.5693655,11.9763861 35.1613664,13.4874938 35.226124,15.2210589 C35.5255632,15.6108605 35.9037476,16.3779381 35.4478541,17.4225864 Z M32.4984062,51 C30.2101484,49.2691166 28.736952,48.4251349 28.0788169,48.4680548 C27.1659127,46.701735 21.0434571,38.8952127 21.0434571,32.9455703 C21.0434571,31.1134818 21.1039869,29.5804197 21.8208008,28.0655753 C22.9375706,25.705503 26.2942444,22.621877 28.0095215,21.6728516 C29.5261419,22.1161373 30.8563015,22.3877031 32,22.4875488 C33.6868212,22.307824 35.0455452,22.0452915 36.0761719,21.6999512 C37.6744505,22.8371702 41.0690053,24.2673796 43.3599675,28.0655753 C44,29.1266878 44,30.9389703 44,32.9455703 C44,39.8386057 37.2768268,46.9704797 36.4535471,48.4680548 C35.9193538,48.4680548 34.6009735,49.3120366 32.4984062,51 Z M23.5991047,43 L25.9899978,46.8114656 C25.9890711,46.8266366 26.0117753,47.0122288 25.9918512,47.2767102 C26.0201156,48.0271699 25.9024244,49.3950901 24.806135,49.885114 C24.7602633,49.8977565 24.7213417,49.9205131 24.6949307,49.9554064 C24.1277886,50.1313902 22.886007,50.7791927 22.3290587,53.1575028 C22.2600193,53.4528319 22.2118308,53.731473 22.1733726,54 C21.2522301,53.3087072 20.2509278,50.9440511 20.0109118,47.7773538 C19.7699691,44.598014 23.5991047,43 23.5991047,43 Z M26,22.4896599 C26,22.4896599 23.2788375,24.209533 22.5560212,25.2295526 C21.8332049,26.2495723 17.9275875,30.6099762 16.8838407,32.0999249 C15.840094,33.5898736 13.0389399,36 13.0389399,36 C13.0389399,36 12.9285899,34.7298955 13.0794176,32.6298551 C13.2302452,30.5298147 13.6514062,30.3493312 14.8262236,27.0195071 C16.0010411,23.689683 20.9099276,21.0198716 22.6567336,20.1496148 C24.4035397,19.2793581 26,22.4896599 26,22.4896599 Z",
+                id: "Combined-Shape",
+                transform:
+                  "translate(32.500000, 32.500000) rotate(-90.000000) translate(-32.500000, -32.500000) "
+              }
+            })
+          ])
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-23c3efa1", module.exports)
+  }
+}
+
+/***/ }),
+/* 355 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "d-inline-block" },
+    [
+      this.icon_id == 6
+        ? _c("coral", { attrs: { size: _vm.size + "px" } })
+        : _vm._e(),
+      _vm._v(" "),
+      this.icon_id == 3
+        ? _c("macro", { attrs: { size: _vm.size + "px" } })
+        : _vm._e(),
+      _vm._v(" "),
+      this.icon_id == 5
+        ? _c("ray", { attrs: { size: _vm.size + "px" } })
+        : _vm._e(),
+      _vm._v(" "),
+      this.icon_id == 4
+        ? _c("school-of-fish", { attrs: { size: _vm.size + "px" } })
+        : _vm._e(),
+      _vm._v(" "),
+      this.icon_id == 1
+        ? _c("shark", { attrs: { size: _vm.size + "px" } })
+        : _vm._e(),
+      _vm._v(" "),
+      this.icon_id == 7
+        ? _c("soft-coral", { attrs: { size: _vm.size + "px" } })
+        : _vm._e(),
+      _vm._v(" "),
+      this.icon_id == 2
+        ? _c("turtle", { attrs: { size: _vm.size + "px" } })
+        : _vm._e()
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-815a7b0a", module.exports)
+  }
+}
+
+/***/ }),
+/* 356 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(357)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(359)
+/* template */
+var __vue_template__ = __webpack_require__(360)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/StarsIcons.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7ff03c30", Component.options)
+  } else {
+    hotAPI.reload("data-v-7ff03c30", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(358);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("618a28c5", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7ff03c30\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./StarsIcons.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7ff03c30\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./StarsIcons.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 358 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 359 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'StarsIcons',
+    props: {
+        stars: {
+            type: Number,
+            default: 0
+        }
+    }
+});
+
+/***/ }),
+/* 360 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "stars-rating" },
+    _vm._l(this.stars, function(i) {
+      return _c("div", { staticClass: "d-inline-block" }, [
+        _c("i", { staticClass: "fas fa-star" })
+      ])
+    })
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7ff03c30", module.exports)
+  }
+}
 
 /***/ })
 ],[44]);

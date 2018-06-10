@@ -19,3 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('/image-upload', 'GalleryController@upload');
 Route::get('/images', 'GalleryController@getImages');
+
+Route::prefix('dive-spots')->group(function() {
+    Route::get('/formdata', 'DivespotController@getFormData');
+    Route::post('/new', 'DivespotController@saveSpot');
+});
