@@ -6,7 +6,7 @@
                 <div class="col-md-6">
                     <section-title title="Dive Spots" number="02" align="right"/>
                     <section-subtitle>
-                        There is a lot to see, from beginners to experts
+                        There is a lot to see, from beginners to advance divers
                     </section-subtitle>
                     <section-paragraph>
                         More than 26 of the Seychelles top scuba diving spots

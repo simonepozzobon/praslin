@@ -8,7 +8,7 @@
                             <img src="/images/boat.jpg" class="img-fluid"/>
                         </div>​
                         <div id="boats-img-2">
-                            <img src="/images/dive-center-boat.png" class="img-fluid"/>
+                            <img src="/images/boat-2.jpg" class="img-fluid"/>
                         </div>​
                     </div>
                 </div>
@@ -84,7 +84,7 @@ export default {
         top: 180px;
         left: 0;
         width: 65%;
-        // @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
+        @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
     }
 
 }

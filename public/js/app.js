@@ -45569,7 +45569,7 @@ var render = function() {
               _vm._v(" "),
               _c("section-subtitle", [
                 _vm._v(
-                  "\n                    There is a lot to see, from beginners to experts\n                "
+                  "\n                    There is a lot to see, from beginners to advance divers\n                "
                 )
               ]),
               _vm._v(" "),
@@ -73738,7 +73738,7 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "boats-img-2" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/dive-center-boat.png" }
+          attrs: { src: "/images/boat-2.jpg" }
         })
       ]),
       _vm._v("​\n                ")
@@ -73789,7 +73789,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#boats {\n  padding-bottom: 180px;\n}\n#boats .waves-icon {\n    position: absolute;\n    right: 15px;\n    top: -40px;\n}\n#boats-images {\n  position: relative;\n}\n#boats-images > #boats-img-1 {\n    position: absolute;\n    right: 90px;\n    top: -40px;\n    width: 75%;\n}\n#boats-images > #boats-img-2 {\n    position: absolute;\n    top: 180px;\n    left: 0;\n    width: 65%;\n}\n", ""]);
+exports.push([module.i, "\n#boats {\n  padding-bottom: 180px;\n}\n#boats .waves-icon {\n    position: absolute;\n    right: 15px;\n    top: -40px;\n}\n#boats-images {\n  position: relative;\n}\n#boats-images > #boats-img-1 {\n    position: absolute;\n    right: 90px;\n    top: -40px;\n    width: 75%;\n}\n#boats-images > #boats-img-2 {\n    position: absolute;\n    top: 180px;\n    left: 0;\n    width: 65%;\n    -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n            box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n", ""]);
 
 // exports
 
