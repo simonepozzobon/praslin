@@ -47498,7 +47498,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#island {\n  padding-top: 180px;\n}\n#island .row.first-part {\n    padding-bottom: 120px;\n}\n#island .waves-icon {\n    position: absolute;\n    top: -40px;\n    right: 15px;\n}\n#island .waves-icon.left {\n      left: 15px;\n      right: auto;\n}\n#island .island-info {\n    padding-top: 80px;\n}\n#island .island-images {\n    position: relative;\n}\n#island .island-images > #island-img-1 {\n      position: absolute;\n      width: 80%;\n      top: -40px;\n      right: 90px;\n}\n#island .island-images > #island-img-2 {\n      position: absolute;\n      width: 70%;\n      top: 170px;\n      right: 20px;\n      -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#island .island-images > #island-img-3 {\n      position: absolute;\n      width: 80%;\n      top: 790px;\n      left: -15px;\n      -webkit-box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#island .island-images > #island-img-4 {\n      position: absolute;\n      width: 70%;\n      top: -40px;\n      left: 90px;\n}\n#island .island-images > #island-img-5 {\n      position: absolute;\n      width: 70%;\n      top: 190px;\n      right: 0;\n      z-index: 1;\n      -webkit-box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#island .island-images > #island-img-6 {\n      position: absolute;\n      width: 60%;\n      top: 390px;\n      left: 40px;\n      z-index: 0;\n}\n", ""]);
+exports.push([module.i, "\n#island {\n  padding-top: 180px;\n}\n#island .row.first-part {\n    padding-bottom: 120px;\n}\n#island .waves-icon {\n    position: absolute;\n    top: -40px;\n    right: 15px;\n}\n#island .waves-icon.left {\n      left: 15px;\n      right: auto;\n}\n#island .island-info {\n    padding-top: 80px;\n}\n#island .island-images {\n    position: relative;\n}\n#island .island-images > #island-img-2 {\n      position: absolute;\n      width: 70%;\n      top: -40px;\n      right: 90px;\n}\n#island .island-images > #island-img-3 {\n      position: absolute;\n      width: 80%;\n      top: 590px;\n      left: -15px;\n      -webkit-box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#island .island-images > #island-img-4 {\n      position: absolute;\n      width: 70%;\n      top: -40px;\n      left: 90px;\n}\n#island .island-images > #island-img-5 {\n      position: absolute;\n      width: 70%;\n      top: 430px;\n      right: 0;\n      z-index: 1;\n      -webkit-box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 4px 16px 0 rgba(37, 37, 37, 0.33);\n}\n", ""]);
 
 // exports
 
@@ -47515,9 +47515,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_SectionTitle_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_icons_Waves_vue__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_icons_Waves_vue__);
-//
-//
-//
 //
 //
 //
@@ -47994,13 +47991,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "island-images" }, [
-      _c("div", { attrs: { id: "island-img-1" } }, [
-        _c("img", {
-          staticClass: "img-fluid",
-          attrs: { src: "/images/beach-2.jpg" }
-        })
-      ]),
-      _vm._v(" "),
       _c("div", { attrs: { id: "island-img-2" } }, [
         _c("img", {
           staticClass: "img-fluid",
@@ -48024,21 +48014,14 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "island-img-4" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-anse-lazio.jpg" }
+          attrs: { src: "/images/praslin-island-palm.jpg" }
         })
       ]),
       _vm._v(" "),
       _c("div", { attrs: { id: "island-img-5" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-3.jpg" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "island-img-6" } }, [
-        _c("img", {
-          staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-4.jpg" }
+          attrs: { src: "/images/praslin-island-2.jpg" }
         })
       ])
     ])

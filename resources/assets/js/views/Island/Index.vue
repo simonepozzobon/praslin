@@ -5,9 +5,9 @@
                 <div class="col-md-6">
                     <waves class="waves-icon"/>
                     <div class="island-images">
-                        <div id="island-img-1">
+                        <!-- <div id="island-img-1">
                             <img src="/images/beach-2.jpg" class="img-fluid" />
-                        </div>
+                        </div> -->
                         <div id="island-img-2">
                             <img src="/images/praslin-island-1.jpg" class="img-fluid" />
                         </div>
@@ -99,13 +99,10 @@
                     <waves class="waves-icon left"/>
                     <div class="island-images">
                         <div id="island-img-4">
-                            <img src="/images/praslin-anse-lazio.jpg" class="img-fluid" />
+                            <img src="/images/praslin-island-palm.jpg" class="img-fluid" />
                         </div>
                         <div id="island-img-5">
-                            <img src="/images/praslin-3.jpg" class="img-fluid" />
-                        </div>
-                        <div id="island-img-6">
-                            <img src="/images/praslin-4.jpg" class="img-fluid" />
+                            <img src="/images/praslin-island-2.jpg" class="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -161,25 +158,25 @@ export default {
     .island-images {
         position: relative;
 
-        > #island-img-1 {
-            position: absolute;
-            width: 80%;
-            top: -40px;
-            right: 90px;
-        }
+        // > #island-img-1 {
+        //     position: absolute;
+        //     width: 80%;
+        //     top: -40px;
+        //     right: 90px;
+        // }
 
         > #island-img-2 {
             position: absolute;
             width: 70%;
-            top: 170px;
-            right: 20px;
-            @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
+            top: -40px;
+            right: 90px;
+            // @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
         }
 
         > #island-img-3 {
             position: absolute;
             width: 80%;
-            top: 790px;
+            top: 590px;
             left: -15px;
             @include box-shadow(0 4px 16px 0 rgba($black, 0.33));
         }
@@ -194,19 +191,19 @@ export default {
         > #island-img-5 {
             position: absolute;
             width: 70%;
-            top: 190px;
+            top: 430px;
             right: 0;
             z-index: 1;
             @include box-shadow(0 4px 16px 0 rgba($black, 0.33));
         }
 
-        > #island-img-6 {
-            position: absolute;
-            width: 60%;
-            top: 390px;
-            left: 40px;
-            z-index: 0;
-        }
+        // > #island-img-6 {
+        //     position: absolute;
+        //     width: 60%;
+        //     top: 390px;
+        //     left: 40px;
+        //     z-index: 0;
+        // }
     }
 
 }
