@@ -9,7 +9,7 @@
                         There is a lot to see, from beginners to experts
                     </section-subtitle>
                     <section-paragraph>
-                        More than 15 of the Seychelles top scuba diving spots
+                        More than 26 of the Seychelles top scuba diving spots
                         include some as close as a 5 minutes boat ride and some
                         an hour or so away for deeper dives and greater chances of
                         different species. Dive sites are always assessed before

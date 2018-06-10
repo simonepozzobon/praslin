@@ -4,13 +4,13 @@
             <div class="col-md-6">
                 <section-title title="Dive Center" number="02" align="right"/>
                 <section-subtitle>
-                    We are a “S.E.A“ dive centre.
+                    We are a “S.E.A.“ dive centre.
                 </section-subtitle>
                 <section-paragraph>
                     The dive centre is located in the north-east corner of the
                     long stretch of Anse Gouvernement Beach at l’Archipel Hotel which
                     also provide all the services a holiday maker may need.<br>
-                    We are a “S.E.A“ dive centre equipped with all scuba pro
+                    We are a “S.E.A.“ dive centre equipped with all scuba pro
                     gears, design and manufactured by scuba pro specialist team.
                 </section-paragraph>
             </div>
