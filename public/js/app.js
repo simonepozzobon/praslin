@@ -48014,14 +48014,14 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "island-img-4" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-island-palm.jpg" }
+          attrs: { src: "/images/praslin-island-palm.JPG" }
         })
       ]),
       _vm._v(" "),
       _c("div", { attrs: { id: "island-img-5" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-island-2.jpg" }
+          attrs: { src: "/images/praslin-island-2.JPG" }
         })
       ])
     ])

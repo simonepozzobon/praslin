@@ -99,10 +99,10 @@
                     <waves class="waves-icon left"/>
                     <div class="island-images">
                         <div id="island-img-4">
-                            <img src="/images/praslin-island-palm.jpg" class="img-fluid" />
+                            <img src="/images/praslin-island-palm.JPG" class="img-fluid" />
                         </div>
                         <div id="island-img-5">
-                            <img src="/images/praslin-island-2.jpg" class="img-fluid" />
+                            <img src="/images/praslin-island-2.JPG" class="img-fluid" />
                         </div>
                     </div>
                 </div>
