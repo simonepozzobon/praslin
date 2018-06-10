@@ -6,7 +6,7 @@
                     <waves class="waves-icon"/>
                 </div>
                 <div class="col-12">
-                    <p class="custom-p p-4 text-center">
+                    <p class="custom-p p-4">
                         <span class="contact-label">E-mail</span><br>
                         <span class="contact-description">
                             <a href="mailto:praslinprodivers@gmail.com">praslinprodivers@gmail.com</a>

@@ -48314,7 +48314,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-12" }, [
-      _c("p", { staticClass: "custom-p p-4 text-center" }, [
+      _c("p", { staticClass: "custom-p p-4" }, [
         _c("span", { staticClass: "contact-label" }, [_vm._v("E-mail")]),
         _c("br"),
         _vm._v(" "),
