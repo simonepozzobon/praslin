@@ -7,10 +7,15 @@
                     Pick up the equipment and get on board.
                 </section-subtitle>
                 <section-paragraph>
-                    Our 6 meters speed boat provide all the comfort a small
+                    <!-- Our 6 meters speed boat provide all the comfort a small
                     embarkation dive boat can provide,equipped with all safety
                     and navigational equipment to get you right on the dive
-                    spots with a 100% accuracy.
+                    spots with a 100% accuracy. -->
+                    The dive centre is located in the north-east corner of the
+                    long stretch of cote D’or Beach at l’Archipel Hotel which
+                    also provide all the services a holiday maker may need.<br>
+                    We are a “S.E.A“ dive centre equipped with all scuba pro
+                    gears, design and manufactured by scuba pro specialist team.
                 </section-paragraph>
             </div>
             <div class="col-md-6">

@@ -45140,6 +45140,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -45182,7 +45187,11 @@ var render = function() {
           _vm._v(" "),
           _c("section-paragraph", [
             _vm._v(
-              "\n                Our 6 meters speed boat provide all the comfort a small\n                embarkation dive boat can provide,equipped with all safety\n                and navigational equipment to get you right on the dive\n                spots with a 100% accuracy.\n            "
+              "\n                The dive centre is located in the north-east corner of the\n                long stretch of cote D’or Beach at l’Archipel Hotel which\n                also provide all the services a holiday maker may need."
+            ),
+            _c("br"),
+            _vm._v(
+              "\n                We are a “S.E.A“ dive centre equipped with all scuba pro\n                gears, design and manufactured by scuba pro specialist team.\n            "
             )
           ])
         ],
