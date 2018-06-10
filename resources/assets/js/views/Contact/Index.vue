@@ -123,7 +123,7 @@ export default {
 @import '~styles/mixins';
 
 #contact {
-    padding-top: 132px;
+    // padding-top: 132px;
     overflow: hidden;
 
     #contact-panel, #bottom-contact {
@@ -164,7 +164,7 @@ export default {
 
     #contact-map {
         // position:absolute;
-        top: 0;
+        // top: 0
         width: 100%;
         min-height: 100vh;
         height: 100%;
@@ -181,7 +181,7 @@ export default {
         }
 
         #contact-map {
-            margin-top: 80px;
+            // margin-top: 80px;
             // position: absolute;
         }
     };
