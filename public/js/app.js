@@ -45704,7 +45704,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#meet-the-team {\n  padding-bottom: 122px;\n}\n#meet-the-team .waves-icon {\n    position: absolute;\n    z-index: 2;\n    top: 60px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n#meet-the-team .team-mates {\n    padding-top: 130px;\n}\n#meet-the-team .team-mates .team-mate {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n}\n#meet-the-team .team-mates .team-mate .team-pic {\n        width: 128px;\n        padding-top: 1rem;\n        padding-bottom: 1rem;\n        overflow: hidden;\n}\n#meet-the-team .team-mates .team-mate .team-pic > img {\n          border-radius: 50%;\n}\n#meet-the-team .team-mates .team-mate .team-name {\n        font-weight: 700;\n        font-size: 36px;\n        text-transform: uppercase;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n}\n#meet-the-team .team-mates .team-mate .team-role {\n        text-transform: uppercase;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n}\n#meet-the-team .team-mates .team-mate .description {\n        padding-top: 26px;\n        text-align: justify;\n        line-height: 1.618;\n}\n", ""]);
+exports.push([module.i, "\n#meet-the-team {\n  padding-bottom: 122px;\n}\n#meet-the-team .waves-icon {\n    position: absolute;\n    z-index: 2;\n    top: 60px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n#meet-the-team .team-mates {\n    padding-top: 130px;\n}\n#meet-the-team .team-mates .team-mate {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n}\n#meet-the-team .team-mates .team-mate .team-pic {\n        width: 128px;\n        padding-top: 1rem;\n        padding-bottom: 1rem;\n        overflow: hidden;\n}\n#meet-the-team .team-mates .team-mate .team-pic > img {\n          border-radius: 50%;\n}\n#meet-the-team .team-mates .team-mate .team-name {\n        font-weight: 700;\n        font-size: 36px;\n        text-transform: uppercase;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n}\n#meet-the-team .team-mates .team-mate .team-role {\n        text-transform: uppercase;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n}\n#meet-the-team .team-mates .team-mate .description {\n        padding-top: 26px;\n        text-align: justify;\n        line-height: 1.618;\n}\n", ""]);
 
 // exports
 
@@ -45723,15 +45723,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_SectionTitle_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_icons_Waves_vue__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -46303,13 +46294,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "description" }, [
-      _c("p", [
-        _vm._v(
-          "\n                            A pralinois with extensive experiences and\n                            knowledge of the Indian ocean. Passionated by\n                            the ocean he has been in the diving industry for\n                            over 20 years, taught and certified more than\n                            300 divers with over 4000 logged dives to date.\n                            He is ready to take you for a dive tour,\n                            knowing the dive sites as the back of his hands\n                            you are sure to be in safe hands.\n                        "
-        )
-      ])
-    ])
+    return _c("div", { staticClass: "description" }, [_c("p")])
   }
 ]
 render._withStripped = true

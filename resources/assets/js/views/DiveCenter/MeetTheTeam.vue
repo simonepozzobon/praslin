@@ -47,16 +47,7 @@
                             Skipper & Dive Master
                         </div>
                         <div class="description">
-                            <p>
-                                A pralinois with extensive experiences and
-                                knowledge of the Indian ocean. Passionated by
-                                the ocean he has been in the diving industry for
-                                over 20 years, taught and certified more than
-                                300 divers with over 4000 logged dives to date.
-                                He is ready to take you for a dive tour,
-                                knowing the dive sites as the back of his hands
-                                you are sure to be in safe hands.
-                            </p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +96,7 @@ export default {
         .team-mate {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
 
             .team-pic {
