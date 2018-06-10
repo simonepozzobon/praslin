@@ -33,7 +33,7 @@
             </div>
             <div class="row">
                 <div class="col d-flex justify-content-center">
-                    <button class="btn btn-light-blue text-uppercase" @click="submitRequest">Submit</button>
+                    <button class="btn btn-dark text-uppercase" @click="submitRequest">Submit</button>
                 </div>
             </div>
         </div>
@@ -205,7 +205,7 @@ export default {
 
         input, textarea {
             border: none;
-            border-bottom: 2px solid $light-blue;
+            border-bottom: 2px solid $menu-green;
             @include border-radius(0);
             @include box-shadow(none);
             background-color: transparent;
