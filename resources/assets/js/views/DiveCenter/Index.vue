@@ -20,6 +20,17 @@ export default {
         DiveSpots,
         MeetTheTeam,
         PriceList,
+    },
+    watch: {
+        '$route': 'scrollTo'
+    },
+    methods: {
+        scrollTo: function() {
+            var element = document.getElementById(this.$route.params.anchor)
+            if (!element) return 
+            var top = element.offsetTop
+            window.scrollTo(0, top)
+        }
     }
 }
 </script>

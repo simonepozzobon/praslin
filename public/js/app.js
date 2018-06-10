@@ -31296,7 +31296,7 @@ var router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
         name: 'About',
         component: __webpack_require__(90)
     }, {
-        path: '/dive-center',
+        path: '/dive-center/:anchor',
         name: 'DiveCenter',
         component: __webpack_require__(116)
     }, {
@@ -44981,7 +44981,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -45022,6 +45022,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         DiveSpots: __WEBPACK_IMPORTED_MODULE_1__DiveSpots_vue___default.a,
         MeetTheTeam: __WEBPACK_IMPORTED_MODULE_2__MeetTheTeam_vue___default.a,
         PriceList: __WEBPACK_IMPORTED_MODULE_3__PriceList_vue___default.a
+    },
+    watch: {
+        '$route': 'scrollTo'
+    },
+    methods: {
+        scrollTo: function scrollTo() {
+            var element = document.getElementById(this.$route.params.anchor);
+            if (!element) return;
+            var top = element.offsetTop;
+            window.scrollTo(0, top);
+        }
     }
 });
 
@@ -45542,7 +45553,7 @@ var render = function() {
           expression: "visibilityChanged"
         }
       ],
-      attrs: { id: "dive-spots" }
+      attrs: { id: "diving-spots" }
     },
     [
       _c("div", { staticClass: "container pb-5" }, [
@@ -48890,11 +48901,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Logo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Logo_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_NavItem_vue__ = __webpack_require__(287);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_NavItem_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_NavItem_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_PhoneCall_vue__ = __webpack_require__(292);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_PhoneCall_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_gsap__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__WeatherInfoLite_vue__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__WeatherInfoLite_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_NavItemDropdown_vue__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_NavItemDropdown_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_NavItemDropdown_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_PhoneCall_vue__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_PhoneCall_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_PhoneCall_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_gsap__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__WeatherInfoLite_vue__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__WeatherInfoLite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__WeatherInfoLite_vue__);
 //
 //
 //
@@ -48924,6 +48937,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 
 
@@ -48940,8 +48954,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         burger: __WEBPACK_IMPORTED_MODULE_1__components_icons_burger_vue___default.a,
         Logo: __WEBPACK_IMPORTED_MODULE_2__Logo_vue___default.a,
         NavItem: __WEBPACK_IMPORTED_MODULE_3__components_NavItem_vue___default.a,
-        PhoneCall: __WEBPACK_IMPORTED_MODULE_4__components_PhoneCall_vue___default.a,
-        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_6__WeatherInfoLite_vue___default.a
+        NavItemDropdown: __WEBPACK_IMPORTED_MODULE_4__components_NavItemDropdown_vue___default.a,
+        PhoneCall: __WEBPACK_IMPORTED_MODULE_5__components_PhoneCall_vue___default.a,
+        WeatherInfoLite: __WEBPACK_IMPORTED_MODULE_7__WeatherInfoLite_vue___default.a
     },
     data: function data() {
         return {
@@ -48950,7 +48965,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     methods: {
         animate: function animate() {
-            var t1 = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
+            var t1 = new __WEBPACK_IMPORTED_MODULE_6_gsap__["a" /* TimelineMax */]();
             var elements = document.getElementsByClassName('nav-item');
 
             t1.staggerFrom(elements, .8, {
@@ -48959,21 +48974,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 ease: Back.easeInOut
             }, .1, '+=0');
 
-            var t2 = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
+            var t2 = new __WEBPACK_IMPORTED_MODULE_6_gsap__["a" /* TimelineMax */]();
             t2.from('#weather-wrapper', .8, {
                 y: -16,
                 opacity: 0,
                 ease: Back.easeInOut
             });
 
-            var t3 = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
+            var t3 = new __WEBPACK_IMPORTED_MODULE_6_gsap__["a" /* TimelineMax */]();
             t3.from('#phone-call-wrapper', .8, {
                 y: -16,
                 opacity: 0,
                 ease: Back.easeInOut
             });
 
-            var master = new __WEBPACK_IMPORTED_MODULE_5_gsap__["a" /* TimelineMax */]();
+            var master = new __WEBPACK_IMPORTED_MODULE_6_gsap__["a" /* TimelineMax */]();
             master.add(t1, 0.1);
             master.add(t2, 0.7);
             master.add(t3, 0.8);
@@ -54380,7 +54395,7 @@ var render = function() {
                   attrs: { number: "01", link: "/about", text: "About" }
                 }),
                 _vm._v(" "),
-                _c("nav-item", {
+                _c("nav-item-dropdown", {
                   attrs: {
                     number: "02",
                     link: "/dive-center",
@@ -70165,6 +70180,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             data.append('dive_level', this.dive_level);
             data.append('from_to', this.from_to);
             data.append('email', this.email);
+
+            // axios.post('')
         },
         toggleModal: function toggleModal() {
             var _this2 = this;
@@ -70338,6 +70355,282 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-6e0d0068", module.exports)
+  }
+}
+
+/***/ }),
+/* 366 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(367)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(369)
+/* template */
+var __vue_template__ = __webpack_require__(370)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/NavItemDropdown.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-117e1ec0", Component.options)
+  } else {
+    hotAPI.reload("data-v-117e1ec0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 367 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(368);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("10a2119b", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-117e1ec0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NavItemDropdown.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-117e1ec0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NavItemDropdown.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 368 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.dropdown-menu {\n  background-color: #252525;\n  border-radius: 0;\n}\n.dropdown-menu > .dropdown-item {\n    color: #fff;\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 14px;\n    padding-bottom: 0.5rem;\n    padding-top: 0.5rem;\n    -webkit-transition: all .3s ease-in-out;\n    transition: all .3s ease-in-out;\n}\n.dropdown-menu > .dropdown-item:active, .dropdown-menu > .dropdown-item:visited, .dropdown-menu > .dropdown-item:link {\n      color: #fff;\n      -webkit-transition: all .3s ease-in-out;\n      transition: all .3s ease-in-out;\n}\n.dropdown-menu > .dropdown-item:hover {\n      background-color: transparent;\n      color: #00AFB8;\n      -webkit-transition: all .8s ease-in-out;\n      transition: all .8s ease-in-out;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 369 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_gsap__ = __webpack_require__(277);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'NavItem',
+    props: {
+        link: {
+            type: String,
+            default: '/'
+        },
+        number: {
+            type: String,
+            default: '00'
+        },
+        text: {
+            type: String,
+            default: 'Home'
+        }
+    },
+    data: function data() {
+        return {
+            isAnimating: false
+        };
+    },
+    methods: {
+        animate: function animate() {
+            var _this = this;
+
+            if (!this.isAnimating) {
+                this.isAnimating = true;
+                var text = new SplitText(this.$refs.number, { type: 'chars' });
+
+                var t1 = new __WEBPACK_IMPORTED_MODULE_0_gsap__["a" /* TimelineMax */]();
+                t1.set(text.chars, {
+                    perspective: 400
+                }).staggerFrom(text.chars, 0.8, {
+                    opacity: 0,
+                    y: 16,
+                    ease: Back.easeInOut,
+                    onComplete: function onComplete() {
+                        _this.isAnimating = false;
+                        text.revert();
+                    }
+                }, 0.1, '+=0');
+            }
+        }
+    },
+    mounted: function mounted() {}
+});
+
+/***/ }),
+/* 370 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "li",
+    { staticClass: "nav-item dropdown", on: { mouseenter: _vm.animate } },
+    [
+      _c("span", { ref: "number", staticClass: "nav-number" }, [
+        _vm._v("\n        " + _vm._s(_vm.number) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "nav-link dropdown-toggle",
+          attrs: {
+            href: "#",
+            id: "navbarDropdown",
+            role: "button",
+            "data-toggle": "dropdown",
+            "aria-haspopup": "true",
+            "aria-expanded": "false"
+          }
+        },
+        [_vm._v("\n        " + _vm._s(_vm.text) + "\n    ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "dropdown-menu",
+          attrs: { "aria-labelledby": "navbarDropdown" }
+        },
+        [
+          _c(
+            "router-link",
+            {
+              staticClass: "dropdown-item",
+              attrs: {
+                to: { name: "DiveCenter", params: { anchor: "dive-center" } }
+              }
+            },
+            [_vm._v("Dive Center")]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "dropdown-item",
+              attrs: { to: { name: "DiveCenter", params: { anchor: "none" } } }
+            },
+            [_vm._v("Boats")]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "dropdown-item",
+              attrs: {
+                to: { name: "DiveCenter", params: { anchor: "diving-spots" } }
+              }
+            },
+            [_vm._v("Dive Spots")]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "dropdown-item",
+              attrs: {
+                to: { name: "DiveCenter", params: { anchor: "meet-the-team" } }
+              }
+            },
+            [_vm._v("Meet The Team")]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "dropdown-item",
+              attrs: {
+                to: { name: "DiveCenter", params: { anchor: "price-list" } }
+              }
+            },
+            [_vm._v("Price List")]
+          )
+        ],
+        1
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-117e1ec0", module.exports)
   }
 }
 

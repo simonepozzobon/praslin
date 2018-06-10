@@ -13,7 +13,7 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav">
                     <nav-item number="01" link='/about' text="About" />
-                    <nav-item number="02" link='/dive-center' text="Dive Center"/>
+                    <nav-item-dropdown number="02" link='/dive-center' text="Dive Center"/>
                     <nav-item number="03" link='/galleries' text="Galleries"/>
                     <nav-item number="04" link='/island' text="Info"/>
                     <nav-item number="05" link='/contacts' text="Contact"/>
@@ -32,6 +32,7 @@ import BookNow from '../components/BookNow.vue'
 import burger from '../components/icons/burger.vue'
 import Logo from './Logo.vue'
 import NavItem from '../components/NavItem.vue'
+import NavItemDropdown from '../components/NavItemDropdown.vue'
 import PhoneCall from '../components/PhoneCall.vue'
 import {TweenMax, TimelineMax} from 'gsap'
 import WeatherInfoLite from './WeatherInfoLite.vue'
@@ -43,6 +44,7 @@ export default {
         burger,
         Logo,
         NavItem,
+        NavItemDropdown,
         PhoneCall,
         WeatherInfoLite,
     },

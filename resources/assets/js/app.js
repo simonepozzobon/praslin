@@ -33,7 +33,7 @@ const router = new VueRouter({
             component: require('./views/About/Index.vue')
         },
         {
-            path: '/dive-center',
+            path: '/dive-center/:anchor',
             name: 'DiveCenter',
             component: require('./views/DiveCenter/Index.vue')
         },

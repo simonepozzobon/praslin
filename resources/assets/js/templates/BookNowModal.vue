@@ -110,6 +110,8 @@ export default {
             data.append('dive_level', this.dive_level)
             data.append('from_to', this.from_to)
             data.append('email', this.email)
+
+            // axios.post('')
         },
         toggleModal: function() {
             if (!this.isOpen) {

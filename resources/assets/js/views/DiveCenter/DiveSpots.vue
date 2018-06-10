@@ -1,5 +1,5 @@
 <template lang="html">
-    <div id="dive-spots" v-observe-visibility="visibilityChanged">
+    <div id="diving-spots" v-observe-visibility="visibilityChanged">
         <div class="container pb-5">
             <div class="row">
                 <div class="col-md-6">
