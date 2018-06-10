@@ -78,12 +78,12 @@ export default {
             position: absolute;
             right: 90px;
             top: -40px;
-            width: 70%;
+            width: 78%;
         }
 
         #about-us-img-2 {
             position: absolute;
-            top: 200px;
+            top: 240px;
             left: -20px;
             width: 70%;
         }

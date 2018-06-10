@@ -44146,7 +44146,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#about-us .waves-icon {\n  position: absolute;\n  right: 15px;\n  top: -40px;\n}\n#about-us .images {\n  position: relative;\n}\n#about-us .images #about-us-img-1 {\n    position: absolute;\n    right: 90px;\n    top: -40px;\n    width: 70%;\n}\n#about-us .images #about-us-img-2 {\n    position: absolute;\n    top: 200px;\n    left: -20px;\n    width: 70%;\n}\n#about-us .images #about-us-img-3 {\n    position: absolute;\n    top: 330px;\n    right: 0;\n    width: 30%;\n}\n#about-us .padi {\n  padding-top: 4rem;\n}\n#about-us .padi > img {\n    width: 200px;\n    height: auto;\n    height: 100%;\n}\n", ""]);
+exports.push([module.i, "\n#about-us .waves-icon {\n  position: absolute;\n  right: 15px;\n  top: -40px;\n}\n#about-us .images {\n  position: relative;\n}\n#about-us .images #about-us-img-1 {\n    position: absolute;\n    right: 90px;\n    top: -40px;\n    width: 78%;\n}\n#about-us .images #about-us-img-2 {\n    position: absolute;\n    top: 240px;\n    left: -20px;\n    width: 70%;\n}\n#about-us .images #about-us-img-3 {\n    position: absolute;\n    top: 330px;\n    right: 0;\n    width: 30%;\n}\n#about-us .padi {\n  padding-top: 4rem;\n}\n#about-us .padi > img {\n    width: 200px;\n    height: auto;\n    height: 100%;\n}\n", ""]);
 
 // exports
 
