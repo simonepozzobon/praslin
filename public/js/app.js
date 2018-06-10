@@ -45182,7 +45182,7 @@ var render = function() {
           _vm._v(" "),
           _c("section-paragraph", [
             _vm._v(
-              "\n                The dive centre is located in the north-east corner of the\n                long stretch of cote D’or Beach at l’Archipel Hotel which\n                also provide all the services a holiday maker may need."
+              "\n                The dive centre is located in the north-east corner of the\n                long stretch of Anse Gouvernement Beach at l’Archipel Hotel which\n                also provide all the services a holiday maker may need."
             ),
             _c("br"),
             _vm._v(
