@@ -12,7 +12,7 @@
                         Seychelles top scuba diving spots
                         include some as close as a 5 minutes boat ride and some
                         an hour or so away for deeper dives and greater chances of
-                        different species. Dive sites are always assessed before
+                        different species. Dive conditions are always assessed before
                         diving, and with plenty of alternative spots nearby, a
                         change in site is easy when needed.
                     </section-paragraph>
