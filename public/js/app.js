@@ -45333,7 +45333,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#diving-spots {\n  padding-bottom: 180px;\n}\n#diving-spots .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#diving-spots #dive-sposts-images {\n    position: relative;\n}\n#diving-spots #dive-sposts-images #dive-spots-img-1 {\n      position: absolute;\n      width: 60%;\n      top: -40px;\n      left: 90px;\n}\n#diving-spots #dive-sposts-images #dive-spots-img-2 {\n      position: absolute;\n      width: 60%;\n      top: 170px;\n      right: 0;\n      z-index: 1;\n      -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#diving-spots #dive-sposts-images #dive-spots-img-3 {\n      position: absolute;\n      width: 60%;\n      top: 310px;\n      left: 15px;\n      z-index: 0;\n}\n#diving-spots #map-wrapper #dive-spots-map {\n    width: 100%;\n    min-height: 60vh;\n    height: 100%;\n    z-index: 0;\n}\n", ""]);
+exports.push([module.i, "\n#diving-spots {\n  padding-bottom: 180px;\n}\n#diving-spots .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#diving-spots #dive-sposts-images {\n    position: relative;\n}\n#diving-spots #dive-sposts-images #dive-spots-img-1 {\n      position: absolute;\n      width: 60%;\n      top: -40px;\n      left: 90px;\n}\n#diving-spots #dive-sposts-images #dive-spots-img-2 {\n      position: absolute;\n      width: 60%;\n      top: 300px;\n      right: 0;\n      z-index: 1;\n      -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n              box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n#diving-spots #map-wrapper {\n    padding-top: 140px;\n}\n#diving-spots #map-wrapper #dive-spots-map {\n      width: 100%;\n      min-height: 60vh;\n      height: 100%;\n      z-index: 0;\n}\n", ""]);
 
 // exports
 
@@ -45358,9 +45358,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_icons_Waves_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_icons_sea_creatures_Coral_vue__ = __webpack_require__(320);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_icons_sea_creatures_Coral_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_icons_sea_creatures_Coral_vue__);
-//
-//
-//
 //
 //
 //
@@ -45608,21 +45605,14 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "dive-spots-img-1" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-north.jpg" }
+          attrs: { src: "/images/dive-spots-img-2.jpg" }
         })
       ]),
       _vm._v("​\n                    "),
       _c("div", { attrs: { id: "dive-spots-img-2" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-st-pierre.jpg" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "dive-spots-img-3" } }, [
-        _c("img", {
-          staticClass: "img-fluid",
-          attrs: { src: "/images/national-park.jpg" }
+          attrs: { src: "/images/dive-spots-img-1.jpg" }
         })
       ])
     ])

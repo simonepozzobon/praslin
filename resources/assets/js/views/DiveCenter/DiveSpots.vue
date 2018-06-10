@@ -21,13 +21,10 @@
                     <waves class="waves-icon"/>
                     <div id="dive-sposts-images">
                         <div id="dive-spots-img-1">
-                            <img src="/images/praslin-north.jpg" class="img-fluid"/>
+                            <img src="/images/dive-spots-img-2.jpg" class="img-fluid"/>
                         </div>​
                         <div id="dive-spots-img-2">
-                            <img src="/images/praslin-st-pierre.jpg" class="img-fluid"/>
-                        </div>
-                        <div id="dive-spots-img-3">
-                            <img src="/images/national-park.jpg" class="img-fluid"/>
+                            <img src="/images/dive-spots-img-1.jpg" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -205,22 +202,23 @@ export default {
         #dive-spots-img-2 {
             position: absolute;
             width: 60%;
-            top: 170px;
+            top: 300px;
             right: 0;
             z-index: 1;
             @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
         }
 
-        #dive-spots-img-3 {
-            position: absolute;
-            width: 60%;
-            top: 310px;
-            left: 15px;
-            z-index: 0;
-        }
+        // #dive-spots-img-3 {
+        //     position: absolute;
+        //     width: 60%;
+        //     top: 310px;
+        //     left: 15px;
+        //     z-index: 0;
+        // }
     }
 
     #map-wrapper {
+        padding-top: 140px;
 
         #dive-spots-map {
             width: 100%;
