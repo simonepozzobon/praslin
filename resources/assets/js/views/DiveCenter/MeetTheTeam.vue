@@ -38,7 +38,7 @@
                             <sailor align="center"/>
                         </div>
                         <div class="team-pic">
-                            <img src="/images/guest-circle.jpg" class="img-fluid"/>
+                            <img src="/images/ted.jpg" class="img-fluid"/>
                         </div>
                         <div class="team-name">
                             Ted Charles
@@ -86,6 +86,7 @@ export default {
 <style lang="scss">
 @import '~styles/functions';
 @import '~styles/variables';
+@import '~styles/mixins';
 
 #meet-the-team {
     padding-bottom: 122px;
@@ -111,6 +112,11 @@ export default {
                 width: 128px;
                 padding-top: $spacer;
                 padding-bottom: $spacer;
+                overflow: hidden;
+
+                > img {
+                    @include border-radius(50%);
+                }
             }
 
             .team-name {

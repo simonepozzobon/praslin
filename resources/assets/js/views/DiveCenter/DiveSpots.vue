@@ -168,7 +168,7 @@ export default {
 @import '~styles/variables';
 @import '~styles/mixins';
 
-#dive-spots {
+#diving-spots {
     padding-bottom: 180px;
 
     .waves-icon {
