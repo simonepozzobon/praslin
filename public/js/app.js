@@ -44798,7 +44798,7 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "about-us-img-1" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-about-1.jpg" }
+          attrs: { src: "/images/about-us-dive-center-2.jpg" }
         })
       ]),
       _vm._v("​\n                "),

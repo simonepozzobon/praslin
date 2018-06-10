@@ -5,7 +5,7 @@
                 <waves class="waves-icon"/>
                 <div class="images">
                     <div id="about-us-img-1">
-                        <img src="/images/praslin-about-1.jpg" class="img-fluid"/>
+                        <img src="/images/about-us-dive-center-2.jpg" class="img-fluid"/>
                     </div>​
                     <div id="about-us-img-2">
                         <img src="/images/equipment-4.jpg" class="img-fluid"/>
