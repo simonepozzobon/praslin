@@ -194,14 +194,14 @@ export default {
 
         #dive-spots-img-1 {
             position: absolute;
-            width: 60%;
+            width: 50%;
             top: -40px;
             left: 90px;
         }
 
         #dive-spots-img-2 {
             position: absolute;
-            width: 60%;
+            width: 50%;
             top: 300px;
             right: 0;
             z-index: 1;
@@ -218,7 +218,7 @@ export default {
     }
 
     #map-wrapper {
-        padding-top: 140px;
+        padding-top: 100px;
 
         #dive-spots-map {
             width: 100%;
