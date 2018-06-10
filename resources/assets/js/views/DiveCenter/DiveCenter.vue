@@ -8,10 +8,11 @@
                 </section-subtitle>
                 <section-paragraph>
                     The dive centre is located in the north-east corner of the
-                    long stretch of Anse Gouvernement Beach at l’Archipel Hotel which
-                    also provide all the services a holiday maker may need.<br>
-                    We are a “S.E.A.“ dive centre equipped with all scuba pro
-                    gears, design and manufactured by scuba pro specialist team.
+                    long stretch of Anse Gouvernement Beach at l’Archipel Hotel,
+                    Praslin Pro Divers has real world class diving.<br>
+                    We are a “S.E.A.“ dive centre equipped high quality
+                    scuba pro branded diving equipment design and manufactured
+                    by scuba pro specialist team.
                 </section-paragraph>
             </div>
             <div class="col-md-6">

@@ -36,6 +36,9 @@
         <div id="map-wrapper" class="container-fluid mt-5 px-0">
             <div id="dive-spots-map"></div>
         </div>
+        <!-- <div id="dive-list" class="container mt-5 px-0">
+            <b-table stiped hover :items="this.spotsConverted"></b-table>
+        </div> -->
     </div>
 </template>
 
@@ -74,6 +77,17 @@ export default {
             }
             return true
         },
+        spotsConverted: function() {
+            var converted = []
+            for (var i = 0; i < this.spots.length; i++) {
+                var spot = this.spots[i]
+                var newspot
+                newspot.reef_type = spot.reef_type.description
+                converted.push(newspot)
+            }
+
+            return converted
+        }
     },
     methods: {
         getSpots: function() {

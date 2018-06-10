@@ -13,10 +13,12 @@ window.Vue = require('vue')
 import VueResource from 'vue-resource'
 import VueRouter from 'vue-router'
 import VueVisibility from 'vue-observe-visibility'
+import BootstrapVue from 'bootstrap-vue'
 
 Vue.use(VueResource)
 Vue.use(VueRouter)
 Vue.use(VueVisibility)
+Vue.use(BootstrapVue)
 
 const router = new VueRouter({
     mode: 'history',
