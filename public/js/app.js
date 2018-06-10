@@ -47842,7 +47842,7 @@ var render = function() {
                     ),
                     _c("br"),
                     _vm._v(
-                      "\n                        Famed for its COCO DE- MER forest, Praslin is home to one of\n                        Seychelles two UNESCO world heritage site,the VALLE DE MAI.\n                    "
+                      "\n                        Famed for its COCO DE-MER forest, Praslin is home to one of\n                        Seychelles two UNESCO world heritage site, the VALLE DE MAI.\n                    "
                     )
                   ]
                 ),

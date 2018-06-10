@@ -22,8 +22,8 @@
                         <island-description title="Praslin" icon="far fa-map">
                             The second largest island at 38sq km lies 49km (30.5 nautical miles)
                             north-east of Mahe.<br>
-                            Famed for its COCO DE- MER forest, Praslin is home to one of
-                            Seychelles two UNESCO world heritage site,the VALLE DE MAI.
+                            Famed for its COCO DE-MER forest, Praslin is home to one of
+                            Seychelles two UNESCO world heritage site, the VALLE DE MAI.
                         </island-description>
                         <island-description title="Climate" icon="fas fa-thermometer-half">
                             Seychelles has the blissful advantage of a near constant
