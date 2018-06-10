@@ -5,7 +5,7 @@
                 <div id="home-slider-slogan" class="text-center">
                     <h2>Welcome To</h2>
                     <h1>Praslin Pro Divers</h1>
-                    <h3>Seychelles</h3>
+                    <h2>Seychelles</h2>
                 </div>
                 <!-- <main-slider-slogan class="main-slider-slogan"/> -->
             </swiper-slide>
@@ -80,7 +80,7 @@ export default {
     methods: {
         animate: function() {
             var t1 = new TimelineMax()
-                t1.from(['#home-slider-slogan h1', '#home-slider-slogan h2', '#home-slider-slogan h3'], .8, {
+                t1.from(['#home-slider-slogan h1', '#home-slider-slogan h2'], .8, {
                     delay: 1.2,
                     opacity: 0,
                     scale: 0.98,
@@ -113,6 +113,7 @@ export default {
     // width: 100%;
     // height: 100%;
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -125,7 +126,11 @@ export default {
     }
 
     > h1 {
-        font-size: 64px;
+        font-size: 72px;
+    }
+
+    > h2 {
+        font-size: 40px;
     }
 }
 
