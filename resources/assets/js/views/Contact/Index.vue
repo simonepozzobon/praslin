@@ -1,6 +1,6 @@
 <template lang="html">
     <div id="contact" v-observe-visibility="visibilityChanged">
-        <div id="contact-panel" class="bg-sand row">
+        <!-- <div id="contact-panel" class="bg-sand row">
                 <div class="col-12 py-5">
                     <section-title title="Contact" number="05" align="left" class="section-title"/>
                     <waves class="waves-icon"/>
@@ -22,7 +22,7 @@
                     </p>
 
                 </div>
-        </div>
+        </div> -->
         <div id="contact-map">
 
         </div>

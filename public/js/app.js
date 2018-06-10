@@ -48279,75 +48279,10 @@ var render = function() {
       ],
       attrs: { id: "contact" }
     },
-    [
-      _c(
-        "div",
-        { staticClass: "bg-sand row", attrs: { id: "contact-panel" } },
-        [
-          _c(
-            "div",
-            { staticClass: "col-12 py-5" },
-            [
-              _c("section-title", {
-                staticClass: "section-title",
-                attrs: { title: "Contact", number: "05", align: "left" }
-              }),
-              _vm._v(" "),
-              _c("waves", { staticClass: "waves-icon" })
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _vm._m(0)
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "contact-map" } }),
-      _vm._v(" "),
-      _vm._m(1)
-    ]
+    [_c("div", { attrs: { id: "contact-map" } }), _vm._v(" "), _vm._m(0)]
   )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-12" }, [
-      _c("p", { staticClass: "custom-p p-4" }, [
-        _c("span", { staticClass: "contact-label" }, [_vm._v("E-mail")]),
-        _c("br"),
-        _vm._v(" "),
-        _c("span", { staticClass: "contact-description" }, [
-          _c("a", { attrs: { href: "mailto:praslinprodivers@gmail.com" } }, [
-            _vm._v("praslinprodivers@gmail.com")
-          ])
-        ]),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c("span", { staticClass: "contact-label" }, [_vm._v("Mobile")]),
-        _c("br"),
-        _vm._v(" "),
-        _c("span", { staticClass: "contact-description" }, [
-          _vm._v(
-            "\n                        (+248) 26 33 000\n                    "
-          )
-        ]),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c("span", { staticClass: "contact-label" }, [_vm._v("Phone")]),
-        _c("br"),
-        _vm._v(" "),
-        _c("span", { staticClass: "contact-description" }, [
-          _vm._v(
-            "\n                        (+248) 42 32 113\n                    "
-          )
-        ])
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
