@@ -40,11 +40,14 @@
 
 <script>
 import apiKeys from '~js/apiKeys'
+import axios from 'axios'
 import GoogleMapsOpts from '~js/config/GoogleMapsOpts'
 import SectionParagraph from '../../components/SectionParagraph.vue'
 import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
 import Waves from '../../components/icons/Waves.vue'
+
+import Coral from '../../components/icons/sea-creatures/Coral.vue'
 
 export default {
     name: 'DiveSpots',
@@ -56,55 +59,7 @@ export default {
     },
     data: function() {
         return {
-            spots: [
-                {
-                    name: 'St. Pierre',
-                    lat: -4.302592,
-                    lng: 55.749939,
-                },
-                {
-                    name: 'Coral Garden',
-                    lat: -4.287068,
-                    lng: 55.740583,
-                },
-                {
-                    name: 'Red Point',
-                    lat: -4.277310,
-                    lng: 55.746034,
-                },
-                {
-                    name: 'Aride Island',
-                    lat: -4.213270,
-                    lng: 55.665350,
-                },
-                {
-                    name: 'Bobby Rock',
-                    lat: -4.251115,
-                    lng: 55.678160,
-                },
-                {
-                    name: 'Corail Francine',
-                    lat: -4.292361,
-                    lng: 55.761599,
-                },
-                {
-                    name: 'Ave Maria',
-                    lat: -4.310583,
-                    lng: 55.829240,
-                },
-                {
-                    name: 'White Bank',
-                    lat: -4.317233,
-                    lng: 55.817776,
-                },
-                {
-                    name: 'Channel Rock',
-                    lat: -4.346670,
-                    lng: 55.807134,
-                },
-
-
-            ]
+            spots: []
         }
     },
     computed: {
@@ -120,6 +75,21 @@ export default {
         },
     },
     methods: {
+        getSpots: function() {
+            return new Promise((resolve, reject) => {
+                axios.get('/api/dive-spots').then(response => {
+                    this.spots = response.data
+                    resolve()
+                })
+            })
+
+        },
+        hasSnorkeling: function(value) {
+            if (value == 0) {
+                return 'No'
+            }
+            return 'Yes'
+        },
         loadMap: function() {
             const element = document.getElementById('dive-spots-map')
             GoogleMapsOpts.zoom = 12
@@ -127,12 +97,49 @@ export default {
             const map = new google.maps.Map(element, GoogleMapsOpts)
 
             this.spots.forEach((coord) => {
-                const position = new google.maps.LatLng(coord.lat, coord.lng)
+                const position = new google.maps.LatLng(coord.lat, coord.lon)
                 const marker = new google.maps.Marker({
                     position,
-                    map
+                    map,
+                    title: coord.name
+                })
+
+                var contentString = '<h2>'+coord.name+'</h2>' +
+                '<hr>' +
+                'Reef Type: ' + coord.reef_type.description + '<br>' +
+                'Level: ' + coord.dive_level.description + '<br>' +
+                'Depth: ' + coord.depth + '<br>' +
+                'Snorkeling: ' + this.hasSnorkeling(coord.snorkeling) + '<br>' +
+                'Rating: ' + this.renderStars(coord.rating) + '<br>' +
+                'What you can see: ' + this.renderActivities(coord.icons)
+
+
+                const infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                })
+
+                marker.addListener('click', () => {
+                    infowindow.open(map, marker)
                 })
             })
+        },
+        renderActivities: function(act) {
+            var string = ''
+            for (var i = 0; i < act.length; i++) {
+                if (i < (act.length - 1)) {
+                    var string = string + act[i].description + ', '
+                } else {
+                    var string = string + act[i].description + '.'
+                }
+            }
+            return string
+        },
+        renderStars: function(value) {
+            var string = ''
+            for (var i = 0; i < (parseInt(value) - 1); i++) {
+                string = string + '<i class="fas fa-star"></i> '
+            }
+            return string
         },
         visibilityChanged: function(isVisible, entry) {
             if (isVisible && this.googleMapsLoaded) {
@@ -149,9 +156,9 @@ export default {
         }
     },
     mounted: function() {
-        window.onload = () => {
+        this.getSpots().then(() => {
             this.loadMap()
-        }
+        })
     }
 }
 </script>

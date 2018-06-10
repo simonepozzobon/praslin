@@ -26,6 +26,18 @@ class DivespotController extends Controller
         return view('admin.divespots.index', compact('divespots'));
     }
 
+    public function getSpots() {
+        $divespots = Divespot::all();
+
+        $formatted = collect();
+        foreach ($divespots as $key => $dp) {
+            $dp = $this->formatSpot($dp);
+            $formatted->push($dp);
+        }
+
+        return $formatted;
+    }
+
     public function getFormData() {
         $icons = Icon::all();
         $reef_types = ReefType::all();
