@@ -118,6 +118,8 @@ export default {
     overflow: hidden;
 
     #contact-panel {
+        @include box-shadow(0 4px 16px 0 rgba($black, 0.33));
+        
 
         .custom-p {
             margin-bottom: 0;
@@ -155,8 +157,10 @@ export default {
     }
 
     #contact-map {
+        // position:absolute;
+        top: 0;
         width: 100%;
-        min-height: 60vh;
+        min-height: 100vh;
         height: 100%;
     }
 
