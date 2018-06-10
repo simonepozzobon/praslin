@@ -64,10 +64,12 @@
   width: 100%; // Ensure `.modal-content` extends the full width of the parent `.modal-dialog`
   // counteract the pointer-events: none; in the .modal-dialog
   pointer-events: auto;
-  background-color: $modal-content-bg;
+  background-color: $sand;
   background-clip: padding-box;
   border: $modal-content-border-width solid $modal-content-border-color;
-  @include border-radius($modal-content-border-radius);
+  // @include border-radius($modal-content-border-radius);
+  @include border-radius(0);
+
   @include box-shadow($modal-content-box-shadow-xs);
   // Remove focus outline from opened modal
   outline: 0;
@@ -95,8 +97,10 @@
   align-items: flex-start; // so the close btn always stays on the upper right corner
   justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
   padding: $modal-header-padding;
-  border-bottom: $modal-header-border-width solid $modal-header-border-color;
-  @include border-top-radius($modal-content-border-radius);
+  // border-bottom: $modal-header-border-width solid $modal-header-border-color;
+  border-bottom: 0px solid transparent;
+  // @include border-top-radius($modal-content-border-radius);
+  @include border-top-radius(0);
 
   .close {
     padding: $modal-header-padding;
@@ -127,7 +131,8 @@
   align-items: center; // vertically center
   justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
   padding: $modal-inner-padding;
-  border-top: $modal-footer-border-width solid $modal-footer-border-color;
+  // border-top: $modal-footer-border-width solid $modal-footer-border-color;
+  border-top: 0 solid transparent;
 
   // Easily place margin between footer elements
   > :not(:first-child) { margin-left: .25rem; }

@@ -1,9 +1,7 @@
 <template lang="html">
     <div id="phone-call-wrapper">
         <div class="call-to-action">
-            <button class="btn btn-sm btn-white text-uppercase" @click="openModal">
-                <i class="fas fa-calendar-check"></i> Book Now
-            </button>
+            <b-btn v-b-modal.bookmodalwrapper class="text-uppercase btn-sm"><i class="fas fa-calendar-check"></i> Book Now</b-btn>
         </div>
     </div>
 </template>

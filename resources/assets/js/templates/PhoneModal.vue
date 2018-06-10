@@ -1,8 +1,8 @@
 <template lang="html">
-    <div id="phone-modal-wrapper">
-        <div class="title">
-            <waves class="waves-icon"/>
-            <section-title title="Call Us" number="05" position="left" class="phone-section-title"/>
+    <b-modal id="phonemodalwrapper" title="Book Now" size="lg">
+        <div slot="modal-header">
+            <waves id="phone-waves-icon"/>
+            <section-title title="Call Us" number="05" position="left" id="phone-section-title"/>
         </div>
         <div id="phone-modal">
             <p class="custom-p p-4">
@@ -20,7 +20,12 @@
                 </span>
             </p>
         </div>
-    </div>
+        <div slot="modal-footer">
+
+        </div>
+    </b-modal>
+
+
 </template>
 
 <script>
@@ -81,36 +86,25 @@ export default {
 @import '~styles/variables';
 @import '~styles/mixins';
 
-#phone-modal-wrapper {
-    position: absolute;
-    width: 60%;
-    height: 60%;
-    min-width: 340px;
-    min-height: 420px;
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $sand;
-    @include box-shadow(0 8px 32px 0 rgba(37, 37, 37, .15));
+#phone-waves-icon {
+    position: relative;
+    left: -15px;
+}
 
-    display: none;
-    opacity: 0;
+#phone-section-title {
+    left: 100px;
+    top: -50px;
 
-    > .title {
-        padding-top: 50px;
-        width: 100%;
-
-        > .phone-section-title {
-            left: 122px;
-            top: -40px;
-        }
+    > .number {
+        min-width: 300px;
     }
 
+    > .text {
+        min-width: 300px;
+    }
+}
+
     #phone-modal {
-        padding-top: 60px;
 
         > .info {
             padding: $spacer ($spacer * 2);
@@ -132,11 +126,4 @@ export default {
             }
         }
     }
-}
-
-
-//
-// #phone-modal-start {
-//     fill: $sand;
-// }
 </style>

@@ -1,8 +1,8 @@
 <template lang="html">
-    <div id="book-modal-wrapper">
-        <div class="title">
-            <waves class="waves-icon"/>
-            <section-title title="Book Now" number="05" position="left" class="phone-section-title"/>
+    <b-modal id="bookmodalwrapper" title="Book Now" size="lg">
+        <div slot="modal-header">
+            <waves id="book-now-waves" class="waves-icon"/>
+            <section-title title="Book Now" number="05" position="left" id="book-section-title"/>
         </div>
         <div id="book-modal" class="container-fluid px-5">
             <div class="row">
@@ -31,16 +31,17 @@
                     <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
                 </div>
             </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <button class="btn btn-dark text-uppercase" @click="submitRequest">Submit</button>
-                </div>
-            </div>
         </div>
         <div id="response" class="container-fluid p-5">
             <h3 class="text-center">{{ this.serviceMessage }}</h3>
         </div>
-    </div>
+        <div slot="modal-footer">
+            <div class="col d-flex justify-content-center">
+                <button class="btn btn-dark text-uppercase" @click="submitRequest">Submit</button>
+            </div>
+        </div>
+    </b-modal>
+
 </template>
 
 <script>
@@ -152,75 +153,58 @@ export default {
 @import '~styles/variables';
 @import '~styles/mixins';
 
-#book-modal-wrapper {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    min-width: 340px;
-    min-height: 420px;
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-    background-color: $sand;
-    @include box-shadow(0 8px 32px 0 rgba(37, 37, 37, .15));
+#book-now-waves {
+    position: relative;
+    left: -15px;
+}
 
-    display: none;
-    opacity: 0;
+#book-section-title {
+    left: 100px;
+    top: -50px;
 
-    > .title {
-        padding-top: 50px;
-        width: 100%;
-
-        > .phone-section-title {
-            left: 122px;
-            top: -40px;
-        }
+    > .number {
+        min-width: 300px;
     }
 
-    #book-modal {
-        padding-top: 60px;
-
-        > .info {
-            padding: $spacer ($spacer * 2);
-
-            > i {
-                padding-right: $spacer;
-            }
-        }
-
-        > .custom-p {
-            .contact-label {
-                text-transform: uppercase;
-                font-size: 20px;
-                font-weight: 700;
-
-                &.last {
-                    padding-left: 1.5rem;
-                }
-            }
-        }
-
-        input, textarea {
-            border: none;
-            border-bottom: 2px solid $menu-green;
-            @include border-radius(0);
-            @include box-shadow(none);
-            background-color: transparent;
-        }
-    }
-
-    #response {
-        display: none;
-        opacity: 0;
+    > .text {
+        min-width: 300px;
     }
 }
 
+#book-modal {
+    padding-top: 60px;
 
-//
-// #phone-modal-start {
-//     fill: $sand;
-// }
+    > .info {
+        padding: $spacer ($spacer * 2);
+
+        > i {
+            padding-right: $spacer;
+        }
+    }
+
+    > .custom-p {
+        .contact-label {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 700;
+
+            &.last {
+                padding-left: 1.5rem;
+            }
+        }
+    }
+
+    input, textarea {
+        border: none;
+        border-bottom: 2px solid $menu-green;
+        @include border-radius(0);
+        @include box-shadow(none);
+        background-color: transparent;
+    }
+}
+
+#response {
+    display: none;
+    opacity: 0;
+}
 </style>

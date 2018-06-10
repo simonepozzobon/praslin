@@ -6,6 +6,11 @@
 @import "functions";
 @import "variables";
 @import "mixins";
+
+// Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+
 // @import "root";
 // @import "reboot";
 // @import "type";
@@ -32,15 +37,14 @@
 // @import "media";
 // @import "list-group";
 // @import "close";
-// @import "modal";
+@import "modal";
 // @import "tooltip";
 // @import "popover";
 // @import "carousel";
 // @import "utilities";
 // @import "print";
 
-// Bootstrap
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
 
 .navbar-laravel {
   background-color: #fff;
