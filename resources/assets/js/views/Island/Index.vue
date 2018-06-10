@@ -6,13 +6,13 @@
                     <waves class="waves-icon"/>
                     <div class="island-images">
                         <div id="island-img-1">
-                            <img src="/images/praslin-island.jpg" class="img-fluid" />
+                            <img src="/images/beach-2.jpg" class="img-fluid" />
                         </div>
                         <div id="island-img-2">
                             <img src="/images/praslin-1.jpg" class="img-fluid" />
                         </div>
                         <div id="island-img-3">
-                            <img src="/images/praslin-2.jpg" class="img-fluid" />
+                            <img src="/images/beach.jpg" class="img-fluid" />
                         </div>
                     </div>
                 </div>

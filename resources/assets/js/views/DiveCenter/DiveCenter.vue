@@ -17,10 +17,10 @@
                 <waves class="waves-icon"/>
                 <div id="images">
                     <div id="dive-center-img-1">
-                        <img src="/images/dive-center-boat.png" class="img-fluid"/>
+                        <img src="/images/boat.jpg" class="img-fluid"/>
                     </div>​
                     <div id="dive-center-img-2">
-                        <img src="/images/dive-center-island.png" class="img-fluid"/>
+                        <img src="/images/dive-center.jpg" class="img-fluid"/>
                     </div>​
                 </div>
             </div>
@@ -47,6 +47,9 @@ export default {
 
 <style lang="scss">
 // @import '../css/scale-img.scss';
+@import '~styles/functions';
+@import '~styles/variables';
+@import '~styles/mixins';
 
 #dive-center {
     padding-top: 180px;
@@ -66,14 +69,15 @@ export default {
         position: absolute;
         left: 90px;
         top: -40px;
-        width: 70%;
+        width: 75%;
     }
 
     > #dive-center-img-2 {
         position: absolute;
         top: 180px;
         right: 0;
-        width: 60%;
+        width: 75%;
+        @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
     }
 }
 

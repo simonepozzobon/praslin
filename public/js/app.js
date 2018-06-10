@@ -45101,7 +45101,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#dive-center {\n  padding-top: 180px;\n  padding-bottom: 180px;\n}\n#dive-center .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#images {\n  position: relative;\n}\n#images > #dive-center-img-1 {\n    position: absolute;\n    left: 90px;\n    top: -40px;\n    width: 70%;\n}\n#images > #dive-center-img-2 {\n    position: absolute;\n    top: 180px;\n    right: 0;\n    width: 60%;\n}\n", ""]);
+exports.push([module.i, "\n#dive-center {\n  padding-top: 180px;\n  padding-bottom: 180px;\n}\n#dive-center .waves-icon {\n    position: absolute;\n    left: 15px;\n    top: -40px;\n}\n#images {\n  position: relative;\n}\n#images > #dive-center-img-1 {\n    position: absolute;\n    left: 90px;\n    top: -40px;\n    width: 75%;\n}\n#images > #dive-center-img-2 {\n    position: absolute;\n    top: 180px;\n    right: 0;\n    width: 75%;\n    -webkit-box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n            box-shadow: 0 2px 16px 0 rgba(37, 37, 37, 0.33);\n}\n", ""]);
 
 // exports
 
@@ -45217,14 +45217,14 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "dive-center-img-1" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/dive-center-boat.png" }
+          attrs: { src: "/images/boat.jpg" }
         })
       ]),
       _vm._v("​\n                "),
       _c("div", { attrs: { id: "dive-center-img-2" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/dive-center-island.png" }
+          attrs: { src: "/images/dive-center.jpg" }
         })
       ]),
       _vm._v("​\n            ")
@@ -47998,7 +47998,7 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "island-img-1" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-island.jpg" }
+          attrs: { src: "/images/beach-2.jpg" }
         })
       ]),
       _vm._v(" "),
@@ -48012,7 +48012,7 @@ var staticRenderFns = [
       _c("div", { attrs: { id: "island-img-3" } }, [
         _c("img", {
           staticClass: "img-fluid",
-          attrs: { src: "/images/praslin-2.jpg" }
+          attrs: { src: "/images/beach.jpg" }
         })
       ])
     ])
