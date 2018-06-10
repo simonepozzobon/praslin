@@ -44205,6 +44205,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -44775,7 +44778,7 @@ var render = function() {
           _vm._v(" "),
           _c("section-paragraph", [
             _vm._v(
-              "\n                Praslin Pro Divers is a unique dive centre where we\n                value our customers and fellow divers no matter your\n                dive experiences. We are not just passionate about the\n                ocean, but your safety  and enjoyment are as well our\n                business… with an emphasis on education, conservation and\n                responsible diving practices.\n                This is one of the reason we limit dive groups to six divers per guide.\n            "
+              "\n                Praslin Pro Divers is a unique dive centre based on the\n                peaceful island of praslin located directly on the beach\n                of anse gouvernement. we were founded with the goal of\n                providing our customers and fellow divers an unforgettable,\n                personalise and fun diving experience.\n                We are not just passionate about the ocean, but your safety\n                and enjoyment are as well our business… with an emphasis\n                on education, conservation and responsible diving practices.\n                This is one of the reason we limit dive groups to six\n                divers per guide.\n            "
             )
           ])
         ],
