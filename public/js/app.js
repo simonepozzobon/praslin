@@ -45735,7 +45735,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#meet-the-team {\n  padding-bottom: 122px;\n}\n#meet-the-team .waves-icon {\n    position: absolute;\n    z-index: 2;\n    top: 60px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n#meet-the-team .team-mates {\n    padding-top: 130px;\n}\n#meet-the-team .team-mates .team-name {\n      font-weight: 700;\n      font-size: 36px;\n      text-transform: uppercase;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n#meet-the-team .team-mates .team-role {\n      text-transform: uppercase;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n}\n#meet-the-team .team-mates .description {\n      padding-top: 26px;\n      text-align: justify;\n      line-height: 1.618;\n}\n", ""]);
+exports.push([module.i, "\n#meet-the-team {\n  padding-bottom: 122px;\n}\n#meet-the-team .waves-icon {\n    position: absolute;\n    z-index: 2;\n    top: 60px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n#meet-the-team .team-mates {\n    padding-top: 130px;\n}\n#meet-the-team .team-mates .team-mate {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-orient: vertical;\n      -webkit-box-direction: normal;\n          -ms-flex-direction: column;\n              flex-direction: column;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n}\n#meet-the-team .team-mates .team-mate .team-pic {\n        width: 128px;\n        padding-top: 1rem;\n        padding-bottom: 1rem;\n}\n#meet-the-team .team-mates .team-mate .team-name {\n        font-weight: 700;\n        font-size: 36px;\n        text-transform: uppercase;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n}\n#meet-the-team .team-mates .team-mate .team-role {\n        text-transform: uppercase;\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-pack: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n}\n#meet-the-team .team-mates .team-mate .description {\n        padding-top: 26px;\n        text-align: justify;\n        line-height: 1.618;\n}\n", ""]);
 
 // exports
 
@@ -46243,15 +46243,15 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "col-12" }, [
           _c("div", { staticClass: "row team-mates" }, [
-            _c("div", { staticClass: "col-md-6" }, [
-              _vm._m(0),
-              _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 team-mate" }, [
               _c(
                 "div",
                 { staticClass: "d-flex justify-content-center" },
                 [_c("scuba")],
                 1
               ),
+              _vm._v(" "),
+              _vm._m(0),
               _vm._v(" "),
               _c("div", { staticClass: "team-name" }, [
                 _vm._v(
@@ -46268,15 +46268,15 @@ var render = function() {
               _vm._m(1)
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-6" }, [
-              _vm._m(2),
-              _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 team-mate" }, [
               _c(
                 "div",
                 { staticClass: "d-flex justify-content-center" },
                 [_c("sailor", { attrs: { align: "center" } })],
                 1
               ),
+              _vm._v(" "),
+              _vm._m(2),
               _vm._v(" "),
               _c("div", { staticClass: "team-name" }, [
                 _vm._v(

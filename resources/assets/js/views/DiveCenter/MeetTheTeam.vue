@@ -7,12 +7,12 @@
             </div>
             <div class="col-12">
                 <div class="row team-mates">
-                    <div class="col-md-6">
-                        <div class="team-pic">
-                            <img src="/images/jp-circle.jpg" class="img-fluid"/>
-                        </div>
+                    <div class="col-md-6 team-mate">
                         <div class="d-flex justify-content-center">
                             <scuba />
+                        </div>
+                        <div class="team-pic">
+                            <img src="/images/jp-circle.jpg" class="img-fluid"/>
                         </div>
                         <div class="team-name">
                             Jean Paul
@@ -33,12 +33,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="team-pic">
-                            <img src="/images/guest-circle.jpg" class="img-fluid"/>
-                        </div>
+                    <div class="col-md-6 team-mate">
                         <div class="d-flex justify-content-center">
                             <sailor align="center"/>
+                        </div>
+                        <div class="team-pic">
+                            <img src="/images/guest-circle.jpg" class="img-fluid"/>
                         </div>
                         <div class="team-name">
                             Ted Charles
@@ -84,6 +84,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~styles/functions';
+@import '~styles/variables';
 
 #meet-the-team {
     padding-bottom: 122px;
@@ -99,28 +101,39 @@ export default {
     .team-mates {
         padding-top: 130px;
 
-        .team-name {
-            font-weight: 700;
-            font-size: 36px;
-            text-transform: uppercase;
+        .team-mate {
             display: flex;
+            flex-direction: column;
             justify-content: center;
-        }
+            align-items: center;
 
-        .team-role {
-            text-transform: uppercase;
-            display: flex;
-            justify-content: center;
-        }
+            .team-pic {
+                width: 128px;
+                padding-top: $spacer;
+                padding-bottom: $spacer;
+            }
 
-        .description {
-            padding-top: 26px;
-            text-align: justify;
-            line-height: 1.618;
+            .team-name {
+                font-weight: 700;
+                font-size: 36px;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+            }
+
+            .team-role {
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+            }
+
+            .description {
+                padding-top: 26px;
+                text-align: justify;
+                line-height: 1.618;
+            }
         }
     }
-
-
 }
 
 </style>
