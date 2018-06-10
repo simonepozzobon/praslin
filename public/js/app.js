@@ -73652,6 +73652,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -73694,21 +73695,25 @@ var render = function() {
           _vm._v(" "),
           _c("section-subtitle", [
             _vm._v(
-              "\n                  Pick up the equipment and get on board.\n              "
+              "\n                    Pick up the equipment and get on board.\n                "
             )
           ]),
           _vm._v(" "),
           _c("section-paragraph", [
             _vm._v(
-              "\n                Our specially design speed boat provide all the comfort a\n                small embarkation dive boat can provide,equipped with all\n                safety and navigational equipment to get you right on the\n                dive spots with a 100% accuracy."
+              "\n                    Our specially design speed boat provide all the comfort a\n                    small embarkation dive boat can provide,equipped with all\n                    safety and navigational equipment to get you right on the\n                    dive spots with a 100% accuracy."
             ),
             _c("br"),
             _vm._v(
-              "\n                High standards of safety and outstanding service oriented\n                staff, a dive trip with us is sure to leave you relaxed\n                and rejuvenated, or pumped up and ready for more."
+              "\n                    High standards of safety and outstanding service oriented\n                    staff, a dive trip with us is sure to leave you relaxed\n                    and rejuvenated, or pumped up and ready for more."
             ),
             _c("br"),
             _vm._v(
-              "\n                So call Praslin Pro Divers today to inquire about our\n                services, book a dive, sign up for a course, or just\n                “talk story”. We are open daily from 09:00 hrs - 17:00 hrs.\n                We look forward to dive with you and share the colorful\n                side of life.\n              "
+              "\n                    So call Praslin Pro Divers today to inquire about our\n                    services, book a dive, sign up for a course, or just\n                    “talk story”."
+            ),
+            _c("br"),
+            _vm._v(
+              "\n                    We are open daily from 09:00 hrs - 17:00 hrs.\n                    We look forward to dive with you and share the colorful\n                    side of life.\n                "
             )
           ])
         ],
@@ -73729,14 +73734,14 @@ var staticRenderFns = [
           attrs: { src: "/images/boat.jpg" }
         })
       ]),
-      _vm._v("​\n                  "),
+      _vm._v("​\n                    "),
       _c("div", { attrs: { id: "boats-img-2" } }, [
         _c("img", {
           staticClass: "img-fluid",
           attrs: { src: "/images/dive-center-boat.png" }
         })
       ]),
-      _vm._v("​\n              ")
+      _vm._v("​\n                ")
     ])
   }
 ]
