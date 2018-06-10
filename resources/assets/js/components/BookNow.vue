@@ -2,7 +2,7 @@
     <div id="phone-call-wrapper">
         <div class="call-to-action">
             <button class="btn btn-sm btn-white text-uppercase" @click="openModal">
-                <i class="fas fa-phone"></i> Book Now
+                <i class="fas fa-calendar-check"></i> Book Now
             </button>
         </div>
     </div>
@@ -14,7 +14,7 @@ export default {
     name: 'PhoneCall',
     methods: {
         openModal: function() {
-            EventBus.$emit('toggle-phone-modal')
+            EventBus.$emit('toggle-book-modal')
         }
     }
 }

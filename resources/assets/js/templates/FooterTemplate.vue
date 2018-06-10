@@ -1,14 +1,28 @@
 <template lang="html">
     <div id="footer">
         <div class="contact-information">
-            
+
         </div>
-        <div class="footer-logos">
+        <!-- <div class="footer-logos">
             <div class="scuba-logo">
                 <img src="/images/SEA-logo-white.png" class="img-fluid" />
             </div>
             <div class="padi-instructor">
                 <img src="/images/padi-instructor.jpg" class="img-fluid">
+            </div>
+        </div> -->
+        <div class="contact-informations pb-3">
+            <div class="logo">
+                <logo align="center" />
+            </div>
+            <div class="address text-center">
+                C/o L’Archipel Hotel, Anse Gouvernement - Praslin, Seychelles
+            </div>
+            <div class="phones text-center">
+                Mobile: (+248) 26 33 000 - Phone: (+248) 42 32 113
+            </div>
+            <div class="hours text-center">
+                Open from 9 a.m. to 5 p.m.
             </div>
         </div>
         <div class="sub-footer">
@@ -18,8 +32,13 @@
 </template>
 
 <script>
+import Logo from './Logo.vue'
+
 export default {
-    name: 'FooterTemplate'
+    name: 'FooterTemplate',
+    components: {
+        Logo,
+    }
 }
 </script>
 

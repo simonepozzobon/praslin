@@ -48495,7 +48495,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#main-template {\n  padding-top: 75px;\n  min-height: 100vh;\n}\n", ""]);
+exports.push([module.i, "\n#main-template {\n  padding-top: 75px;\n  height: 100%;\n  min-height: 100vh;\n}\n", ""]);
 
 // exports
 
@@ -48508,14 +48508,16 @@ exports.push([module.i, "\n#main-template {\n  padding-top: 75px;\n  min-height:
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_EventBus__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FooterTemplate_vue__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__FooterTemplate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__FooterTemplate_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PhoneModal_vue__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PhoneModal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__PhoneModal_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__TopMenu_vue__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__TopMenu_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__TopMenu_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_gsap__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BookNowModal_vue__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BookNowModal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__BookNowModal_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_EventBus__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__FooterTemplate_vue__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__FooterTemplate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__FooterTemplate_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PhoneModal_vue__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PhoneModal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__PhoneModal_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__TopMenu_vue__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__TopMenu_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__TopMenu_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_gsap__ = __webpack_require__(277);
 //
 //
 //
@@ -48527,6 +48529,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 
 
@@ -48538,13 +48542,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'MainTemplate',
     components: {
-        FooterTemplate: __WEBPACK_IMPORTED_MODULE_2__FooterTemplate_vue___default.a,
-        PhoneModal: __WEBPACK_IMPORTED_MODULE_3__PhoneModal_vue___default.a,
-        TopMenu: __WEBPACK_IMPORTED_MODULE_4__TopMenu_vue___default.a
+        BookNowModal: __WEBPACK_IMPORTED_MODULE_1__BookNowModal_vue___default.a,
+        FooterTemplate: __WEBPACK_IMPORTED_MODULE_3__FooterTemplate_vue___default.a,
+        PhoneModal: __WEBPACK_IMPORTED_MODULE_4__PhoneModal_vue___default.a,
+        TopMenu: __WEBPACK_IMPORTED_MODULE_5__TopMenu_vue___default.a
     },
     methods: {
         enter: function enter(el, done) {
-            __WEBPACK_IMPORTED_MODULE_5_gsap__["b" /* TweenMax */].fromTo(el, .4, {
+            __WEBPACK_IMPORTED_MODULE_6_gsap__["b" /* TweenMax */].fromTo(el, .4, {
                 opacity: 0
             }, {
                 opacity: 1,
@@ -48552,7 +48557,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
         leave: function leave(el, done) {
-            __WEBPACK_IMPORTED_MODULE_5_gsap__["b" /* TweenMax */].fromTo(el, .4, {
+            __WEBPACK_IMPORTED_MODULE_6_gsap__["b" /* TweenMax */].fromTo(el, .4, {
                 opacity: 1
             }, {
                 opacity: 0,
@@ -48565,14 +48570,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             width: window.innerWidth,
             height: window.innerHeight
         };
-        __WEBPACK_IMPORTED_MODULE_1__js_EventBus__["a" /* default */].$emit('window-resized', size);
+        __WEBPACK_IMPORTED_MODULE_2__js_EventBus__["a" /* default */].$emit('window-resized', size);
 
         window.addEventListener('resize', __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.debounce(function () {
             var size = {
                 width: window.innerWidth,
                 height: window.innerHeight
             };
-            __WEBPACK_IMPORTED_MODULE_1__js_EventBus__["a" /* default */].$emit('window-resized', size);
+            __WEBPACK_IMPORTED_MODULE_2__js_EventBus__["a" /* default */].$emit('window-resized', size);
         }, 100));
     }
 });
@@ -48674,6 +48679,22 @@ exports.push([module.i, "\n#footer {\n  min-height: 460px;\n  background-image: 
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Logo_vue__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Logo_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Logo_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -48694,8 +48715,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'FooterTemplate'
+    name: 'FooterTemplate',
+    components: {
+        Logo: __WEBPACK_IMPORTED_MODULE_0__Logo_vue___default.a
+    }
 });
 
 /***/ }),
@@ -48706,38 +48732,47 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { attrs: { id: "footer" } }, [
+    _c("div", { staticClass: "contact-information" }),
+    _vm._v(" "),
+    _c("div", { staticClass: "contact-informations pb-3" }, [
+      _c(
+        "div",
+        { staticClass: "logo" },
+        [_c("logo", { attrs: { align: "center" } })],
+        1
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "address text-center" }, [
+        _vm._v(
+          "\n            C/o L’Archipel Hotel, Anse Gouvernement - Praslin, Seychelles\n        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "phones text-center" }, [
+        _vm._v(
+          "\n            Mobile: (+248) 26 33 000 - Phone: (+248) 42 32 113\n        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "hours text-center" }, [
+        _vm._v("\n            Open from 9 a.m. to 5 p.m.\n        ")
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(0)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "footer" } }, [
-      _c("div", { staticClass: "contact-information" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "footer-logos" }, [
-        _c("div", { staticClass: "scuba-logo" }, [
-          _c("img", {
-            staticClass: "img-fluid",
-            attrs: { src: "/images/SEA-logo-white.png" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "padi-instructor" }, [
-          _c("img", {
-            staticClass: "img-fluid",
-            attrs: { src: "/images/padi-instructor.jpg" }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "sub-footer" }, [
-        _vm._v("\n        © 2018 All rights reserved by Praslin Pro Divers | "),
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Privacy Policy")]),
-        _vm._v(" | "),
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Terms of Use")])
-      ])
+    return _c("div", { staticClass: "sub-footer" }, [
+      _vm._v("\n        © 2018 All rights reserved by Praslin Pro Divers | "),
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Privacy Policy")]),
+      _vm._v(" | "),
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Terms of Use")])
     ])
   }
 ]
@@ -54422,6 +54457,8 @@ var render = function() {
       _c("top-menu"),
       _vm._v(" "),
       _c("phone-modal"),
+      _vm._v(" "),
+      _c("book-now-modal"),
       _vm._v(" "),
       _c(
         "transition",
@@ -69652,7 +69689,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     name: 'PhoneCall',
     methods: {
         openModal: function openModal() {
-            __WEBPACK_IMPORTED_MODULE_0__js_EventBus__["a" /* default */].$emit('toggle-phone-modal');
+            __WEBPACK_IMPORTED_MODULE_0__js_EventBus__["a" /* default */].$emit('toggle-book-modal');
         }
     }
 });
@@ -69674,7 +69711,7 @@ var render = function() {
           on: { click: _vm.openModal }
         },
         [
-          _c("i", { staticClass: "fas fa-phone" }),
+          _c("i", { staticClass: "fas fa-calendar-check" }),
           _vm._v(" Book Now\n        ")
         ]
       )
@@ -69871,6 +69908,436 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-ef667248", module.exports)
+  }
+}
+
+/***/ }),
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(362)
+}
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(364)
+/* template */
+var __vue_template__ = __webpack_require__(365)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/templates/BookNowModal.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6e0d0068", Component.options)
+  } else {
+    hotAPI.reload("data-v-6e0d0068", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 362 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(363);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("92ebf338", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6e0d0068\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./BookNowModal.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6e0d0068\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./BookNowModal.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 363 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#book-modal-wrapper {\n  position: absolute;\n  width: 60%;\n  height: 100%;\n  min-width: 340px;\n  min-height: 420px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  z-index: 100;\n  left: 50%;\n  top: 70%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  background-color: #FEFAF5;\n  -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n  display: none;\n  opacity: 0;\n}\n#book-modal-wrapper > .title {\n    padding-top: 50px;\n    width: 100%;\n}\n#book-modal-wrapper > .title > .phone-section-title {\n      left: 122px;\n      top: -40px;\n}\n#book-modal-wrapper #book-modal {\n    padding-top: 60px;\n}\n#book-modal-wrapper #book-modal > .info {\n      padding: 1rem 2rem;\n}\n#book-modal-wrapper #book-modal > .info > i {\n        padding-right: 1rem;\n}\n#book-modal-wrapper #book-modal > .custom-p .contact-label {\n      text-transform: uppercase;\n      font-size: 20px;\n      font-weight: 700;\n}\n#book-modal-wrapper #book-modal > .custom-p .contact-label.last {\n        padding-left: 1.5rem;\n}\n#book-modal-wrapper #book-modal input, #book-modal-wrapper #book-modal textarea {\n      border: none;\n      border-bottom: 2px solid #E5F7F7;\n      border-radius: 0;\n      -webkit-box-shadow: none;\n              box-shadow: none;\n      background-color: transparent;\n}\n#book-modal-wrapper #response {\n    display: none;\n    opacity: 0;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 364 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_EventBus__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_externals_MorphSVGPlugin__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_SectionTitle_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_SectionTitle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_SectionTitle_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_gsap__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_icons_Waves_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_icons_Waves_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_icons_Waves_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'BookNowModal',
+    components: {
+        SectionTitle: __WEBPACK_IMPORTED_MODULE_3__components_SectionTitle_vue___default.a,
+        Waves: __WEBPACK_IMPORTED_MODULE_5__components_icons_Waves_vue___default.a
+    },
+    data: function data() {
+        return {
+            dive_level: null,
+            email: null,
+            from_to: null,
+            isOpen: false,
+            message: null,
+            name: null,
+            serviceMessage: null,
+            surname: null
+        };
+    },
+    methods: {
+        missingField: function missingField() {
+            var _this = this;
+
+            this.serviceMessage = 'Missing Informations!';
+            var t1 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            t1.to('#book-modal', .4, {
+                opacity: 0,
+                display: 'none'
+            }).to('#response', .4, {
+                opacity: 1,
+                display: 'block',
+                onComplete: function onComplete() {
+                    setTimeout(function () {
+                        _this.restoreForm();
+                    }, 3000);
+                }
+            });
+        },
+        restoreForm: function restoreForm() {
+            var t1 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+            t1.to('#response', .4, {
+                opacity: 0,
+                display: 'none'
+            }).to('#book-modal', .4, {
+                opacity: 1,
+                display: 'block'
+            });
+        },
+        submitRequest: function submitRequest() {
+            if (!this.name || !this.surname || !this.dive_level || !this.from_to || !this.email || !this.message) {
+                this.missingField();
+                return;
+            }
+
+            var data = new FormData();
+            data.append('name', this.name);
+            data.append('surname', this.surname);
+            data.append('dive_level', this.dive_level);
+            data.append('from_to', this.from_to);
+            data.append('email', this.email);
+        },
+        toggleModal: function toggleModal() {
+            var _this2 = this;
+
+            if (!this.isOpen) {
+                var t1 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+                t1.fromTo('#book-modal-wrapper', .2, {
+                    y: '-=500'
+                }, {
+                    y: '-50%',
+                    opacity: 1,
+                    display: 'flex',
+                    onComplete: function onComplete() {
+                        _this2.isOpen = true;
+                    }
+                });
+            } else {
+                var t1 = new __WEBPACK_IMPORTED_MODULE_4_gsap__["a" /* TimelineMax */]();
+                t1.to('#book-modal-wrapper', .4, {
+                    opacity: 0,
+                    display: 'none',
+                    y: '-=500',
+                    onComplete: function onComplete() {
+                        _this2.isOpen = false;
+                    }
+                });
+            }
+        }
+    },
+    mounted: function mounted() {
+        var _this3 = this;
+
+        __WEBPACK_IMPORTED_MODULE_1__js_EventBus__["a" /* default */].$on('toggle-book-modal', function () {
+            _this3.toggleModal();
+        });
+    }
+});
+
+/***/ }),
+/* 365 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "book-modal-wrapper" } }, [
+    _c(
+      "div",
+      { staticClass: "title" },
+      [
+        _c("waves", { staticClass: "waves-icon" }),
+        _vm._v(" "),
+        _c("section-title", {
+          staticClass: "phone-section-title",
+          attrs: { title: "Book Now", number: "05", position: "left" }
+        })
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "container-fluid px-5", attrs: { id: "book-modal" } },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col d-flex justify-content-center" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-light-blue text-uppercase",
+                on: { click: _vm.submitRequest }
+              },
+              [_vm._v("Submit")]
+            )
+          ])
+        ])
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "container-fluid p-5", attrs: { id: "response" } },
+      [
+        _c("h3", { staticClass: "text-center" }, [
+          _vm._v(_vm._s(this.serviceMessage))
+        ])
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "form-group col-md-6" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: { type: "text", placeholder: "Name" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group col-md-6" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: { type: "text", placeholder: "Surname" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "form-group col-md-6" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: { type: "text", placeholder: "Dive Level" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group col-md-6" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: { type: "text", placeholder: "From / To" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "form-group col-md-12" }, [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: { type: "text", placeholder: "Email" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "form-group col-md-12" }, [
+        _c("textarea", {
+          staticClass: "form-control",
+          attrs: { name: "name", rows: "8", cols: "80" }
+        })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6e0d0068", module.exports)
   }
 }
 

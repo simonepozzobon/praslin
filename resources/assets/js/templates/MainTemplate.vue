@@ -2,6 +2,7 @@
     <div id="main-template">
         <top-menu></top-menu>
         <phone-modal></phone-modal>
+        <book-now-modal></book-now-modal>
         <transition :css="false" @enter="enter" @leave="leave">
             <router-view></router-view>
         </transition>
@@ -11,6 +12,7 @@
 
 <script>
 import _ from 'lodash'
+import BookNowModal from './BookNowModal.vue'
 import EventBus from '~js/EventBus'
 import FooterTemplate from './FooterTemplate.vue'
 import PhoneModal from './PhoneModal.vue'
@@ -20,6 +22,7 @@ import {TweenMax, TimelineMax} from 'gsap'
 export default {
     name: 'MainTemplate',
     components: {
+        BookNowModal,
         FooterTemplate,
         PhoneModal,
         TopMenu,
@@ -63,6 +66,7 @@ export default {
 <style lang="scss">
 #main-template {
     padding-top: 75px;
+    height: 100%;
     min-height: 100vh;
 }
 </style>
