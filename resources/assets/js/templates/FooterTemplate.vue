@@ -13,7 +13,7 @@
         </div> -->
         <div class="contact-informations pb-3">
             <div class="logo">
-                <logo align="center" />
+                <logo-inverse align="center" />
             </div>
             <div class="address text-center">
                 C/o L’Archipel Hotel, Anse Gouvernement - Praslin, Seychelles
@@ -32,12 +32,12 @@
 </template>
 
 <script>
-import Logo from './Logo.vue'
+import LogoInverse from './LogoInverse.vue'
 
 export default {
     name: 'FooterTemplate',
     components: {
-        Logo,
+        LogoInverse,
     }
 }
 </script>
