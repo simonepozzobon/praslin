@@ -20,9 +20,9 @@
                 <section-paragraph>
                     Praslin Pro Divers is a unique dive centre based on the
                     peaceful island of praslin located directly on the beach
-                    of anse gouvernement. we were founded with the goal of
+                    of anse gouvernement. We were founded with the goal of
                     providing our customers and fellow divers an unforgettable,
-                    personalise and fun diving experience.
+                    personalized and fun diving experience.
                     We are not just passionate about the ocean, but your safety
                     and enjoyment are as well our business… with an emphasis
                     on education, conservation and responsible diving practices.
