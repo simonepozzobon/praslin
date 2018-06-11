@@ -42,10 +42,10 @@
                             <i class="fab fa-tripadvisor fa-2x"></i>
                         </div>
                         <div class="social-icon p-4 fa-2x">
-                            <i class="fab fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/Praslin-Pro-Divers-1745688432182615" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         </div>
                         <div class="social-icon p-4 fa-2x">
-                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/praslinprodivers/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
