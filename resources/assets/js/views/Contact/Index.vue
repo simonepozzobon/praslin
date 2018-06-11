@@ -166,7 +166,7 @@ export default {
         // position:absolute;
         // top: 0
         width: 100%;
-        min-height: 100vh;
+        min-height: 60vh;
         height: 100%;
     }
 
