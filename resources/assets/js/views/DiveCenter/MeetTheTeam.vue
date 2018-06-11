@@ -49,7 +49,7 @@
                         <div class="description">
                             <p>
                                 After cruising and diving for several years the
-                                outer islands of seychelles,Ted a native of
+                                outer islands of seychelles, Ted a native of
                                 praslin finally return to his home island.
                                 His long career as a dive master has made him
                                 very good at what he does, the ability to
