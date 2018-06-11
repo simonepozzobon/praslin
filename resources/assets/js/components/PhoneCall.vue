@@ -34,6 +34,10 @@ export default {
 
             > i {
                 padding-right: $spacer / 2;
+                
+                @media (max-width: 1075px) and (min-width: 991px) {
+                    display: none;
+                }
             }
 
             &:hover {

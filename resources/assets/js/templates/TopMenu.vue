@@ -23,11 +23,13 @@
             <weather-info-lite />
             <phone-call />
             <book-now />
+            <audio-control size="small" :animated="true"/>
         </nav>
     </div>
 </template>
 
 <script>
+import AudioControl from '../components/AudioControl.vue'
 import BookNow from '../components/BookNow.vue'
 import burger from '../components/icons/burger.vue'
 import Logo from './Logo.vue'
@@ -40,6 +42,7 @@ import WeatherInfoLite from './WeatherInfoLite.vue'
 export default {
     name: 'TopMenu',
     components: {
+        AudioControl,
         BookNow,
         burger,
         Logo,
@@ -85,11 +88,19 @@ export default {
                 ease: Back.easeInOut,
             })
 
+            var t5 = new TimelineMax()
+            t5.from('#audio-control-wrapper', .8, {
+                y: -16,
+                opacity: 0,
+                ease: Back.easeInOut,
+            })
+
             var master = new TimelineMax()
             master.add(t1, 0.1)
             master.add(t2, 0.7)
             master.add(t3, 0.8)
             master.add(t4, 0.9)
+            master.add(t5, 1.0)
             master.play()
         }
     },
@@ -195,7 +206,7 @@ $menu-color: $white;
                         transition: all .8s ease-in-out;
                     }
 
-                    @media (max-width: 1263px) and (min-width: 1040px) {
+                    @media (max-width: 1290px) and (min-width: 991px) {
                         font-size: 12px;
                     }
 
@@ -243,9 +254,23 @@ $menu-color: $white;
         }
     }
 
-    @media (max-width: 1040px) and (min-width: 991px) {
+    @media (max-width: 1344px) and (min-width: 991px) {
         #phone-call-wrapper {
-            padding-left: $spacer / 2;
+            padding-left: $spacer;
+        }
+
+        #book-now-wrapper {
+            padding-left: $spacer;
+        }
+
+        #audio-control-wrapper {
+            padding-left: $spacer;
+        }
+    }
+
+    @media (max-width: 1075px) and (min-width: 991px) {
+        #audio-control-wrapper {
+            padding-right: 0;
         }
     }
 }
