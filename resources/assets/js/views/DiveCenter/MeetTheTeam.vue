@@ -47,7 +47,20 @@
                             Skipper & Dive Master
                         </div>
                         <div class="description">
-                            <p></p>
+                            <p>
+                                After cruising and diving for several years the
+                                outer islands of seychelles,Ted a native of
+                                praslin finally return to his home island.
+                                His long career as a dive master has made him
+                                very good at what he does, the ability to
+                                anticipate and manage any dive situations and
+                                to take the leader role of his dive make him a
+                                valuable team member.
+                                Always smilling and telling dives storries, from
+                                the big encounters to the stormmy weather.
+                                Ted will surly put the "EXTRA" before the
+                                "ORDINARY" on your dives.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -126,7 +139,7 @@ export default {
 
             .description {
                 padding-top: 26px;
-                text-align: justify;
+                // text-align: justify;
                 line-height: 1.618;
             }
         }
