@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-12 price-content">
                     <table class="w-100 price-list-table">
-                        <thead class="bg-light-blue">
+                        <thead class="bg-menu-green">
                             <td>Details</td>
                             <td>Cyl / Weights</td>
                             <td>All Equipment</td>
@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-12 pt-5">
                     <table class="w-100 price-list-table">
-                        <thead class="bg-light-blue">
+                        <thead class="bg-menu-green">
                             <td>Padi Courses</td>
                             <td>Min Days</td>
                             <td>Retail Price</td>
@@ -116,7 +116,7 @@
             <div class="row">
                 <div class="col-12 pt-5">
                     <table class="w-100 price-list-table">
-                        <thead class="bg-light-blue">
+                        <thead class="bg-menu-green">
                             <td>Speciality</td>
                             <td>Min Days</td>
                             <td>Retail Price</td>
@@ -210,13 +210,13 @@ export default {
             font-size: 20px;
             font-weight: 700;
             padding: ($spacer * 2) $spacer;
-            border: 2px solid $light-blue;
+            border: 2px solid $menu-green;
             width: 33.333%;
         }
 
         tbody td {
             padding: $spacer;
-            border: 2px solid $light-blue;
+            border: 2px solid $menu-green;
             width: 33.333%;
         }
     }

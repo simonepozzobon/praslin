@@ -77752,7 +77752,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#price-list {\n  padding-top: 90px;\n  padding-bottom: 8rem;\n}\n#price-list .price-list-title {\n    top: 72px;\n    right: 121px;\n    z-index: 2;\n}\n#price-list .waves-icon {\n    position: absolute;\n    top: 32px;\n    right: 15px;\n    z-index: 2;\n}\n#price-list .price-content {\n    padding-top: 154px;\n}\n#price-list .price-list-table thead > td {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n    padding: 2rem 1rem;\n    border: 2px solid #E5F7F7;\n    width: 33.333%;\n}\n#price-list .price-list-table tbody td {\n    padding: 1rem;\n    border: 2px solid #E5F7F7;\n    width: 33.333%;\n}\n", ""]);
+exports.push([module.i, "\n#price-list {\n  padding-top: 90px;\n  padding-bottom: 8rem;\n}\n#price-list .price-list-title {\n    top: 72px;\n    right: 121px;\n    z-index: 2;\n}\n#price-list .waves-icon {\n    position: absolute;\n    top: 32px;\n    right: 15px;\n    z-index: 2;\n}\n#price-list .price-content {\n    padding-top: 154px;\n}\n#price-list .price-list-table thead > td {\n    text-transform: uppercase;\n    font-size: 20px;\n    font-weight: 700;\n    padding: 2rem 1rem;\n    border: 2px solid #00AFB8;\n    width: 33.333%;\n}\n#price-list .price-list-table tbody td {\n    padding: 1rem;\n    border: 2px solid #00AFB8;\n    width: 33.333%;\n}\n", ""]);
 
 // exports
 
@@ -77992,7 +77992,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-12 price-content" }, [
         _c("table", { staticClass: "w-100 price-list-table" }, [
-          _c("thead", { staticClass: "bg-light-blue" }, [
+          _c("thead", { staticClass: "bg-menu-green" }, [
             _c("td", [_vm._v("Details")]),
             _vm._v(" "),
             _c("td", [_vm._v("Cyl / Weights")]),
@@ -78052,7 +78052,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-12 pt-5" }, [
         _c("table", { staticClass: "w-100 price-list-table" }, [
-          _c("thead", { staticClass: "bg-light-blue" }, [
+          _c("thead", { staticClass: "bg-menu-green" }, [
             _c("td", [_vm._v("Padi Courses")]),
             _vm._v(" "),
             _c("td", [_vm._v("Min Days")]),
@@ -78160,7 +78160,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-12 pt-5" }, [
         _c("table", { staticClass: "w-100 price-list-table" }, [
-          _c("thead", { staticClass: "bg-light-blue" }, [
+          _c("thead", { staticClass: "bg-menu-green" }, [
             _c("td", [_vm._v("Speciality")]),
             _vm._v(" "),
             _c("td", [_vm._v("Min Days")]),
