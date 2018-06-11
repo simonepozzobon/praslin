@@ -83971,7 +83971,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#main-menu {\n  width: 100%;\n  background-color: #252525;\n  position: fixed;\n  z-index: 101;\n  top: 0;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  -webkit-box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n}\n@media (min-width: 768px) {\n#main-menu {\n      min-height: 75px;\n}\n}\n#main-menu > .navbar-brand {\n    position: relative;\n    min-width: 128px;\n    max-width: 170px;\n}\n#main-menu > .navbar-brand > .navbar-brand-bg {\n      position: relative;\n      left: -1rem;\n      min-width: 128px;\n      background-color: #252525;\n      -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n              box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n}\n#main-menu > .navbar-brand > .navbar-brand-bg .logo > svg {\n        width: 100%;\n}\n#main-menu #navbarContent > .navbar-nav {\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    margin-left: 40px;\n    margin-right: 40px;\n    width: 100%;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding-right: 1rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n        display: inline-block;\n        color: #00AFB8;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n        text-transform: uppercase;\n        font-weight: 500;\n        font-size: 14px;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:active, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:link, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:visited {\n          color: #fff;\n          -webkit-transition: all .3s ease-in-out;\n          transition: all .3s ease-in-out;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:hover {\n          color: #00AFB8;\n          -webkit-transition: all .8s ease-in-out;\n          transition: all .8s ease-in-out;\n}\n@media (max-width: 991.98px) {\n#main-menu #navbarContent > .navbar-nav {\n        margin-top: 2rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n          padding-right: 1rem;\n}\n}\n#main-menu #weather-wrapper {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#main-menu #weather-wrapper > .temperature {\n      color: #fff;\n      font-size: 20px;\n      font-weight: 700;\n}\n#main-menu #weather-wrapper > .icon {\n      padding-right: 1rem;\n}\n#main-menu #weather-wrapper > .icon > svg {\n        width: 36px;\n}\n", ""]);
+exports.push([module.i, "\n#main-menu {\n  width: 100%;\n  background-color: #252525;\n  position: fixed;\n  z-index: 101;\n  top: 0;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n  -webkit-box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n          box-shadow: 0 16px 32px 0 rgba(37, 37, 37, 0.15);\n}\n@media (min-width: 768px) {\n#main-menu {\n      min-height: 75px;\n}\n}\n#main-menu > .navbar-brand {\n    position: relative;\n    min-width: 128px;\n    max-width: 170px;\n}\n#main-menu > .navbar-brand > .navbar-brand-bg {\n      position: relative;\n      left: -1rem;\n      min-width: 128px;\n      background-color: #252525;\n      -webkit-box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n              box-shadow: 0 8px 32px 0 rgba(37, 37, 37, 0.15);\n}\n#main-menu > .navbar-brand > .navbar-brand-bg .logo > svg {\n        width: 100%;\n}\n#main-menu > .navbar-toggler svg #burger-icon #burger {\n    fill: #fff;\n}\n#main-menu #navbarContent > .navbar-nav {\n    margin-left: 40px;\n    margin-right: 40px;\n    width: 100%;\n}\n@media (max-width: 1263px) and (min-width: 991px) {\n#main-menu #navbarContent > .navbar-nav {\n        margin-left: 0;\n        margin-right: 0;\n}\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      padding-right: 1rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n        display: inline-block;\n        color: #00AFB8;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n        text-transform: uppercase;\n        font-weight: 500;\n        font-size: 14px;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:active, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:link, #main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:visited {\n          color: #fff;\n          -webkit-transition: all .3s ease-in-out;\n          transition: all .3s ease-in-out;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link:hover {\n          color: #00AFB8;\n          -webkit-transition: all .8s ease-in-out;\n          transition: all .8s ease-in-out;\n}\n@media (max-width: 1263px) and (min-width: 1040px) {\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n            font-size: 12px;\n}\n}\n@media (max-width: 1040px) and (min-width: 991px) {\n#main-menu #navbarContent > .navbar-nav > .nav-item > .nav-link {\n            font-size: 11px;\n}\n}\n@media (max-width: 991.98px) {\n#main-menu #navbarContent > .navbar-nav {\n        margin-top: 2rem;\n}\n#main-menu #navbarContent > .navbar-nav > .nav-item > span {\n          padding-right: 1rem;\n}\n}\n#main-menu #weather-wrapper {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n#main-menu #weather-wrapper > .temperature {\n      color: #fff;\n      font-size: 20px;\n      font-weight: 700;\n}\n#main-menu #weather-wrapper > .icon {\n      padding-right: 1rem;\n}\n#main-menu #weather-wrapper > .icon > svg {\n        width: 36px;\n}\n@media (max-width: 1263px) {\n#main-menu #weather-wrapper {\n        display: none;\n}\n}\n@media (max-width: 1040px) and (min-width: 991px) {\n#main-menu #phone-call-wrapper {\n      padding-left: 0.5rem;\n}\n}\n", ""]);
 
 // exports
 
@@ -84077,10 +84077,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 ease: Back.easeInOut
             });
 
+            var t4 = new __WEBPACK_IMPORTED_MODULE_6_gsap__["a" /* TimelineMax */]();
+            t4.from('#book-now-wrapper', .8, {
+                y: -16,
+                opacity: 0,
+                ease: Back.easeInOut
+            });
+
             var master = new __WEBPACK_IMPORTED_MODULE_6_gsap__["a" /* TimelineMax */]();
             master.add(t1, 0.1);
             master.add(t2, 0.7);
             master.add(t3, 0.8);
+            master.add(t4, 0.9);
             master.play();
         }
     },
@@ -84175,7 +84183,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#phone-call-wrapper {\n  padding-left: 2rem;\n}\n#phone-call-wrapper .btn {\n    background-color: transparent;\n    border: 2px solid #fff;\n    color: #fff;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n#phone-call-wrapper .btn > i {\n      padding-right: 0.5rem;\n}\n#phone-call-wrapper .btn:hover {\n      background-color: #fff;\n      color: #252525;\n      -webkit-transition: all .4s ease-in-out;\n      transition: all .4s ease-in-out;\n}\n", ""]);
+exports.push([module.i, "\n#book-now-wrapper {\n  padding-left: 2rem;\n}\n#book-now-wrapper .btn {\n    background-color: transparent;\n    border: 2px solid #fff;\n    color: #fff;\n    -webkit-transition: all .4s ease-in-out;\n    transition: all .4s ease-in-out;\n}\n#book-now-wrapper .btn > i {\n      padding-right: 0.5rem;\n}\n#book-now-wrapper .btn:hover {\n      background-color: #fff;\n      color: #252525;\n      -webkit-transition: all .4s ease-in-out;\n      transition: all .4s ease-in-out;\n}\n", ""]);
 
 // exports
 
@@ -84214,7 +84222,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "phone-call-wrapper" } }, [
+  return _c("div", { attrs: { id: "book-now-wrapper" } }, [
     _c(
       "div",
       { staticClass: "call-to-action" },

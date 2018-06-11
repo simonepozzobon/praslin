@@ -78,10 +78,18 @@ export default {
                 ease: Back.easeInOut,
             })
 
+            var t4 = new TimelineMax()
+            t4.from('#book-now-wrapper', .8, {
+                y: -16,
+                opacity: 0,
+                ease: Back.easeInOut,
+            })
+
             var master = new TimelineMax()
             master.add(t1, 0.1)
             master.add(t2, 0.7)
             master.add(t3, 0.8)
+            master.add(t4, 0.9)
             master.play()
         }
     },
@@ -98,6 +106,10 @@ export default {
 
 $menu-bg: $black;
 $menu-color: $white;
+
+@media (max-width: 1263px) and (min-width: 991px) {
+
+}
 
 #main-menu {
     // display: flex;
@@ -138,15 +150,25 @@ $menu-color: $white;
                 }
             }
         }
+
+    }
+
+    > .navbar-toggler svg #burger-icon #burger {
+        fill: $white;
     }
 
     #navbarContent {
 
         > .navbar-nav {
-            justify-content: space-between;
+            // justify-content: space-between;
             margin-left: 40px;
             margin-right: 40px;
             width: 100%;
+
+            @media (max-width: 1263px) and (min-width: 991px) {
+                margin-left: 0;
+                margin-right: 0;
+            }
 
             > .nav-item {
                 display: flex;
@@ -172,7 +194,18 @@ $menu-color: $white;
                         color: $menu-green;
                         transition: all .8s ease-in-out;
                     }
+
+                    @media (max-width: 1263px) and (min-width: 1040px) {
+                        font-size: 12px;
+                    }
+
+                    @media (max-width: 1040px) and (min-width: 991px) {
+                        font-size: 11px;
+                    }
                 }
+
+
+
             }
 
             @include media-breakpoint-down('md') {
@@ -202,6 +235,17 @@ $menu-color: $white;
             > svg {
                 width: 36px;
             }
+        }
+
+
+        @media (max-width: 1263px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1040px) and (min-width: 991px) {
+        #phone-call-wrapper {
+            padding-left: $spacer / 2;
         }
     }
 }

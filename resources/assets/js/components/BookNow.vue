@@ -1,5 +1,5 @@
 <template lang="html">
-    <div id="phone-call-wrapper">
+    <div id="book-now-wrapper">
         <div class="call-to-action">
             <b-btn v-b-modal.bookmodalwrapper class="text-uppercase btn-sm"><i class="fas fa-calendar-check"></i> Book Now</b-btn>
         </div>
@@ -23,7 +23,7 @@ export default {
 @import '~styles/variables';
 @import '~styles/mixins';
 
-    #phone-call-wrapper {
+    #book-now-wrapper {
         padding-left: $spacer * 2;
 
         .btn {
