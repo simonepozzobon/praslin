@@ -25,3 +25,5 @@ Route::prefix('dive-spots')->group(function() {
     Route::get('/formdata', 'DivespotController@getFormData');
     Route::post('/new', 'DivespotController@saveSpot');
 });
+
+Route::post('/send-booking', 'BookingController@sendBooking');

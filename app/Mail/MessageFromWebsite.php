@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Message;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
@@ -10,6 +11,9 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class MessageFromWebsite extends Mailable
 {
     use Queueable, SerializesModels;
+
+
+    public $data;
 
     /**
      * Create a new message instance.
@@ -28,6 +32,6 @@ class MessageFromWebsite extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.bookmessage');
+        return $this->from($this->data['email'], $this->data['name'] . ' ' . $this->data['surname'])->view('emails.bookmessage')->with(['message' => $this->data]);
     }
 }

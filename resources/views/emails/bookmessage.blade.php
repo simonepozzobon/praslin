@@ -2,10 +2,11 @@
 <p>
     <h1>Book Request from website</h1>
     <hr>
-    Name: {{ $data->name }}<br>
-    Surname: {{ $data->surname }}
-    Dive Level: {{ $data->dive_level }}
-    From \ To: {{ $data->email }}
-    Message:<br>
-    {{ $data->message }}
+    <b>Name:</b> {{ $data['name'] }}<br>
+    <b>Surname:</b> {{ $data['surname'] }}<br>
+    <b>Dive Level:</b> {{ $data['dive_level'] }}<br>
+    <b>From \ To:</b> {{ $data['from_to'] }}<br>
+    <b>E-mail:</b> {{ $data['email'] }}<br>
+    <b>Message:</b><br>
+    {{ $data['message'] }}
 </p>

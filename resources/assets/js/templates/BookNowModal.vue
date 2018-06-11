@@ -7,28 +7,28 @@
         <div id="book-modal" class="container-fluid px-5">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <input type="text" placeholder="Name" class="form-control">
+                    <input type="text" placeholder="Name" class="form-control" v-model="name">
                 </div>
                 <div class="form-group col-md-6">
-                    <input type="text" placeholder="Surname" class="form-control">
+                    <input type="text" placeholder="Surname" class="form-control" v-model="surname">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-md-6">
-                    <input type="text" placeholder="Dive Level" class="form-control">
+                    <input type="text" placeholder="Dive Level" class="form-control" v-model="dive_level">
                 </div>
                 <div class="form-group col-md-6">
-                    <input type="text" placeholder="From / To" class="form-control">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-12">
-                    <input type="text" placeholder="Email" class="form-control">
+                    <input type="text" placeholder="From / To" class="form-control" v-model="from_to">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-md-12">
-                    <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
+                    <input type="text" placeholder="Email" class="form-control" v-model="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <textarea name="name" rows="8" cols="80" class="form-control" v-model="message"></textarea>
                 </div>
             </div>
         </div>
@@ -111,8 +111,11 @@ export default {
             data.append('dive_level', this.dive_level)
             data.append('from_to', this.from_to)
             data.append('email', this.email)
+            data.append('message', this.message)
 
-            // axios.post('')
+            axios.post('/api/send-booking', data).then(response => {
+                console.log(response)
+            })
         },
         toggleModal: function() {
             if (!this.isOpen) {

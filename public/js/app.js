@@ -80261,8 +80261,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             data.append('dive_level', this.dive_level);
             data.append('from_to', this.from_to);
             data.append('email', this.email);
+            data.append('message', this.message);
 
-            // axios.post('')
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/api/send-booking', data).then(function (response) {
+                console.log(response);
+            });
         },
         toggleModal: function toggleModal() {
             var _this2 = this;
@@ -80341,15 +80344,49 @@ var render = function() {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "form-group col-md-6" }, [
               _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.name,
+                    expression: "name"
+                  }
+                ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Name" }
+                attrs: { type: "text", placeholder: "Name" },
+                domProps: { value: _vm.name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.name = $event.target.value
+                  }
+                }
               })
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "form-group col-md-6" }, [
               _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.surname,
+                    expression: "surname"
+                  }
+                ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Surname" }
+                attrs: { type: "text", placeholder: "Surname" },
+                domProps: { value: _vm.surname },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.surname = $event.target.value
+                  }
+                }
               })
             ])
           ]),
@@ -80357,15 +80394,49 @@ var render = function() {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "form-group col-md-6" }, [
               _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.dive_level,
+                    expression: "dive_level"
+                  }
+                ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Dive Level" }
+                attrs: { type: "text", placeholder: "Dive Level" },
+                domProps: { value: _vm.dive_level },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.dive_level = $event.target.value
+                  }
+                }
               })
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "form-group col-md-6" }, [
               _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.from_to,
+                    expression: "from_to"
+                  }
+                ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "From / To" }
+                attrs: { type: "text", placeholder: "From / To" },
+                domProps: { value: _vm.from_to },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.from_to = $event.target.value
+                  }
+                }
               })
             ])
           ]),
@@ -80373,8 +80444,25 @@ var render = function() {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "form-group col-md-12" }, [
               _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.email,
+                    expression: "email"
+                  }
+                ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Email" }
+                attrs: { type: "text", placeholder: "Email" },
+                domProps: { value: _vm.email },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.email = $event.target.value
+                  }
+                }
               })
             ])
           ]),
@@ -80382,8 +80470,25 @@ var render = function() {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "form-group col-md-12" }, [
               _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.message,
+                    expression: "message"
+                  }
+                ],
                 staticClass: "form-control",
-                attrs: { name: "name", rows: "8", cols: "80" }
+                attrs: { name: "name", rows: "8", cols: "80" },
+                domProps: { value: _vm.message },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.message = $event.target.value
+                  }
+                }
               })
             ])
           ])
