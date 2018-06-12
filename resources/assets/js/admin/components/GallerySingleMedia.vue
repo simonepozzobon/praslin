@@ -1,5 +1,5 @@
 <template lang="html">
-    <div class="col-md-3">
+    <div class="col-md-4">
         <img :src="image" class="img-fluid"/>
     </div>
 </template>
