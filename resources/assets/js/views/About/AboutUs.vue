@@ -5,7 +5,7 @@
                 <waves class="waves-icon"/>
                 <div class="images">
                     <div id="about-us-img-1">
-                        <img src="/images/about-us-dive-center-2.jpg" class="img-fluid"/>
+                        <image-container src="/images/about-us-dive-center-2.jpg"/>
                     </div>​
                     <div id="about-us-img-2">
                         <img src="/images/equipment-4.jpg" class="img-fluid"/>
@@ -42,7 +42,11 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import ImageContainer from '../../components/ImageContainer.vue'
+=======
+import ImageContainer from '../../components/SectionTitle.vue'
+>>>>>>> e1201b2fbf3ddae36453271676929cadf828facf
 import SectionParagraph from '../../components/SectionParagraph.vue'
 import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
