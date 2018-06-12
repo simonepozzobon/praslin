@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Storage;
 class GalleryController extends Controller
 {
     public function galleries() {
-        $images = Image::all();
+        $images = Image::orderBy('id', 'desc')->get();
 
         $images = $images->transform(function($img, $key) {
             $img->thumb = Storage::disk('local')->url($img->thumb);
@@ -37,7 +37,7 @@ class GalleryController extends Controller
     }
 
     public function getImages() {
-        $images = Image::all();
+        $images = Image::orderBy('id', 'desc')->get();
 
         $images = $images->transform(function($img, $key) {
             $img->thumb = Storage::disk('local')->url($img->thumb);
