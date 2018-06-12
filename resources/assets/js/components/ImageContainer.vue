@@ -1,9 +1,15 @@
 <template lang="html">
-    <div class="image-container" :style="'min-height:' + this.height + 'px; width: 100%;'">
+    <div class="image-container" :style="'min-height:'+this.height+'px; width: 100%;'">
+        <div
+            class="load-img-overlay"
+            :style="'width:'+this.percent+'; min-height:'+this.height+'px; top: '+this.top+'; right: '+this.right+'; '"
+            ref="overlay">
+            </div>
         <div
             class="img-src"
             :class="this.shadowClass"
-            :style="'background-image: url(' + this.src + '); min-height:' + this.height + 'px; width: ' + this.percent + '; top: ' + this.top + '; right: ' + this.right + '; '">
+            :style="'background-image: url('+this.src+'); min-height:'+this.height+'px; width: '+this.percent+'; top: '+this.top+'; right: '+this.right+'; '"
+            ref="image">
         </div>
     </div>
 </template>
@@ -48,7 +54,23 @@ export default {
     },
     methods: {
         animate: function() {
+            var t1 = new TimelineMax()
+            t1.to(this.$refs.overlay, 2, {
+                width: 0,
+                delay: 1,
+                ease: Power4.easeOut
+            })
 
+            var t2 = new TimelineMax()
+            t2.from(this.$refs.image, 2, {
+                opacity: 0,
+                ease: Power4.easeOut,
+            })
+
+            var master = new TimelineMax()
+            master.add(t2, 0.1)
+            master.add(t1, 0.3)
+            master.play()
         }
     },
     mounted: function() {
@@ -65,12 +87,20 @@ export default {
 .image-container {
     position: relative;
 
+    .load-img-overlay {
+        position: absolute;
+        content: '';
+        background-color: $white;
+        z-index: 1;
+    }
+
     .img-src {
         width: 100%;
         min-height: 60px;
         background-size: cover;
         background-position: center;
         position: absolute;
+        z-index: 0;
 
         &.shadowed {
             @include box-shadow(0 2px 16px 0 rgba($black, 0.15));

@@ -30,14 +30,11 @@
                         right="90px" />
                     <image-container
                         src="/images/equipment-4.jpg"
-                        :height="400"
+                        :height="300"
                         percent="70%"
                         top="-60px"
-                        left="-20px"
+                        right="160px"
                         :shadow="true"/>
-                    <!-- <div id="about-us-img-2">
-                        <img src="/images/equipment-4.jpg" class="img-fluid"/>
-                    </div>​ -->
                 </div>
             </div>
         </div>
@@ -83,24 +80,24 @@ export default {
         top: -40px;
     }
 
-    .images {
-        position: relative;
-
-        #about-us-img-1 {
-            position: absolute;
-            right: 90px;
-            top: -40px;
-            width: 78%;
-        }
-
-        #about-us-img-2 {
-            position: absolute;
-            top: 250px;
-            left: -20px;
-            width: 70%;
-            @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
-        }
-    }
+    // .images {
+    //     position: relative;
+    //
+    //     // #about-us-img-1 {
+    //     //     position: absolute;
+    //     //     right: 90px;
+    //     //     top: -40px;
+    //     //     width: 78%;
+    //     // }
+    //     //
+    //     // #about-us-img-2 {
+    //     //     position: absolute;
+    //     //     top: 250px;
+    //     //     left: -20px;
+    //     //     width: 70%;
+    //     //     @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
+    //     // }
+    // }
 
     .padi {
         padding-top: $spacer * 4;
