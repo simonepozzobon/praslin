@@ -9,156 +9,17 @@
             </div>
             <div class="row">
                 <div class="col-12 price-content">
-                    <table class="w-100 price-list-table">
-                        <thead class="bg-menu-green">
-                            <td>Details</td>
-                            <td>Cyl / Weights</td>
-                            <td>All Equipment</td>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1 short distance dive</td>
-                                <td>50,00 €</td>
-                                <td>60,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>2 short distance dive</td>
-                                <td>95,00 €</td>
-                                <td>115,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Long distance / night dive</td>
-                                <td>+ 20,00 €</td>
-                                <td>+ 20,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Snorkeling</td>
-                                <td></td>
-                                <td>30,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Marine Park Fees</td>
-                                <td>20,00 €</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <b-table striped hover responsive outlined :items="this.data1" :fields="fields1"></b-table>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 pt-5">
-                    <table class="w-100 price-list-table">
-                        <thead class="bg-menu-green">
-                            <td>Padi Courses</td>
-                            <td>Min Days</td>
-                            <td>Retail Price</td>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Discover Scuba Diving</td>
-                                <td>1</td>
-                                <td>100,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Scuba Diver</td>
-                                <td>2</td>
-                                <td>350,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Open Water</td>
-                                <td>4</td>
-                                <td>450,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Open Water E-learned</td>
-                                <td>2</td>
-                                <td>330,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Open Water Referral</td>
-                                <td>2</td>
-                                <td>350,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Avd Open Water</td>
-                                <td>2</td>
-                                <td>350,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Avd Open E-learner</td>
-                                <td>2</td>
-                                <td>280,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Rescue Diver</td>
-                                <td>2</td>
-                                <td>350,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Rescue E-learner</td>
-                                <td>2</td>
-                                <td>285,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Emergency First Response</td>
-                                <td>1</td>
-                                <td>110,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Dive Master</td>
-                                <td>TC</td>
-                                <td>1000,00 €</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <b-table striped hover responsive outlined :items="this.data2" :fields="fields2"></b-table>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 pt-5">
-                    <table class="w-100 price-list-table">
-                        <thead class="bg-menu-green">
-                            <td>Speciality</td>
-                            <td>Min Days</td>
-                            <td>Retail Price</td>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Drift or Naturalist</td>
-                                <td>1</td>
-                                <td>150,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Deep</td>
-                                <td>2</td>
-                                <td>250,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Night</td>
-                                <td>2</td>
-                                <td>280,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Navigation</td>
-                                <td>2</td>
-                                <td>250,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Digital UW</td>
-                                <td>2</td>
-                                <td>200,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Boat</td>
-                                <td>1</td>
-                                <td>150,00 €</td>
-                            </tr>
-                            <tr>
-                                <td>Peak Buoyancy</td>
-                                <td>1</td>
-                                <td>160,00 €</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <b-table striped hover responsive outlined :items="this.data3" :fields="fields3"></b-table>
                 </div>
             </div>
         </div>
@@ -174,6 +35,146 @@ export default {
     components: {
         SectionTitle,
         Waves,
+    },
+    data: function() {
+        return {
+            fields1: [
+                { key: 'details', label: 'Details' },
+                { key: 'cyl', label: 'Cyl / Weights' },
+                { key: 'equipment', label: 'All Equipment' }
+            ],
+            data1: [
+                {
+                    details: '1 short distance dive',
+                    cyl: '50,00 €',
+                    equipment: '60,00 €',
+                },
+                {
+                    details: '2 short distance dive',
+                    cyl: '95,00 €',
+                    equipment: '115,00 €',
+                },
+                {
+                    details: 'Long distance / night dive',
+                    cyl: '+ 20,00 €',
+                    equipment: '+ 20,00 €',
+                },
+                {
+                    details: 'Snorkeling',
+                    cyl: '',
+                    equipment: '30,00 €',
+                },
+                {
+                    details: 'Marine Park Fees',
+                    cyl: '20,00 €',
+                    equipment: '',
+                },
+            ],
+            fields2: [
+                { key: 'courses', label: 'Padi Courses' },
+                { key: 'min', label: 'Min Days' },
+                { key: 'retail', label: 'Retail Price' }
+            ],
+            data2: [
+                {
+                    courses: 'Discover Scuba Diving',
+                    min: '1',
+                    retail: '100,00 €'
+                },
+                {
+                    courses: 'Scuba Diver',
+                    min: '2',
+                    retail: '350,00 €'
+                },
+                {
+                    courses: 'Open Water',
+                    min: '4',
+                    retail: '450,00 €'
+                },
+                {
+                    courses: 'Open Water E-learned',
+                    min: '2',
+                    retail: '330,00 €'
+                },
+                {
+                    courses: 'Open Water Referral',
+                    min: '2',
+                    retail: '350,00 €'
+                },
+                {
+                    courses: 'Avd open Water',
+                    min: '2',
+                    retail: '350,00 €'
+                },
+                {
+                    courses: 'Avd Open E-learner',
+                    min: '2',
+                    retail: '280,00 €'
+                },
+                {
+                    courses: 'Rescue Diver',
+                    min: '2',
+                    retail: '350,00 €'
+                },
+                {
+                    courses: 'Rescue E-learner',
+                    min: '2',
+                    retail: '285,00 €'
+                },
+                {
+                    courses: 'Emergency First Response',
+                    min: '1',
+                    retail: '110,00 €'
+                },
+                {
+                    courses: 'Dive Master',
+                    min: 'TC',
+                    retail: '1000,00 €'
+                },
+            ],
+            fields3: [
+                { key: 'speciality', label: 'Speciality' },
+                { key: 'min', label: 'Min Days' },
+                { key: 'retail', label: 'Retail Price' }
+            ],
+            data3: [
+                {
+                    speciality: 'Drift or Naturalist',
+                    min: '1',
+                    retail: '150,00 €'
+                },
+                {
+                    speciality: 'Deep',
+                    min: '2',
+                    retail: '250,00 €'
+                },
+                {
+                    speciality: 'Night',
+                    min: '2',
+                    retail: '280,00 €'
+                },
+                {
+                    speciality: 'Navigation',
+                    min: '2',
+                    retail: '250,00 €'
+                },
+                {
+                    speciality: 'Digital UW',
+                    min: '2',
+                    retail: '200,00 €'
+                },
+                {
+                    speciality: 'Boat',
+                    min: '1',
+                    retail: '150,00 €'
+                },
+                {
+                    speciality: 'Peak Buoyancy',
+                    min: '1',
+                    retail: '160,00 €'
+                },
+            ]
+        }
     }
 }
 </script>
