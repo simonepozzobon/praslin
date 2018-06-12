@@ -42,6 +42,7 @@
 </template>
 
 <script>
+import ImageContainer from '../../components/ImageContainer.vue'
 import SectionParagraph from '../../components/SectionParagraph.vue'
 import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
