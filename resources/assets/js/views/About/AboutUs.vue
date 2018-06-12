@@ -2,17 +2,6 @@
     <div id="about-us" class="container">
         <div class="row">
             <div class="col-md-6">
-                <waves class="waves-icon"/>
-                <div class="images">
-                    <div id="about-us-img-1">
-                        <image-container src="/images/about-us-dive-center-2.jpg"/>
-                    </div>​
-                    <div id="about-us-img-2">
-                        <img src="/images/equipment-4.jpg" class="img-fluid"/>
-                    </div>​
-                </div>
-            </div>
-            <div class="col-md-6">
                 <section-title title="About Us" number="01" />
                 <section-subtitle>
                     Experience the colorful side of life.
@@ -30,6 +19,27 @@
                     divers per guide.
                 </section-paragraph>
             </div>
+            <div class="col-md-6 order-md-first order-lg-first order-xl-first">
+                <waves class="waves-icon"/>
+                <div class="images">
+                    <image-container
+                        src="/images/about-us-dive-center-2.jpg"
+                        :height="300"
+                        percent="78%"
+                        top="-40px"
+                        right="90px" />
+                    <image-container
+                        src="/images/equipment-4.jpg"
+                        :height="400"
+                        percent="70%"
+                        top="-60px"
+                        left="-20px"
+                        :shadow="true"/>
+                    <!-- <div id="about-us-img-2">
+                        <img src="/images/equipment-4.jpg" class="img-fluid"/>
+                    </div>​ -->
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col">
@@ -42,11 +52,7 @@
 </template>
 
 <script>
-<<<<<<< HEAD
 import ImageContainer from '../../components/ImageContainer.vue'
-=======
-import ImageContainer from '../../components/SectionTitle.vue'
->>>>>>> e1201b2fbf3ddae36453271676929cadf828facf
 import SectionParagraph from '../../components/SectionParagraph.vue'
 import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
@@ -55,6 +61,7 @@ import Waves from '../../components/icons/Waves.vue'
 export default {
     name: 'AboutUs',
     components: {
+        ImageContainer,
         SectionParagraph,
         SectionSubtitle,
         SectionTitle,
