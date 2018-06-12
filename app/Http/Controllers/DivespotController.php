@@ -35,7 +35,11 @@ class DivespotController extends Controller
             $formatted->push($dp);
         }
 
-        return $formatted;
+        $data = [
+            'divespots' => $formatted,
+        ];
+
+        return $data;
     }
 
     public function getFormData() {

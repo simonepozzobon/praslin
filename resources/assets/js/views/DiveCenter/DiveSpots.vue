@@ -33,34 +33,86 @@
         <div id="map-wrapper" class="container-fluid mt-5 px-0">
             <div id="dive-spots-map"></div>
         </div>
-        <!-- <div id="dive-list" class="container mt-5 px-0">
-            <b-table stiped hover :items="this.spotsConverted"></b-table>
-        </div> -->
+        <div id="dive-list" class="container mt-5 px-0">
+            <b-table striped hover responsive outlined :items="this.spotsConverted" :fields="fields">
+                <template slot="rating" slot-scope="data">
+                    <stars-icons :stars="parseInt(data.item.rating)" />
+                </template>
+                <template slot="icons" slot-scope="data">
+                    <fish-icons v-for="icon in data.item.icons" :key="icon.id" :icon_id="icon.id" size="32"/>
+                </template>
+            </b-table>
+        </div>
     </div>
 </template>
 
 <script>
 import apiKeys from '~js/apiKeys'
 import axios from 'axios'
+import FishIcons from '../../components/FishIcons.vue'
 import GoogleMapsOpts from '~js/config/GoogleMapsOpts'
 import SectionParagraph from '../../components/SectionParagraph.vue'
 import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
+import StarsIcons from '../../components/StarsIcons.vue'
 import Waves from '../../components/icons/Waves.vue'
-
-import Coral from '../../components/icons/sea-creatures/Coral.vue'
 
 export default {
     name: 'DiveSpots',
     components: {
+        FishIcons,
         SectionParagraph,
         SectionSubtitle,
         SectionTitle,
+        StarsIcons,
         Waves,
     },
     data: function() {
         return {
-            spots: []
+            fields: [
+                {
+                    key: 'id',
+                    label: 'ID',
+                    sortable: true,
+                },
+                {
+                    key: 'title',
+                    label: 'Title',
+                    sortable: true,
+                },
+                {
+                    key: 'reef_type',
+                    label: 'Reef Type',
+                    sortable: true,
+                },
+                {
+                    key: 'level',
+                    label: 'Level',
+                    sortable: true,
+                },
+                {
+                    key: 'depth',
+                    label: 'Depth',
+                    sortable: true,
+                },
+                {
+                    key: 'snorkeling',
+                    label: 'Snorkeling',
+                    sortable: true,
+                },
+                {
+                    key: 'rating',
+                    label: 'Rating',
+                    sortable: true,
+                },
+                {
+                    key: 'icons',
+                    label: 'What You Can See',
+                    sortable: true,
+                },
+            ],
+            spots: [],
+            spotsConverted: [],
         }
     },
     computed: {
@@ -74,23 +126,13 @@ export default {
             }
             return true
         },
-        spotsConverted: function() {
-            var converted = []
-            for (var i = 0; i < this.spots.length; i++) {
-                var spot = this.spots[i]
-                var newspot
-                newspot.reef_type = spot.reef_type.description
-                converted.push(newspot)
-            }
-
-            return converted
-        }
     },
     methods: {
         getSpots: function() {
             return new Promise((resolve, reject) => {
                 axios.get('/api/dive-spots').then(response => {
-                    this.spots = response.data
+                    this.spots = response.data.divespots
+                    this.spotsConverted
                     resolve()
                 })
             })
@@ -107,6 +149,7 @@ export default {
             GoogleMapsOpts.zoom = 12
             GoogleMapsOpts.center = new google.maps.LatLng(-4.31685,55.7543)
             const map = new google.maps.Map(element, GoogleMapsOpts)
+            var converted = []
 
             this.spots.forEach((coord) => {
                 const position = new google.maps.LatLng(coord.lat, coord.lon)
@@ -125,6 +168,18 @@ export default {
                 'Rating: ' + this.renderStars(coord.rating) + '<br>' +
                 'What you can see: ' + this.renderActivities(coord.icons)
 
+                var sortedIcons = _.sortBy(coord.icons, 'id')
+                var object = {
+                    id: coord.id,
+                    title: coord.name,
+                    reef_type: coord.reef_type.description,
+                    level: coord.dive_level.description,
+                    depth: coord.depth,
+                    snorkeling: this.hasSnorkeling(coord.snorkeling),
+                    rating: coord.rating,
+                    icons: sortedIcons,
+                }
+                converted.push(object)
 
                 const infowindow = new google.maps.InfoWindow({
                     content: contentString
@@ -134,6 +189,8 @@ export default {
                     infowindow.open(map, marker)
                 })
             })
+
+            this.spotsConverted = converted
         },
         renderActivities: function(act) {
             var string = ''
