@@ -23,7 +23,7 @@
             <weather-info-lite />
             <phone-call />
             <book-now />
-            <audio-control size="small" :animated="true"/>
+            <audio-control v-if="this.isDesktop" size="small" :animated="true"/>
         </nav>
     </div>
 </template>
@@ -38,6 +38,8 @@ import NavItemDropdown from '../components/NavItemDropdown.vue'
 import PhoneCall from '../components/PhoneCall.vue'
 import {TweenMax, TimelineMax} from 'gsap'
 import WeatherInfoLite from './WeatherInfoLite.vue'
+
+const MobileDetect = require('mobile-detect')
 
 export default {
     name: 'TopMenu',
@@ -54,6 +56,7 @@ export default {
     data: function() {
         return {
             isAnimating: false,
+            isDesktop: false,
         }
     },
     methods: {
@@ -102,10 +105,19 @@ export default {
             master.add(t4, 0.9)
             master.add(t5, 1.0)
             master.play()
+        },
+        mobileDetect: function() {
+            var md = new MobileDetect(window.navigator.userAgent)
+            if (!md.phone() && !md.tablet()) {
+                this.isDesktop = true
+            } else {
+                this.isDesktop = false
+            }
         }
     },
     mounted: function() {
         this.animate()
+        this.mobileDetect()
     }
 }
 </script>
