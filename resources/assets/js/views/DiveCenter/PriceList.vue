@@ -175,6 +175,11 @@ export default {
                 },
             ]
         }
+    },
+    methods: {
+        animate: function() {
+            
+        }
     }
 }
 </script>
