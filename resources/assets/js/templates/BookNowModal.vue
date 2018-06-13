@@ -1,5 +1,5 @@
 <template lang="html">
-    <b-modal id="bookmodalwrapper" title="Book Now" size="lg">
+    <b-modal id="bookmodalwrapper" title="Book Now" size="lg" ref="bookingModal">
         <div slot="modal-header">
             <waves id="book-now-waves" class="waves-icon"/>
             <section-title title="Book Now" number="05" position="left" id="book-section-title"/>
@@ -35,8 +35,12 @@
         <div id="response" class="container-fluid p-5">
             <h3 class="text-center">{{ this.serviceMessage }}</h3>
         </div>
+        <div id="success" class="container-fluid p-5">
+            <h3 class="text-center">Message sent!</h3>
+        </div>
         <div slot="modal-footer">
             <div class="col d-flex justify-content-center">
+                <button class="btn btn-dark text-uppercase mr-5" @click="closeModal">Close</button>
                 <button class="btn btn-dark text-uppercase" @click="submitRequest">Submit</button>
             </div>
         </div>
@@ -71,6 +75,9 @@ export default {
         }
     },
     methods: {
+        closeModal: function() {
+            this.$refs.bookingModal.hide()
+        },
         missingField: function() {
             this.serviceMessage = 'Missing Informations!'
             var t1 = new TimelineMax()
@@ -99,6 +106,22 @@ export default {
                     display: 'block'
                 })
         },
+        showSuccess: function() {
+            var t1 = new TimelineMax()
+            t1.to('#book-modal', .4, {
+                opacity: 0,
+                display: 'none'
+            })
+                .to('#success', .4, {
+                    opacity: 1,
+                    display: 'block',
+                    onComplete: () => {
+                        setTimeout(() => {
+                            this.$refs.bookingModal.hide()
+                        }, 3000)
+                    }
+                })
+        },
         submitRequest: function() {
             if (!this.name || !this.surname || !this.dive_level || !this.from_to || !this.email || !this.message) {
                 this.missingField()
@@ -114,7 +137,7 @@ export default {
             data.append('message', this.message)
 
             axios.post('/api/send-booking', data).then(response => {
-                console.log(response)
+                this.showSuccess()
             })
         },
         toggleModal: function() {
@@ -206,7 +229,7 @@ export default {
     }
 }
 
-#response {
+#response, #success {
     display: none;
     opacity: 0;
 }
