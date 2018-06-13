@@ -22,7 +22,7 @@
                             :image="image.thumb"
                             :id="image.id"
                             itemClass="gallery-small-item"
-                            size="col-md-1 pb-4"/>
+                            size="col-1 pb-4"/>
                     </div>
                 </div>
             </div>
