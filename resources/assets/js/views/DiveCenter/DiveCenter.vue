@@ -17,16 +17,26 @@
             </div>
             <div class="col-md-6">
                 <waves class="waves-icon"/>
-                <div id="images">
-                    <div id="dive-center-img-1">
-                        <img src="/images/dive-center.jpg" class="img-fluid"/>
-                    </div>​
-                    <div id="dive-center-img-2">
-                        <img src="/images/equipment-3.jpg" class="img-fluid"/>
-                    </div>​
-                    <div id="dive-center-img-3">
-                        <img src="/images/SEA-logo.png" class="img-fluid"/>
-                    </div>
+                <div class="images">
+                    <image-container
+                        src="/images/dive-center.jpg"
+                        :height="300"
+                        percent="75%"
+                        top="-40px"
+                        left="90px" />
+                    <image-container
+                        src="/images/equipment-3.jpg"
+                        :height="300"
+                        percent="70%"
+                        top="-80px"
+                        right="0" />
+                    <image-container
+                        src="/images/SEA-logo.png"
+                        size="contain"
+                        :height="162"
+                        percent="30%"
+                        top="-150px"
+                        left="-40px" />
                 </div>
             </div>
         </div>
@@ -34,6 +44,7 @@
 </template>
 
 <script>
+import ImageContainer from '../../components/ImageContainer.vue'
 import SectionParagraph from '../../components/SectionParagraph.vue'
 import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
@@ -42,6 +53,7 @@ import Waves from '../../components/icons/Waves.vue'
 export default {
     name: 'DiveCenter',
     components: {
+        ImageContainer,
         SectionParagraph,
         SectionSubtitle,
         SectionTitle,
@@ -58,38 +70,15 @@ export default {
 
 #dive-center {
     padding-top: 180px;
-    padding-bottom: 180px;
+
+    @include media-breakpoint-down('md') {
+        padding-bottom: 90px;
+    };
 
     .waves-icon {
         position: absolute;
         left: 15px;
         top: -40px;
-    }
-}
-
-#images {
-    position: relative;
-
-    > #dive-center-img-1 {
-        position: absolute;
-        left: 90px;
-        top: -40px;
-        width: 75%;
-    }
-
-    > #dive-center-img-2 {
-        position: absolute;
-        top: 180px;
-        right: 0;
-        width: 65%;
-        @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
-    }
-
-    > #dive-center-img-3 {
-        position: absolute;
-        top: 280px;
-        left: 0;
-        width: 30%;
     }
 }
 

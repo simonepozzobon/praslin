@@ -1,6 +1,6 @@
 <template lang="html">
     <div id="diving-spots" v-observe-visibility="visibilityChanged">
-        <div class="container pb-5">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <section-title title="Dive Spots" number="02" align="right"/>
@@ -18,13 +18,19 @@
                 </div>
                 <div class="col-md-6">
                     <waves class="waves-icon"/>
-                    <div id="dive-sposts-images">
-                        <div id="dive-spots-img-1">
-                            <img src="/images/dive-spots-img-2.jpg" class="img-fluid"/>
-                        </div>​
-                        <div id="dive-spots-img-2">
-                            <img src="/images/dive-spots-img-1.jpg" class="img-fluid"/>
-                        </div>
+                    <div class="images">
+                        <image-container
+                            src="/images/dive-spots-img-2.jpg"
+                            :height="400"
+                            percent="50%"
+                            top="-40px"
+                            left="90px" />
+                        <image-container
+                            src="/images/dive-spots-img-1.jpg"
+                            :height="300"
+                            percent="50%"
+                            top="-80px"
+                            right="40px" />
                     </div>
                 </div>
             </div>
@@ -51,18 +57,18 @@ import axios from 'axios'
 import EventBus from '~js/EventBus'
 import FishIcons from '../../components/FishIcons.vue'
 import GoogleMapsOpts from '~js/config/GoogleMapsOpts'
+import ImageContainer from '../../components/ImageContainer.vue'
 import SectionParagraph from '../../components/SectionParagraph.vue'
 import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
 import StarsIcons from '../../components/StarsIcons.vue'
 import Waves from '../../components/icons/Waves.vue'
 
-// const MobileDetect = require('mobile-detect')
-
 export default {
     name: 'DiveSpots',
     components: {
         FishIcons,
+        ImageContainer,
         SectionParagraph,
         SectionSubtitle,
         SectionTitle,
@@ -205,14 +211,6 @@ export default {
 
             this.spotsConverted = converted
         },
-        mobileDetect: function() {
-            // var md = new MobileDetect(window.navigator.userAgent)
-            // if (!md.phone() && !md.tablet()) {
-            //     this.isDesktop = true
-            // } else {
-            //     this.isDesktop = false
-            // }
-        },
         renderActivities: function(act) {
             var string = ''
             for (var i = 0; i < act.length; i++) {
@@ -246,9 +244,7 @@ export default {
         }
     },
     mounted: function() {
-        // this.mobileDetect()
         EventBus.$on('window-resized', size => {
-            console.log(size)
             this.windowSize = size.value
         })
         this.getSpots().then(() => {
@@ -272,42 +268,17 @@ export default {
         top: -40px;
     }
 
-    #dive-sposts-images {
-        position: relative;
-
-        #dive-spots-img-1 {
-            position: absolute;
-            width: 50%;
-            top: -40px;
-            left: 90px;
-        }
-
-        #dive-spots-img-2 {
-            position: absolute;
-            width: 50%;
-            top: 300px;
-            right: 0;
-            z-index: 1;
-            @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
-        }
-
-        // #dive-spots-img-3 {
-        //     position: absolute;
-        //     width: 60%;
-        //     top: 310px;
-        //     left: 15px;
-        //     z-index: 0;
-        // }
-    }
-
     #map-wrapper {
-        padding-top: 100px;
 
         #dive-spots-map {
             width: 100%;
             min-height: 60vh;
             height: 100%;
             z-index: 0;
+
+            @include media-breakpoint-down('md') {
+                min-height: 80vh;
+            };
         }
     }
 

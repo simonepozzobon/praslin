@@ -80,25 +80,6 @@ export default {
         top: -40px;
     }
 
-    // .images {
-    //     position: relative;
-    //
-    //     // #about-us-img-1 {
-    //     //     position: absolute;
-    //     //     right: 90px;
-    //     //     top: -40px;
-    //     //     width: 78%;
-    //     // }
-    //     //
-    //     // #about-us-img-2 {
-    //     //     position: absolute;
-    //     //     top: 250px;
-    //     //     left: -20px;
-    //     //     width: 70%;
-    //     //     @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
-    //     // }
-    // }
-
     .padi {
         padding-top: $spacer * 4;
 

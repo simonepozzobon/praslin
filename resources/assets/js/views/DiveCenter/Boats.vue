@@ -2,17 +2,6 @@
     <div id="boats" class="container">
           <div class="row">
                 <div class="col-md-6">
-                    <waves class="waves-icon"/>
-                    <div id="boats-images">
-                        <div id="boats-img-1">
-                            <img src="/images/boat-2.jpg" class="img-fluid"/>
-                        </div>​
-                        <div id="boats-img-2">
-                            <img src="/images/equipment-5.jpg" class="img-fluid"/>
-                        </div>​
-                    </div>
-                </div>
-                <div class="col-md-6">
                     <section-title title="Boats" number="02" align="left"/>
                     <section-subtitle>
                         Pick up the equipment and get on board.
@@ -33,19 +22,38 @@
                         side of life.
                     </section-paragraph>
                 </div>
-
+                <div class="col-md-6 order-md-first order-lg-first order-xl-first">
+                    <waves class="waves-icon"/>
+                    <div class="images">
+                        <image-container
+                            src="/images/boat-2.jpg"
+                            :height="400"
+                            percent="75%"
+                            top="-40px"
+                            right="90px" />
+                        <image-container
+                            src="/images/equipment-5.jpg"
+                            :height="300"
+                            percent="65%"
+                            top="-60px"
+                            left="160px" />
+                    </div>
+                </div>
           </div>
       </div>
 </template>
 
 <script>
+import ImageContainer from '../../components/ImageContainer.vue'
 import SectionParagraph from '../../components/SectionParagraph.vue'
 import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
 import Waves from '../../components/icons/Waves.vue'
+
 export default {
     name: 'Boats',
     components: {
+        ImageContainer,
         SectionParagraph,
         SectionSubtitle,
         SectionTitle,
@@ -67,26 +75,6 @@ export default {
         right: 15px;
         top: -40px;
     }
-}
-
-#boats-images {
-    position: relative;
-
-    > #boats-img-1 {
-        position: absolute;
-        right: 90px;
-        top: -40px;
-        width: 75%;
-    }
-
-    > #boats-img-2 {
-        position: absolute;
-        top: 180px;
-        left: 0;
-        width: 65%;
-        @include box-shadow(0 2px 16px 0 rgba($black, 0.33));
-    }
-
 }
 
 </style>
