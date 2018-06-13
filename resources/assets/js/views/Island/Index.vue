@@ -3,17 +3,6 @@
         <div class="container">
             <div class="row first-part">
                 <div class="col-md-6">
-                    <waves class="waves-icon"/>
-                    <div class="island-images">
-                        <div id="island-img-2">
-                            <img src="/images/praslin-island-1.jpg" class="img-fluid" />
-                        </div>
-                        <div id="island-img-3">
-                            <img src="/images/beach.jpg" class="img-fluid" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
                     <section-title title="About The Island" number="04" align="left"/>
                     <div class="island-info">
                         <island-description title="Praslin" icon="far fa-map">
@@ -61,6 +50,23 @@
                         </island-description>
                     </div>
                 </div>
+                <div class="col-md-6 order-md-first order-lg-first order-xl-first">
+                    <waves class="waves-icon"/>
+                    <div class="images">
+                        <image-container
+                            src="/images/praslin-island-1.jpg"
+                            :height="600"
+                            percent="75%"
+                            top="-40px"
+                            right="90px" />
+                        <image-container
+                            src="/images/beach.jpg"
+                            :height="340"
+                            percent="65%"
+                            top="-60px"
+                            left="160px" />
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -94,13 +100,19 @@
                 </div>
                 <div class="col-md-6">
                     <waves class="waves-icon left"/>
-                    <div class="island-images">
-                        <div id="island-img-4">
-                            <img src="/images/praslin-island-palm.JPG" class="img-fluid" />
-                        </div>
-                        <div id="island-img-5">
-                            <img src="/images/praslin-island-2.JPG" class="img-fluid" />
-                        </div>
+                    <div class="images">
+                        <image-container
+                            src="/images/praslin-island-palm.JPG"
+                            :height="450"
+                            percent="50%"
+                            top="-40px"
+                            left="90px" />
+                        <image-container
+                            src="/images/praslin-island-2.JPG"
+                            :height="350"
+                            percent="50%"
+                            top="-80px"
+                            right="40px" />
                     </div>
                 </div>
             </div>
@@ -109,6 +121,7 @@
 </template>
 
 <script>
+import ImageContainer from '../../components/ImageContainer.vue'
 import IslandDescription from '../../components/IslandDescription.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
 import Waves from '../../components/icons/Waves.vue'
@@ -116,6 +129,7 @@ import Waves from '../../components/icons/Waves.vue'
 export default {
     name: 'IslandIndex',
     components: {
+        ImageContainer,
         IslandDescription,
         SectionTitle,
         Waves,

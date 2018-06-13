@@ -31,10 +31,9 @@
                     <image-container
                         src="/images/equipment-4.jpg"
                         :height="300"
-                        percent="70%"
+                        percent="60%"
                         top="-60px"
-                        right="160px"
-                        :shadow="true"/>
+                        left="0" />
                 </div>
             </div>
         </div>
