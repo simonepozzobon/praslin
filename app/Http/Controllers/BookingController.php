@@ -29,7 +29,7 @@ class BookingController extends Controller
             'message' => $message->message,
         ];
 
-        $mail = Mail::to('info@simonepozzobon.com')->send(new MessageFromWebsite($mail_data));
+        $mail = Mail::to('praslinprodivers@gmail.com')->send(new MessageFromWebsite($mail_data));
 
         return $mail;
     }
