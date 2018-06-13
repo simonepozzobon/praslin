@@ -2,7 +2,6 @@
     <div id="diving-spots" v-observe-visibility="visibilityChanged">
         <div class="container pb-5">
             <div class="row">
-
                 <div class="col-md-6">
                     <section-title title="Dive Spots" number="02" align="right"/>
                     <section-subtitle>
@@ -34,7 +33,7 @@
             <div id="dive-spots-map"></div>
         </div>
         <div id="dive-list" class="container mt-5 px-0">
-            <b-table striped hover responsive outlined :items="this.spotsConverted" :fields="fields">
+            <b-table striped hover responsive outlined :stacked="this.isMobile" :items="this.spotsConverted" :fields="fields">
                 <template slot="rating" slot-scope="data">
                     <stars-icons :stars="parseInt(data.item.rating)" />
                 </template>
@@ -49,6 +48,7 @@
 <script>
 import apiKeys from '~js/apiKeys'
 import axios from 'axios'
+import EventBus from '~js/EventBus'
 import FishIcons from '../../components/FishIcons.vue'
 import GoogleMapsOpts from '~js/config/GoogleMapsOpts'
 import SectionParagraph from '../../components/SectionParagraph.vue'
@@ -56,6 +56,8 @@ import SectionSubtitle from '../../components/SectionSubtitle.vue'
 import SectionTitle from '../../components/SectionTitle.vue'
 import StarsIcons from '../../components/StarsIcons.vue'
 import Waves from '../../components/icons/Waves.vue'
+
+// const MobileDetect = require('mobile-detect')
 
 export default {
     name: 'DiveSpots',
@@ -111,8 +113,19 @@ export default {
                     sortable: true,
                 },
             ],
+            isMobile: false,
             spots: [],
             spotsConverted: [],
+            windowSize: null,
+        }
+    },
+    watch: {
+        windowSize: function(size) {
+            if (size == 'md' || size == 'sm' || size == 'xs') {
+                this.isMobile = true
+            } else {
+                this.isMobile = false
+            }
         }
     },
     computed: {
@@ -192,6 +205,14 @@ export default {
 
             this.spotsConverted = converted
         },
+        mobileDetect: function() {
+            // var md = new MobileDetect(window.navigator.userAgent)
+            // if (!md.phone() && !md.tablet()) {
+            //     this.isDesktop = true
+            // } else {
+            //     this.isDesktop = false
+            // }
+        },
         renderActivities: function(act) {
             var string = ''
             for (var i = 0; i < act.length; i++) {
@@ -225,6 +246,11 @@ export default {
         }
     },
     mounted: function() {
+        // this.mobileDetect()
+        EventBus.$on('window-resized', size => {
+            console.log(size)
+            this.windowSize = size.value
+        })
         this.getSpots().then(() => {
             this.loadMap()
         })

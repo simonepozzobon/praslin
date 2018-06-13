@@ -28,6 +28,26 @@ export default {
         TopMenu,
     },
     methods: {
+        calculateSize: function() {
+            var size = {
+                width: window.innerWidth,
+                height: window.innerHeight
+            }
+
+            if (size.width <= 576) {
+                size.value = 'xs'
+            } else if (size.width > 576 && size.width <= 768) {
+                size.value = 'sm'
+            } else if (size.width > 768 && size.width <= 992) {
+                size.value = 'md'
+            } else if (size.width > 992 && size.width <= 1200) {
+                size.value = 'lg'
+            } else if (size.width > 1200) {
+                size.value = 'xl'
+            }
+
+            EventBus.$emit('window-resized', size)
+        },
         enter: function(el, done) {
             TweenMax.fromTo(el, .4, {
                 opacity: 0,
@@ -46,18 +66,10 @@ export default {
         },
     },
     mounted: function() {
-        var size = {
-            width: window.innerWidth,
-            height: window.innerHeight,
-        }
-        EventBus.$emit('window-resized', size)
+        this.calculateSize()
 
         window.addEventListener('resize', _.debounce(() => {
-            var size = {
-                width: window.innerWidth,
-                height: window.innerHeight
-            }
-            EventBus.$emit('window-resized', size)
+            this.calculateSize()
         }, 100))
     }
 }
