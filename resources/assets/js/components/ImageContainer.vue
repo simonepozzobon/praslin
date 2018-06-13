@@ -86,25 +86,42 @@ export default {
 
 .image-container {
     position: relative;
+    @include media-breakpoint-down('md') {
+        margin-top: $spacer;
+    }
 
     .load-img-overlay {
         position: absolute;
         content: '';
         background-color: $white;
         z-index: 1;
+
+        @include media-breakpoint-down('md') {
+            display: none;
+        }
     }
 
     .img-src {
-        width: 100%;
+        // width: 100%;
         min-height: 60px;
         background-size: cover;
         background-position: center;
         position: absolute;
         z-index: 0;
 
-        &.shadowed {
-            @include box-shadow(0 2px 16px 0 rgba($black, 0.15));
-        }
+        @include media-breakpoint-down('md') {
+            width: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+        };
+
+        @include media-breakpoint-up('md') {
+            &.shadowed {
+                @include box-shadow(0 2px 16px 0 rgba($black, 0.15));
+            }
+        };
     }
 }
 </style>
