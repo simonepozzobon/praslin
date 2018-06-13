@@ -41,7 +41,7 @@
         <div slot="modal-footer">
             <div class="col d-flex justify-content-center">
                 <button class="btn btn-dark text-uppercase mr-5" @click="closeModal">Close</button>
-                <button class="btn btn-dark text-uppercase" @click="submitRequest">Submit</button>
+                <button ref="submitBook" class="btn btn-dark text-uppercase" @click="submitRequest">Submit</button>
             </div>
         </div>
     </b-modal>
@@ -112,6 +112,10 @@ export default {
                 opacity: 0,
                 display: 'none'
             })
+                .to(this.$refs.submitBook, .2, {
+                    opacity: 0,
+                    display: 'none',
+                })
                 .to('#success', .4, {
                     opacity: 1,
                     display: 'block',
