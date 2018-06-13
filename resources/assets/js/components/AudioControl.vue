@@ -89,6 +89,12 @@ export default {
 #audio-control-wrapper {
     padding-left: $spacer * 2;
     padding-right: $spacer;
+    @include media-breakpoint-down('xs') {
+        padding-bottom: $spacer * 2;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    };
 
     .audio-btn {
         position: relative;

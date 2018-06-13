@@ -25,6 +25,9 @@ export default {
 
     #phone-call-wrapper {
         padding-left: $spacer * 2;
+        @include media-breakpoint-down('xs') {
+            padding-bottom: $spacer * 2;
+        };
 
         .btn {
             background-color: transparent;
@@ -34,7 +37,7 @@ export default {
 
             > i {
                 padding-right: $spacer / 2;
-                
+
                 @media (max-width: 1075px) and (min-width: 991px) {
                     display: none;
                 }

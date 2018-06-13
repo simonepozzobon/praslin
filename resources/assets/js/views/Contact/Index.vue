@@ -1,33 +1,8 @@
 <template lang="html">
     <div id="contact" v-observe-visibility="visibilityChanged">
-        <!-- <div id="contact-panel" class="bg-sand row">
-                <div class="col-12 py-5">
-                    <section-title title="Contact" number="05" align="left" class="section-title"/>
-                    <waves class="waves-icon"/>
-                </div>
-                <div class="col-12">
-                    <p class="custom-p p-4">
-                        <span class="contact-label">E-mail</span><br>
-                        <span class="contact-description">
-                            <a href="mailto:praslinprodivers@gmail.com">praslinprodivers@gmail.com</a>
-                        </span><br><br>
-                        <span class="contact-label">Mobile</span><br>
-                        <span class="contact-description">
-                            (+248) 26 33 000
-                        </span><br><br>
-                        <span class="contact-label">Phone</span><br>
-                        <span class="contact-description">
-                            (+248) 42 32 113
-                        </span>
-                    </p>
-
-                </div>
-        </div> -->
-        <div id="contact-map">
-
-        </div>
+        <div id="contact-map"></div>
         <div class="container">
-            <div id="bottom-contact" class="row">
+            <div id="bottom-contact" class="row pt-5">
                 <div class="col-12">
                     <p class="custom-p p-4">
                         <span class="contact-label">Address</span><br>
@@ -36,15 +11,15 @@
                             Praslin, Seychelles
                         </span><br><br>
                     </p>
-                    <span class="contact-label last text-center">Social</span>
+                    <span class="contact-label last">Social</span>
                     <div class="social">
+                        <div class="social-icon pl-2 py-4 pr-4">
+                            <i class="fab fa-tripadvisor"></i>
+                        </div>
                         <div class="social-icon p-4">
-                            <i class="fab fa-tripadvisor fa-2x"></i>
+                            <a href="https://www.facebook.com/Praslin-Pro-Divers-1745688432182615" target="_blank"><i class="fab fa-facebook-square"></i></a>
                         </div>
-                        <div class="social-icon p-4 fa-2x">
-                            <a href="https://www.facebook.com/Praslin-Pro-Divers-1745688432182615" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                        <div class="social-icon p-4 fa-2x">
+                        <div class="social-icon p-4">
                             <a href="https://www.instagram.com/praslinprodivers/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
@@ -121,7 +96,8 @@ export default {
 @import '~styles/functions';
 @import '~styles/variables';
 @import '~styles/mixins';
-
+$menu-bg: $black;
+$menu-color: $white;
 #contact {
     // padding-top: 132px;
     overflow: hidden;
@@ -151,13 +127,27 @@ export default {
 
         .social {
             display: flex;
-            justify-content: space-between;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
+            // justify-content: space-between;
+            padding-left: $spacer;
+            padding-right: $spacer;
             padding-bottom: 40px;
 
             > .social-icon {
                 font-size: 32px;
+
+                > a {
+                    color: $black;
+
+                    &:active, &:link, &:visited {
+                        color: black;
+                        transition: all .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        color: $menu-green;
+                        transition: all .8s ease-in-out;
+                    }
+                }
             }
         }
     }

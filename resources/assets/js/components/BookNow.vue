@@ -25,6 +25,9 @@ export default {
 
     #book-now-wrapper {
         padding-left: $spacer * 2;
+        @include media-breakpoint-down('xs') {
+            padding-bottom: $spacer * 2;
+        };
 
         .btn {
             background-color: transparent;
