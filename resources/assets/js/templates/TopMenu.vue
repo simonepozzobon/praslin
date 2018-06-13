@@ -17,13 +17,12 @@
                     <nav-item number="03" link='/galleries' text="Galleries"/>
                     <nav-item number="04" link='/island' text="Info"/>
                     <nav-item number="05" link='/contacts' text="Contact"/>
+                    <weather-info-lite />
+                    <phone-call />
+                    <book-now />
+                    <audio-control v-if="this.isDesktop" size="small" :animated="true"/>
                 </ul>
             </div>
-
-            <weather-info-lite />
-            <phone-call />
-            <book-now />
-            <audio-control v-if="this.isDesktop" size="small" :animated="true"/>
         </nav>
     </div>
 </template>
@@ -227,7 +226,7 @@ $menu-color: $white;
                     }
 
                     @media (max-width: 1040px) and (min-width: 991px) {
-                        font-size: 11px;
+                        font-size: 10px;
                     }
                 }
 
@@ -235,13 +234,13 @@ $menu-color: $white;
 
             }
 
-            @include media-breakpoint-down('md') {
-                margin-top: $spacer * 2;
-
-                > .nav-item > span {
-                    padding-right: $spacer;
-                }
-            };
+            // @include media-breakpoint-down('md') {
+            //     margin-top: $spacer * 2;
+            //
+            //     > .nav-item > span {
+            //         padding-right: $spacer;
+            //     }
+            // };
 
         }
     }
@@ -249,6 +248,7 @@ $menu-color: $white;
     #weather-wrapper {
         display: flex;
         align-items: center;
+        min-width: 100px;
 
         > .temperature {
             color: $menu-color;
@@ -265,30 +265,30 @@ $menu-color: $white;
         }
 
 
-        @media (max-width: 1263px) {
-            display: none;
-        }
+        // @media (max-width: 1263px) {
+        //     display: none;
+        // }
     }
 
-    @media (max-width: 1344px) and (min-width: 991px) {
-        #phone-call-wrapper {
-            padding-left: $spacer;
-        }
-
-        #book-now-wrapper {
-            padding-left: $spacer;
-        }
-
-        #audio-control-wrapper {
-            padding-left: $spacer;
-        }
-    }
-
-    @media (max-width: 1075px) and (min-width: 991px) {
-        #audio-control-wrapper {
-            padding-right: 0;
-        }
-    }
+    // @media (max-width: 1344px) and (min-width: 991px) {
+    //     #phone-call-wrapper {
+    //         padding-left: $spacer;
+    //     }
+    //
+    //     #book-now-wrapper {
+    //         padding-left: $spacer;
+    //     }
+    //
+    //     #audio-control-wrapper {
+    //         padding-left: $spacer;
+    //     }
+    // }
+    //
+    // @media (max-width: 1075px) and (min-width: 991px) {
+    //     #audio-control-wrapper {
+    //         padding-right: 0;
+    //     }
+    // }
 }
 
 

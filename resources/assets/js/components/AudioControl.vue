@@ -1,11 +1,11 @@
 <template lang="html">
-    <div id="audio-control-wrapper">
+    <li id="audio-control-wrapper">
         <div class="audio-btn">
             <a id="audio-control" class="video-audio-btn" :class="color +' '+size+' '+isAnimated" href="#" @click="toggleAudio">
                 <i class="fas" :class="btnClass"></i>
             </a>
         </div>
-    </div>
+    </li>
 </template>
 
 <script>
@@ -89,9 +89,12 @@ export default {
 #audio-control-wrapper {
     padding-left: $spacer * 2;
     padding-right: $spacer;
+    display: flex;
+    align-items: center;
     @include media-breakpoint-down('xs') {
+        padding-left: 0;
+        padding-right: $spacer;
         padding-bottom: $spacer * 2;
-        display: flex;
         justify-content: center;
         width: 100%;
     };

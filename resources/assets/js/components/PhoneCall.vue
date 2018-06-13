@@ -1,9 +1,9 @@
 <template lang="html">
-    <div id="phone-call-wrapper">
+    <li id="phone-call-wrapper">
         <div class="call-to-action">
             <b-btn v-b-modal.phonemodalwrapper class="text-uppercase btn-sm"><i class="fas fa-phone"></i>  Call Us</b-btn>
         </div>
-    </div>
+    </li>
 </template>
 
 <script>
@@ -25,9 +25,15 @@ export default {
 
     #phone-call-wrapper {
         padding-left: $spacer * 2;
-        @include media-breakpoint-down('xs') {
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down('md') {
+            padding-left: 0;
             padding-bottom: $spacer * 2;
         };
+        // @include media-breakpoint-down('xs') {
+        //     padding-bottom: $spacer * 2;
+        // };
 
         .btn {
             background-color: transparent;

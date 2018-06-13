@@ -1,5 +1,5 @@
 <template>
-    <div id="weather-wrapper">
+    <li id="weather-wrapper">
         <div class="icon">
             <cloudy v-if="this.icon == '03d' || this.icon == '03n'"/>
             <cloudy-full v-else-if="this.icon == '04d' || this.icon == '04n'"/>
@@ -14,7 +14,7 @@
         <div class="temperature">
             <span>{{ this.temperature }} °C</span>
         </div>
-    </div>
+    </li>
 </template>
 <script>
 import apiKeys from '~js/apiKeys'

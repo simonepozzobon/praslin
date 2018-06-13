@@ -1,9 +1,9 @@
 <template lang="html">
-    <div id="book-now-wrapper">
+    <li id="book-now-wrapper">
         <div class="call-to-action">
             <b-btn v-b-modal.bookmodalwrapper class="text-uppercase btn-sm"><i class="fas fa-calendar-check"></i> Book Now</b-btn>
         </div>
-    </div>
+    </li>
 </template>
 
 <script>
@@ -25,9 +25,15 @@ export default {
 
     #book-now-wrapper {
         padding-left: $spacer * 2;
-        @include media-breakpoint-down('xs') {
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down('md') {
+            padding-left: 0;
             padding-bottom: $spacer * 2;
         };
+        // @include media-breakpoint-down('xs') {
+        //     padding-bottom: $spacer * 2;
+        // };
 
         .btn {
             background-color: transparent;
