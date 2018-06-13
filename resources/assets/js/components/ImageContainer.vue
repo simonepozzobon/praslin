@@ -2,13 +2,13 @@
     <div class="image-container" :style="'min-height:'+this.height+'px; width: 100%;'">
         <div
             class="load-img-overlay"
-            :style="'width:'+this.percent+'; min-height:'+this.height+'px; top: '+this.top+'; right: '+this.right+'; '"
+            :style="'width:'+this.percent+'; min-height:'+this.height+'px; top: '+this.top+'; right: '+this.right+'; bottom: '+this.bottom+'; left: '+this.left+';'"
             ref="overlay">
             </div>
         <div
             class="img-src"
-            :class="this.shadowClass"
-            :style="'background-image: url('+this.src+'); min-height:'+this.height+'px; width: '+this.percent+'; top: '+this.top+'; right: '+this.right+'; '"
+            :class="this.shadowClass + ' ' + this.size"
+            :style="'background-image: url('+this.src+'); min-height:'+this.height+'px; width: '+this.percent+'; top: '+this.top+'; right: '+this.right+'; bottom: '+this.bottom+'; left: '+this.left+''"
             ref="image">
         </div>
     </div>
@@ -20,9 +20,17 @@ import {TweenMax, TimelineMax} from 'gsap'
 export default {
     name: 'ImageContainer',
     props: {
+        bottom: {
+            type: String,
+            default: 'inherit',
+        },
         height: {
             type: Number,
             default: 60,
+        },
+        left: {
+            type: String,
+            default: 'inherit',
         },
         percent: {
             type: String,
@@ -35,6 +43,10 @@ export default {
         shadow: {
             type: Boolean,
             default: false,
+        },
+        size: {
+            type: String,
+            default: 'cover'
         },
         src: {
             type: String,
@@ -104,10 +116,10 @@ export default {
     .img-src {
         // width: 100%;
         min-height: 60px;
-        background-size: cover;
         background-position: center;
         position: absolute;
         z-index: 0;
+        background-repeat: no-repeat;
 
         @include media-breakpoint-down('md') {
             width: 100% !important;
@@ -122,6 +134,14 @@ export default {
                 @include box-shadow(0 2px 16px 0 rgba($black, 0.15));
             }
         };
+
+        &.cover {
+            background-size: cover;
+        }
+
+        &.contain {
+            background-size: contain;
+        }
     }
 }
 </style>
