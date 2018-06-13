@@ -193,6 +193,10 @@ $menu-color: $white;
                 margin-right: 0;
             }
 
+            @include media-breakpoint-down('md') {
+                padding-bottom: $spacer * 3;
+            };
+
             > .nav-item {
                 display: flex;
                 align-items: center;
