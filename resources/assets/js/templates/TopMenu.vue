@@ -154,15 +154,9 @@ $menu-color: $white;
         max-width: 170px;
 
         > .navbar-brand-bg {
-            // padding-top: 6px;
-            // padding-bottom: 12px;
             position: relative;
-            // position: absolute;
             left: -$spacer;
-            // top: 50%;
-            // transform: translateY(-50%);
             min-width: 128px;
-            // min-height: 89px;
             background-color: $menu-bg;
             @include box-shadow(0 8px 32px 0 rgba(37, 37, 37, .15));
 
@@ -233,15 +227,6 @@ $menu-color: $white;
 
 
             }
-
-            // @include media-breakpoint-down('md') {
-            //     margin-top: $spacer * 2;
-            //
-            //     > .nav-item > span {
-            //         padding-right: $spacer;
-            //     }
-            // };
-
         }
     }
 
@@ -263,32 +248,7 @@ $menu-color: $white;
                 width: 36px;
             }
         }
-
-
-        // @media (max-width: 1263px) {
-        //     display: none;
-        // }
     }
-
-    // @media (max-width: 1344px) and (min-width: 991px) {
-    //     #phone-call-wrapper {
-    //         padding-left: $spacer;
-    //     }
-    //
-    //     #book-now-wrapper {
-    //         padding-left: $spacer;
-    //     }
-    //
-    //     #audio-control-wrapper {
-    //         padding-left: $spacer;
-    //     }
-    // }
-    //
-    // @media (max-width: 1075px) and (min-width: 991px) {
-    //     #audio-control-wrapper {
-    //         padding-right: 0;
-    //     }
-    // }
 }
 
 

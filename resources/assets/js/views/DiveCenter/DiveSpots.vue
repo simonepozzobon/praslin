@@ -224,7 +224,7 @@ export default {
         },
         renderStars: function(value) {
             var string = ''
-            for (var i = 0; i < (parseInt(value) - 1); i++) {
+            for (var i = 0; i < (parseInt(value)); i++) {
                 string = string + '<i class="fas fa-star"></i> '
             }
             return string
