@@ -182,9 +182,9 @@ $menu-color: $white;
     #navbarContent {
 
         > .navbar-nav {
-            // justify-content: space-between;
+            justify-content: flex-end;
             margin-left: 40px;
-            margin-right: 40px;
+            // margin-right: 40px;
             width: 100%;
 
             @media (max-width: 1263px) and (min-width: 991px) {
