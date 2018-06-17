@@ -30,6 +30,7 @@
         "lodash": "^4.17.10",
         "lottie-web": "^5.1.16",
         "mobile-detect": "^1.4.2",
+        "moment": "^2.22.2",
         "tether": "^1.4.4",
         "tone": "^0.12.80",
         "vue-awesome-swiper": "^3.1.3",
