@@ -37,10 +37,17 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row pb-5">
             <div class="col">
                 <div class="padi d-flex justify-content-center">
                     <img src="/images/padi-instructor.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5 justify-content-center">
+            <div class="col-md-8">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/275538098" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
             </div>
         </div>

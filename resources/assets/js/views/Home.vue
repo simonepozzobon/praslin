@@ -12,13 +12,13 @@
                     <review-list :reviews="this.reviews"/>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <!-- <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="form-group">
                         <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

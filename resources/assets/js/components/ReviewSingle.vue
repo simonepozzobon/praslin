@@ -10,7 +10,9 @@
                     {{ this.review.message }}
                 </p>
             </div>
-            <!-- <div class="actions">Icons</div> -->
+            <div class="actions">
+                <a href="https://www.facebook.com/pg/praslinprodivers/reviews" target="_blank">Read on Facebook</a>
+            </div>
         </div>
     </div>
 </template>
@@ -49,6 +51,10 @@ export default {
         > .message {
             padding-top: $spacer;
             // padding-bottom: $spacer;
+        }
+
+        > .actions {
+            padding-bottom: $spacer;
         }
     }
 }
