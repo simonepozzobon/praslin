@@ -62,6 +62,7 @@ export default {
 .review-single-info {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: $spacer;
 
