@@ -174,6 +174,11 @@ $menu-color: $white;
     }
 
     #navbarContent {
+        height: 100vh;
+
+        @include media-breakpoint-up('lg') {
+            height: auto;
+        };
 
         > .navbar-nav {
             justify-content: flex-end;
@@ -194,6 +199,12 @@ $menu-color: $white;
                 display: flex;
                 align-items: center;
                 padding-right: $spacer;
+
+                @include media-breakpoint-down('lg') {
+                    > .nav-number {
+                        padding-right: $spacer / 2;
+                    }
+                };
 
                 > span {
                     display: inline-block;
