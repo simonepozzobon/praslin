@@ -7,11 +7,11 @@
             {{ text }}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a href="" class="dropdown-item" @click="selected('dive-center', $event)" @tap="selected('dive-center', $event)">Dive Center</a>
-            <a href="" class="dropdown-item" @click="selected('boats', $event)" @tap="selected('boats', $event)">Boats</a>
-            <a href="" class="dropdown-item" @click="selected('diving-spots', $event)" @tap="selected('diving-spots', $event)">Dive Spots</a>
-            <a href="" class="dropdown-item" @click="selected('meet-the-team', $event)" @tap="selected('meet-the-team', $event)">Meet The Team</a>
-            <a href="" class="dropdown-item" @click="selected('price-list', $event)" @tap="selected('price-list', $event)">Price List</a>
+            <a href="" class="dropdown-item" @click="selected('dive-center', $event)" @touchstart="selected('dive-center', $event)">Dive Center</a>
+            <a href="" class="dropdown-item" @click="selected('boats', $event)" @touchstart="selected('boats', $event)">Boats</a>
+            <a href="" class="dropdown-item" @click="selected('diving-spots', $event)" @touchstart="selected('diving-spots', $event)">Dive Spots</a>
+            <a href="" class="dropdown-item" @click="selected('meet-the-team', $event)" @touchstart="selected('meet-the-team', $event)">Meet The Team</a>
+            <a href="" class="dropdown-item" @click="selected('price-list', $event)" @touchstart="selected('price-list', $event)">Price List</a>
         </div>
         <!-- <a class="nav-link dropdown-toggle" active-class="active" :to="link">
 

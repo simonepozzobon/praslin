@@ -3,7 +3,7 @@
         <span class="nav-number" ref="number">
             {{ number }}
         </span>
-        <a class="nav-link" href="" @click="selected" @tap="selected">
+        <a class="nav-link" href="" @click="selected" @touchstart="selected">
             {{ text }}
         </a>
     </li>
