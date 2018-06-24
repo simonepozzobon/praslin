@@ -7,15 +7,15 @@
             {{ text }}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <router-link :to="{name: 'DiveCenter', params: {anchor: 'dive-center'}}" class="dropdown-item">Dive Center</router-link>
-            <router-link :to="{name: 'DiveCenter', params: {anchor: 'boats'}}" class="dropdown-item">Boats</router-link>
-            <router-link :to="{name: 'DiveCenter', params: {anchor: 'diving-spots'}}" class="dropdown-item">Dive Spots</router-link>
-            <router-link :to="{name: 'DiveCenter', params: {anchor: 'meet-the-team'}}" class="dropdown-item">Meet The Team</router-link>
-            <router-link :to="{name: 'DiveCenter', params: {anchor: 'price-list'}}" class="dropdown-item">Price List</router-link>
+            <a href="" class="dropdown-item" @click="selected('dive-center', $event)" @tap="selected('dive-center', $event)">Dive Center</a>
+            <a href="" class="dropdown-item" @click="selected('boats', $event)" @tap="selected('boats', $event)">Boats</a>
+            <a href="" class="dropdown-item" @click="selected('diving-spots', $event)" @tap="selected('diving-spots', $event)">Dive Spots</a>
+            <a href="" class="dropdown-item" @click="selected('meet-the-team', $event)" @tap="selected('meet-the-team', $event)">Meet The Team</a>
+            <a href="" class="dropdown-item" @click="selected('price-list', $event)" @tap="selected('price-list', $event)">Price List</a>
         </div>
-        <!-- <router-link class="nav-link dropdown-toggle" active-class="active" :to="link">
+        <!-- <a class="nav-link dropdown-toggle" active-class="active" :to="link">
 
-        </router-link> -->
+        </a> -->
     </li>
 </template>
 
@@ -63,6 +63,11 @@ export default {
                         }
                     }, 0.1, '+=0')
             }
+        },
+        selected: function(item, event) {
+            event.preventDefault()
+            this.$emit('selected')
+            this.$router.push({name: 'DiveCenter', params: {anchor: item}})
         }
     },
     mounted: function() {

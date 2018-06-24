@@ -3,9 +3,9 @@
         <span class="nav-number" ref="number">
             {{ number }}
         </span>
-        <router-link class="nav-link" active-class="active" :to="link">
+        <a class="nav-link" href="" @click="selected" @tap="selected">
             {{ text }}
-        </router-link>
+        </a>
     </li>
 </template>
 
@@ -53,6 +53,11 @@ export default {
                         }
                     }, 0.1, '+=0')
             }
+        },
+        selected: function(event) {
+            event.preventDefault()
+            this.$emit('selected')
+            this.$router.push(this.link)
         }
     },
     mounted: function() {

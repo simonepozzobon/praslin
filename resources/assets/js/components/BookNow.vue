@@ -1,7 +1,7 @@
 <template lang="html">
     <li id="book-now-wrapper">
         <div class="call-to-action">
-            <b-btn v-b-modal.bookmodalwrapper class="text-uppercase btn-sm"><i class="fas fa-calendar-check"></i> Book Now</b-btn>
+            <b-btn v-b-modal.bookmodalwrapper class="text-uppercase btn-sm" @click="selected"><i class="fas fa-calendar-check"></i> Book Now</b-btn>
         </div>
     </li>
 </template>
@@ -13,6 +13,9 @@ export default {
     methods: {
         openModal: function() {
             EventBus.$emit('toggle-book-modal')
+        },
+        selected: function() {
+            this.$emit('selected')
         }
     }
 }

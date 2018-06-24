@@ -1,7 +1,7 @@
 <template lang="html">
     <li id="phone-call-wrapper">
         <div class="call-to-action">
-            <b-btn v-b-modal.phonemodalwrapper class="text-uppercase btn-sm"><i class="fas fa-phone"></i>  Call Us</b-btn>
+            <b-btn v-b-modal.phonemodalwrapper class="text-uppercase btn-sm" @click="selected"><i class="fas fa-phone"></i>  Call Us</b-btn>
         </div>
     </li>
 </template>
@@ -13,6 +13,9 @@ export default {
     methods: {
         openModal: function() {
             EventBus.$emit('toggle-phone-modal')
+        },
+        selected: function() {
+            this.$emit('selected')
         }
     }
 }

@@ -12,14 +12,14 @@
 
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav">
-                    <nav-item number="01" link='/about' text="About" />
-                    <nav-item-dropdown number="02" link='/dive-center' text="Dive Center"/>
-                    <nav-item number="03" link='/galleries' text="Galleries"/>
-                    <nav-item number="04" link='/island' text="Info"/>
-                    <nav-item number="05" link='/contacts' text="Contact"/>
+                    <nav-item number="01" link='/about' text="About" @selected="selected"/>
+                    <nav-item-dropdown number="02" link='/dive-center' text="Dive Center" @selected="selected"/>
+                    <nav-item number="03" link='/galleries' text="Galleries" @selected="selected"/>
+                    <nav-item number="04" link='/island' text="Info" @selected="selected"/>
+                    <nav-item number="05" link='/contacts' text="Contact" @selected="selected"/>
                     <weather-info-lite />
-                    <phone-call />
-                    <book-now />
+                    <phone-call @selected="selected" />
+                    <book-now @selected="selected" />
                     <audio-control v-if="this.isDesktop" size="small" :animated="true"/>
                 </ul>
             </div>
@@ -112,6 +112,10 @@ export default {
             } else {
                 this.isDesktop = false
             }
+        },
+        selected: function() {
+            console.log('selected')
+            $('#navbarContent').collapse('hide')
         }
     },
     mounted: function() {
