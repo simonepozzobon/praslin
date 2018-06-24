@@ -32,6 +32,9 @@
                 </div>
             </div>
         </div>
+        <div id="loader">
+            <moon-loader :loading="loader" color="#00AFB8"></moon-loader>
+        </div>
         <div id="response" class="container-fluid p-5">
             <h3 class="text-center">{{ this.serviceMessage }}</h3>
         </div>
@@ -51,6 +54,7 @@
 <script>
 import axios from 'axios'
 import EventBus from '~js/EventBus'
+import MoonLoader from 'vue-spinner/src/MoonLoader.vue'
 import MorphSVG from '~js/externals/MorphSVGPlugin'
 import SectionTitle from '../components/SectionTitle.vue'
 import {TweenMax, TimelineMax} from 'gsap'
@@ -59,6 +63,7 @@ import Waves from '../components/icons/Waves.vue'
 export default {
     name: 'BookNowModal',
     components: {
+        MoonLoader,
         SectionTitle,
         Waves,
     },
@@ -68,6 +73,7 @@ export default {
             email: null,
             from_to: null,
             isOpen: false,
+            loader: false,
             message: null,
             name: null,
             serviceMessage: null,
@@ -83,7 +89,10 @@ export default {
             var t1 = new TimelineMax()
             t1.to('#book-modal', .4, {
                 opacity: 0,
-                display: 'none'
+                display: 'none',
+                onComplete: () => {
+                    this.loader = false
+                }
             })
                 .to('#response', .4, {
                     opacity: 1,
@@ -107,16 +116,9 @@ export default {
                 })
         },
         showSuccess: function() {
+            this.loader = false
             var t1 = new TimelineMax()
-            t1.to('#book-modal', .4, {
-                opacity: 0,
-                display: 'none'
-            })
-                .to(this.$refs.submitBook, .2, {
-                    opacity: 0,
-                    display: 'none',
-                })
-                .to('#success', .4, {
+            t1.to('#success', .4, {
                     opacity: 1,
                     display: 'block',
                     onComplete: () => {
@@ -131,6 +133,19 @@ export default {
                 this.missingField()
                 return
             }
+
+            var t1 = new TimelineMax()
+            t1.to('#book-modal', .4, {
+                display: 'none',
+                opacity: 0
+            })
+                .to(this.$refs.submitBook, .2, {
+                    opacity: 0,
+                    display: 'none',
+                    onComplete: () => {
+                        this.loader = true
+                    }
+                })
 
             var data = new FormData()
             data.append('name', this.name)
@@ -231,6 +246,12 @@ export default {
         @include box-shadow(none);
         background-color: transparent;
     }
+}
+
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #response, #success {

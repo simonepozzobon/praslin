@@ -32,6 +32,8 @@ class MessageFromWebsite extends Mailable
      */
     public function build()
     {
-        return $this->from($this->data['email'], $this->data['name'] . ' ' . $this->data['surname'])->view('emails.bookmessage')->with(['message' => $this->data]);
+        return $this->from($this->data['email'], $this->data['name'] . ' ' . $this->data['surname'])
+            ->view('emails.bookmessage')
+            ->with(['message' => $this->data]);
     }
 }

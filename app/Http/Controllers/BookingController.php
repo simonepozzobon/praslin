@@ -6,6 +6,7 @@ use App\Message;
 use Illuminate\Http\Request;
 use App\Mail\MessageFromWebsite;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\SenderMessageFromWebsite;
 
 class BookingController extends Controller
 {
@@ -30,6 +31,7 @@ class BookingController extends Controller
         ];
 
         $mail = Mail::to('praslinprodivers@gmail.com')->send(new MessageFromWebsite($mail_data));
+        $mail = Mail::to($message->email)->send(new SenderMessageFromWebsite($mail_data));
 
         return $mail;
     }
