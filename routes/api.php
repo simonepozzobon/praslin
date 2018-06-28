@@ -26,4 +26,6 @@ Route::prefix('dive-spots')->group(function() {
     Route::post('/new', 'DivespotController@saveSpot');
 });
 
+Route::post('/instagram-upload', 'InstagramController@upload');
+
 Route::post('/send-booking', 'BookingController@sendBooking');

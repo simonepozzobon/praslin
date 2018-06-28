@@ -31,8 +31,11 @@
                         <a class="nav-link" href="{{ route('admin.divespots') }}">Dive Spots</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Price List</a>
+                        <a class="nav-link" href="{{ route('admin.instagram') }}">Instagram</a>
                     </li>
+                    {{-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Price List</a>
+                    </li> --}}
                 </ul>
             </div>
         </nav>

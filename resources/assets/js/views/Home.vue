@@ -32,7 +32,7 @@ import moment from 'moment'
 import ReviewList from '../components/ReviewList.vue'
 import SectionTitle from '../components/SectionTitle.vue'
 
-var FB = require('~js/externals/FacebookSDK')
+const FB = require('~js/externals/FacebookSDK')
 
 export default {
     name: 'Home',

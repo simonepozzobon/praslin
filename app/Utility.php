@@ -51,4 +51,27 @@ class Utility extends Model
 
         return $image;
     }
+
+    public static function uploadInstagram($file) {
+        $filename = $file->getClientOriginalName();
+        $src = $file->storeAs('public/instagram', $filename);
+
+        // preparo gli altri formati
+        $thumb = $file->storeAs('public/instagram/thumb', $filename);
+
+        // genero gli altri formati
+        $path = storage_path('app/public/instagram');
+
+        // Thumb
+        Image::make($path.'/thumb/'.$filename)->fit(500, 500, function ($constraint) {
+            $constraint->upsize();
+        })->save();
+
+        $image = [
+            'src' => $src,
+            'thumb' => $thumb,
+        ];
+
+        return $image;
+    }
 }

@@ -54,6 +54,11 @@ const router = new VueRouter({
             name: 'Contacts',
             component: require('./views/Contact/Index.vue')
         },
+        {
+            path: '/privacy',
+            name: 'Privacy',
+            component: require('./views/Privacy.vue')
+        }
     ]
 })
 
