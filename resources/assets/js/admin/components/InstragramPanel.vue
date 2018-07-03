@@ -64,10 +64,11 @@ export default {
             access_token: null,
             caption: '',
             fbSignInParams: {
-                scope: 'instagram_basic',
+                scope: 'instagram_basic,publish_video',
                 return_scopes: true
             },
             FB: null,
+            FBID: 1745688432182615,
             instaID: 17841408102168032,
             instagramPost: null,
             media: null,

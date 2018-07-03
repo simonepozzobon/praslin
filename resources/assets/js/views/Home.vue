@@ -69,18 +69,21 @@ export default {
             );
         },
         formatFacebookReviews: function(data) {
-            console.log(data)
-            for (var i = 0; i < data.length; i++) {
-                var review = {
-                    id: parseInt((new Date().getTime() / 1000).toFixed(0)),
-                    name: 'Facebook',
-                    rating: data[i].rating,
-                    type: 'Facebook',
-                    pic: null,
-                    date: moment(data[i].created_time).format('LL'),
-                    message: data[i].review_text,
+            if (data) {
+                for (var i = 0; i < data.length; i++) {
+                    var review = {
+                        id: parseInt((new Date().getTime() / 1000).toFixed(0)),
+                        name: 'Facebook',
+                        rating: data[i].rating,
+                        type: 'Facebook',
+                        pic: null,
+                        date: moment(data[i].created_time).format('LL'),
+                        message: data[i].review_text,
+                    }
+                    this.reviews.push(review)
                 }
-                this.reviews.push(review)
+            } else {
+                console.log('error with access_token')
             }
         }
     },
