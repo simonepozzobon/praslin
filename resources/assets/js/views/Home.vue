@@ -56,36 +56,64 @@ export default {
                 ease: Back.easeInOut
             })
         },
+        // getImage: function(FB, review, i) {
+        //     if (review.reviewer) {
+        //         console.log(review)
+        //         var id = review.reviewer.id
+        //         var url = '/'+id+'/picture'
+        //         // FB.api(
+        //         //     url,
+        //         //     'GET',
+        //         //     {access_token: apiKeys.facebook.page_token},
+        //         //     gianni => {
+        //         //         console.log(gianni)
+        //         //         this.formatFacebookReview(review, i)
+        //         //     }
+        //         // )
+        //     } else {
+        //         this.formatFacebookReview(review, i)
+        //     }
+        //
+        // },
         getPageToken: function(FB) {
             FB.api(
                 '/1745688432182615/ratings',
                 'GET',
                 response => {
-                    this.formatFacebookReviews(response.data)
+                    if (response.data) {
+                        for (var i = 0; i < response.data.length; i++) {
+                            var review = {
+                                id: i,
+                                name: response.data[i].reviewer.name,
+                                rating: response.data[i].rating,
+                                type: 'Facebook',
+                                pic: null,
+                                date: moment(response.data[i].created_time).format('LL'),
+                                message: response.data[i].review_text,
+                            }
+                            this.reviews.push(review)
+                        }
+                    } else {
+                        console.log('error with access_token')
+                    }
                 },
                 {
                     access_token: apiKeys.facebook.page_token
                 }
             );
         },
-        formatFacebookReviews: function(data) {
-            if (data) {
-                for (var i = 0; i < data.length; i++) {
-                    var review = {
-                        id: parseInt((new Date().getTime() / 1000).toFixed(0)),
-                        name: 'Facebook',
-                        rating: data[i].rating,
-                        type: 'Facebook',
-                        pic: null,
-                        date: moment(data[i].created_time).format('LL'),
-                        message: data[i].review_text,
-                    }
-                    this.reviews.push(review)
-                }
-            } else {
-                console.log('error with access_token')
-            }
-        }
+        // formatFacebookReview: function(review, i) {
+        //     var review = {
+        //         id: i,
+        //         name: review.reviewer.name,
+        //         rating: review.rating,
+        //         type: 'Facebook',
+        //         pic: null,
+        //         date: moment(review.created_time).format('LL'),
+        //         message: review.review_text,
+        //     }
+        //     this.reviews.push(review)
+        // },
     },
     mounted: function() {
         this.animate()
