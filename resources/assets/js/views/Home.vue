@@ -82,15 +82,18 @@ export default {
                 response => {
                     if (response.data) {
                         for (var i = 0; i < response.data.length; i++) {
-                            var review = {
-                                id: i,
-                                name: response.data[i].reviewer.name,
-                                rating: response.data[i].rating,
-                                type: 'Facebook',
-                                pic: null,
-                                date: moment(response.data[i].created_time).format('LL'),
-                                message: response.data[i].review_text,
+                            var review = {}
+                            review.id = i
+                            if (response.data[i].reviewer) {
+                                review.name = response.data[i].reviewer.name
+                            } else {
+                                review.name = 'Facebook Account'
                             }
+                            review.rating = response.data[i].rating
+                            review.type = 'Facebook'
+                            review.pic = null
+                            review.date = moment(response.data[i].created_time).format('LL')
+                            review.message = response.data[i].review_text
                             this.reviews.push(review)
                         }
                     } else {

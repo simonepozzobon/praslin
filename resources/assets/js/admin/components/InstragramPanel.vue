@@ -27,6 +27,7 @@
             </div>
         </div>
         <div class="col-12" ref="instagrampost" v-if="this.instagramPost">
+        <!-- <div class="col-12" ref="instagrampost"> -->
             <div class="row">
                 <div class="col-md-6">
                     <img :src="this.instagramPost.thumb" class="img-fluid"/>
@@ -35,16 +36,6 @@
                     <p>
                         {{ this.instagramPost.caption }}
                     </p>
-                </div>
-            </div>
-            <div class="row pt-4">
-                <div class="col d-flex justify-content-center">
-                    <fb-signin-button
-                        :params="fbSignInParams"
-                        @success="onSignInSuccess"
-                        @error="onSignInError">
-                        Login and Post
-                    </fb-signin-button>
                 </div>
             </div>
         </div>
@@ -64,7 +55,7 @@ export default {
             access_token: null,
             caption: '',
             fbSignInParams: {
-                scope: 'instagram_basic,publish_video',
+                scope: 'manage_pages,pages_manage_cta,pages_show_list,ads_read,pages_messaging,instagram_basic',
                 return_scopes: true
             },
             FB: null,
@@ -84,45 +75,6 @@ export default {
                 opacity: 0,
             })
         },
-        mediaPublish: function(id) {
-            this.FB.api(
-                '/17841408102168032/media_publish',
-                'POST',
-                {
-                    creation_id: id,
-                    access_token: this.access_token
-                },
-                response => {
-                    console.log('publish', response)
-                }
-            )
-        },
-        onSignInSuccess: function(response) {
-            this.access_token = response.authResponse.accessToken
-            var url = location.protocol + '//' + location.hostname + (location.port ? ':'+location.port: '')
-            var img_url = url + this.instagramPost.thumb
-
-            // debug
-            img_url = "https://d1ljaggyrdca1l.cloudfront.net/wp-content/uploads/2017/03/azure-seas-and-palm-trees-seychelles-1600x900.jpg"
-
-            this.FB.api(
-                '/17841408102168032/media',
-                'POST',
-                {
-                    image_url: img_url,
-                    caption: this.instagramPost.caption,
-                    access_token: this.access_token
-                },
-                response => {
-                    console.log('media upload', response)
-                    // change the number with the id from the response
-                    this.mediaPublish(17889455560051444)
-                }
-            )
-        },
-        onSignInError: function(error) {
-            console.log(error)
-        },
         uploadInstagram: function() {
             if (this.media) {
                 var data = new FormData()
@@ -133,15 +85,25 @@ export default {
 
                 axios.post('/api/instagram-upload', data).then(response => {
                     this.instagramPost = response.data
+
+                    var data = {
+                        url: window.location.protocol + '//' + window.location.host + this.instagramPost.thumb,
+                        caption: this.instagramPost.caption
+                    }
+
+                    console.log(data)
+                    axios.post('http://localhost:6029/api/save-instagram-pic', data).then(response => {
+                        console.log(response)
+                    })
                 })
             }
         }
     },
     mounted: function() {
-        EventBus.$on('facebook-sdk-loaded', FB => {
-            console.log('api loaded')
-            this.FB = FB
-        })
+        // EventBus.$on('facebook-sdk-loaded', FB => {
+        //     console.log('api loaded')
+        //     this.FB = FB
+        // })
     }
 }
 </script>

@@ -2849,19 +2849,19 @@ var apiKeys = {
         appID: '681131438900079',
         client_token: '9fdf711cfaa171be8ed61c74c19a2997',
         secret: '4d630484be48f5d51fe484618f50e4f6',
-        page_token: 'EAAJrfEV2A28BACZC05PznnslAbSiui4ob8IPdqcQDtmPbI07U5c1Tlxg4S0Yt6ESaeaMrQzYY45MbrlSvproknLiDke4r1AQ5UXfNZBdCFIIGPQ6RwVX0JNEyn5p48vUUP71imhAMR0fX1VfJvGRWFDIDrrO1OslQrzaJtAwZDZD'
+        page_token: 'EAAJrfEV2A28BANuYpBGRrImXcEVQDxy7b23kNIJaxOEwfZBaJLKvaJIEZBvhOnUZB67GMRbb9ZCzaVeREC4DWiRQR6JZCR0sER4tUkChaBkVZBA4wVG1U4EOPPOZAQOosxLgZAqOsEKELrF7wj7SnK0dUiGT7Asq3mqAj9AS0FZBXPAZDZD'
     }
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (apiKeys);
 
 // // get long live token
-// https://graph.facebook.com/v2.10/oauth/access_token?grant_type=fb_exchange_token&client_id=681131438900079&client_secret=4d630484be48f5d51fe484618f50e4f6&fb_exchange_token=EAAJrfEV2A28BABYnq5gOmiNpZAjD63xY9ROZByI0r0Rs2dZBOEW9jTUQsMj5ZBknKZCU6RB3UZCZB4WZAyqTOTPh1WCkisJzMbeXLmo3ZA7v6kgwt3UrKzpFHdhsI3Km9UfnvWfo8pFy65lrh7aiHNE4GbYQ9ZAgye1pQZBePT8LdaJL7F34f7uKhE7Dzhau959KToK1GdP3G8sZCB2QxxY28ZC33YcuqCSRLPyA6593AjgNNPQZDZD
+// https://graph.facebook.com/v2.10/oauth/access_token?grant_type=fb_exchange_token&client_id=681131438900079&client_secret=4d630484be48f5d51fe484618f50e4f6&fb_exchange_token=EAAJrfEV2A28BADeQoBPbrPpZCUP8gTuzXeIitsOhrR8SAcDVkNvw0Ecp6NqtBZBOmsLBO4mDxA9cMlgHakNW4kg2y0mLLtmSAE6Vx36SEmP8gq1slijnYQEz9o76bvr7n83OOJgsSUhCjYsRuoZASy3t5zLak8zBchR2i83MUnJmdH9odWEOcJwfPZB1rDrfVeeKgLmDtQZDZD
 //
 // {"access_token":"EAAJrfEV2A28BAEC7rKYRZBz8mD04kLOGTQ0cMb52rv4eQ8RU2NDdAmGyubNjLPCMeuDJWB356l5hnTri0v7dupOZCFVsKAWGwcqsKrEDGOTr9KaJF8KbwjlYpHWteXcX3bT9HlpJLdDRuQ3OUJuY0if7DflvMZD","token_type":"bearer","expires_in":5184000}
 //
 // // get Account ID
-// https://graph.facebook.com/v2.10/me?access_token=EAAJrfEV2A28BAEC7rKYRZBz8mD04kLOGTQ0cMb52rv4eQ8RU2NDdAmGyubNjLPCMeuDJWB356l5hnTri0v7dupOZCFVsKAWGwcqsKrEDGOTr9KaJF8KbwjlYpHWteXcX3bT9HlpJLdDRuQ3OUJuY0if7DflvMZD
+// https://graph.facebook.com/v2.10/me?access_token=EAAJrfEV2A28BAN7EvyZAsCrZBhbVsbMclbpI6CsaEWQZCBThYD19eFtV1SlHFtGYF3nIqfhqKdcc1ngERZBT3k59m4djGhPJXgE2mvmzfG2uJ83Ejoq1xFzX3pY5ERC4ypICakYfVX8ILJ24rBhZBIzRSxGOwJnsZD
 //
 // {
 //    "name": "Angus Simons",
@@ -2869,7 +2869,7 @@ var apiKeys = {
 // }
 //
 // // Get Permanent
-// https://graph.facebook.com/v2.10/2116899541880177/accounts?access_token=EAAJrfEV2A28BAEC7rKYRZBz8mD04kLOGTQ0cMb52rv4eQ8RU2NDdAmGyubNjLPCMeuDJWB356l5hnTri0v7dupOZCFVsKAWGwcqsKrEDGOTr9KaJF8KbwjlYpHWteXcX3bT9HlpJLdDRuQ3OUJuY0if7DflvMZD
+// https://graph.facebook.com/v2.10/2116899541880177/accounts?access_token=EAAJrfEV2A28BAN7EvyZAsCrZBhbVsbMclbpI6CsaEWQZCBThYD19eFtV1SlHFtGYF3nIqfhqKdcc1ngERZBT3k59m4djGhPJXgE2mvmzfG2uJ83Ejoq1xFzX3pY5ERC4ypICakYfVX8ILJ24rBhZBIzRSxGOwJnsZD
 //
 // {
 //    "data": [
@@ -25735,15 +25735,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -25757,7 +25748,7 @@ var FB = __webpack_require__(124);
             access_token: null,
             caption: '',
             fbSignInParams: {
-                scope: 'instagram_basic,publish_video',
+                scope: 'manage_pages,pages_manage_cta,pages_show_list,ads_read,pages_messaging,instagram_basic',
                 return_scopes: true
             },
             FB: null,
@@ -25777,39 +25768,8 @@ var FB = __webpack_require__(124);
                 opacity: 0
             });
         },
-        mediaPublish: function mediaPublish(id) {
-            this.FB.api('/17841408102168032/media_publish', 'POST', {
-                creation_id: id,
-                access_token: this.access_token
-            }, function (response) {
-                console.log('publish', response);
-            });
-        },
-        onSignInSuccess: function onSignInSuccess(response) {
-            var _this = this;
-
-            this.access_token = response.authResponse.accessToken;
-            var url = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
-            var img_url = url + this.instagramPost.thumb;
-
-            // debug
-            img_url = "https://d1ljaggyrdca1l.cloudfront.net/wp-content/uploads/2017/03/azure-seas-and-palm-trees-seychelles-1600x900.jpg";
-
-            this.FB.api('/17841408102168032/media', 'POST', {
-                image_url: img_url,
-                caption: this.instagramPost.caption,
-                access_token: this.access_token
-            }, function (response) {
-                console.log('media upload', response);
-                // change the number with the id from the response
-                _this.mediaPublish(17889455560051444);
-            });
-        },
-        onSignInError: function onSignInError(error) {
-            console.log(error);
-        },
         uploadInstagram: function uploadInstagram() {
-            var _this2 = this;
+            var _this = this;
 
             if (this.media) {
                 var data = new FormData();
@@ -25819,18 +25779,26 @@ var FB = __webpack_require__(124);
                 this.hideUpload();
 
                 __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('/api/instagram-upload', data).then(function (response) {
-                    _this2.instagramPost = response.data;
+                    _this.instagramPost = response.data;
+
+                    var data = {
+                        url: window.location.protocol + '//' + window.location.host + _this.instagramPost.thumb,
+                        caption: _this.instagramPost.caption
+                    };
+
+                    console.log(data);
+                    __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post('http://localhost:6029/api/save-instagram-pic', data).then(function (response) {
+                        console.log(response);
+                    });
                 });
             }
         }
     },
     mounted: function mounted() {
-        var _this3 = this;
-
-        __WEBPACK_IMPORTED_MODULE_1__js_EventBus__["a" /* default */].$on('facebook-sdk-loaded', function (FB) {
-            console.log('api loaded');
-            _this3.FB = FB;
-        });
+        // EventBus.$on('facebook-sdk-loaded', FB => {
+        //     console.log('api loaded')
+        //     this.FB = FB
+        // })
     }
 });
 
@@ -25919,31 +25887,6 @@ var render = function() {
                 )
               ])
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row pt-4" }, [
-            _c(
-              "div",
-              { staticClass: "col d-flex justify-content-center" },
-              [
-                _c(
-                  "fb-signin-button",
-                  {
-                    attrs: { params: _vm.fbSignInParams },
-                    on: {
-                      success: _vm.onSignInSuccess,
-                      error: _vm.onSignInError
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n                    Login and Post\n                "
-                    )
-                  ]
-                )
-              ],
-              1
-            )
           ])
         ])
       : _vm._e()
