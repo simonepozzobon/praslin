@@ -137,6 +137,10 @@ export default {
                     this.responseStatus = 'text-danger'
                     this.responseMsg = 'Error, please reload the page!'
                 }
+            }).catch(errors => {
+                this.loading = false
+                this.responseStatus = 'text-danger'
+                this.responseMsg = 'Error, please reload the page!'
             })
         },
         uploadInstagram: function() {
