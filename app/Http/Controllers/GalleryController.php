@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use App\Image;
 use App\Utility;
 use Illuminate\Http\Request;
@@ -10,6 +11,10 @@ use Illuminate\Support\Facades\Storage;
 class GalleryController extends Controller
 {
     public function galleries() {
+        if (!Auth::user()) {
+            return redirect('/');
+        }
+
         $images = Image::orderBy('id', 'desc')->get();
 
         $images = $images->transform(function($img, $key) {

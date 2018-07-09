@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use App\Utility;
 use App\Instagram;
 use Illuminate\Http\Request;
@@ -10,6 +11,9 @@ use Illuminate\Support\Facades\Storage;
 class InstagramController extends Controller
 {
     public function index() {
+        if (!Auth::user()) {
+            return redirect('/');
+        }
         return view('admin.instagram.index');
     }
 

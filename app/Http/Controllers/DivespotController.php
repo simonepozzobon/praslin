@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use App\Icon;
 use App\Divespot;
 use App\ReefType;
@@ -13,6 +14,10 @@ class DivespotController extends Controller
     protected $table = 'dive_spots';
 
     public function index() {
+        if (!Auth::user()) {
+            return redirect('/');
+        }
+
         $divespots = Divespot::all();
 
         $formatted = collect();
