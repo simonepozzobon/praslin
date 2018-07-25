@@ -22,6 +22,7 @@ Route::get('/images', 'GalleryController@getImages');
 
 Route::prefix('dive-spots')->group(function() {
     Route::get('/', 'DivespotController@getSpots');
+    Route::get('/delete/{id}', 'DivespotController@destroy');
     Route::get('/formdata', 'DivespotController@getFormData');
     Route::post('/new', 'DivespotController@saveSpot');
 });

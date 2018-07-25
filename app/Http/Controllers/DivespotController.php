@@ -31,6 +31,14 @@ class DivespotController extends Controller
         return view('admin.divespots.index', compact('divespots'));
     }
 
+    public function destroy($id) {
+        $divespot = Divespot::find($id);
+        $divespot->delete();
+        return [
+            'result' => true
+        ];
+    }
+
     public function getSpots() {
         $divespots = Divespot::all();
 

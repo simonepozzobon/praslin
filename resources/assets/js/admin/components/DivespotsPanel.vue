@@ -85,8 +85,8 @@
                         <th>What</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr v-for="divespot in this.divespots" :key="divespot.id">
+                <tbody v-for="divespot in this.divespots" :key="divespot.id" @click="destroy(divespot.id)">
+                    <tr>
                         <td>{{ divespot.id }}</td>
                         <td>{{ divespot.name }}</td>
                         <td>{{ divespot.reef_type.description }}</td>
@@ -102,6 +102,11 @@
                             <fish-icons v-for="icon in divespot.icons" :key="icon.id" :icon_id="icon.id" size="32"/>
                         </td>
                     </tr>
+                    <tr :id="'delete-panel-'+divespot.id" class="delete-panel-here">
+                        <td colspan="8">
+                            <button class="btn btn-danger" @click="confirmDelete(divespot.id)">Delete</button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -114,6 +119,7 @@ import axios from 'axios'
 import FishIcons from '../../components/FishIcons.vue'
 import GoogleMapsOpts from '~js/config/GoogleMapsOpts'
 import StarsIcons from '../../components/StarsIcons.vue'
+import {TweenMax} from 'gsap'
 
 export default {
     name: 'GalleryPanel',
@@ -184,6 +190,18 @@ export default {
                 }
             }
         },
+        confirmDelete: function(id) {
+            axios.get('/api/dive-spots/delete/'+id).then(response => {
+                console.log(response)
+            })
+        },
+        destroy: function(id) {
+            console.log(id)
+            TweenMax.to('#delete-panel-'+id, .4, {
+                display: 'table-row',
+                opacity: 1,
+            })
+        },
         getFormData: function() {
             axios.get('/api/dive-spots/formdata').then(response => {
                 this.iconsAvailable = response.data.icons
@@ -238,7 +256,9 @@ export default {
             data.append('icons', JSON.stringify(this.icons))
 
             axios.post('/api/dive-spots/new', data).then(response => {
-                console.log(response)
+                if (response) {
+                    location.reload()
+                }
             })
         }
     },
@@ -267,5 +287,10 @@ export default {
     min-height: 60vh;
     height: 100%;
     z-index: 0;
+}
+
+.delete-panel-here {
+    display: none;
+    opacity: 0;
 }
 </style>
